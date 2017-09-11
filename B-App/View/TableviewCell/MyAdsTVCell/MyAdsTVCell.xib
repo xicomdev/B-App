@@ -17,7 +17,7 @@
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3NN-Xh-9DZ" customClass="SetCornerButton" customModule="B_App" customModuleProvider="target">
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tumbnail" translatesAutoresizingMaskIntoConstraints="NO" id="Tx9-cN-WZ3">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummyHouse" translatesAutoresizingMaskIntoConstraints="NO" id="Tx9-cN-WZ3">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="mu2-jc-kbQ"/>
                                 </constraints>
@@ -99,6 +99,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="tumbnail" width="116" height="104"/>
+        <image name="dummyHouse" width="150" height="100"/>
     </resources>
 </document>

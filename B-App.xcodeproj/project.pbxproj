@@ -22,6 +22,7 @@
 		2516B7D11F66A2650016A29E /* RecievedMsgTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2516B7CF1F66A2650016A29E /* RecievedMsgTVCell.xib */; };
 		2516B7D41F66A2770016A29E /* SentMsgTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2516B7D21F66A2770016A29E /* SentMsgTVCell.swift */; };
 		2516B7D51F66A2770016A29E /* SentMsgTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2516B7D31F66A2770016A29E /* SentMsgTVCell.xib */; };
+		2516B7D71F66C13D0016A29E /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2516B7D61F66C13D0016A29E /* TabBar.storyboard */; };
 		25D4B6171F5FFCC6002507B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25D4B6151F5FFCC6002507B8 /* Main.storyboard */; };
 		25D4B61A1F5FFCC6002507B8 /* B_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 25D4B6181F5FFCC6002507B8 /* B_App.xcdatamodeld */; };
 		25D4B61C1F5FFCC6002507B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25D4B61B1F5FFCC6002507B8 /* Assets.xcassets */; };
@@ -89,6 +90,7 @@
 		2516B7CF1F66A2650016A29E /* RecievedMsgTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecievedMsgTVCell.xib; sourceTree = "<group>"; };
 		2516B7D21F66A2770016A29E /* SentMsgTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentMsgTVCell.swift; sourceTree = "<group>"; };
 		2516B7D31F66A2770016A29E /* SentMsgTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SentMsgTVCell.xib; sourceTree = "<group>"; };
+		2516B7D61F66C13D0016A29E /* TabBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		25D4B60E1F5FFCC6002507B8 /* B-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "B-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25D4B6161F5FFCC6002507B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		25D4B6191F5FFCC6002507B8 /* B_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = B_App.xcdatamodel; sourceTree = "<group>"; };
@@ -303,6 +305,7 @@
 				25D4B68B1F5FFFB0002507B8 /* View */,
 				25D4B68C1F5FFFB0002507B8 /* ViewController */,
 				25D4B6151F5FFCC6002507B8 /* Main.storyboard */,
+				2516B7D61F66C13D0016A29E /* TabBar.storyboard */,
 				25D4B61B1F5FFCC6002507B8 /* Assets.xcassets */,
 				25D4B61D1F5FFCC6002507B8 /* LaunchScreen.storyboard */,
 				25D4B6201F5FFCC6002507B8 /* Info.plist */,
@@ -627,6 +630,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2516B7D11F66A2650016A29E /* RecievedMsgTVCell.xib in Resources */,
+				2516B7D71F66C13D0016A29E /* TabBar.storyboard in Resources */,
 				2516B7AF1F6662420016A29E /* HouseAdCVCell.xib in Resources */,
 				25D4B6A21F5FFFB0002507B8 /* GoogleSignIn.bundle in Resources */,
 				25D4B61F1F5FFCC6002507B8 /* LaunchScreen.storyboard in Resources */,
@@ -883,6 +887,7 @@
 					"$(PROJECT_DIR)/B-App/Libraries/Google",
 				);
 				INFOPLIST_FILE = "B-App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.App.B-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -902,6 +907,7 @@
 					"$(PROJECT_DIR)/B-App/Libraries/Google",
 				);
 				INFOPLIST_FILE = "B-App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.App.B-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";

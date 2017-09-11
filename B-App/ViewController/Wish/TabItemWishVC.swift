@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TabItemWishVC: UIViewController {
+class TabItemWishVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var collctnVwAds: UICollectionView!
     @IBOutlet weak var btnSortBy: UIButton!
@@ -18,9 +18,17 @@ class TabItemWishVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let nibAd = UINib(nibName: "HouseAdCVCell", bundle: nil)
+        collctnVwAds.register(nibAd, forCellWithReuseIdentifier: "HouseAdCVCell")
+        
+        collctnVwAds.delegate = self
+        collctnVwAds.dataSource = self
+        collctnVwAds.reloadData()
+
     }
 
+    //MARK: - Buttons Actions
+    
     @IBAction func actionBackBtn(_ sender: AnyObject) {
     }
     @IBAction func actionSearchBtn(_ sender: AnyObject) {
@@ -35,20 +43,26 @@ class TabItemWishVC: UIViewController {
     }
     @IBAction func actionSortByBtn(_ sender: AnyObject) {
     }
+    
+    //MARK: - Tableview delegate and datsource methods 
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 4
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collctnVwAds.dequeueReusableCell(withReuseIdentifier: "HouseAdCVCell", for: indexPath) as! HouseAdCVCell
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collctnVwAds.frame.width - 40, height: 240)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

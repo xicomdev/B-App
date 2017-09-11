@@ -15,7 +15,7 @@
                 <frame key="frameInset" width="320" height="74"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Njs-AI-rnT" customClass="SetCornerImageView" customModule="B_App" customModuleProvider="target">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy" translatesAutoresizingMaskIntoConstraints="NO" id="Njs-AI-rnT" customClass="SetCornerImageView" customModule="B_App" customModuleProvider="target">
                         <constraints>
                             <constraint firstAttribute="height" constant="58" id="Hav-bV-DDT"/>
                             <constraint firstAttribute="width" constant="58" id="fPK-mG-Dru"/>
@@ -82,4 +82,7 @@
             <point key="canvasLocation" x="26" y="67.5"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="dummy" width="150" height="150"/>
+    </resources>
 </document>

@@ -15,7 +15,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="195" height="225"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T6Z-NA-3Kj" customClass="SetCornerImageView" customModule="B_App" customModuleProvider="target">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="dummyHouse" translatesAutoresizingMaskIntoConstraints="NO" id="T6Z-NA-3Kj" customClass="SetCornerImageView" customModule="B_App" customModuleProvider="target">
+                        <frame key="frameInset" minY="8" width="195" height="129.5"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                 <real key="value" value="12"/>
@@ -40,7 +41,8 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tokyo, nakaro, Sokme" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sM4-Uk-kvO">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Tokyo, nakaro, Sokme" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sM4-Uk-kvO">
+                        <frame key="frameInset" minY="142.5" width="195" height="14.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -101,6 +103,7 @@
     </objects>
     <resources>
         <image name="button_small" width="208" height="58"/>
+        <image name="dummyHouse" width="150" height="100"/>
         <image name="heart_small" width="19" height="16"/>
     </resources>
 </document>
