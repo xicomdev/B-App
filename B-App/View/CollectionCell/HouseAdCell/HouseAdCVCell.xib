@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1611" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HouseAdCVCell" id="gTV-IL-0wX" customClass="HouseAdCVCell" customModule="B_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="195" height="225"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="195" height="225"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T6Z-NA-3Kj" customClass="SetCornerImageView" customModule="B_App" customModuleProvider="target">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DhX-vO-Ikn">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="UMm-YW-ztd"/>
+                            <constraint firstAttribute="width" constant="80" id="iXG-Bm-eXl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                        <state key="normal" title="Learn more" backgroundImage="button_small">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$20 per month" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WhP-Bp-UfO">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="UW8-hP-JDU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tokyo, nakaro, Sokme" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sM4-Uk-kvO">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60m" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYf-Zu-3iV">
+                        <color key="backgroundColor" red="0.85490196080000003" green="0.90588235289999997" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="dKu-fs-apN"/>
+                            <constraint firstAttribute="width" constant="50" id="oRo-JW-eol"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="9"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZVU-2x-jUB">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="GiR-06-6px"/>
+                            <constraint firstAttribute="height" constant="25" id="KCC-zo-XjS"/>
+                        </constraints>
+                        <state key="normal" image="heart_small"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="T6Z-NA-3Kj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9jZ-Ud-cf8"/>
+                <constraint firstItem="WhP-Bp-UfO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Bdp-26-p8x"/>
+                <constraint firstAttribute="trailing" secondItem="sM4-Uk-kvO" secondAttribute="trailing" id="DHo-7h-mFc"/>
+                <constraint firstItem="DhX-vO-Ikn" firstAttribute="top" secondItem="WhP-Bp-UfO" secondAttribute="bottom" constant="10" id="FbO-T6-tLB"/>
+                <constraint firstItem="sM4-Uk-kvO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="LNv-IS-zLE"/>
+                <constraint firstItem="hYf-Zu-3iV" firstAttribute="height" secondItem="WhP-Bp-UfO" secondAttribute="height" id="PKp-of-e7v"/>
+                <constraint firstItem="hYf-Zu-3iV" firstAttribute="leading" secondItem="WhP-Bp-UfO" secondAttribute="trailing" constant="12" id="TCb-O8-1wm"/>
+                <constraint firstAttribute="trailing" secondItem="T6Z-NA-3Kj" secondAttribute="trailing" id="aLs-np-7La"/>
+                <constraint firstItem="ZVU-2x-jUB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="aac-sA-Oc6"/>
+                <constraint firstItem="DhX-vO-Ikn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bWe-Et-QDM"/>
+                <constraint firstAttribute="bottom" secondItem="DhX-vO-Ikn" secondAttribute="bottom" constant="10" id="gSb-Z3-fqY"/>
+                <constraint firstItem="T6Z-NA-3Kj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="iL8-p9-PlK"/>
+                <constraint firstItem="sM4-Uk-kvO" firstAttribute="top" secondItem="T6Z-NA-3Kj" secondAttribute="bottom" constant="5" id="iSH-R4-N1C"/>
+                <constraint firstItem="WhP-Bp-UfO" firstAttribute="top" secondItem="sM4-Uk-kvO" secondAttribute="bottom" constant="5" id="nhG-r1-KOl"/>
+                <constraint firstAttribute="trailing" secondItem="ZVU-2x-jUB" secondAttribute="trailing" constant="10" id="tAB-QC-zHA"/>
+                <constraint firstItem="hYf-Zu-3iV" firstAttribute="centerY" secondItem="WhP-Bp-UfO" secondAttribute="centerY" id="uUf-7j-4Aw"/>
+            </constraints>
+            <size key="customSize" width="195" height="225"/>
+            <connections>
+                <outlet property="btnHeart" destination="ZVU-2x-jUB" id="WhB-Ez-uz5"/>
+                <outlet property="btnLearnMore" destination="DhX-vO-Ikn" id="uFz-6M-a5m"/>
+                <outlet property="imgvw" destination="T6Z-NA-3Kj" id="jI1-1Z-fe0"/>
+                <outlet property="lblAddress" destination="sM4-Uk-kvO" id="loE-ku-y26"/>
+                <outlet property="lblAreaSize" destination="hYf-Zu-3iV" id="QgW-jQ-LZa"/>
+                <outlet property="lblPrice" destination="WhP-Bp-UfO" id="iPF-NV-a2X"/>
+            </connections>
+            <point key="canvasLocation" x="97.5" y="139.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="button_small" width="208" height="58"/>
+        <image name="heart_small" width="19" height="16"/>
+    </resources>
+</document>
