@@ -20,7 +20,6 @@ class TabItemHomeVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         tblVwAds.registerNibsForCells(arryNib: ["MyAdsTVCell"])
         tblVwAds.delegate = self
         tblVwAds.dataSource = self
-        tblVwAds.reloadData()
     }
 
     //MARK: - Buttons Actions

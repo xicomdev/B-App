@@ -33,6 +33,7 @@ class AddHouseVC: UIViewController {
         super.viewDidLoad()
         
     }
+    
     //MARK: - Buttons Actions
 
     @IBAction func actionCrossBtn(_ sender: AnyObject) {

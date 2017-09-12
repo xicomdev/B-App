@@ -7,7 +7,6 @@ target 'B-App' do
 
   # Pods for B-App
 pod 'Alamofire', '~> 4.5'
-pod 'TextFieldEffects', '~> 1.3'
 pod 'IQKeyboardManagerSwift', '~> 4.0'
 pod 'Kingfisher', '~> 3.12'
 pod 'CountryPickerSwift', '~> 1.4'

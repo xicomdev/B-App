@@ -15,8 +15,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="195" height="225"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="dummyHouse" translatesAutoresizingMaskIntoConstraints="NO" id="T6Z-NA-3Kj" customClass="SetCornerImageView" customModule="B_App" customModuleProvider="target">
-                        <frame key="frameInset" minY="8" width="195" height="129.5"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummyHouse" translatesAutoresizingMaskIntoConstraints="NO" id="T6Z-NA-3Kj" customClass="SetCornerImageView" customModule="B_App" customModuleProvider="target">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                 <real key="value" value="12"/>
@@ -41,13 +40,12 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Tokyo, nakaro, Sokme" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sM4-Uk-kvO">
-                        <frame key="frameInset" minY="142.5" width="195" height="14.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Tokyo, nakaro, Sokme" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sM4-Uk-kvO">
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60m" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYf-Zu-3iV">
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60m" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYf-Zu-3iV">
                         <color key="backgroundColor" red="0.85490196080000003" green="0.90588235289999997" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="18" id="dKu-fs-apN"/>
@@ -72,6 +70,7 @@
                 </subviews>
             </view>
             <constraints>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hYf-Zu-3iV" secondAttribute="trailing" constant="5" id="6WR-2G-ztx"/>
                 <constraint firstItem="T6Z-NA-3Kj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9jZ-Ud-cf8"/>
                 <constraint firstItem="WhP-Bp-UfO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Bdp-26-p8x"/>
                 <constraint firstAttribute="trailing" secondItem="sM4-Uk-kvO" secondAttribute="trailing" id="DHo-7h-mFc"/>
@@ -82,8 +81,8 @@
                 <constraint firstAttribute="trailing" secondItem="T6Z-NA-3Kj" secondAttribute="trailing" id="aLs-np-7La"/>
                 <constraint firstItem="ZVU-2x-jUB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="aac-sA-Oc6"/>
                 <constraint firstItem="DhX-vO-Ikn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bWe-Et-QDM"/>
-                <constraint firstAttribute="bottom" secondItem="DhX-vO-Ikn" secondAttribute="bottom" constant="10" id="gSb-Z3-fqY"/>
-                <constraint firstItem="T6Z-NA-3Kj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="iL8-p9-PlK"/>
+                <constraint firstAttribute="bottom" secondItem="DhX-vO-Ikn" secondAttribute="bottom" constant="12" id="gSb-Z3-fqY"/>
+                <constraint firstItem="T6Z-NA-3Kj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="iL8-p9-PlK"/>
                 <constraint firstItem="sM4-Uk-kvO" firstAttribute="top" secondItem="T6Z-NA-3Kj" secondAttribute="bottom" constant="5" id="iSH-R4-N1C"/>
                 <constraint firstItem="WhP-Bp-UfO" firstAttribute="top" secondItem="sM4-Uk-kvO" secondAttribute="bottom" constant="5" id="nhG-r1-KOl"/>
                 <constraint firstAttribute="trailing" secondItem="ZVU-2x-jUB" secondAttribute="trailing" constant="10" id="tAB-QC-zHA"/>
@@ -103,7 +102,7 @@
     </objects>
     <resources>
         <image name="button_small" width="208" height="58"/>
-        <image name="dummyHouse" width="150" height="100"/>
+        <image name="dummyHouse" width="720" height="495"/>
         <image name="heart_small" width="19" height="16"/>
     </resources>
 </document>

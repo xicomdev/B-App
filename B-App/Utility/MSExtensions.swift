@@ -282,6 +282,14 @@ extension UITextField{
         view.leftViewMode = .always
         view.contentVerticalAlignment = .center
     }
+    
+    public func isBlank() -> Bool {
+        return self.text!.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).isEmpty ? true : false
+    }
+    
+    public func trimmedText() -> String {
+        return self.text!.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+    }
 }
 
 

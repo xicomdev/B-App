@@ -19,15 +19,20 @@ class SocialSignupVC: UIViewController {
     @IBAction func actionBackBtn(_ sender: AnyObject) {
         self.navigationController!.popViewController(animated: true)
     }
+    
     @IBAction func actionFacebookBtn(_ sender: AnyObject) {
     }
+    
     @IBAction func actionTwitterBtn(_ sender: AnyObject) {
     }
+    
     @IBAction func actionLinkedinBtn(_ sender: AnyObject) {
     }
+    
     @IBAction func actionCreateAccountBtn(_ sender: AnyObject) {
         self.pushViewController(controllerName: "SignupStep1VC", storyboardName: mainStoryboard)
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

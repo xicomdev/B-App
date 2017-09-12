@@ -28,23 +28,27 @@ class TabItemSearchVC: UIViewController, UICollectionViewDelegate, UICollectionV
         
         collctnVwAds.delegate = self
         collctnVwAds.dataSource = self
-        collctnVwAds.reloadData()
         collctnVwRecomendAds.delegate = self
         collctnVwRecomendAds.dataSource = self
-        collctnVwRecomendAds.reloadData()
     }
     
     //MARK: - Buttons Actions
 
     @IBAction func actionMoreAdsBtn(_ sender: AnyObject) {
     }
+    
     @IBAction func actionSearchAdBtn(_ sender: AnyObject) {
     }
+    
     @IBAction func actionSearchHouseBtn(_ sender: AnyObject) {
     }
+    
     @IBAction func actionSortbyBtn(_ sender: AnyObject) {
+        self.pushViewController(controllerName: "SortByVC", storyboardName: tabbarStoryboard)
     }
+    
     @IBAction func actionFIlterBtn(_ sender: AnyObject) {
+        self.pushViewController(controllerName: "FilterVC", storyboardName: tabbarStoryboard)
     }
     
     //MARK:- CollectionView delegate and datasource methods
@@ -60,9 +64,9 @@ class TabItemSearchVC: UIViewController, UICollectionViewDelegate, UICollectionV
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView == collctnVwRecomendAds {
-            return CGSize(width: collctnVwRecomendAds.frame.width * 4 / 5, height: collctnVwRecomendAds.frame.height)
+            return CGSize(width: collctnVwRecomendAds.frame.width * 3 / 5, height: collctnVwRecomendAds.frame.height)
         }else {
-            return CGSize(width: (collctnVwAds.frame.width - 30)/2, height: collctnVwAds.frame.height)
+            return CGSize(width: (collctnVwAds.frame.width - 60)/2, height: collctnVwAds.frame.height)
         }
     }
     

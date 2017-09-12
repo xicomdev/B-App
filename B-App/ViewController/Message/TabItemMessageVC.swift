@@ -19,7 +19,6 @@ class TabItemMessageVC: UIViewController, UITableViewDelegate, UITableViewDataSo
         tblVwMsgList.registerNibsForCells(arryNib: ["MsgListTVCell"])
         tblVwMsgList.delegate = self
         tblVwMsgList.dataSource = self
-        tblVwMsgList.reloadData()
     }
 
     //MARK: - Buttons Actions

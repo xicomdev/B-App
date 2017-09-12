@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import TextFieldEffects
 
 class SignupStep1VC: UIViewController {
 
@@ -23,7 +22,17 @@ class SignupStep1VC: UIViewController {
         self.navigationController!.popViewController(animated: true)
     }
     @IBAction func actionNextBtn(_ sender: AnyObject) {
-        self.pushViewController(controllerName: "SignupStep2VC", storyboardName: mainStoryboard)
+        if txtfldName.isBlank() {
+            txtfldName.text = ""
+            showAlert(title: "B-App", message: "Please enter name", controller: self)
+        }else if txtfldSurname.isBlank() {
+            txtfldSurname.text = ""
+            showAlert(title: "B-App", message: "Please enter surname", controller: self)
+        }else {
+            User.me.name = txtfldName.text!
+            User.me.surname = txtfldSurname.text!
+            self.pushViewController(controllerName: "SignupStep2VC", storyboardName: mainStoryboard)
+        }
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -23,24 +23,28 @@ class TabItemWishVC: UIViewController, UICollectionViewDelegate, UICollectionVie
         
         collctnVwAds.delegate = self
         collctnVwAds.dataSource = self
-        collctnVwAds.reloadData()
-
     }
 
     //MARK: - Buttons Actions
     
     @IBAction func actionBackBtn(_ sender: AnyObject) {
     }
+    
     @IBAction func actionSearchBtn(_ sender: AnyObject) {
     }
+    
     @IBAction func actionOptionsBtn(_ sender: AnyObject) {
     }
+    
     @IBAction func actionMyAdsBtn(_ sender: AnyObject) {
     }
+    
     @IBAction func actionDesiredAdsBtn(_ sender: AnyObject) {
     }
+    
     @IBAction func actionFilterBtn(_ sender: AnyObject) {
     }
+    
     @IBAction func actionSortByBtn(_ sender: AnyObject) {
     }
     
@@ -56,7 +60,7 @@ class TabItemWishVC: UIViewController, UICollectionViewDelegate, UICollectionVie
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collctnVwAds.frame.width - 40, height: 240)
+        return CGSize(width: collctnVwAds.frame.width - 40, height: self.view.frame.height * 3 / 7)
     }
     
     override func didReceiveMemoryWarning() {
