@@ -11,49 +11,67 @@ import SwiftRangeSlider
 
 class FilterVC: UIViewController {
 
+    @IBOutlet weak var lblPriceRange: UILabel!
     @IBOutlet weak var btnTerm: UIButton!
     @IBOutlet weak var btnGender: UIButton!
     @IBOutlet weak var lblSizeValue: UILabel!
     @IBOutlet weak var txtfldRegion: UITextField!
     @IBOutlet weak var priceRangeSlider: RangeSlider!
+    
+    var currentSize = 0
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
 
     //MARK: - Buttons actions
 
-    @IBAction func actionSIzeMinus(_ sender: AnyObject) {
-    }
+    
     @IBAction func actionBackBtn(_ sender: AnyObject) {
     }
+    
     @IBAction func actionResetBtn(_ sender: AnyObject) {
     }
+    
+    @IBAction func actionSIzeMinus(_ sender: AnyObject) {
+        if currentSize != 0 {
+            lblSizeValue.text = "\(currentSize - 1)"
+        }
+    }
+    
     @IBAction func actionSizePlus(_ sender: AnyObject) {
+        lblSizeValue.text = "\(currentSize + 1)"
     }
+    
     @IBAction func actionGenderBtn(_ sender: AnyObject) {
+        if btnGender.isSelected {
+            btnGender.isSelected = false
+        }else {
+            btnGender.isSelected = true
+        }
     }
+    
     @IBAction func actionTermBtn(_ sender: AnyObject) {
+        if btnGender.isSelected {
+            btnGender.isSelected = false
+        }else {
+            btnGender.isSelected = true
+        }
     }
+    
     @IBAction func actionApplyBtn(_ sender: AnyObject) {
     }
+    
     @IBAction func actionPriceChanged(_ sender: AnyObject) {
+        
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

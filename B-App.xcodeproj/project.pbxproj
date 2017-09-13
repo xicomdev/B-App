@@ -87,6 +87,7 @@
 		25E72E2E1F6815FC0010C532 /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E72E241F6815FC0010C532 /* YokoTextField.swift */; };
 		25E72E2F1F6815FC0010C532 /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E72E251F6815FC0010C532 /* YoshikoTextField.swift */; };
 		25E72E311F6816650010C532 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E72E301F6816650010C532 /* MainTabBarController.swift */; };
+		25F387EE1F6908C200BD19F7 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F387ED1F6908C200BD19F7 /* House.swift */; };
 		51D9DEECFED8CAA939ACB0A3 /* Pods_B_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D10FCE0DBAE0CF74EAFB9DA4 /* Pods_B_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -175,6 +176,7 @@
 		25E72E241F6815FC0010C532 /* YokoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YokoTextField.swift; sourceTree = "<group>"; };
 		25E72E251F6815FC0010C532 /* YoshikoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoshikoTextField.swift; sourceTree = "<group>"; };
 		25E72E301F6816650010C532 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTabBarController.swift; path = ../../../../../Documents/MainTabBarController.swift; sourceTree = "<group>"; };
+		25F387ED1F6908C200BD19F7 /* House.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
 		ABF62B58A4FD5657B6400DEC /* Pods-B-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-B-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-B-App/Pods-B-App.release.xcconfig"; sourceTree = "<group>"; };
 		D10FCE0DBAE0CF74EAFB9DA4 /* Pods_B_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_B_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -408,6 +410,7 @@
 		25D4B6811F5FFFB0002507B8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				25F387EC1F6908AB00BD19F7 /* House */,
 				25D4B6821F5FFFB0002507B8 /* User */,
 			);
 			path = Model;
@@ -623,6 +626,14 @@
 				25E72E251F6815FC0010C532 /* YoshikoTextField.swift */,
 			);
 			path = TextFieldEffects;
+			sourceTree = "<group>";
+		};
+		25F387EC1F6908AB00BD19F7 /* House */ = {
+			isa = PBXGroup;
+			children = (
+				25F387ED1F6908C200BD19F7 /* House.swift */,
+			);
+			path = House;
 			sourceTree = "<group>";
 		};
 		72793E8EF6C6D47279770AD7 /* Frameworks */ = {
@@ -848,6 +859,7 @@
 				25DFC4001F610FD500E32F5F /* SignupStep2VC.swift in Sources */,
 				25E5580C1F62CD680039B0BD /* HouseLocationMapVC.swift in Sources */,
 				25E72E311F6816650010C532 /* MainTabBarController.swift in Sources */,
+				25F387EE1F6908C200BD19F7 /* House.swift in Sources */,
 				25DFC4061F61100100E32F5F /* SignupStep5VC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

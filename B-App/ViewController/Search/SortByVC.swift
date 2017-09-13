@@ -24,32 +24,46 @@ class SortByVC: UIViewController {
 
     @IBAction func actionBackBtn(_ sender: AnyObject) {
     }
+    
     @IBAction func actionResetBtn(_ sender: AnyObject) {
     }
+    
     @IBAction func actionRadioPending(_ sender: AnyObject) {
+        radioBtnPending.isSelected = true
+        radioBtnPrice.isSelected = false
+        radioBtnPlaceNearFar.isSelected = false
+        radioBtnPlaceFarNear.isSelected = false
     }
+    
     @IBAction func actionRadioPrice(_ sender: AnyObject) {
+        radioBtnPending.isSelected = false
+        radioBtnPrice.isSelected = true
+        radioBtnPlaceNearFar.isSelected = false
+        radioBtnPlaceFarNear.isSelected = false
     }
+    
     @IBAction func actionRadioPlaceNearFar(_ sender: AnyObject) {
+        radioBtnPending.isSelected = false
+        radioBtnPrice.isSelected = false
+        radioBtnPlaceNearFar.isSelected = true
+        radioBtnPlaceFarNear.isSelected = false
     }
+    
     @IBAction func actionRadioPlaceFarNear(_ sender: AnyObject) {
+        radioBtnPending.isSelected = false
+        radioBtnPrice.isSelected = false
+        radioBtnPlaceNearFar.isSelected = false
+        radioBtnPlaceFarNear.isSelected = true
     }
+    
     @IBAction func actionApplyBtn(_ sender: AnyObject) {
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

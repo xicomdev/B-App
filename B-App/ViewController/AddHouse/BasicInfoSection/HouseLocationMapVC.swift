@@ -17,10 +17,12 @@ class HouseLocationMapVC: UIViewController {
     }
 
     @IBAction func actionBackBtn(_ sender: AnyObject) {
+        self.navigationController!.popViewController(animated: true)
     }
     @IBAction func actionSaveExitBtn(_ sender: AnyObject) {
     }
     @IBAction func actionContinueBtn(_ sender: AnyObject) {
+        self.navigationController?.popToRootViewController(animated: true)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

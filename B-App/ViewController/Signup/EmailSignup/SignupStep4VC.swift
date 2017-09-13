@@ -20,16 +20,18 @@ class SignupStep4VC: UIViewController {
     @IBAction func actionBackBtn(_ sender: AnyObject) {
         self.navigationController!.popViewController(animated: true)
     }
+    
     @IBAction func actionIAgreeBtn(_ sender: AnyObject) {
         self.pushViewController(controllerName: "SignupStep5VC", storyboardName: mainStoryboard)
     }
+    
     @IBAction func actionSkipBtn(_ sender: AnyObject) {
         self.pushViewController(controllerName: "SignupStep5VC", storyboardName: mainStoryboard)
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
 }

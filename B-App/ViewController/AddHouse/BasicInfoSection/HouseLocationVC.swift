@@ -22,10 +22,12 @@ class HouseLocationVC: UIViewController {
     }
 
     @IBAction func actionBackBtn(_ sender: AnyObject) {
+        self.navigationController!.popViewController(animated: true)
     }
     @IBAction func actionSaveExitBtn(_ sender: AnyObject) {
     }
     @IBAction func actionContinueBtn(_ sender: AnyObject) {
+        self.pushViewController(controllerName: "HouseLocationMapVC", storyboardName: AddHouseStoryboard)
     }
     
     override func didReceiveMemoryWarning() {

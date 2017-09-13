@@ -34,8 +34,13 @@ class SignupStep3VC: UIViewController {
     }
     
     @IBAction func actionNextBtn(_ sender: AnyObject) {
-        User.me.password = txtfldPassword.text!
-        self.pushViewController(controllerName: "SignupStep4VC", storyboardName: mainStoryboard)
+        if txtfldPassword.text!.isEmpty {
+            showAlert(title: "B-App", message: "Please enter password", controller: self)
+        }else
+        {
+            User.me.password = txtfldPassword.text!
+            self.pushViewController(controllerName: "SignupStep4VC", storyboardName: mainStoryboard)
+        }
     }
     
     override func didReceiveMemoryWarning() {

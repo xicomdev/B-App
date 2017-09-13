@@ -23,9 +23,26 @@ class LoginVC: UIViewController {
         self.navigationController!.popViewController(animated: true)
     }
     @IBAction func actionEyeBtn(_ sender: AnyObject) {
+        if btnEye.isSelected {
+            btnEye.isSelected = false
+            txtfldPassword.isSecureTextEntry = true
+        }else {
+            btnEye.isSelected = true
+            txtfldPassword.isSecureTextEntry = false
+        }
     }
     @IBAction func actionLoginBtn(_ sender: AnyObject) {
+        if !(txtfldEmail.text!.isValidEmail()) {
+            showAlert(title: "B-App", message: "Please enter valid email", controller: self)
+        }else if txtfldPassword.text!.isEmpty {
+            showAlert(title: "B-App", message: "Please enter password", controller: self)
+        }else
+        {
+            let tabBarController = tabbarStoryboard.instantiateViewController(withIdentifier: "MainTabBarController") as! MainTabBarController
+            appDelegate().window?.rootViewController = tabBarController
+        }
     }
+    
     @IBAction func actionForgotPasswordBtn(_ sender: AnyObject) {
         self.pushViewController(controllerName: "ForgotPasswordVC", storyboardName: mainStoryboard)
     }

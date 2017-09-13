@@ -35,7 +35,7 @@
             <objects>
                 <navigationController navigationBarHidden="YES" id="DIg-8z-SXc" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="web-page-home" id="sUK-Wd-NFu"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Ee2-Vd-5HO">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ee2-Vd-5HO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -171,7 +171,7 @@
             <objects>
                 <navigationController navigationBarHidden="YES" id="uKh-Q9-Ngo" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Search" image="search" id="pS7-PV-P7s"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="u2u-Kp-yhe">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="u2u-Kp-yhe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -995,6 +995,7 @@
                     <connections>
                         <outlet property="btnGender" destination="C90-7C-oUO" id="ucz-j4-gBc"/>
                         <outlet property="btnTerm" destination="FPC-EM-Etw" id="faA-Qm-xG2"/>
+                        <outlet property="lblPriceRange" destination="kRd-9D-7bo" id="6Df-mC-v2Y"/>
                         <outlet property="lblSizeValue" destination="wAy-Ll-ehO" id="FQy-H4-VKm"/>
                         <outlet property="priceRangeSlider" destination="3rk-wB-NhJ" id="Tek-An-gLy"/>
                         <outlet property="txtfldRegion" destination="HKV-OU-Jqb" id="dbf-fL-OWy"/>
@@ -1009,7 +1010,7 @@
             <objects>
                 <navigationController navigationBarHidden="YES" id="pGP-uj-AvJ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Message" image="envelope" id="Vyc-89-SrI"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="3dY-gd-UZJ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3dY-gd-UZJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1026,7 +1027,7 @@
             <objects>
                 <navigationController navigationBarHidden="YES" id="pzN-jV-DNg" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Wish" image="heart" id="XHU-9t-Rd9"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="9zy-cX-D72">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9zy-cX-D72">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1043,7 +1044,7 @@
             <objects>
                 <navigationController navigationBarHidden="YES" id="27e-8R-1YQ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profile" image="user-male-black-shape" id="9Qs-0m-1es"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Sqh-iN-2dD">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Sqh-iN-2dD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
