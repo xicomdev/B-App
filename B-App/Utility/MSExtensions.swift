@@ -266,6 +266,8 @@ extension UITextField{
         self.layer.cornerRadius = CGFloat(corners)
         self.layer.borderColor = borderColor.cgColor
         self.layer.borderWidth = CGFloat(borderWidth)
+        let vw = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 0))
+        self.addSubview(vw)
         self.clipsToBounds = true
     }
     

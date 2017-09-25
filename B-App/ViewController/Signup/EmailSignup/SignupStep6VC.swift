@@ -75,7 +75,10 @@ class SignupStep6VC: UIViewController {
                 self.navigationController?.pushViewController(adVc, animated: true)
             }
         }else if screenType == "ad" {
-            self.pushViewController(controllerName: "AddHouseVC", storyboardName: AddHouseStoryboard)
+            let addHouseVc = AddHouseStoryboard.instantiateViewController(withIdentifier: "AddHouseVC") as! AddHouseVC
+            let navControllr = UINavigationController.init(rootViewController: addHouseVc)
+            appDelegate().window?.rootViewController = navControllr
+            
             
         }else if screenType == "search" {
             let tabBarController = tabbarStoryboard.instantiateViewController(withIdentifier: "MainTabBarController") as! MainTabBarController

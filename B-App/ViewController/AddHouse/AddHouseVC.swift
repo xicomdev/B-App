@@ -32,6 +32,8 @@ class AddHouseVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.isNavigationBarHidden = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -96,7 +98,8 @@ class AddHouseVC: UIViewController {
     //MARK: - Buttons Actions
 
     @IBAction func actionCrossBtn(_ sender: AnyObject) {
-        
+        let tabBarController = tabbarStoryboard.instantiateViewController(withIdentifier: "MainTabBarController") as! MainTabBarController
+        appDelegate().window?.rootViewController = tabBarController
     }
     
     @IBAction func actionBasicContinue(_ sender: AnyObject) {

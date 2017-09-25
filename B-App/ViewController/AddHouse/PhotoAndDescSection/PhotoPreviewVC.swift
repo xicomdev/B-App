@@ -19,6 +19,8 @@ class PhotoPreviewVC: UIViewController {
     @IBAction func actionBackBtn(_ sender: AnyObject) {
     }
     @IBAction func actionSaveExitBtn(_ sender: AnyObject) {
+        let tabBarController = tabbarStoryboard.instantiateViewController(withIdentifier: "MainTabBarController") as! MainTabBarController
+        appDelegate().window?.rootViewController = tabBarController
     }
     @IBAction func actionContinueBtn(_ sender: AnyObject) {
     }

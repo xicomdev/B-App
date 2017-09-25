@@ -14,6 +14,7 @@ class AccomodationTypeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        txtfldHouseType.setBorder(corners: 5, borderWidth: 1, borderColor: UIColor.gray)
         // Do any additional setup after loading the view.
     }
 
@@ -21,7 +22,8 @@ class AccomodationTypeVC: UIViewController {
         self.navigationController!.popViewController(animated: true)
     }
     @IBAction func actionSaveExitBtn(_ sender: AnyObject) {
-        
+        let tabBarController = tabbarStoryboard.instantiateViewController(withIdentifier: "MainTabBarController") as! MainTabBarController
+        appDelegate().window?.rootViewController = tabBarController
     }
     @IBAction func actionContinueBtn(_ sender: AnyObject) {
         self.pushViewController(controllerName: "HouseLocationVC", storyboardName: AddHouseStoryboard)
