@@ -11,4 +11,7 @@ pod 'IQKeyboardManagerSwift', '~> 4.0'
 pod 'Kingfisher', '~> 3.12'
 pod 'CountryPickerSwift', '~> 1.4'
 pod 'SwiftRangeSlider', '~> 1.1'
+pod 'GoogleMaps', '~> 2.4'
+pod 'GooglePlaces', '~> 2.4'
+pod 'DKImagePickerController', '~> 3.6'
 end

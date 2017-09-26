@@ -2,21 +2,27 @@
 //  AppDelegate.swift
 //  B-App
 //
-//  Created by Ankit Chhabra on 9/25/17.
+//  Created by Ankit Chhabra on 9/26/17.
 //  Copyright © 2017 Ankit Chhabra. All rights reserved.
 //
 
 import UIKit
 import CoreData
-
+import IQKeyboardManagerSwift
+import GoogleMaps
+import GooglePlaces
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        LocationManager.sharedObj.startLocationUpdates()
+        IQKeyboardManager.sharedManager().enable = true
+        IQKeyboardManager.sharedManager().shouldResignOnTouchOutside = true
+        GMSServices.provideAPIKey("AIzaSyBNNYNPabfeamWXspAdChLzkYANao1NG4E")
+        GMSPlacesClient.provideAPIKey("AIzaSyBNNYNPabfeamWXspAdChLzkYANao1NG4E")
         return true
     }
 

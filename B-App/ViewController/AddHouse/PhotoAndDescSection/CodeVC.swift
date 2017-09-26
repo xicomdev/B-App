@@ -10,6 +10,7 @@ import UIKit
 
 class CodeVC: UIViewController {
 
+    @IBOutlet weak var txtfldOtpCode: HoshiTextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +23,8 @@ class CodeVC: UIViewController {
     @IBAction func actionSaveExitBtn(_ sender: AnyObject) {
     }
     @IBAction func actionContinueBtn(_ sender: AnyObject) {
+    }
+    @IBAction func actionSendAgain(_ sender: Any) {
     }
     
     override func didReceiveMemoryWarning() {

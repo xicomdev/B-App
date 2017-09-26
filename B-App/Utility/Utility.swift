@@ -57,50 +57,46 @@ func JSONString (paraObject : Any) -> String{
 
 
 
-
-
-public func resizeImage(image: UIImage, size: CGSize) -> UIImage? {
-    var returnImage: UIImage?
-    var scaleFactor: CGFloat = 1.0
-    var scaledWidth = size.width
-    var scaledHeight = size.height
-    var thumbnailPoint = CGPoint(x: 0, y: 0)
+public func resizeImage(_ image: UIImage) -> UIImage {
     
-    if !image.size.equalTo(size) {
-        let widthFactor = size.width / image.size.width
-        let heightFactor = size.height / image.size.height
-        
-        if widthFactor > heightFactor {
-            scaleFactor = widthFactor
-        } else {
-            scaleFactor = heightFactor
+    var actualHeight: CGFloat = image.size.height
+    var actualWidth: CGFloat = image.size.width
+    let maxHeight: CGFloat = 300.0
+    let maxWidth: CGFloat = 300.0
+    var imgRatio: CGFloat = actualWidth/actualHeight
+    let maxRatio: CGFloat = maxWidth/maxHeight
+    let compressionQuality: CGFloat = 0.5;//50 percent compression
+    
+    if (actualHeight > maxHeight || actualWidth > maxWidth)
+    {
+        if(imgRatio < maxRatio)
+        {
+            //adjust width according to maxHeight
+            imgRatio = maxHeight / actualHeight
+            actualWidth = imgRatio * actualWidth
+            actualHeight = maxHeight
         }
-        
-        scaledWidth = image.size.width * scaleFactor
-        scaledHeight = image.size.height * scaleFactor
-        
-        if widthFactor > heightFactor {
-            thumbnailPoint.y = (size.height - scaledHeight) * 0.5
-        } else if widthFactor < heightFactor {
-            thumbnailPoint.x = (size.width - scaledWidth) * 0.5
+        else if(imgRatio > maxRatio)
+        {
+            //adjust height according to maxWidth
+            imgRatio = maxWidth / actualWidth
+            actualHeight = imgRatio * actualHeight
+            actualWidth = maxWidth
+        }
+        else
+        {
+            actualHeight = maxHeight
+            actualWidth = maxWidth
         }
     }
-    
-    UIGraphicsBeginImageContextWithOptions(size, true, 0)
-    
-    var thumbnailRect = CGRect.zero
-    thumbnailRect.origin = thumbnailPoint
-    thumbnailRect.size.width = scaledWidth
-    thumbnailRect.size.height = scaledHeight
-    
-    image.draw(in: thumbnailRect)
-    returnImage = UIGraphicsGetImageFromCurrentImageContext()
+    let rect: CGRect = CGRect(x: 0.0, y: 0.0, width: actualWidth, height: actualHeight)
+    UIGraphicsBeginImageContext(rect.size)
+    image.draw(in: rect)
+    let img: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+    let imageData: Data = UIImageJPEGRepresentation(img, compressionQuality)!
     UIGraphicsEndImageContext()
-    
-    
-    return returnImage
+    return UIImage(data: imageData)!
 }
-
 
 
 

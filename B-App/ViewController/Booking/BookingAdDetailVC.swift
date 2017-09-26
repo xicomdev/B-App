@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import GoogleMaps
 
 class BookingAdDetailVC: UIViewController {
 
+    @IBOutlet weak var mapvw: GMSMapView!
     @IBOutlet weak var btnFavourite: UIButton!
     @IBOutlet weak var btnBook: UIButton!
     @IBOutlet weak var btnContactOwner: UIButton!

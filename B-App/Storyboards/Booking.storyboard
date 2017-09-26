@@ -150,7 +150,7 @@
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xln-La-rfz">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xln-La-rfz" customClass="GMSMapView">
                                                 <rect key="frame" x="0.0" y="653" width="375" height="187.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
@@ -444,6 +444,7 @@
                         <outlet property="lblPrice" destination="y53-uk-3pU" id="eVF-Wt-Kv0"/>
                         <outlet property="lblUserName" destination="qnG-Ri-rLg" id="ci8-va-fs5"/>
                         <outlet property="lblUserStatus" destination="ga9-ku-nll" id="XUk-LM-0Jn"/>
+                        <outlet property="mapvw" destination="xln-La-rfz" id="Rgp-gn-vFs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ldu-bW-icO" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1611" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -15,7 +18,9 @@
                 <rect key="frame" x="0.0" y="0.0" width="104" height="72"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EJx-Lv-9SV"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EJx-Lv-9SV">
+                        <rect key="frame" x="0.0" y="0.0" width="104" height="72"/>
+                    </imageView>
                 </subviews>
             </view>
             <constraints>
@@ -25,6 +30,9 @@
                 <constraint firstItem="EJx-Lv-9SV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="l3o-nd-2Rs"/>
             </constraints>
             <size key="customSize" width="104" height="72"/>
+            <connections>
+                <outlet property="imgVw" destination="EJx-Lv-9SV" id="dof-x2-FeJ"/>
+            </connections>
             <point key="canvasLocation" x="52" y="63"/>
         </collectionViewCell>
     </objects>

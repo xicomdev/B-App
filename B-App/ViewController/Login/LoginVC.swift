@@ -38,8 +38,14 @@ class LoginVC: UIViewController {
             showAlert(title: "B-App", message: "Please enter password", controller: self)
         }else
         {
-            let tabBarController = tabbarStoryboard.instantiateViewController(withIdentifier: "MainTabBarController") as! MainTabBarController
-            appDelegate().window?.rootViewController = tabBarController
+//            let tabBarController = tabbarStoryboard.instantiateViewController(withIdentifier: "MainTabBarController") as! MainTabBarController
+//            appDelegate().window?.rootViewController = tabBarController
+
+            let addHouseVc = AddHouseStoryboard.instantiateViewController(withIdentifier: "AddHouseVC") as! AddHouseVC
+            let navControllr = UINavigationController.init(rootViewController: addHouseVc)
+            appDelegate().window?.rootViewController = navControllr
+
+        
         }
     }
     

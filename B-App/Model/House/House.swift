@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import DKImagePickerController
 
 class House: NSObject {
 
-    var stageCompleted = Int()
+    var stageCompleted = 1
     var accomodationType = ""
-    var countrty = ""
+    var country = ""
     var city = ""
     var street = ""
     var apartmentNo = ""
@@ -20,7 +21,8 @@ class House: NSObject {
     var lattitude = ""
     var longitude = ""
     var aryphotos = [UIImage]()
-    var decription = ""
+    var assets = [DKAsset]()
+    var desc = ""
     var areaSIze = ""
     var costType = ""
     var currency = ""

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Dns-Ad-DDS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ijD-F8-kQG">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -550,7 +550,7 @@
                                 <rect key="frame" x="0.0" y="139" width="375" height="472.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WJ5-zd-4iX">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="533"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="543"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNo-PP-mxE">
                                                 <rect key="frame" x="30" y="20" width="52" height="17"/>
@@ -656,7 +656,7 @@
                                             <constraint firstAttribute="trailing" secondItem="4LE-kQ-lfZ" secondAttribute="trailing" constant="30" id="cQe-oL-gHD"/>
                                             <constraint firstItem="TIY-lV-t48" firstAttribute="trailing" secondItem="T8x-fD-6lT" secondAttribute="trailing" constant="-15" id="dmf-9D-tig"/>
                                             <constraint firstItem="T8x-fD-6lT" firstAttribute="top" secondItem="ugg-fT-nqe" secondAttribute="bottom" constant="10" id="gvo-0B-84K"/>
-                                            <constraint firstAttribute="bottom" secondItem="ycV-f5-H4A" secondAttribute="bottom" constant="20" id="idf-oL-cdu"/>
+                                            <constraint firstAttribute="bottom" secondItem="ycV-f5-H4A" secondAttribute="bottom" constant="30" id="idf-oL-cdu"/>
                                             <constraint firstAttribute="trailing" secondItem="T8x-fD-6lT" secondAttribute="trailing" constant="30" id="kqN-qq-uZZ"/>
                                             <constraint firstItem="SfX-Jh-AL8" firstAttribute="centerY" secondItem="ycV-f5-H4A" secondAttribute="centerY" id="pA6-U1-JS0"/>
                                             <constraint firstAttribute="trailing" secondItem="p9D-Jj-Kb3" secondAttribute="trailing" constant="30" id="pHu-1n-W4W"/>
@@ -786,7 +786,7 @@
                                     <action selector="actionContinueBtn:" destination="ijD-F8-kQG" eventType="touchUpInside" id="Koj-8f-dho"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Bc-Rt-UBG">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Bc-Rt-UBG" customClass="GMSMapView">
                                 <rect key="frame" x="0.0" y="144" width="375" height="467.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -847,6 +847,9 @@
                             <constraint firstAttribute="trailing" secondItem="0Rr-k5-QKy" secondAttribute="trailing" id="t3j-wx-TxR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapvw" destination="2Bc-Rt-UBG" id="KR6-8m-hDp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tYI-38-jqf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1182,6 +1185,9 @@
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="actionContinueBtn:" destination="BbY-WQ-aER" eventType="touchUpInside" id="d2w-rm-4cR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCS-to-Nvw">
                                 <rect key="frame" x="0.0" y="552" width="375" height="55.5"/>
@@ -1189,6 +1195,9 @@
                                 <state key="normal" title="Preview">
                                     <color key="titleColor" red="0.2784313725" green="0.58431372550000005" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="actionPreviewBtn:" destination="BbY-WQ-aER" eventType="touchUpInside" id="ECc-nC-48D"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1o7-Xl-y8I">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
@@ -1200,6 +1209,9 @@
                                             <constraint firstAttribute="height" constant="40" id="V9I-5s-2pX"/>
                                         </constraints>
                                         <state key="normal" image="arrow_back_black"/>
+                                        <connections>
+                                            <action selector="actionBackBtn:" destination="BbY-WQ-aER" eventType="touchUpInside" id="LU0-AX-8sb"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Photo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ex-Ui-qbI">
                                         <rect key="frame" x="151.5" y="36" width="72" height="18"/>
@@ -1214,6 +1226,9 @@
                                             <constraint firstAttribute="width" constant="40" id="y2n-Ws-Q6c"/>
                                         </constraints>
                                         <state key="normal" image="options"/>
+                                        <connections>
+                                            <action selector="actionOptonsBtn:" destination="BbY-WQ-aER" eventType="touchUpInside" id="n7g-47-7dP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcg-vs-Lhl">
                                         <rect key="frame" x="272" y="25" width="40" height="40"/>
@@ -1222,6 +1237,9 @@
                                             <constraint firstAttribute="height" constant="40" id="z5d-yc-K74"/>
                                         </constraints>
                                         <state key="normal" image="plus"/>
+                                        <connections>
+                                            <action selector="actionAddBtn:" destination="BbY-WQ-aER" eventType="touchUpInside" id="GeR-H2-bBQ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1242,16 +1260,16 @@
                                 <rect key="frame" x="0.0" y="73" width="375" height="339"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XLs-sz-oYO">
-                                <rect key="frame" x="0.0" y="422" width="375" height="80"/>
+                                <rect key="frame" x="0.0" y="422" width="375" height="90"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="34z-FJ-04u"/>
+                                    <constraint firstAttribute="height" constant="90" id="34z-FJ-04u"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iDo-eU-Af1">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iDo-eU-Af1">
                                     <size key="itemSize" width="78" height="64"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
@@ -1272,12 +1290,16 @@
                             <constraint firstItem="jCS-to-Nvw" firstAttribute="leading" secondItem="yVh-Zl-qPL" secondAttribute="leading" id="aPq-JS-KPa"/>
                             <constraint firstItem="1o7-Xl-y8I" firstAttribute="top" secondItem="yVh-Zl-qPL" secondAttribute="top" id="dW9-t3-3p9"/>
                             <constraint firstAttribute="trailing" secondItem="jCS-to-Nvw" secondAttribute="trailing" id="gUN-nM-1hf"/>
-                            <constraint firstItem="jCS-to-Nvw" firstAttribute="top" secondItem="XLs-sz-oYO" secondAttribute="bottom" constant="50" id="mvX-Mf-LeE"/>
+                            <constraint firstItem="jCS-to-Nvw" firstAttribute="top" secondItem="XLs-sz-oYO" secondAttribute="bottom" constant="40" id="mvX-Mf-LeE"/>
                             <constraint firstAttribute="trailing" secondItem="XLs-sz-oYO" secondAttribute="trailing" id="q7G-xn-dcq"/>
                             <constraint firstItem="XLs-sz-oYO" firstAttribute="leading" secondItem="yVh-Zl-qPL" secondAttribute="leading" id="syS-zq-IRG"/>
                             <constraint firstAttribute="trailing" secondItem="BR0-ry-26t" secondAttribute="trailing" id="z7i-Qq-qZQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collctnvwImages" destination="XLs-sz-oYO" id="oPM-fT-LX5"/>
+                        <outlet property="imgVwPreview" destination="GF7-s5-sFT" id="aCB-2G-6xu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mqx-Vk-lpK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1314,6 +1336,9 @@
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="actionContinueBtn:" destination="BJf-hL-8vJ" eventType="touchUpInside" id="XEM-pV-80I"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DYe-nS-Hdk">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
@@ -1325,6 +1350,9 @@
                                             <constraint firstAttribute="width" constant="45" id="KRb-90-MUD"/>
                                         </constraints>
                                         <state key="normal" image="arrow_back_black"/>
+                                        <connections>
+                                            <action selector="actionBackBtn:" destination="BJf-hL-8vJ" eventType="touchUpInside" id="Rrd-Wy-mph"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j9w-Ro-hLR">
                                         <rect key="frame" x="266" y="25" width="94" height="40"/>
@@ -1332,6 +1360,9 @@
                                         <state key="normal" title="Save and Exit">
                                             <color key="titleColor" red="0.2784313725" green="0.58431372550000005" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="actionSaveExitBtn:" destination="BJf-hL-8vJ" eventType="touchUpInside" id="nap-tw-DZk"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1351,6 +1382,9 @@
                                 <state key="normal" title="Preview">
                                     <color key="titleColor" red="0.2784313725" green="0.58431372550000005" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="actionPreviewBtn:" destination="BJf-hL-8vJ" eventType="touchUpInside" id="VfF-Io-ZFx"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ndg-h2-bRa">
                                 <rect key="frame" x="0.0" y="149" width="375" height="391"/>
@@ -1398,6 +1432,9 @@
                             <constraint firstAttribute="trailing" secondItem="rz0-LK-Slt" secondAttribute="trailing" id="zlz-c1-FDd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="txtVwDesc" destination="Dig-4d-9qU" id="WHe-Qo-KSV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hK1-sO-Qaz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1428,6 +1465,9 @@
                                             <constraint firstAttribute="height" constant="40" id="zGx-zW-Tce"/>
                                         </constraints>
                                         <state key="normal" image="arrow back"/>
+                                        <connections>
+                                            <action selector="actionBackBtn:" destination="4Y2-iA-hgU" eventType="touchUpInside" id="ueo-e7-WPu"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DLk-rR-3Mz">
                                         <rect key="frame" x="266" y="25" width="94" height="40"/>
@@ -1435,6 +1475,9 @@
                                         <state key="normal" title="Save and Exit">
                                             <color key="titleColor" red="0.34686538519999999" green="0.75666278629999995" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="actionSaveExitBtn:" destination="4Y2-iA-hgU" eventType="touchUpInside" id="6mF-Pc-vtI"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1467,6 +1510,9 @@
                                 <state key="normal" title="Add photo">
                                     <color key="titleColor" red="0.2784313725" green="0.58431372550000005" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="actionContinueBtn:" destination="4Y2-iA-hgU" eventType="touchUpInside" id="ekN-Dw-lZA"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FQ8-8E-LMB" customClass="SetCornerImageView" customModule="B_App" customModuleProvider="target">
                                 <rect key="frame" x="50" y="283.5" width="275" height="275"/>
@@ -1491,6 +1537,9 @@
                                     <constraint firstAttribute="width" secondItem="Yk1-zF-rKC" secondAttribute="height" id="QaT-SW-l8o"/>
                                 </constraints>
                                 <state key="normal" image="edit"/>
+                                <connections>
+                                    <action selector="actionEditPhoto:" destination="4Y2-iA-hgU" eventType="touchUpInside" id="Lh7-uA-NMI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1525,6 +1574,13 @@
                             <constraint firstAttribute="trailing" secondItem="7n8-hQ-8qy" secondAttribute="trailing" id="yAf-i5-Kr5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnAddPhoto" destination="8IB-bM-hAu" id="wON-Cl-j8E"/>
+                        <outlet property="btnEditPhoto" destination="Yk1-zF-rKC" id="cgg-We-PcJ"/>
+                        <outlet property="imgvwPhoto" destination="FQ8-8E-LMB" id="Fdq-fe-2GO"/>
+                        <outlet property="lblSubTitle" destination="o60-UR-Qh2" id="UhU-qU-ULr"/>
+                        <outlet property="lblTitle" destination="u5u-2O-TkB" id="N0X-i7-47m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pB4-hg-uzD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1564,6 +1620,9 @@
                                             <constraint firstAttribute="height" constant="40" id="Wly-vs-DwR"/>
                                         </constraints>
                                         <state key="normal" image="arrow_back_black"/>
+                                        <connections>
+                                            <action selector="actionBackBtn:" destination="3fc-0y-PNk" eventType="touchUpInside" id="OPZ-kA-MdO"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IR6-Y5-7Wn">
                                         <rect key="frame" x="266" y="25" width="94" height="40"/>
@@ -1571,6 +1630,9 @@
                                         <state key="normal" title="Save and Exit">
                                             <color key="titleColor" red="0.2784313725" green="0.58431372550000005" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="actionSaveExitBtn:" destination="3fc-0y-PNk" eventType="touchUpInside" id="lBf-Kj-ule"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1628,6 +1690,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lTF-EY-ous">
                                 <rect key="frame" x="30" y="292" width="315" height="55.5"/>
                                 <state key="normal" title="Continue" backgroundImage="button"/>
+                                <connections>
+                                    <action selector="actionContinueBtn:" destination="3fc-0y-PNk" eventType="touchUpInside" id="0jo-vz-5Jd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1660,6 +1725,10 @@
                             <constraint firstItem="lTF-EY-ous" firstAttribute="top" secondItem="bXh-F4-2ft" secondAttribute="bottom" constant="30" id="yj5-ER-QOX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="txtfldCountryCode" destination="A8H-Bx-kV7" id="NFB-Yk-BNi"/>
+                        <outlet property="txtfldPhoneNo" destination="UIg-KP-XbM" id="Q6v-eH-PeP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MVl-zu-5Wz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1699,6 +1768,9 @@
                                             <constraint firstAttribute="height" constant="40" id="fIl-oc-bD1"/>
                                         </constraints>
                                         <state key="normal" image="arrow_back_black"/>
+                                        <connections>
+                                            <action selector="actionBackBtn:" destination="rAr-bt-I0I" eventType="touchUpInside" id="0Jw-xr-mFi"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocB-ci-tma">
                                         <rect key="frame" x="266" y="25" width="94" height="40"/>
@@ -1706,6 +1778,9 @@
                                         <state key="normal" title="Save and Exit">
                                             <color key="titleColor" red="0.2784313725" green="0.58431372550000005" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="actionSaveExitBtn:" destination="rAr-bt-I0I" eventType="touchUpInside" id="GNB-my-D15"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1728,6 +1803,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71f-ec-yPw">
                                 <rect key="frame" x="30" y="295" width="315" height="55.5"/>
                                 <state key="normal" title="Continue" backgroundImage="button"/>
+                                <connections>
+                                    <action selector="actionContinueBtn:" destination="rAr-bt-I0I" eventType="touchUpInside" id="8F5-ax-FjO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LkX-72-jre">
                                 <rect key="frame" x="148.5" y="365.5" width="78" height="30"/>
@@ -1735,6 +1813,9 @@
                                 <state key="normal" title="Send again">
                                     <color key="titleColor" red="0.2784313725" green="0.58431372550000005" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="actionSendAgain:" destination="rAr-bt-I0I" eventType="touchUpInside" id="pxg-CV-esF"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="digits" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0gt-Cp-VkI" customClass="HoshiTextField" customModule="B_App" customModuleProvider="target">
                                 <rect key="frame" x="30" y="205" width="315" height="65"/>
@@ -1783,6 +1864,9 @@
                             <constraint firstItem="vkk-ZC-tQC" firstAttribute="leading" secondItem="2Kg-YQ-xRh" secondAttribute="leading" constant="30" id="tLi-7J-Uqo"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="txtfldOtpCode" destination="0gt-Cp-VkI" id="gWq-mt-20M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uld-IM-Prt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

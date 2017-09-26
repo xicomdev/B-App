@@ -10,6 +10,8 @@ import UIKit
 
 class PhoneNumberVC: UIViewController {
 
+    @IBOutlet weak var txtfldCountryCode: UITextField!
+    @IBOutlet weak var txtfldPhoneNo: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -120,7 +120,7 @@ class AddHouseVC: UIViewController {
         self.pushViewController(controllerName: "AddPhotoVC", storyboardName: AddHouseStoryboard)
     }
     @IBAction func actionPhotosNext(_ sender: AnyObject) {
-        self.pushViewController(controllerName: "AddPhotoVC", storyboardName: AddHouseStoryboard)
+        self.pushViewController(controllerName: "PhotoPreviewVC", storyboardName: AddHouseStoryboard)
     }
     
     @IBAction func actionSaveExitBtn(_ sender: AnyObject) {
