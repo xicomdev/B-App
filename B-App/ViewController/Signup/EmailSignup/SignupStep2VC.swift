@@ -19,7 +19,7 @@ class SignupStep2VC: UIViewController {
     }
 
     @IBAction func actionBackBtn(_ sender: AnyObject) {
-        self.navigationController!.popViewController(animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func actionCheckboxBtn(_ sender: AnyObject) {

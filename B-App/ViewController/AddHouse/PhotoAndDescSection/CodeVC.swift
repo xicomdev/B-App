@@ -18,11 +18,18 @@ class CodeVC: UIViewController {
     }
 
     
+    //MARK: - Buttons actions
     @IBAction func actionBackBtn(_ sender: AnyObject) {
+        self.navigationController?.popViewController(animated: true)
     }
     @IBAction func actionSaveExitBtn(_ sender: AnyObject) {
+        self.navigationController?.popToRootViewController(animated: true)
     }
     @IBAction func actionContinueBtn(_ sender: AnyObject) {
+        if House.newHouse.stageCompleted == 1 {
+            House.newHouse.stageCompleted = 2
+        }
+        self.navigationController?.popToRootViewController(animated: true)
     }
     @IBAction func actionSendAgain(_ sender: Any) {
     }

@@ -17,7 +17,7 @@ class SignupStep5VC: UIViewController {
     }
 
     @IBAction func actionBackBtn(_ sender: AnyObject) {
-        self.navigationController!.popViewController(animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
     @IBAction func actionAcceptBtn(_ sender: AnyObject) {
         self.pushViewController(controllerName: "SignupStep6VC", storyboardName: mainStoryboard)

@@ -44,11 +44,15 @@ class TabItemSearchVC: UIViewController, UICollectionViewDelegate, UICollectionV
     }
     
     @IBAction func actionSortbyBtn(_ sender: AnyObject) {
-        self.pushViewController(controllerName: "SortByVC", storyboardName: tabbarStoryboard)
+        let sortVc = tabbarStoryboard.instantiateViewController(withIdentifier: "SortByVC") as! SortByVC
+        sortVc.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(sortVc, animated: true)
     }
     
     @IBAction func actionFIlterBtn(_ sender: AnyObject) {
-        self.pushViewController(controllerName: "FilterVC", storyboardName: tabbarStoryboard)
+        let filterVc = tabbarStoryboard.instantiateViewController(withIdentifier: "FilterVC") as! FilterVC
+        filterVc.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(filterVc, animated: true)
     }
     
     //MARK:- CollectionView delegate and datasource methods

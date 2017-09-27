@@ -60,7 +60,7 @@ class SignupStep6VC: UIViewController {
     }
 
     @IBAction func actionBackBtn(_ sender: AnyObject) {
-        self.navigationController!.popViewController(animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func actionSelectionBtn(_ sender: AnyObject) {

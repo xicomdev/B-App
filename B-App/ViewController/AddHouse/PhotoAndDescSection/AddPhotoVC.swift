@@ -21,8 +21,9 @@ class AddPhotoVC: UIViewController , UIImagePickerControllerDelegate, UINavigati
         // Do any additional setup after loading the view.
     }
 
+    //MARK: - Buttons actions
     @IBAction func actionBackBtn(_ sender: AnyObject) {
-        self.navigationController!.popViewController(animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
     @IBAction func actionSaveExitBtn(_ sender: AnyObject) {
         self.navigationController?.popToRootViewController(animated: true)

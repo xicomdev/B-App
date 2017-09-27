@@ -14,4 +14,5 @@ pod 'SwiftRangeSlider', '~> 1.1'
 pod 'GoogleMaps', '~> 2.4'
 pod 'GooglePlaces', '~> 2.4'
 pod 'DKImagePickerController', '~> 3.6'
+pod 'FSCalendar', '~> 2.7'
 end

@@ -7,20 +7,27 @@
 //
 
 import UIKit
+import FSCalendar
 
 class CalenderVC: UIViewController {
 
+    @IBOutlet weak var calenderVw: FSCalendar!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        calenderVw.allowsMultipleSelection = true
     }
     
+    //MARK: - Buttons actions
     @IBAction func actionBackBtn(_ sender: AnyObject) {
+        self.navigationController?.popViewController(animated: true)
     }
     @IBAction func actionSaveExitBtn(_ sender: AnyObject) {
+        self.navigationController?.popToRootViewController(animated: true)
     }
     @IBAction func actionContinueBtn(_ sender: AnyObject) {
+        print(calenderVw.selectedDates)
+        self.pushViewController(controllerName: "ConfirmAgreementVC", storyboardName: AddHouseStoryboard)
     }
 
     override func didReceiveMemoryWarning() {

@@ -23,6 +23,7 @@ class SortByVC: UIViewController {
     //MARK: - Buttons actions
 
     @IBAction func actionBackBtn(_ sender: AnyObject) {
+        self.navigationController?.popToRootViewController(animated: true)
     }
     
     @IBAction func actionResetBtn(_ sender: AnyObject) {

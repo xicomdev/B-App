@@ -40,7 +40,7 @@ class AccomodationTypeVC: UIViewController,UITextFieldDelegate, UIPickerViewDele
 
     //MARK: - Buttons Actions
     @IBAction func actionBackBtn(_ sender: AnyObject) {
-        self.navigationController!.popViewController(animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
     @IBAction func actionSaveExitBtn(_ sender: AnyObject) {
         House.newHouse.accomodationType = txtfldHouseType.text!

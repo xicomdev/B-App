@@ -11,7 +11,7 @@ import DKImagePickerController
 
 class House: NSObject {
 
-    var stageCompleted = 1
+    var stageCompleted = 0
     var accomodationType = ""
     var country = ""
     var city = ""
@@ -29,6 +29,9 @@ class House: NSObject {
     var startPrice = ""
     var noticePeriod = ""
     var bookDate = ""
-    
+    var profilePhoto: UIImage?
+    var phoneNo = ""
+    var countryCode = ""
+    var isNoificationOn = Bool()
     static var newHouse = House()
 }

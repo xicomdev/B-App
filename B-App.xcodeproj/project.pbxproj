@@ -99,6 +99,8 @@
 		252575D91F7A1D8400473DD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 252575D81F7A1D8400473DD8 /* Main.storyboard */; };
 		252575DB1F7A298100473DD8 /* current.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 252575DA1F7A298100473DD8 /* current.gpx */; };
 		252575DD1F7A2B6700473DD8 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252575DC1F7A2B6700473DD8 /* LocationManager.swift */; };
+		2583E1931F7BCC5D006293F1 /* PublishAdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2583E1921F7BCC5D006293F1 /* PublishAdVC.swift */; };
+		2583E1951F7BCF36006293F1 /* CongratulationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2583E1941F7BCF36006293F1 /* CongratulationVC.swift */; };
 		963DE5047998BE528CBA8489 /* Pods_B_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1435D3E69AC79308708C3F73 /* Pods_B_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -199,6 +201,8 @@
 		252575D81F7A1D8400473DD8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		252575DA1F7A298100473DD8 /* current.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = current.gpx; sourceTree = "<group>"; };
 		252575DC1F7A2B6700473DD8 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		2583E1921F7BCC5D006293F1 /* PublishAdVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishAdVC.swift; sourceTree = "<group>"; };
+		2583E1941F7BCF36006293F1 /* CongratulationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CongratulationVC.swift; sourceTree = "<group>"; };
 		C4AE89BEDF7F27C69315153B /* Pods-B-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-B-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-B-App/Pods-B-App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -433,10 +437,12 @@
 			children = (
 				2525751A1F7A1BCD00473DD8 /* AddHouseVC.swift */,
 				2525751B1F7A1BCD00473DD8 /* BasicInfoSection */,
-				252575201F7A1BCD00473DD8 /* CostSection */,
 				252575261F7A1BCD00473DD8 /* PhotoAndDescSection */,
+				252575201F7A1BCD00473DD8 /* CostSection */,
 				2525752D1F7A1BCD00473DD8 /* Preview */,
 				2525751F1F7A1BCD00473DD8 /* ConfirmAgreementVC.swift */,
+				2583E1921F7BCC5D006293F1 /* PublishAdVC.swift */,
+				2583E1941F7BCF36006293F1 /* CongratulationVC.swift */,
 			);
 			path = AddHouse;
 			sourceTree = "<group>";
@@ -454,11 +460,11 @@
 		252575201F7A1BCD00473DD8 /* CostSection */ = {
 			isa = PBXGroup;
 			children = (
-				252575211F7A1BCD00473DD8 /* CalenderVC.swift */,
-				252575221F7A1BCD00473DD8 /* CostTypeSelectVC.swift */,
 				252575231F7A1BCD00473DD8 /* HouseAreaVC.swift */,
-				252575241F7A1BCD00473DD8 /* NoticePeriodVC.swift */,
+				252575221F7A1BCD00473DD8 /* CostTypeSelectVC.swift */,
 				252575251F7A1BCD00473DD8 /* StartPriceVC.swift */,
+				252575241F7A1BCD00473DD8 /* NoticePeriodVC.swift */,
+				252575211F7A1BCD00473DD8 /* CalenderVC.swift */,
 			);
 			path = CostSection;
 			sourceTree = "<group>";
@@ -470,8 +476,8 @@
 				2525752C1F7A1BCD00473DD8 /* PhotoPreviewVC.swift */,
 				252575271F7A1BCD00473DD8 /* AddDescVC.swift */,
 				252575291F7A1BCD00473DD8 /* AddProfilePhotoVC.swift */,
-				2525752A1F7A1BCD00473DD8 /* CodeVC.swift */,
 				2525752B1F7A1BCD00473DD8 /* PhoneNumberVC.swift */,
+				2525752A1F7A1BCD00473DD8 /* CodeVC.swift */,
 			);
 			path = PhotoAndDescSection;
 			sourceTree = "<group>";
@@ -757,6 +763,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CountryPickerSwift/CountryPicker.framework",
 				"${BUILT_PRODUCTS_DIR}/DKImagePickerController/DKImagePickerController.framework",
+				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftRangeSlider/SwiftRangeSlider.framework",
@@ -766,6 +773,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CountryPicker.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DKImagePickerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftRangeSlider.framework",
@@ -820,6 +828,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				252575891F7A1BCD00473DD8 /* SocialSignupVC.swift in Sources */,
+				2583E1931F7BCC5D006293F1 /* PublishAdVC.swift in Sources */,
 				252575BC1F7A1BF700473DD8 /* JiroTextField.swift in Sources */,
 				252575DD1F7A2B6700473DD8 /* LocationManager.swift in Sources */,
 				252573C11F7A139300473DD8 /* B_App.xcdatamodeld in Sources */,
@@ -827,6 +836,7 @@
 				252575BB1F7A1BF700473DD8 /* IsaoTextField.swift in Sources */,
 				252575851F7A1BCD00473DD8 /* SignupStep3VC.swift in Sources */,
 				252575631F7A1BCD00473DD8 /* NoticePeriodVC.swift in Sources */,
+				2583E1951F7BCF36006293F1 /* CongratulationVC.swift in Sources */,
 				252575811F7A1BCD00473DD8 /* SortByVC.swift in Sources */,
 				2525756B1F7A1BCD00473DD8 /* PreviewVC.swift in Sources */,
 				252573B91F7A139300473DD8 /* AppDelegate.swift in Sources */,

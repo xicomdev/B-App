@@ -10,18 +10,36 @@ import UIKit
 
 class HouseAreaVC: UIViewController {
 
+    @IBOutlet weak var sliderArea: UISlider!
+    @IBOutlet weak var lblSliderValue: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if House.newHouse.areaSIze == ""
+        {
+            lblSliderValue.text = "100"
+            sliderArea.value = 100
+        }else
+        {
+            lblSliderValue.text = House.newHouse.areaSIze
+            sliderArea.value = Float(House.newHouse.areaSIze)!
+        }
     }
-
     
+    //MARK: - Buttons actions
     @IBAction func actionBackBtn(_ sender: AnyObject) {
+        self.navigationController?.popViewController(animated: true)
     }
     @IBAction func actionSaveExitBtn(_ sender: AnyObject) {
+        House.newHouse.areaSIze = "\(Int(sliderArea.value))"
+        self.navigationController?.popToRootViewController(animated: true)
     }
     @IBAction func actionContinueBtn(_ sender: AnyObject) {
+        House.newHouse.areaSIze = "\(Int(sliderArea.value))"
+        self.pushViewController(controllerName: "CostTypeSelectVC", storyboardName: AddHouseStoryboard)
+    }
+    @IBAction func actionSlider(_ sender: Any) {
+        lblSliderValue.text = "\(Int(sliderArea.value))"
     }
     
     override func didReceiveMemoryWarning() {

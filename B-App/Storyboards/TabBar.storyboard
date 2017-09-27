@@ -966,6 +966,9 @@
                                                 </constraints>
                                                 <state key="normal" image="checkbox"/>
                                                 <state key="selected" image="checkbox (Select)"/>
+                                                <connections>
+                                                    <action selector="actionGenderBtn:" destination="00Z-6k-U9X" eventType="touchUpInside" id="xVk-uj-GAB"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPC-EM-Etw">
                                                 <rect key="frame" x="295" y="480" width="40" height="40"/>
@@ -976,7 +979,6 @@
                                                 <state key="normal" image="checkbox"/>
                                                 <state key="selected" image="checkbox (Select)"/>
                                                 <connections>
-                                                    <action selector="actionGenderBtn:" destination="00Z-6k-U9X" eventType="touchUpInside" id="OdA-lD-qhN"/>
                                                     <action selector="actionTermBtn:" destination="00Z-6k-U9X" eventType="touchUpInside" id="B3s-GX-Xib"/>
                                                 </connections>
                                             </button>

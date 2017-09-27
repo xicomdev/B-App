@@ -19,7 +19,7 @@ class SignupStep1VC: UIViewController {
     }
 
     @IBAction func actionBackBtn(_ sender: AnyObject) {
-        self.navigationController!.popViewController(animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
     @IBAction func actionNextBtn(_ sender: AnyObject) {
         if txtfldName.isBlank() {

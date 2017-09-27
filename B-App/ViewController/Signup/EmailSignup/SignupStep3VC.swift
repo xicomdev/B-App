@@ -20,7 +20,7 @@ class SignupStep3VC: UIViewController {
     
     //MARK: - Buttons Actions
     @IBAction func actionBackBtn(_ sender: AnyObject) {
-        self.navigationController!.popViewController(animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
 
     @IBAction func actionEyeBtn(_ sender: AnyObject) {

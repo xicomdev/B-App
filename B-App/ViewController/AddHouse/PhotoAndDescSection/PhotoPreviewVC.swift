@@ -33,8 +33,9 @@ class PhotoPreviewVC: UIViewController, UICollectionViewDelegate, UICollectionVi
         collctnvwImages.dataSource = self
     }
 
+    //MARK: - Buttons actions
     @IBAction func actionBackBtn(_ sender: AnyObject) {
-        self.navigationController!.popToRootViewController(animated: true)
+        self.navigationController?.popToRootViewController(animated: true)
     }
     
     @IBAction func actionAddBtn(_ sender: Any) {

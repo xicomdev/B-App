@@ -61,8 +61,8 @@ public func resizeImage(_ image: UIImage) -> UIImage {
     
     var actualHeight: CGFloat = image.size.height
     var actualWidth: CGFloat = image.size.width
-    let maxHeight: CGFloat = 300.0
-    let maxWidth: CGFloat = 300.0
+    let maxHeight: CGFloat = 400.0
+    let maxWidth: CGFloat = 400.0
     var imgRatio: CGFloat = actualWidth/actualHeight
     let maxRatio: CGFloat = maxWidth/maxHeight
     let compressionQuality: CGFloat = 0.5;//50 percent compression

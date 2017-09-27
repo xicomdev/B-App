@@ -48,7 +48,7 @@ class HouseLocationMapVC: UIViewController, GMSMapViewDelegate {
     }
     
     @IBAction func actionBackBtn(_ sender: AnyObject) {
-        self.navigationController!.popViewController(animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
     @IBAction func actionSaveExitBtn(_ sender: AnyObject) {
         House.newHouse.lattitude = "\(markerLocation.latitude)"
@@ -60,7 +60,9 @@ class HouseLocationMapVC: UIViewController, GMSMapViewDelegate {
         if locationSelected {
             House.newHouse.lattitude = "\(markerLocation.latitude)"
             House.newHouse.longitude = "\(markerLocation.longitude)"
-            House.newHouse.stageCompleted = 1
+            if House.newHouse.stageCompleted == 0 {
+                House.newHouse.stageCompleted = 1
+            }
             self.navigationController?.popToRootViewController(animated: true)
         }else
         {

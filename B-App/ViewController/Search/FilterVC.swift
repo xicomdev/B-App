@@ -22,13 +22,14 @@ class FilterVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        self.hidesBottomBarWhenPushed = true
     }
 
     //MARK: - Buttons actions
 
     
     @IBAction func actionBackBtn(_ sender: AnyObject) {
+        self.navigationController?.popToRootViewController(animated: true)
     }
     
     @IBAction func actionResetBtn(_ sender: AnyObject) {
@@ -53,10 +54,10 @@ class FilterVC: UIViewController {
     }
     
     @IBAction func actionTermBtn(_ sender: AnyObject) {
-        if btnGender.isSelected {
-            btnGender.isSelected = false
+        if btnTerm.isSelected {
+            btnTerm.isSelected = false
         }else {
-            btnGender.isSelected = true
+            btnTerm.isSelected = true
         }
     }
     
@@ -64,7 +65,7 @@ class FilterVC: UIViewController {
     }
     
     @IBAction func actionPriceChanged(_ sender: AnyObject) {
-        
+        lblPriceRange.text = "$\(priceRangeSlider.lowerValue)-$\(priceRangeSlider.upperValue)"
     }
     
     override func didReceiveMemoryWarning() {
