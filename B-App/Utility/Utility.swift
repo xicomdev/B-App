@@ -55,7 +55,10 @@ func JSONString (paraObject : Any) -> String{
     return strReturning
 }
 
-
+public func getDayAndDateString(_ date: Date) -> (day:String, date:String){
+    
+    return ("","")
+}
 
 public func resizeImage(_ image: UIImage) -> UIImage {
     

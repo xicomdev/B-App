@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -485,6 +485,9 @@
                                             <constraint firstAttribute="height" constant="40" id="Spr-Ue-bJM"/>
                                         </constraints>
                                         <state key="normal" image="arrow_back_black"/>
+                                        <connections>
+                                            <action selector="actionBack:" destination="yhE-16-Nr8" eventType="touchUpInside" id="Pak-oX-pAw"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -517,6 +520,9 @@
                                 <state key="normal" title="Create an account">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="actionCreateAccount:" destination="yhE-16-Nr8" eventType="touchUpInside" id="BwW-ys-H1j"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxx-pF-DHR">
                                 <rect key="frame" x="30" y="258.5" width="315" height="1"/>
@@ -555,6 +561,9 @@
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="actionContinue:" destination="yhE-16-Nr8" eventType="touchUpInside" id="PBt-Sg-UtP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7FO-5c-9U1">
                                 <rect key="frame" x="30" y="269.5" width="315" height="55.5"/>
@@ -562,6 +571,9 @@
                                 <state key="normal" title="Add a photo to your profile">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="actionAddPhoto:" destination="yhE-16-Nr8" eventType="touchUpInside" id="QiR-XR-dvw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5P3-nd-YvR">
                                 <rect key="frame" x="30" y="346" width="315" height="56"/>
@@ -569,6 +581,9 @@
                                 <state key="normal" title="Confirm contact details">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="actionContactDetail:" destination="yhE-16-Nr8" eventType="touchUpInside" id="Pa5-cQ-BT7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eso-tF-Nbv">
                                 <rect key="frame" x="30" y="423" width="315" height="55.5"/>
@@ -576,6 +591,9 @@
                                 <state key="normal" title="ID Confirmation">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="actionIdConfirmation:" destination="yhE-16-Nr8" eventType="touchUpInside" id="mdq-y0-lek"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="qeO-qa-4cv">
                                 <rect key="frame" x="323" y="212.5" width="22" height="17"/>
@@ -645,6 +663,12 @@
                             <constraint firstAttribute="trailing" secondItem="hTG-ai-9BX" secondAttribute="trailing" constant="30" id="zqy-Yl-xJb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imgAddPhoto" destination="TX7-hx-hGs" id="6wU-8v-alf"/>
+                        <outlet property="imgContactDetails" destination="Huu-mK-Msr" id="nsD-Fx-7Rp"/>
+                        <outlet property="imgCreateAccnt" destination="qeO-qa-4cv" id="HdD-si-yLZ"/>
+                        <outlet property="imgIdConfirm" destination="YJh-Gs-AdG" id="r07-Cf-dKb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jiZ-ZJ-Ji0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -678,6 +702,9 @@
                                             <constraint firstAttribute="height" constant="40" id="SnH-gY-TJK"/>
                                         </constraints>
                                         <state key="normal" image="arrow_back_black"/>
+                                        <connections>
+                                            <action selector="actionBackBtn:" destination="PPN-yi-8N1" eventType="touchUpInside" id="JZp-Fe-CM2"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -732,6 +759,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0J-n3-MPD">
                                 <rect key="frame" x="30" y="267" width="315" height="55.5"/>
                                 <state key="normal" title="Next" backgroundImage="button"/>
+                                <connections>
+                                    <action selector="actionContinueBtn:" destination="PPN-yi-8N1" eventType="touchUpInside" id="CyF-QB-1hm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -762,6 +792,10 @@
                             <constraint firstAttribute="trailing" secondItem="cyf-Tq-mNl" secondAttribute="trailing" constant="30" id="z31-YK-P0T"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="txtfldCountryCode" destination="dle-Xv-DeR" id="4Yf-aZ-0yC"/>
+                        <outlet property="txtfldPhoneNo" destination="rfq-zv-oCy" id="blZ-TF-WuJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4f8-cu-6SI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -795,6 +829,9 @@
                                             <constraint firstAttribute="height" constant="40" id="jhW-vU-gzz"/>
                                         </constraints>
                                         <state key="normal" image="arrow_back_black"/>
+                                        <connections>
+                                            <action selector="actionBackBtn:" destination="Ix2-dz-sIb" eventType="touchUpInside" id="PbI-SF-0FK"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -839,6 +876,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3R-P2-OaF">
                                 <rect key="frame" x="30" y="278" width="315" height="55.5"/>
                                 <state key="normal" title="Continue" backgroundImage="button"/>
+                                <connections>
+                                    <action selector="actionContinueBtn:" destination="Ix2-dz-sIb" eventType="touchUpInside" id="dgw-NO-XFZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fto-QN-bae">
                                 <rect key="frame" x="148.5" y="348.5" width="78" height="30"/>
@@ -846,6 +886,9 @@
                                 <state key="normal" title="Send again">
                                     <color key="titleColor" red="0.2784313725" green="0.58431372550000005" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="actionSendAgain:" destination="Ix2-dz-sIb" eventType="touchUpInside" id="alV-xl-CcP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -875,6 +918,9 @@
                             <constraint firstItem="fto-QN-bae" firstAttribute="top" secondItem="i3R-P2-OaF" secondAttribute="bottom" constant="15" id="w5k-BD-SCr"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="txtfldCode" destination="cbb-Gp-d0M" id="PA4-vO-uYE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sS6-zj-c3T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -908,6 +954,9 @@
                                             <constraint firstAttribute="width" constant="45" id="vyK-Of-Znj"/>
                                         </constraints>
                                         <state key="normal" image="arrow_back_black"/>
+                                        <connections>
+                                            <action selector="actionBack:" destination="eCf-Rz-SpP" eventType="touchUpInside" id="3pC-8V-7pI"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -952,6 +1001,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIr-wL-LUg">
                                 <rect key="frame" x="30" y="278" width="315" height="55.5"/>
                                 <state key="normal" title="Send" backgroundImage="button"/>
+                                <connections>
+                                    <action selector="actionSendBtn:" destination="eCf-Rz-SpP" eventType="touchUpInside" id="jcF-Z2-X7o"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -979,6 +1031,9 @@
                             <constraint firstItem="9vT-XO-B73" firstAttribute="leading" secondItem="ztd-C7-7LQ" secondAttribute="leading" id="xMk-4E-hYj"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="txtfldEmail" destination="o4U-y1-EJ2" id="XGz-g4-hQ7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EI7-8I-dpi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1012,6 +1067,9 @@
                                             <constraint firstAttribute="width" constant="45" id="iiJ-tj-ljT"/>
                                         </constraints>
                                         <state key="normal" image="arrow_back_black"/>
+                                        <connections>
+                                            <action selector="actionBack:" destination="OI4-tM-2sL" eventType="touchUpInside" id="2bN-Tl-DiU"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1034,6 +1092,9 @@
                                 <state key="normal" title="Send again">
                                     <color key="titleColor" red="0.2784313725" green="0.58431372550000005" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="actionSendAgain:" destination="OI4-tM-2sL" eventType="touchUpInside" id="boy-bx-0hq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1051,6 +1112,9 @@
                             <constraint firstItem="sE0-gz-LOd" firstAttribute="top" secondItem="NEq-m0-AVJ" secondAttribute="bottom" constant="40" id="zCj-Yw-pno"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lblEmailIdText" destination="hXd-sj-qNx" id="vM3-Ts-N14"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tad-Ba-gZ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1090,6 +1154,9 @@
                                             <constraint firstAttribute="height" constant="40" id="wzS-Kk-Asn"/>
                                         </constraints>
                                         <state key="normal" image="arrow_back_black"/>
+                                        <connections>
+                                            <action selector="actionBack:" destination="kUx-H4-rF7" eventType="touchUpInside" id="cAF-dm-hdU"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gUp-RP-qUz">
                                         <rect key="frame" x="274" y="25" width="86" height="40"/>
@@ -1109,6 +1176,9 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <action selector="actionNewCard:" destination="kUx-H4-rF7" eventType="touchUpInside" id="DrV-09-cjL"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1135,6 +1205,9 @@
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="actionContinue:" destination="kUx-H4-rF7" eventType="touchUpInside" id="PEU-G4-Wj0"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dKa-OV-nxp">
                                 <rect key="frame" x="0.0" y="192" width="375" height="419.5"/>
@@ -1164,6 +1237,9 @@
                             <constraint firstItem="JNp-6Q-xw0" firstAttribute="top" secondItem="N3U-qK-WZx" secondAttribute="bottom" constant="15" id="yyx-q6-EIc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tblPayments" destination="dKa-OV-nxp" id="1Ea-QM-622"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zdj-5T-gQj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1197,6 +1273,9 @@
                                             <constraint firstAttribute="width" constant="45" id="w3a-nE-kpi"/>
                                         </constraints>
                                         <state key="normal" image="arrow_back_black"/>
+                                        <connections>
+                                            <action selector="actionBack:" destination="U4R-3e-wzU" eventType="touchUpInside" id="p2e-r6-t9L"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1214,6 +1293,9 @@
                                 <state key="normal" title="Confirm the booking">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="actionCofirmBooking:" destination="U4R-3e-wzU" eventType="touchUpInside" id="dlK-Ro-LDu"/>
+                                </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z23-lW-7H1">
                                 <rect key="frame" x="0.0" y="124" width="375" height="487.5"/>
@@ -1274,8 +1356,8 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4b-7F-vQu">
-                                                <rect key="frame" x="30" y="140.5" width="53" height="20"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Area" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4b-7F-vQu">
+                                                <rect key="frame" x="30" y="140.5" width="30" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="fhH-de-Gzt"/>
                                                 </constraints>
@@ -1293,8 +1375,8 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0q-Hl-MXS">
-                                                <rect key="frame" x="30" y="211.5" width="53" height="20"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0q-Hl-MXS">
+                                                <rect key="frame" x="30" y="211.5" width="30.5" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="HJF-tC-SMh"/>
                                                 </constraints>
@@ -1313,19 +1395,19 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total cost:" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYZ-MW-1th">
-                                                <rect key="frame" x="30" y="297.5" width="99.5" height="25.5"/>
+                                                <rect key="frame" x="30" y="297.5" width="96.5" height="25.5"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$24" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yjj-Jg-jqj">
-                                                <rect key="frame" x="137.5" y="297.5" width="39" height="25.5"/>
+                                                <rect key="frame" x="134.5" y="297.5" width="39" height="25.5"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="for 10 days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G9w-oa-JNc">
-                                                <rect key="frame" x="191.5" y="308.5" width="62.5" height="14.5"/>
+                                                <rect key="frame" x="188.5" y="308.5" width="62.5" height="14.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -1337,7 +1419,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12-18 april" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2e4-RS-P2h">
-                                                <rect key="frame" x="272.5" y="212.5" width="72.5" height="18"/>
+                                                <rect key="frame" x="273" y="212.5" width="72" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1414,6 +1496,15 @@
                             <constraint firstAttribute="trailing" secondItem="Z23-lW-7H1" secondAttribute="trailing" id="vgx-MJ-ElO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imgVw" destination="jtO-0y-Pc8" id="FYJ-3g-vmB"/>
+                        <outlet property="lblAddress" destination="gsa-TE-1wt" id="8yA-bA-x5K"/>
+                        <outlet property="lblArea" destination="6ch-PB-xr8" id="jWZ-TN-sZ8"/>
+                        <outlet property="lblCost" destination="Yjj-Jg-jqj" id="HiI-x2-vFD"/>
+                        <outlet property="lblDates" destination="2e4-RS-P2h" id="q3u-tH-pU4"/>
+                        <outlet property="lblNoOfDays" destination="G9w-oa-JNc" id="8A7-sV-htM"/>
+                        <outlet property="lblOwnerName" destination="daT-xp-1Ba" id="ho1-a0-kIH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rkk-Yg-clG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1441,6 +1532,9 @@
                                             <constraint firstAttribute="width" constant="45" id="IoO-Fz-tc5"/>
                                         </constraints>
                                         <state key="normal" image="arrow_back_black"/>
+                                        <connections>
+                                            <action selector="actionBack:" destination="enr-EK-UdR" eventType="touchUpInside" id="zuX-47-ABg"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XWu-qq-B0h">
                                         <rect key="frame" x="321" y="25" width="39" height="40"/>
@@ -1455,6 +1549,9 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <action selector="actionReset:" destination="enr-EK-UdR" eventType="touchUpInside" id="etm-nc-KVT"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AqN-aX-Qys">
                                         <rect key="frame" x="172" y="36" width="31.5" height="18"/>
@@ -1483,6 +1580,9 @@
                                 <state key="normal" title="Apply">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="actionApply:" destination="enr-EK-UdR" eventType="touchUpInside" id="V9E-cO-heM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8k-iB-gL0">
                                 <rect key="frame" x="0.0" y="611.5" width="187.5" height="55.5"/>
@@ -1551,10 +1651,16 @@
                                     <constraint firstAttribute="trailing" secondItem="TwK-jt-Te6" secondAttribute="trailing" constant="30" id="ylF-Uh-whR"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dT1-OE-G8H" customClass="FSCalendar">
+                                <rect key="frame" x="0.0" y="183" width="375" height="408.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="pxg-m8-aC5" firstAttribute="top" secondItem="xrE-7C-0pe" secondAttribute="bottom" constant="8" id="1kS-WP-n8X"/>
+                            <constraint firstItem="dT1-OE-G8H" firstAttribute="leading" secondItem="wnD-HZ-54Z" secondAttribute="leading" id="1p8-sr-mBW"/>
+                            <constraint firstAttribute="trailing" secondItem="dT1-OE-G8H" secondAttribute="trailing" id="2qv-ia-KIP"/>
                             <constraint firstAttribute="trailing" secondItem="Yru-Uf-ISk" secondAttribute="trailing" id="7qj-Ee-OGi"/>
                             <constraint firstItem="l8k-iB-gL0" firstAttribute="height" secondItem="Yru-Uf-ISk" secondAttribute="height" id="9zo-TL-lWA"/>
                             <constraint firstItem="Yru-Uf-ISk" firstAttribute="leading" secondItem="l8k-iB-gL0" secondAttribute="trailing" id="CXU-7e-oHq"/>
@@ -1566,10 +1672,21 @@
                             <constraint firstItem="l8k-iB-gL0" firstAttribute="leading" secondItem="wnD-HZ-54Z" secondAttribute="leading" id="cij-Fe-gbY"/>
                             <constraint firstItem="Yru-Uf-ISk" firstAttribute="height" secondItem="wnD-HZ-54Z" secondAttribute="height" multiplier="50:600" id="fRW-Rn-oaC"/>
                             <constraint firstItem="xrE-7C-0pe" firstAttribute="leading" secondItem="wnD-HZ-54Z" secondAttribute="leading" id="gjT-x3-nfh"/>
+                            <constraint firstItem="dT1-OE-G8H" firstAttribute="top" secondItem="pxg-m8-aC5" secondAttribute="bottom" constant="20" id="hPa-B6-iIM"/>
                             <constraint firstItem="pxg-m8-aC5" firstAttribute="leading" secondItem="wnD-HZ-54Z" secondAttribute="leading" id="i6J-Ty-Xam"/>
+                            <constraint firstItem="l8k-iB-gL0" firstAttribute="top" secondItem="dT1-OE-G8H" secondAttribute="bottom" constant="20" id="lKh-ph-lI9"/>
                             <constraint firstItem="cf2-go-7BY" firstAttribute="top" secondItem="l8k-iB-gL0" secondAttribute="bottom" id="yn9-Ef-o5J"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnApply" destination="Yru-Uf-ISk" id="sNO-CN-NgD"/>
+                        <outlet property="btnTotalCost" destination="l8k-iB-gL0" id="2Ja-Ij-i3G"/>
+                        <outlet property="calenderVw" destination="dT1-OE-G8H" id="8RN-fG-7Z0"/>
+                        <outlet property="lblEndDay" destination="gD2-Kv-Iau" id="eMJ-Or-Epq"/>
+                        <outlet property="lblStartDay" destination="PxD-Jm-8k7" id="obc-ZX-0qQ"/>
+                        <outlet property="txtfldEndDate" destination="TwK-jt-Te6" id="Q4q-cb-62c"/>
+                        <outlet property="txtfldstartDate" destination="Igd-cg-Rk0" id="jJb-Hk-H04"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IYZ-0R-Avu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

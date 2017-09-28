@@ -7,15 +7,58 @@
 //
 
 import UIKit
+import FSCalendar
 
-class SelectBookingDatesVC: UIViewController {
+class SelectBookingDatesVC: UIViewController, FSCalendarDelegate {
 
+    @IBOutlet weak var lblEndDay: UILabel!
+    @IBOutlet weak var lblStartDay: UILabel!
+    @IBOutlet weak var txtfldEndDate: UITextField!
+    @IBOutlet weak var txtfldstartDate: UITextField!
+    @IBOutlet weak var calenderVw: FSCalendar!
+    @IBOutlet weak var btnApply: UIButton!
+    @IBOutlet weak var btnTotalCost: UIButton!
+    
+    var dateFirst: Date? = nil
+    var dateSecond: Date? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        calenderVw.allowsMultipleSelection = true
         // Do any additional setup after loading the view.
     }
 
+    func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
+        if date < Date() {
+            showAlert(title: "B-App", message: "You can not select previous dates", controller: self)
+            calenderVw.deselect(date)
+        }else {
+            if dateFirst == nil {
+                dateFirst = date
+            }else {
+                if date < dateFirst! {
+                    dateSecond = dateFirst
+                    dateFirst = date
+                }else {
+                    dateSecond = date
+                }
+                
+                
+                
+            }
+        }
+       
+    }
+    @IBAction func actionBack(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    @IBAction func actionReset(_ sender: Any) {
+    }
+    @IBAction func actionApply(_ sender: Any) {
+        self.pushViewController(controllerName: "BeforeBookOptionsVC", storyboardName: bookingStoryboard)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

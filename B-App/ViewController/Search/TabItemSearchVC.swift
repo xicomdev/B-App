@@ -74,6 +74,12 @@ class TabItemSearchVC: UIViewController, UICollectionViewDelegate, UICollectionV
         }
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let detailVc = bookingStoryboard.instantiateViewController(withIdentifier: "BookingAdDetailVC") as! BookingAdDetailVC
+        detailVc.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(detailVc, animated: true)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

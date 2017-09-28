@@ -9,7 +9,7 @@
 import UIKit
 import GoogleMaps
 
-class BookingAdDetailVC: UIViewController {
+class BookingAdDetailVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, GMSMapViewDelegate, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var mapvw: GMSMapView!
     @IBOutlet weak var btnFavourite: UIButton!
@@ -28,12 +28,25 @@ class BookingAdDetailVC: UIViewController {
     @IBOutlet weak var imgVwAd: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let nibAd = UINib(nibName: "HouseAdCVCell", bundle: nil)
+        collctnVwMoreAds.register(nibAd, forCellWithReuseIdentifier: "HouseAdCVCell")
+        collctnVwMoreAds.delegate = self
+        collctnVwMoreAds.dataSource = self
+        
+        mapvw.delegate = self
+        if UserDefaults.standard.value(forKey: "lat") != nil {
+            let camera = GMSCameraPosition.camera(withLatitude: Double(UserDefaults.standard.value(forKey: "lat") as! String)!, longitude: Double(UserDefaults.standard.value(forKey: "long") as! String)!, zoom: 12.0)
+            mapvw.animate(to: camera)
+        }
 
-        // Do any additional setup after loading the view.
     }
     @IBAction func actionBack(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
     }
+    
     @IBAction func actionLearnMore(_ sender: Any) {
+        
     }
 
     @IBAction func actionMoreAds(_ sender: Any) {
@@ -41,9 +54,30 @@ class BookingAdDetailVC: UIViewController {
     @IBAction func actionContactOwner(_ sender: Any) {
     }
     @IBAction func actionBook(_ sender: Any) {
+        self.pushViewController(controllerName: "SelectBookingDatesVC", storyboardName: bookingStoryboard)
     }
     @IBAction func actionFavourite(_ sender: Any) {
+        btnFavourite.isSelected = !btnFavourite.isSelected
     }
+    
+   
+    //MARK:- CollectionView delegate and datasource methods
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 4
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HouseAdCVCell", for: indexPath) as! HouseAdCVCell
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        return CGSize(width: collctnVwMoreAds.frame.width * 3 / 5, height: collctnVwMoreAds.frame.height)
+        
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

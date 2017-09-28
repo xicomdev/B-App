@@ -24,10 +24,19 @@ class TabItemHomeVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
 
     //MARK: - Buttons Actions
     @IBAction func actionNewAdBtn(_ sender: AnyObject) {
+        let addHouseVc = AddHouseStoryboard.instantiateViewController(withIdentifier: "AddHouseVC") as! AddHouseVC
+        let navControllr = UINavigationController.init(rootViewController: addHouseVc)
+        appDelegate().window?.rootViewController = navControllr
+        
+
     }
     @IBAction func actionMyAdsBtn(_ sender: AnyObject) {
+        btnDesiredAds.setTitleColor(UIColor(red: 71/255, green: 16/49/255, blue: 207/255, alpha: 1), for: .normal)
+        btnMyAds.setTitleColor(UIColor.white, for: .normal)
     }
     @IBAction func actionDesiredAdsBtn(_ sender: AnyObject) {
+        btnDesiredAds.setTitleColor(UIColor(red: 71/255, green: 16/49/255, blue: 207/255, alpha: 1), for: .normal)
+        btnMyAds.setTitleColor(UIColor.white, for: .normal)
     }
     
     //MARK: - TableView delegate and datasource methods

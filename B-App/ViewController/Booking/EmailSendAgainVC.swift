@@ -10,12 +10,19 @@ import UIKit
 
 class EmailSendAgainVC: UIViewController {
 
+    @IBOutlet weak var lblEmailIdText: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func actionBack(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    @IBAction func actionSendAgain(_ sender: Any) {
+        self.pushViewController(controllerName: "SelectPaymentMethodVC", storyboardName: bookingStoryboard)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
