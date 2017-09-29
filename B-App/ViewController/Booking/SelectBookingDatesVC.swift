@@ -25,7 +25,10 @@ class SelectBookingDatesVC: UIViewController, FSCalendarDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        calenderVw.delegate = self
         calenderVw.allowsMultipleSelection = true
+        txtfldEndDate.isUserInteractionEnabled = false
+        txtfldstartDate.isUserInteractionEnabled = false
         // Do any additional setup after loading the view.
     }
 
@@ -37,6 +40,12 @@ class SelectBookingDatesVC: UIViewController, FSCalendarDelegate {
             if dateFirst == nil {
                 dateFirst = date
             }else {
+                if dateFirst != nil {
+                    calenderVw.deselect(dateFirst!)
+                }
+                if dateSecond != nil {
+                    calenderVw.deselect(dateSecond!)
+                }
                 if date < dateFirst! {
                     dateSecond = dateFirst
                     dateFirst = date
@@ -44,12 +53,35 @@ class SelectBookingDatesVC: UIViewController, FSCalendarDelegate {
                     dateSecond = date
                 }
                 
+                calenderVw.select(dateFirst)
+                calenderVw.select(dateSecond)
+//                let dateAry = generateDatesArrayBetweenTwoDates(startDate: dateFirst!, endDate: dateSecond!)
+//                for dt in dateAry {
+//                    calenderVw.select(dt)
+//                }
+                let startDateTuple : (dayStr:String, dateStr:String) = getDayAndDateString(dateFirst!)
+                let endDateTuple: (dayStr:String, dateStr:String) = getDayAndDateString(dateSecond!)
                 
+                txtfldstartDate.text = startDateTuple.dateStr
+                lblStartDay.text = startDateTuple.dayStr
+                
+                lblEndDay.text = endDateTuple.dayStr
+                txtfldEndDate.text = endDateTuple.dateStr
                 
             }
         }
        
     }
+    
+    func calendar(_ calendar: FSCalendar, didDeselect date: Date, at monthPosition: FSCalendarMonthPosition) {
+        if dateFirst == date {
+            dateFirst = nil
+        }else {
+            dateSecond = nil
+        }
+    }
+    
+   
     @IBAction func actionBack(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }

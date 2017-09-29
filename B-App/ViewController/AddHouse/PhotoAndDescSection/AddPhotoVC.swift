@@ -39,7 +39,6 @@ class AddPhotoVC: UIViewController , UIImagePickerControllerDelegate, UINavigati
     
     //MARK: - Images picker methods
     
-    
     func customActionSheet()
     {
         let myActionSheet = UIAlertController()

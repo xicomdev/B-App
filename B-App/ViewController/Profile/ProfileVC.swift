@@ -23,25 +23,41 @@ class ProfileVC: UIViewController {
     }
 
     @IBAction func actionEditBtn(_ sender: Any) {
+        if btnEdit.title(for: .normal) == "Edit"{
+            btnEdit.setTitle("Save", for: .normal)
+            setInteractionOn()
+        }else {
+            btnEdit.setTitle("Edit", for: .normal)
+            setInteractionOff()
+        }
     }
+    
     @IBAction func actionBack(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
     }
+    
     @IBAction func actionPasswordBtn(_ sender: Any) {
+        self.pushViewController(controllerName: "PasswordVC", storyboardName: profileStoryboard)
     }
+    
+    func setInteractionOff() {
+        txtfldEmail.isUserInteractionEnabled = false
+        txtfldName.isUserInteractionEnabled = false
+        txtfldLastName.isUserInteractionEnabled = false
+        txtfldPhone.isUserInteractionEnabled = false
+    }
+    
+    func setInteractionOn() {
+        txtfldEmail.isUserInteractionEnabled = true
+        txtfldName.isUserInteractionEnabled = true
+        txtfldLastName.isUserInteractionEnabled = true
+        txtfldPhone.isUserInteractionEnabled = true
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

@@ -10,6 +10,8 @@ import UIKit
 
 class PaymentCardCell: UITableViewCell {
 
+    @IBOutlet weak var imgvwRadio: UIImageView!
+    @IBOutlet weak var lblCardNo: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

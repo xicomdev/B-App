@@ -12,7 +12,7 @@ import UIKit
 let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
 let tabbarStoryboard = UIStoryboard(name: "TabBar", bundle: nil)
 let bookingStoryboard = UIStoryboard(name: "Booking", bundle: nil)
-let profilStoryboard = UIStoryboard(name: "Profile", bundle: nil)
+let profileStoryboard = UIStoryboard(name: "Profile", bundle: nil)
 let AddHouseStoryboard = UIStoryboard(name: "AddHouse", bundle: nil)
 
 let colorBlueBtn = UIColor(red: 88/255, green: 193/255, blue: 207/255, alpha: 1)

@@ -19,25 +19,30 @@ class PasswordVC: UIViewController {
     }
 
     @IBAction func actionBack(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
     }
+    
     @IBAction func actionEyeBtn(_ sender: Any) {
+        if btnEye.isSelected {
+            btnEye.isSelected = false
+            txtfldPassword.isSecureTextEntry = true
+        }else {
+            btnEye.isSelected = true
+            txtfldPassword.isSecureTextEntry = false
+        }
+        
     }
     @IBAction func actionNextBtn(_ sender: Any) {
+        if txtfldPassword.text!.isEmpty {
+            showAlert(title: "B-App", message: "Please enter password", controller: self)
+            
+        }else {
+            self.navigationController?.popViewController(animated: true)
+        }
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

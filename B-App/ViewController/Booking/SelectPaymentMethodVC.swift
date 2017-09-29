@@ -11,6 +11,7 @@ import UIKit
 class SelectPaymentMethodVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tblPayments: UITableView!
+    var selectedIndex = 0
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,7 +37,22 @@ class SelectPaymentMethodVC: UIViewController, UITableViewDelegate, UITableViewD
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tblPayments.dequeueReusableCell(withIdentifier: "PaymentCardCell", for: indexPath) as! PaymentCardCell
+        cell.lblCardNo.text = "**** **** **** 5656"
+        if indexPath.row == selectedIndex {
+            cell.imgvwRadio.image = #imageLiteral(resourceName: "radiobatton (selected)")
+        }else {
+            cell.imgvwRadio.image = #imageLiteral(resourceName: "radiobutton")
+        }
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 65
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedIndex = indexPath.row
+        tblPayments.reloadData()
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

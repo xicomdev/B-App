@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PGW-yo-BCT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PGW-yo-BCT">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -39,7 +39,6 @@
                 <navigationController navigationBarHidden="YES" id="DIg-8z-SXc" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="web-page-home" id="sUK-Wd-NFu"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Ee2-Vd-5HO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -96,7 +95,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ads" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cv9-of-uOq">
-                                <rect key="frame" x="20" y="75" width="36" height="24"/>
+                                <rect key="frame" x="20" y="75" width="35" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -183,7 +182,6 @@
                 <navigationController navigationBarHidden="YES" id="uKh-Q9-Ngo" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Search" image="search" id="pS7-PV-P7s"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="u2u-Kp-yhe">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -542,7 +540,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wish List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dI7-E0-rRC">
-                                <rect key="frame" x="20" y="75" width="84.5" height="24"/>
+                                <rect key="frame" x="20" y="75" width="82.5" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -904,7 +902,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Term" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22U-53-1g9">
-                                                <rect key="frame" x="30" y="489.5" width="40.5" height="20.5"/>
+                                                <rect key="frame" x="30" y="489.5" width="40" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                 <color key="textColor" red="0.73196853179999999" green="0.73196853179999999" blue="0.73196853179999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1086,7 +1084,6 @@
                 <navigationController navigationBarHidden="YES" id="pGP-uj-AvJ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Message" image="envelope" id="Vyc-89-SrI"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="3dY-gd-UZJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -1103,7 +1100,6 @@
                 <navigationController navigationBarHidden="YES" id="pzN-jV-DNg" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Wish" image="heart" id="XHU-9t-Rd9"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="9zy-cX-D72">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -1120,7 +1116,6 @@
                 <navigationController navigationBarHidden="YES" id="27e-8R-1YQ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profile" image="user-male-black-shape" id="9Qs-0m-1es"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Sqh-iN-2dD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -1230,7 +1225,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOj-aq-8hP">
-                                <rect key="frame" x="30" y="189.5" width="40.5" height="20.5"/>
+                                <rect key="frame" x="30" y="189.5" width="40" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -1258,7 +1253,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Place (near by &gt; far from)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEj-r1-BfP">
-                                <rect key="frame" x="30" y="271" width="199.5" height="20.5"/>
+                                <rect key="frame" x="30" y="271" width="200.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -1286,7 +1281,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="place (far from &gt; near by)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="us2-pH-32k">
-                                <rect key="frame" x="30" y="352.5" width="199" height="20.5"/>
+                                <rect key="frame" x="30" y="352.5" width="200" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>

@@ -22,16 +22,25 @@ class TabItemProfileVC: UIViewController {
     //MARK: - Buttons actions
     
     @IBAction func actionPersonalInfo(_ sender: AnyObject) {
+        self.pushViewController(controllerName: "ProfileVC", storyboardName: profileStoryboard)
     }
     @IBAction func actionFaq(_ sender: AnyObject) {
+        self.pushViewController(controllerName: "FAQVC", storyboardName: profileStoryboard)
+
     }
     @IBAction func actionPaymentInfo(_ sender: AnyObject) {
+        self.pushViewController(controllerName: "PaymentInfoVC", storyboardName: profileStoryboard)
+
     }
     @IBAction func actionStat(_ sender: AnyObject) {
+        self.pushViewController(controllerName: "ProfileVC", storyboardName: profileStoryboard)
+
     }
     @IBAction func actionExit(_ sender: AnyObject) {
+
     }
     @IBAction func actionBackBtn(_ sender: AnyObject) {
+        self.navigationController?.popViewController(animated: true)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

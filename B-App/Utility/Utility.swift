@@ -55,9 +55,27 @@ func JSONString (paraObject : Any) -> String{
     return strReturning
 }
 
-public func getDayAndDateString(_ date: Date) -> (day:String, date:String){
+public func getDayAndDateString(_ date: Date) -> (dayStr:String, dateStr:String){
+    let formatter = DateFormatter()
+    formatter.dateFormat  = "dd MMMM"
+    let dateStr = formatter.string(from: date)
+    formatter.dateFormat = "E"
+    let dayStr = formatter.string(from: date)
+    return (dayStr,dateStr)
+}
+
+public func generateDatesArrayBetweenTwoDates(startDate: Date , endDate:Date) ->[Date]
+{
+    var datesArray: [Date] =  [Date]()
+    var startDate = startDate
+    let calendar = Calendar.current
     
-    return ("","")
+    while startDate <= endDate {
+        datesArray.append(startDate)
+        startDate = calendar.date(byAdding: .day, value: 1, to: startDate)!
+        
+    }
+    return datesArray
 }
 
 public func resizeImage(_ image: UIImage) -> UIImage {

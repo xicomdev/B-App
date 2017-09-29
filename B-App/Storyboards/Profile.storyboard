@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -417,20 +417,9 @@
                                             <constraint firstAttribute="height" constant="40" id="zLM-bw-chG"/>
                                         </constraints>
                                         <state key="normal" image="arrow_back_black"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AtM-3y-YlM">
-                                        <rect key="frame" x="330" y="25" width="30" height="40"/>
-                                        <state key="normal">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Edit">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.2784313725" green="0.58431372550000005" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" metaFont="system" size="15"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </state>
+                                        <connections>
+                                            <action selector="actionBack:" destination="A9J-fj-gMj" eventType="touchUpInside" id="gOE-z7-Vpf"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kac-E2-sOt">
                                         <rect key="frame" x="173" y="36" width="29" height="18"/>
@@ -442,14 +431,11 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="bEI-4y-cyg" secondAttribute="bottom" id="2Vp-JS-Tkg"/>
-                                    <constraint firstItem="AtM-3y-YlM" firstAttribute="height" secondItem="bEI-4y-cyg" secondAttribute="height" id="3MO-lr-pnF"/>
                                     <constraint firstItem="bEI-4y-cyg" firstAttribute="leading" secondItem="d4q-EW-FPz" secondAttribute="leading" constant="15" id="9At-b1-O5Y"/>
                                     <constraint firstItem="kac-E2-sOt" firstAttribute="centerY" secondItem="bEI-4y-cyg" secondAttribute="centerY" id="HCn-Se-KgM"/>
                                     <constraint firstItem="bEI-4y-cyg" firstAttribute="leading" secondItem="d4q-EW-FPz" secondAttribute="leading" constant="15" id="QeT-9A-f5h"/>
                                     <constraint firstAttribute="height" constant="65" id="XjP-bm-WyN"/>
                                     <constraint firstItem="kac-E2-sOt" firstAttribute="centerX" secondItem="d4q-EW-FPz" secondAttribute="centerX" id="YEQ-Nb-0C3"/>
-                                    <constraint firstItem="AtM-3y-YlM" firstAttribute="centerY" secondItem="bEI-4y-cyg" secondAttribute="centerY" id="ZVw-Dx-izh"/>
-                                    <constraint firstAttribute="trailing" secondItem="AtM-3y-YlM" secondAttribute="trailing" constant="15" id="npB-7g-z2K"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the section you need" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1k-Nk-IPc">
@@ -477,6 +463,9 @@
                             <constraint firstItem="9UK-W8-CLG" firstAttribute="top" secondItem="j1k-Nk-IPc" secondAttribute="bottom" constant="20" id="udU-0q-IeT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tblFaq" destination="9UK-W8-CLG" id="Cc5-Sd-OvJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tyw-BM-jAR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -504,6 +493,9 @@
                                             <constraint firstAttribute="width" constant="45" id="ypq-b5-bYd"/>
                                         </constraints>
                                         <state key="normal" image="arrow_back_black"/>
+                                        <connections>
+                                            <action selector="actionBack:" destination="t0e-ky-iQG" eventType="touchUpInside" id="xns-6z-VTP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdn-9I-bOk">
                                         <rect key="frame" x="320" y="25" width="40" height="40"/>
@@ -513,6 +505,9 @@
                                         <state key="normal" image="plus">
                                             <color key="titleColor" red="0.2784313725" green="0.58431372550000005" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="actionAddCard:" destination="t0e-ky-iQG" eventType="touchUpInside" id="agh-08-UfV"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zql-L9-rqr">
                                         <rect key="frame" x="143" y="36" width="89.5" height="18"/>
@@ -559,6 +554,9 @@
                             <constraint firstItem="2ys-5b-pKC" firstAttribute="top" secondItem="PLi-5U-oDp" secondAttribute="bottom" id="zLF-on-PBk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tblCards" destination="PLi-5U-oDp" id="E3J-ua-Fcp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MGa-zM-ik2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
