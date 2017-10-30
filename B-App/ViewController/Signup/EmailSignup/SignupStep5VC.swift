@@ -20,7 +20,21 @@ class SignupStep5VC: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     @IBAction func actionAcceptBtn(_ sender: AnyObject) {
-        self.pushViewController(controllerName: "SignupStep6VC", storyboardName: mainStoryboard)
+        let param = [
+            "first_name": User.me.name ,
+            "last_name": User.me.surname,
+            "email": User.me.email,
+            "password": User.me.password
+        ]
+        
+        
+        ApiManager.sharedObj.requestApi(API_Signup, method: .post, param: param) { (responseDict, isSuccess, errorStr) in
+            if isSuccess {
+                self.pushViewController(controllerName: "SignupStep6VC", storyboardName: mainStoryboard)
+            }else {
+                showAlert(title: "B-App", message: errorStr!, controller: self)
+            }
+        }
     }
     @IBAction func actionDeclineBtn(_ sender: AnyObject) {
     }

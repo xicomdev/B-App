@@ -103,6 +103,8 @@
 		2583E1951F7BCF36006293F1 /* CongratulationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2583E1941F7BCF36006293F1 /* CongratulationVC.swift */; };
 		25891F251F7D22A7000ADE52 /* PaymentCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25891F231F7D22A7000ADE52 /* PaymentCardCell.swift */; };
 		25891F261F7D22A7000ADE52 /* PaymentCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25891F241F7D22A7000ADE52 /* PaymentCardCell.xib */; };
+		25A003A11FA3199B009BC240 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A003A01FA3199B009BC240 /* Reachability.swift */; };
+		25A003A31FA31A1B009BC240 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A003A21FA31A1B009BC240 /* ApiManager.swift */; };
 		963DE5047998BE528CBA8489 /* Pods_B_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1435D3E69AC79308708C3F73 /* Pods_B_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -207,6 +209,8 @@
 		2583E1941F7BCF36006293F1 /* CongratulationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CongratulationVC.swift; sourceTree = "<group>"; };
 		25891F231F7D22A7000ADE52 /* PaymentCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCardCell.swift; sourceTree = "<group>"; };
 		25891F241F7D22A7000ADE52 /* PaymentCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentCardCell.xib; sourceTree = "<group>"; };
+		25A003A01FA3199B009BC240 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		25A003A21FA31A1B009BC240 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		C4AE89BEDF7F27C69315153B /* Pods-B-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-B-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-B-App/Pods-B-App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -286,6 +290,8 @@
 		252574E61F7A1BB200473DD8 /* Handler */ = {
 			isa = PBXGroup;
 			children = (
+				25A003A01FA3199B009BC240 /* Reachability.swift */,
+				25A003A21FA31A1B009BC240 /* ApiManager.swift */,
 			);
 			path = Handler;
 			sourceTree = "<group>";
@@ -781,6 +787,7 @@
 				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftLoader/SwiftLoader.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftRangeSlider/SwiftRangeSlider.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -791,6 +798,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftLoader.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftRangeSlider.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -874,6 +882,7 @@
 				252575661F7A1BCD00473DD8 /* AddPhotoVC.swift in Sources */,
 				252575BA1F7A1BF700473DD8 /* HoshiTextField.swift in Sources */,
 				252575BF1F7A1BF700473DD8 /* MinoruTextField.swift in Sources */,
+				25A003A31FA31A1B009BC240 /* ApiManager.swift in Sources */,
 				252575651F7A1BCD00473DD8 /* AddDescVC.swift in Sources */,
 				252575161F7A1BB200473DD8 /* MyAdsTVCell.swift in Sources */,
 				252575C21F7A1BF700473DD8 /* YoshikoTextField.swift in Sources */,
@@ -919,6 +928,7 @@
 				252575641F7A1BCD00473DD8 /* StartPriceVC.swift in Sources */,
 				252575871F7A1BCD00473DD8 /* SignupStep5VC.swift in Sources */,
 				252575741F7A1BCD00473DD8 /* SelectPaymentMethodVC.swift in Sources */,
+				25A003A11FA3199B009BC240 /* Reachability.swift in Sources */,
 				2525756F1F7A1BCD00473DD8 /* BookingOtpCodeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

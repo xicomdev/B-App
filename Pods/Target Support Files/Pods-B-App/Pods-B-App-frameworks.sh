@@ -108,6 +108,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftLoader/SwiftLoader.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftRangeSlider/SwiftRangeSlider.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -117,6 +118,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftLoader/SwiftLoader.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftRangeSlider/SwiftRangeSlider.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

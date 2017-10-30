@@ -7,7 +7,7 @@ target 'B-App' do
 
   # Pods for B-App
 pod 'Alamofire', '~> 4.5'
-pod 'IQKeyboardManagerSwift', '~> 4.0'
+pod 'IQKeyboardManagerSwift', '~> 5.0'
 pod 'Kingfisher', '~> 3.12'
 pod 'CountryPickerSwift', '~> 1.4'
 pod 'SwiftRangeSlider', '~> 1.1'
@@ -15,4 +15,5 @@ pod 'GoogleMaps', '~> 2.4'
 pod 'GooglePlaces', '~> 2.4'
 pod 'DKImagePickerController', '~> 3.6'
 pod 'FSCalendar', '~> 2.7'
+pod 'SwiftLoader', '~> 0.2'
 end

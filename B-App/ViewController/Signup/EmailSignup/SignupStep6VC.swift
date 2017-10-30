@@ -30,8 +30,8 @@ class SignupStep6VC: UIViewController {
         var detailDict = [String:Any]()
         if screenType == "interest" {
             detailDict = InterestDetails
-//            hgtConstBackBtn.constant = 0
-//            btnBack.isHidden = true
+            hgtConstBackBtn.constant = 0
+            btnBack.isHidden = true
         }else if screenType == "ad" {
             detailDict = advertiseDetails
         }else if screenType == "search" {

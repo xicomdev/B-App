@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
+
+let API_Signup = "signup"
+
 let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
 let tabbarStoryboard = UIStoryboard(name: "TabBar", bundle: nil)
 let bookingStoryboard = UIStoryboard(name: "Booking", bundle: nil)
