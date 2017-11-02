@@ -29,8 +29,8 @@ class SignupStep1VC: UIViewController {
             txtfldSurname.text = ""
             showAlert(title: "B-App", message: "Please enter surname", controller: self)
         }else {
-            User.me.name = txtfldName.text!
-            User.me.surname = txtfldSurname.text!
+            User.me.firstname = txtfldName.text!
+            User.me.lastname = txtfldSurname.text!
             self.pushViewController(controllerName: "SignupStep2VC", storyboardName: mainStoryboard)
         }
     }

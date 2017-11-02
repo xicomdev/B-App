@@ -21,16 +21,16 @@ class SignupStep5VC: UIViewController {
     }
     @IBAction func actionAcceptBtn(_ sender: AnyObject) {
         let param = [
-            "first_name": User.me.name ,
-            "last_name": User.me.surname,
+            "first_name": User.me.firstname ,
+            "last_name": User.me.lastname,
             "email": User.me.email,
             "password": User.me.password
         ]
         
-        
         ApiManager.sharedObj.requestApi(API_Signup, method: .post, param: param) { (responseDict, isSuccess, errorStr) in
             if isSuccess {
-                self.pushViewController(controllerName: "SignupStep6VC", storyboardName: mainStoryboard)
+                showAlert(title: "Signup Successfull", message: "You may now login.", controller: self)
+                self.navigationController?.popToRootViewController(animated: true)
             }else {
                 showAlert(title: "B-App", message: errorStr!, controller: self)
             }

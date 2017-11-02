@@ -26,6 +26,18 @@ func FontLight(size: CGFloat) -> (UIFont)
     return UIFont.systemFont(ofSize: size)
 }
 
+func getAuthHeader() -> String {
+    if User.me.email == "" {
+        return ""
+    }else if User.me.password == "" {
+        return ""
+    }
+    let loginString = String(format: "%@:%@", User.me.email, User.me.password)
+    let loginData = loginString.data(using: String.Encoding.utf8)!
+    let base64LoginString = loginData.base64EncodedString()
+    
+    return "Basic \(base64LoginString)"
+}
 
 func  showAlert(title : String , message : String , controller : UIViewController)
 {

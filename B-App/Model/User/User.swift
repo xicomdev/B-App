@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-class User: NSObject {
+class User: NSObject, NSCoding  {
 
     var firstname: String = ""
     var lastname = ""
@@ -19,6 +19,7 @@ class User: NSObject {
     var notificationEnable = Bool()
     var emailNotification = Bool()
     var userId = ""
+    var token = ""
 
     static var me = User()
     
@@ -49,7 +50,28 @@ class User: NSObject {
         if let userId = dictUser["id"] as? String{
             self.userId = userId
         }
-        
+        if let token = dictUser["token"] as? String{
+            self.token = token
+        }
+    }
+    
+    class func setUserMe(_ dictUser:NSDictionary) {
+        if let firstname = dictUser["first_name"] as? String{
+            User.me.firstname = firstname
+        }
+        if let lastname = dictUser["last_name"] as? String{
+            User.me.lastname = lastname
+        }
+        if let email = dictUser["email"] as? String{
+            User.me.email = email
+        }
+        if let userId = dictUser["user_id"] as? String{
+            User.me.userId = userId
+        }
+        if let token = dictUser["token"] as? String{
+            User.me.token = token
+        }
+        saveUserProfile()
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -73,15 +95,47 @@ class User: NSObject {
         if userId != nil {
             self.userId = userId!
         }
+        
+        let token : String? = aDecoder.decodeObject(forKey: "token") as? String
+        if token != nil {
+            self.token = token!
+        }
     }
     
     public func encode(with aCoder: NSCoder) {
         
+        aCoder.encode(self.token, forKey: "token")
         aCoder.encode(self.firstname, forKey: "firstname")
         aCoder.encode(self.lastname, forKey: "lastname")
         aCoder.encode(self.email, forKey: "email")
         aCoder.encode(self.userId, forKey: "userId")
 
+    }
+    
+    
+    //MARK:- User default functions
+    //MARK:-
+    
+    class func saveUserProfile() {
+        let data = NSKeyedArchiver.archivedData(withRootObject: User.me)
+        
+        UserDefaults.standard.set(data, forKey: "Me")
+        UserDefaults.standard.synchronize()
+    }
+    
+    class func removeUserProfile(){
+        UserDefaults.standard.removeObject(forKey: "Me")
+        UserDefaults.standard.synchronize()
+        User.me = User()
+    }
+    
+    class func getMeArchiver() -> User? {
+        if let data = UserDefaults.standard.object(forKey: "Me") as? Data {
+            let me = NSKeyedUnarchiver.unarchiveObject(with: data)
+            return me as? User
+        }else{
+            return nil
+        }
     }
     
 }

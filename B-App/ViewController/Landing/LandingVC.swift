@@ -15,7 +15,14 @@ class LandingVC: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
+    override func viewWillAppear(_ animated: Bool) {
+        if (User.getMeArchiver() != nil)
+        {
+            User.me = User.getMeArchiver()!
+            let chooseVc = mainStoryboard.instantiateViewController(withIdentifier: "SignupStep6VC") as! SignupStep6VC
+            self.navigationController?.pushViewController(chooseVc, animated: false)
+        }
+    }
     @IBAction func actionLoginBtn(_ sender: AnyObject) {
         self.pushViewController(controllerName: "LoginVC", storyboardName: mainStoryboard)
     }

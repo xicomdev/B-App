@@ -25,7 +25,7 @@ class ApiManager{
             showIndicator()
             let requestUrl = baseUrl + endpoint
             if method == .get {
-                request(requestUrl, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: ["content-type": "application/json"])
+                request(requestUrl, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: ["content-type": "application/json", "Authorization":getAuthHeader()])
                     .responseJSON { response in
                         self.hideIndicator()
                         print(response)
@@ -33,18 +33,20 @@ class ApiManager{
                             if let jsonData = response.result.value as? NSDictionary {
                                 print(jsonData)
                                 completion(jsonData,true,nil)
-                            }
-                        }else {
-                            print(NSString(data: response.data!, encoding: String.Encoding.utf8.rawValue)!)
-                            if response.error != nil {
-                                completion(nil,false,response.error?.localizedDescription)
                             }else {
                                 completion(nil,false,NSString(data: response.data!, encoding: String.Encoding.utf8.rawValue) as String?)
                             }
+                        }else {
+                            print(NSString(data: response.data!, encoding: String.Encoding.utf8.rawValue)!)
+//                            if response.error != nil {
+//                                completion(nil,false,response.error?.localizedDescription)
+//                            }else {
+                                completion(nil,false,NSString(data: response.data!, encoding: String.Encoding.utf8.rawValue) as String?)
+//                            }
                         }
                 }
             }else if method == .post {
-                request(requestUrl, method: .post, parameters: param!, encoding: JSONEncoding.default, headers: ["content-type": "application/json"])
+                request(requestUrl, method: .post, parameters: param, encoding: JSONEncoding.default, headers: ["content-type": "application/json", "Authorization":getAuthHeader()])
                     .responseJSON { response in
                         self.hideIndicator()
                         print(response)
@@ -52,17 +54,17 @@ class ApiManager{
                             if let jsonData = response.result.value as? NSDictionary {
                                 print(jsonData)
                                 completion(jsonData,true,nil)
-                            }else{
-                                completion(nil,true,nil)
+                            }else {
+                                completion(nil,false,NSString(data: response.data!, encoding: String.Encoding.utf8.rawValue) as String?)
                             }
 
                         }else {
                             print(NSString(data: response.data!, encoding: String.Encoding.utf8.rawValue)!)
-                            if response.error != nil {
-                                completion(nil,false,response.error?.localizedDescription)
-                            }else {
+//                            if response.error != nil {
+//                                completion(nil,false,response.error?.localizedDescription)
+//                            }else {
                                 completion(nil,false,NSString(data: response.data!, encoding: String.Encoding.utf8.rawValue) as String?)
-                            }
+//                            }
                         }
                 }
             }

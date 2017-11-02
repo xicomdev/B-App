@@ -11,6 +11,7 @@ import UIKit
 
 
 let API_Signup = "signup"
+let API_Login = "user/login"
 
 let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
 let tabbarStoryboard = UIStoryboard(name: "TabBar", bundle: nil)

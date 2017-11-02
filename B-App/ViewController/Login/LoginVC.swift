@@ -19,6 +19,7 @@ class LoginVC: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    
     @IBAction func actionBackBtn(_ sender: AnyObject) {
         self.navigationController?.popViewController(animated: true)
     }
@@ -38,12 +39,17 @@ class LoginVC: UIViewController {
             showAlert(title: "B-App", message: "Please enter password", controller: self)
         }else
         {
-
-//            let addHouseVc = AddHouseStoryboard.instantiateViewController(withIdentifier: "AddHouseVC") as! AddHouseVC
-//            let navControllr = UINavigationController.init(rootViewController: addHouseVc)
-//            appDelegate().window?.rootViewController = navControllr
+            User.me.email = txtfldEmail.text!
+            User.me.password = txtfldPassword.text!
             
-            self.pushViewController(controllerName: "SignupStep6VC", storyboardName: mainStoryboard)
+            ApiManager.sharedObj.requestApi(API_Login, method: .post, param: nil, completion: { (resultDict, isSuccess, strError) in
+                if isSuccess {
+                    User.setUserMe(resultDict!)
+                    self.pushViewController(controllerName: "SignupStep6VC", storyboardName: mainStoryboard)
+                }else {
+                    showAlert(title: "B-App", message: strError!, controller: self)
+                }
+            })
         
         }
     }
