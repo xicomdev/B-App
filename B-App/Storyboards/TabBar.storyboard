@@ -10,6 +10,12 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+            <string>Avenir-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Main Tab Bar Controller-->
         <scene sceneID="V67-SW-4j4">
@@ -513,7 +519,7 @@
                                             <action selector="actionSearchBtn:" destination="VQa-gw-w5h" eventType="touchUpInside" id="hJJ-EG-ha5"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwV-ai-Arm">
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwV-ai-Arm">
                                         <rect key="frame" x="15" y="25" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="9g6-hu-Zk1"/>
@@ -1378,7 +1384,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MT5-bT-5sG">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gy3-4M-jK4">
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gy3-4M-jK4">
                                         <rect key="frame" x="15" y="25" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="5DT-UE-IAd"/>
@@ -1672,6 +1678,89 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KAJ-Hz-ZML" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1476" y="3392"/>
+        </scene>
+        <!--ChatVC-->
+        <scene sceneID="NiH-Hn-JoL">
+            <objects>
+                <viewController storyboardIdentifier="ChatVC" automaticallyAdjustsScrollViewInsets="NO" id="h8t-8v-wH9" customClass="ChatVC" customModule="B_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7s3-7o-wlO"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZEO-CE-BvO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P9r-e7-d2Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LeD-bH-p6C">
+                                <rect key="frame" x="0.0" y="20" width="375" height="597"/>
+                                <color key="backgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="njw-lt-euk">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mrm-mk-Aqt">
+                                        <rect key="frame" x="310" y="0.0" width="65" height="50"/>
+                                        <color key="backgroundColor" red="0.17254901959999999" green="0.50196078430000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="65" id="JDn-b4-35y"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                        <state key="normal" title="Send">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnSendAction:" destination="h8t-8v-wH9" eventType="touchUpInside" id="2qH-Au-zYs"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SZl-JN-iFG" customClass="IQTextView" customModule="B_App" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="8" width="294" height="34"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Write Message"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Mrm-mk-Aqt" secondAttribute="trailing" id="3oO-k6-OYa"/>
+                                    <constraint firstItem="Mrm-mk-Aqt" firstAttribute="leading" secondItem="SZl-JN-iFG" secondAttribute="trailing" constant="8" id="7RH-Cq-2ul"/>
+                                    <constraint firstItem="SZl-JN-iFG" firstAttribute="leading" secondItem="njw-lt-euk" secondAttribute="leading" constant="8" id="DcE-ZT-38O"/>
+                                    <constraint firstItem="Mrm-mk-Aqt" firstAttribute="top" secondItem="njw-lt-euk" secondAttribute="top" id="EEs-vq-uIr"/>
+                                    <constraint firstItem="Mrm-mk-Aqt" firstAttribute="centerY" secondItem="SZl-JN-iFG" secondAttribute="centerY" id="ZNw-cE-d2F"/>
+                                    <constraint firstAttribute="bottom" secondItem="SZl-JN-iFG" secondAttribute="bottom" constant="8" id="bKV-PZ-DO9"/>
+                                    <constraint firstAttribute="height" constant="50" id="d1e-1I-O87"/>
+                                    <constraint firstItem="SZl-JN-iFG" firstAttribute="top" secondItem="njw-lt-euk" secondAttribute="top" constant="8" id="njf-Xj-1xq"/>
+                                    <constraint firstAttribute="bottom" secondItem="Mrm-mk-Aqt" secondAttribute="bottom" id="y6D-uI-05k"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="njw-lt-euk" secondAttribute="trailing" id="1ie-MT-1LN"/>
+                            <constraint firstItem="ZEO-CE-BvO" firstAttribute="top" secondItem="njw-lt-euk" secondAttribute="bottom" id="5pR-ai-p1m"/>
+                            <constraint firstItem="njw-lt-euk" firstAttribute="top" secondItem="LeD-bH-p6C" secondAttribute="bottom" id="730-92-FRb"/>
+                            <constraint firstAttribute="trailing" secondItem="LeD-bH-p6C" secondAttribute="trailing" id="Hsj-Ak-Wtx"/>
+                            <constraint firstItem="njw-lt-euk" firstAttribute="leading" secondItem="P9r-e7-d2Z" secondAttribute="leading" id="flB-Zv-h4J"/>
+                            <constraint firstItem="LeD-bH-p6C" firstAttribute="top" secondItem="7s3-7o-wlO" secondAttribute="bottom" id="jw0-D3-tJf"/>
+                            <constraint firstItem="LeD-bH-p6C" firstAttribute="leading" secondItem="P9r-e7-d2Z" secondAttribute="leading" id="m3J-M1-mEn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomMargin" destination="5pR-ai-p1m" id="WSe-Ke-adk"/>
+                        <outlet property="bottomMsgVwHgt" destination="d1e-1I-O87" id="L2F-wR-blg"/>
+                        <outlet property="btnSend" destination="Mrm-mk-Aqt" id="3GJ-9u-Pec"/>
+                        <outlet property="tblChat" destination="LeD-bH-p6C" id="G6D-dF-fIm"/>
+                        <outlet property="txtVWMsg" destination="SZl-JN-iFG" id="d3T-92-MRd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WWX-qU-BsZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-41" y="-1398"/>
         </scene>
     </scenes>
     <resources>

@@ -1,21 +1,21 @@
 PODS:
   - Alamofire (4.5.1)
-  - CountryPickerSwift (1.4.4)
-  - DKImagePickerController (3.8.0):
-    - DKImagePickerController/Camera (= 3.8.0)
-    - DKImagePickerController/ImageManager (= 3.8.0)
-  - DKImagePickerController/Camera (3.8.0)
-  - DKImagePickerController/ImageManager (3.8.0)
+  - CountryPickerSwift (1.4.5)
+  - DKImagePickerController (3.8.1):
+    - DKImagePickerController/Camera (= 3.8.1)
+    - DKImagePickerController/ImageManager (= 3.8.1)
+  - DKImagePickerController/Camera (3.8.1)
+  - DKImagePickerController/ImageManager (3.8.1)
   - FSCalendar (2.7.9)
-  - GoogleMaps (2.4.0):
-    - GoogleMaps/Maps (= 2.4.0)
-  - GoogleMaps/Base (2.4.0)
-  - GoogleMaps/Maps (2.4.0):
+  - GoogleMaps (2.5.0):
+    - GoogleMaps/Maps (= 2.5.0)
+  - GoogleMaps/Base (2.5.0)
+  - GoogleMaps/Maps (2.5.0):
     - GoogleMaps/Base
-  - GooglePlaces (2.4.0):
-    - GoogleMaps/Base (= 2.4.0)
-  - IQKeyboardManagerSwift (5.0.3)
-  - Kingfisher (3.12.2)
+  - GooglePlaces (2.5.0):
+    - GoogleMaps/Base (= 2.5.0)
+  - IQKeyboardManagerSwift (5.0.6)
+  - Kingfisher (3.13.1)
   - SwiftLoader (0.2.5)
   - SwiftRangeSlider (1.1.0)
 
@@ -33,13 +33,13 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
-  CountryPickerSwift: e31e67f2b95eb1fa6ad230e9eb0b49b020526d99
-  DKImagePickerController: 6eea9f1ba2e2ca0ba0317b81d68152d07d9e877f
+  CountryPickerSwift: be2cf0dc41887d8b16ea65ae263a70adb0cc953a
+  DKImagePickerController: 51ad6ee2ba05414bb741db54a72cd7f4fb178e34
   FSCalendar: a04b09f16f811bc92e82f3cf852a15225233b9d5
-  GoogleMaps: 8436ab5d1c25e36915b2f7416d0c8e3fa2e76c61
-  GooglePlaces: aafe5990fa7951e98e078761bbdaaf236d7e0c65
-  IQKeyboardManagerSwift: e257e513744cf32123eca7061272acea0246fc83
-  Kingfisher: 320626678acadfcf47008b3c6841cd882050737b
+  GoogleMaps: c087b8e5dfe87ca6ebf59adb9b4894a4146bec4f
+  GooglePlaces: dd70d9d71ea1c7944846afe67de3712c99b30a77
+  IQKeyboardManagerSwift: 02bfbb0dff71c66d0ab77d80d25dfce0c3717735
+  Kingfisher: ed9707a409cc47fddafbcd12a43a9757e3600af5
   SwiftLoader: 12d7a6f661f5e9a2c9a72003e7dd6162f4ff0cc4
   SwiftRangeSlider: fdaabc219e813d47f26525d9a56b6b5e5ba55b51
 

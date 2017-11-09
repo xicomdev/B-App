@@ -45,7 +45,9 @@ class LoginVC: UIViewController {
             ApiManager.sharedObj.requestApi(API_Login, method: .post, param: nil, completion: { (resultDict, isSuccess, strError) in
                 if isSuccess {
                     User.setUserMe(resultDict!)
-                    self.pushViewController(controllerName: "SignupStep6VC", storyboardName: mainStoryboard)
+                    let tabBarController = tabbarStoryboard.instantiateViewController(withIdentifier: "MainTabBarController") as! MainTabBarController
+                    tabBarController.selectedIndex = 1
+                    appDelegate().window?.rootViewController = tabBarController
                 }else {
                     showAlert(title: "B-App", message: strError!, controller: self)
                 }

@@ -37,18 +37,11 @@
                                             <action selector="actionBack:" destination="S9u-ZB-tCw" eventType="touchUpInside" id="MeZ-ay-MWl"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vb4-OK-yvL">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vb4-OK-yvL">
                                         <rect key="frame" x="275" y="25" width="30" height="40"/>
-                                        <state key="normal">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="Edit">
-                                                    <attributes>
-                                                        <color key="NSColor" red="0.2784313725" green="0.58431372550000005" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" metaFont="system" size="15"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                        <state key="normal" title="Edit">
+                                            <color key="titleColor" red="0.2784313725" green="0.58431372550000005" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="actionEditBtn:" destination="S9u-ZB-tCw" eventType="touchUpInside" id="jtD-Ka-ST9"/>
@@ -198,6 +191,12 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-rightback" translatesAutoresizingMaskIntoConstraints="NO" id="Pqr-w5-xf9">
                                                 <rect key="frame" x="278" y="559" width="12" height="18"/>
                                             </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lK8-HE-ppe">
+                                                <rect key="frame" x="93.5" y="43.5" width="133" height="133"/>
+                                                <connections>
+                                                    <action selector="actionSelectPhoto:" destination="S9u-ZB-tCw" eventType="touchUpInside" id="TH3-ca-Fy0"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -217,13 +216,17 @@
                                             <constraint firstItem="F4a-HZ-eNu" firstAttribute="top" secondItem="9Vx-Fo-mzt" secondAttribute="bottom" constant="10" id="Iwu-PG-on2"/>
                                             <constraint firstItem="Z4C-a7-F4E" firstAttribute="top" secondItem="d73-Hq-Q8P" secondAttribute="bottom" constant="10" id="JbQ-46-k1e"/>
                                             <constraint firstItem="Cfx-lx-a0M" firstAttribute="top" secondItem="55Q-PO-o39" secondAttribute="bottom" constant="10" id="Jud-12-akq"/>
+                                            <constraint firstItem="lK8-HE-ppe" firstAttribute="width" secondItem="WM4-F6-XG6" secondAttribute="width" multiplier="5:6" id="NUV-ev-DYC"/>
                                             <constraint firstItem="cNM-J3-13P" firstAttribute="leading" secondItem="pM4-gp-bti" secondAttribute="leading" constant="30" id="OF4-LU-zOF"/>
+                                            <constraint firstItem="lK8-HE-ppe" firstAttribute="height" secondItem="WM4-F6-XG6" secondAttribute="height" multiplier="5:6" id="STx-gG-fVx"/>
                                             <constraint firstItem="9Vx-Fo-mzt" firstAttribute="top" secondItem="cNM-J3-13P" secondAttribute="bottom" constant="8" id="VSG-Wy-VHs"/>
+                                            <constraint firstItem="lK8-HE-ppe" firstAttribute="centerX" secondItem="WM4-F6-XG6" secondAttribute="centerX" id="XAX-Wh-NV2"/>
                                             <constraint firstItem="cNM-J3-13P" firstAttribute="top" secondItem="avS-vM-Hz5" secondAttribute="bottom" constant="15" id="ZDf-cj-5Vp"/>
                                             <constraint firstAttribute="trailing" secondItem="NAT-Rw-yet" secondAttribute="trailing" constant="30" id="Zsh-yf-JFs"/>
                                             <constraint firstItem="wgD-Nx-Grh" firstAttribute="leading" secondItem="pM4-gp-bti" secondAttribute="leading" constant="30" id="ZyK-6b-Qcw"/>
                                             <constraint firstAttribute="trailing" secondItem="55Q-PO-o39" secondAttribute="trailing" constant="30" id="aoQ-Qd-oMY"/>
                                             <constraint firstAttribute="trailing" secondItem="9Vx-Fo-mzt" secondAttribute="trailing" constant="30" id="bAJ-2c-aQY"/>
+                                            <constraint firstItem="lK8-HE-ppe" firstAttribute="centerY" secondItem="WM4-F6-XG6" secondAttribute="centerY" id="cEX-mc-ylW"/>
                                             <constraint firstItem="Cfx-lx-a0M" firstAttribute="leading" secondItem="pM4-gp-bti" secondAttribute="leading" constant="30" id="e6Y-pT-PFH"/>
                                             <constraint firstItem="Pqr-w5-xf9" firstAttribute="centerY" secondItem="wgD-Nx-Grh" secondAttribute="centerY" id="eQK-t1-iMW"/>
                                             <constraint firstItem="avS-vM-Hz5" firstAttribute="top" secondItem="NAT-Rw-yet" secondAttribute="bottom" constant="10" id="frB-47-URQ"/>
@@ -270,6 +273,8 @@
                     <connections>
                         <outlet property="btnEdit" destination="vb4-OK-yvL" id="FQj-fc-CcV"/>
                         <outlet property="btnPassword" destination="wgD-Nx-Grh" id="WZT-Tz-mYR"/>
+                        <outlet property="btnSelectPhoto" destination="lK8-HE-ppe" id="Tgg-wW-yNE"/>
+                        <outlet property="imgvwDP" destination="WM4-F6-XG6" id="DvX-c3-Y5o"/>
                         <outlet property="txtfldEmail" destination="9Vx-Fo-mzt" id="Fht-uQ-e8L"/>
                         <outlet property="txtfldLastName" destination="55Q-PO-o39" id="BBL-Ku-oiF"/>
                         <outlet property="txtfldName" destination="d73-Hq-Q8P" id="qJE-Sh-rNR"/>
@@ -278,7 +283,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Lk-99-tKd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3968.8000000000002" y="2018.1409295352325"/>
+            <point key="canvasLocation" x="3968" y="2017.6911544227887"/>
         </scene>
         <!--PasswordVC-->
         <scene sceneID="2vw-tI-faY">
@@ -464,6 +469,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="lblScreenTitle" destination="kac-E2-sOt" id="OoL-FN-WEP"/>
+                        <outlet property="lblSubtitle" destination="j1k-Nk-IPc" id="RMV-o1-mgg"/>
                         <outlet property="tblFaq" destination="9UK-W8-CLG" id="Cc5-Sd-OvJ"/>
                     </connections>
                 </viewController>
@@ -584,6 +591,9 @@
                                             <constraint firstAttribute="width" constant="45" id="uUw-zg-8zY"/>
                                         </constraints>
                                         <state key="normal" image="arrow_back_black"/>
+                                        <connections>
+                                            <action selector="actionBackBtn:" destination="Ast-te-uoq" eventType="touchUpInside" id="pPu-UV-8tf"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -617,6 +627,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="actionNextBtn:" destination="Ast-te-uoq" eventType="touchUpInside" id="pbG-Zl-v4c"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -639,6 +652,9 @@
                             <constraint firstAttribute="trailing" secondItem="pXh-VS-oRT" secondAttribute="trailing" id="rnz-9p-aQI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tblvw" destination="RR9-Wc-eY0" id="xQE-YW-K3k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5fp-3p-jSA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

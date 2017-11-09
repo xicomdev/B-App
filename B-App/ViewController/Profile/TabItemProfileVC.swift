@@ -25,8 +25,10 @@ class TabItemProfileVC: UIViewController {
         self.pushViewController(controllerName: "ProfileVC", storyboardName: profileStoryboard)
     }
     @IBAction func actionFaq(_ sender: AnyObject) {
-        self.pushViewController(controllerName: "FAQVC", storyboardName: profileStoryboard)
-
+        let faqvc = profileStoryboard.instantiateViewController(withIdentifier: "FAQVC") as! FAQVC
+        faqvc.screenTitle = "FAQ"
+        self.navigationController?.pushViewController(faqvc, animated: true)
+//        self.pushViewController(controllerName: "FAQVC", storyboardName: profileStoryboard)
     }
     @IBAction func actionPaymentInfo(_ sender: AnyObject) {
         self.pushViewController(controllerName: "PaymentInfoVC", storyboardName: profileStoryboard)

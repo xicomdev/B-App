@@ -13,7 +13,6 @@ class SignupStep5VC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func actionBackBtn(_ sender: AnyObject) {
@@ -36,8 +35,10 @@ class SignupStep5VC: UIViewController {
             }
         }
     }
+    
     @IBAction func actionDeclineBtn(_ sender: AnyObject) {
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

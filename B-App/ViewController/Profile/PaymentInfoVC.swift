@@ -8,12 +8,17 @@
 
 import UIKit
 
-class PaymentInfoVC: UIViewController {
+class PaymentInfoVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tblCards: UITableView!
+    
+    var aryCards = ["5544664466554524","5544664466552485"]
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tblCards.registerNibsForCells(arryNib: ["FaqTableCell"])
+        tblCards.delegate = self
+        tblCards.dataSource = self
         // Do any additional setup after loading the view.
     }
 
@@ -23,20 +28,26 @@ class PaymentInfoVC: UIViewController {
     
     @IBAction func actionAddCard(_ sender: Any) {
     }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return aryCards.count
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        tblCards.estimatedRowHeight = 70
+        return UITableViewAutomaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tblCards.dequeueReusableCell(withIdentifier: "FaqTableCell", for: indexPath) as! FaqTableCell
+        cell.lblTitle.text = (aryCards[indexPath.row] as NSString).replacingCharacters(in: NSMakeRange(0, 12), with: "************")
+        return cell
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

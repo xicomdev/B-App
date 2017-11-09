@@ -30,12 +30,12 @@ class TabItemHomeVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     }
     
     @IBAction func actionMyAdsBtn(_ sender: AnyObject) {
-        btnDesiredAds.setTitleColor(UIColor(red: 71/255, green: 16/49/255, blue: 207/255, alpha: 1), for: .normal)
-        btnMyAds.setTitleColor(UIColor.white, for: .normal)
+        btnDesiredAds.setTitleColor(UIColor.lightGray, for: .normal)
+        btnMyAds.setTitleColor(UIColor.black, for: .normal)
     }
     @IBAction func actionDesiredAdsBtn(_ sender: AnyObject) {
-        btnDesiredAds.setTitleColor(UIColor(red: 71/255, green: 16/49/255, blue: 207/255, alpha: 1), for: .normal)
-        btnMyAds.setTitleColor(UIColor.white, for: .normal)
+        btnMyAds.setTitleColor(UIColor.lightGray, for: .normal)
+        btnDesiredAds.setTitleColor(UIColor.black, for: .normal)
     }
     
     //MARK: - TableView delegate and datasource methods
@@ -57,6 +57,5 @@ class TabItemHomeVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
 }

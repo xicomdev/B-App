@@ -21,6 +21,9 @@ class TabItemMessageVC: UIViewController, UITableViewDelegate, UITableViewDataSo
         tblVwMsgList.dataSource = self
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = true
+    }
     //MARK: - Buttons Actions
     
     @IBAction func actionEditBtn(_ sender: AnyObject) {

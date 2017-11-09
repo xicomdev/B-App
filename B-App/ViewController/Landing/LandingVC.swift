@@ -19,8 +19,9 @@ class LandingVC: UIViewController {
         if (User.getMeArchiver() != nil)
         {
             User.me = User.getMeArchiver()!
-            let chooseVc = mainStoryboard.instantiateViewController(withIdentifier: "SignupStep6VC") as! SignupStep6VC
-            self.navigationController?.pushViewController(chooseVc, animated: false)
+            let tabBarController = tabbarStoryboard.instantiateViewController(withIdentifier: "MainTabBarController") as! MainTabBarController
+            tabBarController.selectedIndex = 1
+            appDelegate().window?.rootViewController = tabBarController
         }
     }
     @IBAction func actionLoginBtn(_ sender: AnyObject) {

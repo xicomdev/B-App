@@ -27,10 +27,6 @@
 		2525750F1F7A1BB200473DD8 /* HouseAdCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 252574F71F7A1BB200473DD8 /* HouseAdCVCell.xib */; };
 		252575101F7A1BB200473DD8 /* MsgListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252574FB1F7A1BB200473DD8 /* MsgListTVCell.swift */; };
 		252575111F7A1BB200473DD8 /* MsgListTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 252574FC1F7A1BB200473DD8 /* MsgListTVCell.xib */; };
-		252575121F7A1BB200473DD8 /* RecievedMsgTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252574FE1F7A1BB200473DD8 /* RecievedMsgTVCell.swift */; };
-		252575131F7A1BB200473DD8 /* RecievedMsgTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 252574FF1F7A1BB200473DD8 /* RecievedMsgTVCell.xib */; };
-		252575141F7A1BB200473DD8 /* SentMsgTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252575011F7A1BB200473DD8 /* SentMsgTVCell.swift */; };
-		252575151F7A1BB200473DD8 /* SentMsgTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 252575021F7A1BB200473DD8 /* SentMsgTVCell.xib */; };
 		252575161F7A1BB200473DD8 /* MyAdsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252575041F7A1BB200473DD8 /* MyAdsTVCell.swift */; };
 		252575171F7A1BB200473DD8 /* MyAdsTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 252575051F7A1BB200473DD8 /* MyAdsTVCell.xib */; };
 		2525755B1F7A1BCD00473DD8 /* AddHouseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2525751A1F7A1BCD00473DD8 /* AddHouseVC.swift */; };
@@ -99,12 +95,17 @@
 		252575D91F7A1D8400473DD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 252575D81F7A1D8400473DD8 /* Main.storyboard */; };
 		252575DB1F7A298100473DD8 /* current.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 252575DA1F7A298100473DD8 /* current.gpx */; };
 		252575DD1F7A2B6700473DD8 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252575DC1F7A2B6700473DD8 /* LocationManager.swift */; };
+		257B29B91FB428E400AA224D /* FaqTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257B29B71FB428E400AA224D /* FaqTableCell.swift */; };
+		257B29BA1FB428E400AA224D /* FaqTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 257B29B81FB428E400AA224D /* FaqTableCell.xib */; };
 		2583E1931F7BCC5D006293F1 /* PublishAdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2583E1921F7BCC5D006293F1 /* PublishAdVC.swift */; };
 		2583E1951F7BCF36006293F1 /* CongratulationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2583E1941F7BCF36006293F1 /* CongratulationVC.swift */; };
 		25891F251F7D22A7000ADE52 /* PaymentCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25891F231F7D22A7000ADE52 /* PaymentCardCell.swift */; };
 		25891F261F7D22A7000ADE52 /* PaymentCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25891F241F7D22A7000ADE52 /* PaymentCardCell.xib */; };
 		25A003A11FA3199B009BC240 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A003A01FA3199B009BC240 /* Reachability.swift */; };
 		25A003A31FA31A1B009BC240 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A003A21FA31A1B009BC240 /* ApiManager.swift */; };
+		25CEC8AF1FB1942900989374 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CEC8AE1FB1942900989374 /* ChatVC.swift */; };
+		25CEC8B41FB19AB600989374 /* RecievedMsgCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CEC8B31FB19AB600989374 /* RecievedMsgCell.swift */; };
+		25CEC8B61FB19ACC00989374 /* SentMsgCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CEC8B51FB19ACC00989374 /* SentMsgCell.swift */; };
 		963DE5047998BE528CBA8489 /* Pods_B_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1435D3E69AC79308708C3F73 /* Pods_B_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -133,10 +134,6 @@
 		252574F71F7A1BB200473DD8 /* HouseAdCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HouseAdCVCell.xib; sourceTree = "<group>"; };
 		252574FB1F7A1BB200473DD8 /* MsgListTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MsgListTVCell.swift; sourceTree = "<group>"; };
 		252574FC1F7A1BB200473DD8 /* MsgListTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MsgListTVCell.xib; sourceTree = "<group>"; };
-		252574FE1F7A1BB200473DD8 /* RecievedMsgTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecievedMsgTVCell.swift; sourceTree = "<group>"; };
-		252574FF1F7A1BB200473DD8 /* RecievedMsgTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecievedMsgTVCell.xib; sourceTree = "<group>"; };
-		252575011F7A1BB200473DD8 /* SentMsgTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentMsgTVCell.swift; sourceTree = "<group>"; };
-		252575021F7A1BB200473DD8 /* SentMsgTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SentMsgTVCell.xib; sourceTree = "<group>"; };
 		252575041F7A1BB200473DD8 /* MyAdsTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAdsTVCell.swift; sourceTree = "<group>"; };
 		252575051F7A1BB200473DD8 /* MyAdsTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyAdsTVCell.xib; sourceTree = "<group>"; };
 		2525751A1F7A1BCD00473DD8 /* AddHouseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddHouseVC.swift; sourceTree = "<group>"; };
@@ -205,12 +202,19 @@
 		252575D81F7A1D8400473DD8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		252575DA1F7A298100473DD8 /* current.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = current.gpx; sourceTree = "<group>"; };
 		252575DC1F7A2B6700473DD8 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		257B29B71FB428E400AA224D /* FaqTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqTableCell.swift; sourceTree = "<group>"; };
+		257B29B81FB428E400AA224D /* FaqTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FaqTableCell.xib; sourceTree = "<group>"; };
 		2583E1921F7BCC5D006293F1 /* PublishAdVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishAdVC.swift; sourceTree = "<group>"; };
 		2583E1941F7BCF36006293F1 /* CongratulationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CongratulationVC.swift; sourceTree = "<group>"; };
 		25891F231F7D22A7000ADE52 /* PaymentCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCardCell.swift; sourceTree = "<group>"; };
 		25891F241F7D22A7000ADE52 /* PaymentCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentCardCell.xib; sourceTree = "<group>"; };
 		25A003A01FA3199B009BC240 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		25A003A21FA31A1B009BC240 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		25CEC8AA1FB1939300989374 /* SentMsgCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SentMsgCell.xib; sourceTree = "<group>"; };
+		25CEC8AD1FB1939A00989374 /* RecievedMsgCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecievedMsgCell.xib; sourceTree = "<group>"; };
+		25CEC8AE1FB1942900989374 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		25CEC8B31FB19AB600989374 /* RecievedMsgCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecievedMsgCell.swift; sourceTree = "<group>"; };
+		25CEC8B51FB19ACC00989374 /* SentMsgCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentMsgCell.swift; sourceTree = "<group>"; };
 		C4AE89BEDF7F27C69315153B /* Pods-B-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-B-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-B-App/Pods-B-App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -299,6 +303,7 @@
 		252574E71F7A1BB200473DD8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				25CEC8B81FB19B6700989374 /* Message */,
 				252574E81F7A1BB200473DD8 /* House */,
 				252574EA1F7A1BB200473DD8 /* User */,
 			);
@@ -372,6 +377,7 @@
 		252574F81F7A1BB200473DD8 /* TableviewCell */ = {
 			isa = PBXGroup;
 			children = (
+				257B29B61FB428BF00AA224D /* FAQCell */,
 				25891F221F7D2256000ADE52 /* PaymentCardCell */,
 				252574F91F7A1BB200473DD8 /* Message */,
 				252575031F7A1BB200473DD8 /* MyAdsTVCell */,
@@ -401,8 +407,8 @@
 		252574FD1F7A1BB200473DD8 /* RecievedMsgTVCell */ = {
 			isa = PBXGroup;
 			children = (
-				252574FE1F7A1BB200473DD8 /* RecievedMsgTVCell.swift */,
-				252574FF1F7A1BB200473DD8 /* RecievedMsgTVCell.xib */,
+				25CEC8AD1FB1939A00989374 /* RecievedMsgCell.xib */,
+				25CEC8B31FB19AB600989374 /* RecievedMsgCell.swift */,
 			);
 			path = RecievedMsgTVCell;
 			sourceTree = "<group>";
@@ -410,8 +416,8 @@
 		252575001F7A1BB200473DD8 /* SentMsgTVCell */ = {
 			isa = PBXGroup;
 			children = (
-				252575011F7A1BB200473DD8 /* SentMsgTVCell.swift */,
-				252575021F7A1BB200473DD8 /* SentMsgTVCell.xib */,
+				25CEC8AA1FB1939300989374 /* SentMsgCell.xib */,
+				25CEC8B51FB19ACC00989374 /* SentMsgCell.swift */,
 			);
 			path = SentMsgTVCell;
 			sourceTree = "<group>";
@@ -546,6 +552,7 @@
 			isa = PBXGroup;
 			children = (
 				252575411F7A1BCD00473DD8 /* TabItemMessageVC.swift */,
+				25CEC8AE1FB1942900989374 /* ChatVC.swift */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -664,6 +671,15 @@
 			path = SwiftLoader;
 			sourceTree = "<group>";
 		};
+		257B29B61FB428BF00AA224D /* FAQCell */ = {
+			isa = PBXGroup;
+			children = (
+				257B29B71FB428E400AA224D /* FaqTableCell.swift */,
+				257B29B81FB428E400AA224D /* FaqTableCell.xib */,
+			);
+			path = FAQCell;
+			sourceTree = "<group>";
+		};
 		25891F221F7D2256000ADE52 /* PaymentCardCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -671,6 +687,13 @@
 				25891F241F7D22A7000ADE52 /* PaymentCardCell.xib */,
 			);
 			path = PaymentCardCell;
+			sourceTree = "<group>";
+		};
+		25CEC8B81FB19B6700989374 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Message;
 			sourceTree = "<group>";
 		};
 		BDDEBE06F371DB3DF86A5EBD /* Frameworks */ = {
@@ -754,7 +777,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2525750F1F7A1BB200473DD8 /* HouseAdCVCell.xib in Resources */,
-				252575151F7A1BB200473DD8 /* SentMsgTVCell.xib in Resources */,
 				25891F261F7D22A7000ADE52 /* PaymentCardCell.xib in Resources */,
 				252575171F7A1BB200473DD8 /* MyAdsTVCell.xib in Resources */,
 				252574E21F7A1B6B00473DD8 /* Profile.storyboard in Resources */,
@@ -764,8 +786,8 @@
 				252575D91F7A1D8400473DD8 /* Main.storyboard in Resources */,
 				252574E01F7A1B6B00473DD8 /* Booking.storyboard in Resources */,
 				252574E31F7A1B6B00473DD8 /* TabBar.storyboard in Resources */,
-				252575131F7A1BB200473DD8 /* RecievedMsgTVCell.xib in Resources */,
 				252575DB1F7A298100473DD8 /* current.gpx in Resources */,
+				257B29BA1FB428E400AA224D /* FaqTableCell.xib in Resources */,
 				252573C31F7A139300473DD8 /* Assets.xcassets in Resources */,
 				2525750D1F7A1BB200473DD8 /* AddPhotoCVCell.xib in Resources */,
 			);
@@ -859,18 +881,19 @@
 				252575BB1F7A1BF700473DD8 /* IsaoTextField.swift in Sources */,
 				252575851F7A1BCD00473DD8 /* SignupStep3VC.swift in Sources */,
 				252575631F7A1BCD00473DD8 /* NoticePeriodVC.swift in Sources */,
+				25CEC8B61FB19ACC00989374 /* SentMsgCell.swift in Sources */,
 				2583E1951F7BCF36006293F1 /* CongratulationVC.swift in Sources */,
 				252575811F7A1BCD00473DD8 /* SortByVC.swift in Sources */,
 				2525756B1F7A1BCD00473DD8 /* PreviewVC.swift in Sources */,
 				25891F251F7D22A7000ADE52 /* PaymentCardCell.swift in Sources */,
 				252573B91F7A139300473DD8 /* AppDelegate.swift in Sources */,
+				25CEC8B41FB19AB600989374 /* RecievedMsgCell.swift in Sources */,
 				252575681F7A1BCD00473DD8 /* CodeVC.swift in Sources */,
 				2525756A1F7A1BCD00473DD8 /* PhotoPreviewVC.swift in Sources */,
 				2525757B1F7A1BCD00473DD8 /* FAQVC.swift in Sources */,
 				2525757C1F7A1BCD00473DD8 /* PasswordVC.swift in Sources */,
 				2525755B1F7A1BCD00473DD8 /* AddHouseVC.swift in Sources */,
 				252575731F7A1BCD00473DD8 /* SelectBookingDatesVC.swift in Sources */,
-				252575121F7A1BB200473DD8 /* RecievedMsgTVCell.swift in Sources */,
 				252575831F7A1BCD00473DD8 /* SignupStep1VC.swift in Sources */,
 				2525757D1F7A1BCD00473DD8 /* PaymentInfoVC.swift in Sources */,
 				252575621F7A1BCD00473DD8 /* HouseAreaVC.swift in Sources */,
@@ -895,7 +918,6 @@
 				2525750E1F7A1BB200473DD8 /* HouseAdCVCell.swift in Sources */,
 				252575B91F7A1BF700473DD8 /* AkiraTextField.swift in Sources */,
 				2525756D1F7A1BCD00473DD8 /* BookingAdDetailVC.swift in Sources */,
-				252575141F7A1BB200473DD8 /* SentMsgTVCell.swift in Sources */,
 				252575071F7A1BB200473DD8 /* House.swift in Sources */,
 				252575C11F7A1BF700473DD8 /* YokoTextField.swift in Sources */,
 				252575781F7A1BCD00473DD8 /* LoginVC.swift in Sources */,
@@ -907,6 +929,7 @@
 				2525757E1F7A1BCD00473DD8 /* ProfileVC.swift in Sources */,
 				252575D71F7A1D0900473DD8 /* SwiftLoader.swift in Sources */,
 				252575801F7A1BCD00473DD8 /* FilterVC.swift in Sources */,
+				257B29B91FB428E400AA224D /* FaqTableCell.swift in Sources */,
 				252575881F7A1BCD00473DD8 /* SignupStep6VC.swift in Sources */,
 				252575081F7A1BB200473DD8 /* User.swift in Sources */,
 				2525756C1F7A1BCD00473DD8 /* BeforeBookOptionsVC.swift in Sources */,
@@ -917,6 +940,7 @@
 				2525757A1F7A1BCD00473DD8 /* AddNewCardVC.swift in Sources */,
 				252575BD1F7A1BF700473DD8 /* KaedeTextField.swift in Sources */,
 				2525756E1F7A1BCD00473DD8 /* BookingEmailConfirmVC.swift in Sources */,
+				25CEC8AF1FB1942900989374 /* ChatVC.swift in Sources */,
 				252575091F7A1BB200473DD8 /* IBDesignables.swift in Sources */,
 				252575771F7A1BCD00473DD8 /* ForgotPasswordVC.swift in Sources */,
 				252575061F7A1BB200473DD8 /* Constant.swift in Sources */,

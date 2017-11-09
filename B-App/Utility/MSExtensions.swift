@@ -85,6 +85,8 @@ extension Date {
 
 extension String
 {
+    
+    
     func getNumberString() -> String{
         var strLocal = self
         strLocal = strLocal.removeParticularCharacterString(character: "-")

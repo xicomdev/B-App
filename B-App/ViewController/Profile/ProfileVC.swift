@@ -10,6 +10,8 @@ import UIKit
 
 class ProfileVC: UIViewController {
 
+    @IBOutlet weak var imgvwDP: UIImageView!
+    @IBOutlet weak var btnSelectPhoto: UIButton!
     @IBOutlet weak var btnPassword: UIButton!
     @IBOutlet weak var txtfldEmail: UITextField!
     @IBOutlet weak var txtfldPhone: UITextField!
@@ -19,7 +21,13 @@ class ProfileVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        imgvwDP.layer.cornerRadius = imgvwDP.frame.size.width/2
+        txtfldEmail.text = User.me.email
+        txtfldName.text = User.me.firstname
+        txtfldLastName.text = User.me.lastname
+        
+        setInteractionOff()
+
     }
 
     @IBAction func actionEditBtn(_ sender: Any) {
@@ -30,6 +38,9 @@ class ProfileVC: UIViewController {
             btnEdit.setTitle("Edit", for: .normal)
             setInteractionOff()
         }
+    }
+    
+    @IBAction func actionSelectPhoto(_ sender: Any) {
     }
     
     @IBAction func actionBack(_ sender: Any) {
@@ -45,6 +56,7 @@ class ProfileVC: UIViewController {
         txtfldName.isUserInteractionEnabled = false
         txtfldLastName.isUserInteractionEnabled = false
         txtfldPhone.isUserInteractionEnabled = false
+        btnSelectPhoto.isUserInteractionEnabled = false
     }
     
     func setInteractionOn() {
@@ -52,6 +64,7 @@ class ProfileVC: UIViewController {
         txtfldName.isUserInteractionEnabled = true
         txtfldLastName.isUserInteractionEnabled = true
         txtfldPhone.isUserInteractionEnabled = true
+        btnSelectPhoto.isUserInteractionEnabled = true
     }
     
     override func didReceiveMemoryWarning() {

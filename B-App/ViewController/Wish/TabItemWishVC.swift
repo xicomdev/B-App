@@ -37,15 +37,25 @@ class TabItemWishVC: UIViewController, UICollectionViewDelegate, UICollectionVie
     }
     
     @IBAction func actionMyAdsBtn(_ sender: AnyObject) {
+        btnDesiredAds.setTitleColor(UIColor.lightGray, for: .normal)
+        btnMyAds.setTitleColor(UIColor.black, for: .normal)
     }
     
     @IBAction func actionDesiredAdsBtn(_ sender: AnyObject) {
+        btnMyAds.setTitleColor(UIColor.lightGray, for: .normal)
+        btnDesiredAds.setTitleColor(UIColor.black, for: .normal)
     }
     
     @IBAction func actionFilterBtn(_ sender: AnyObject) {
+        let filterVc = tabbarStoryboard.instantiateViewController(withIdentifier: "FilterVC") as! FilterVC
+        filterVc.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(filterVc, animated: true)
     }
     
     @IBAction func actionSortByBtn(_ sender: AnyObject) {
+        let sortVc = tabbarStoryboard.instantiateViewController(withIdentifier: "SortByVC") as! SortByVC
+        sortVc.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(sortVc, animated: true)
     }
     
     //MARK: - Tableview delegate and datsource methods 

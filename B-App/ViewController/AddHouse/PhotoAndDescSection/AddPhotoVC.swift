@@ -137,7 +137,6 @@ class AddPhotoVC: UIViewController , UIImagePickerControllerDelegate, UINavigati
                 }
             })
         }
-        
     }
     
     override func didReceiveMemoryWarning() {

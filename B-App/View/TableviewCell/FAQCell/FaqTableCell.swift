@@ -1,15 +1,16 @@
 //
-//  RecievedMsgTVCell.swift
+//  FaqTableCell.swift
 //  B-App
 //
-//  Created by Ankit Chhabra on 9/11/17.
+//  Created by Ankit Chhabra on 11/9/17.
 //  Copyright © 2017 Ankit Chhabra. All rights reserved.
 //
 
 import UIKit
 
-class RecievedMsgTVCell: UITableViewCell {
+class FaqTableCell: UITableViewCell {
 
+    @IBOutlet weak var lblTitle: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
