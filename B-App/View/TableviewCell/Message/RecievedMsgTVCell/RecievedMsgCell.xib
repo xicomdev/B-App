@@ -17,29 +17,17 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UserPlaceHolder" translatesAutoresizingMaskIntoConstraints="NO" id="FeZ-Ak-61q" customClass="SetCornerImageView" customModule="Drinks" customModuleProvider="target">
-                        <rect key="frame" x="10" y="10" width="40" height="40"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="40" id="Wqn-py-lPK"/>
-                            <constraint firstAttribute="height" constant="40" id="ey4-m5-ubg"/>
-                        </constraints>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                <real key="value" value="20"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                    </imageView>
                     <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AYR-FP-BZr" customClass="SetCornerButton" customModule="Drinks" customModuleProvider="target">
-                        <rect key="frame" x="60" y="10" width="250" height="59.5"/>
+                        <rect key="frame" x="10" y="10" width="108" height="59.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message text" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QgB-Kv-YMr">
-                                <rect key="frame" x="8" y="8" width="234" height="19.5"/>
+                                <rect key="frame" x="8" y="8" width="92" height="19.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 mins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8p-Kg-xPq">
-                                <rect key="frame" x="8" y="35.5" width="48.5" height="16"/>
+                                <rect key="frame" x="51.5" y="35.5" width="48.5" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="lVD-4i-oJF"/>
                                 </constraints>
@@ -51,7 +39,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="QgB-Kv-YMr" firstAttribute="top" secondItem="AYR-FP-BZr" secondAttribute="top" constant="8" id="6XH-wn-tUR"/>
-                            <constraint firstItem="T8p-Kg-xPq" firstAttribute="leading" secondItem="AYR-FP-BZr" secondAttribute="leading" constant="8" id="AIE-19-nI1"/>
+                            <constraint firstAttribute="trailing" secondItem="T8p-Kg-xPq" secondAttribute="trailing" constant="8" id="994-vM-XOD"/>
+                            <constraint firstItem="T8p-Kg-xPq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="AYR-FP-BZr" secondAttribute="leading" constant="8" id="AIE-19-nI1"/>
                             <constraint firstAttribute="bottom" secondItem="T8p-Kg-xPq" secondAttribute="bottom" constant="8" id="Aqp-al-lJt"/>
                             <constraint firstItem="QgB-Kv-YMr" firstAttribute="leading" secondItem="AYR-FP-BZr" secondAttribute="leading" constant="8" id="Eh5-Zt-yLo"/>
                             <constraint firstAttribute="trailing" secondItem="QgB-Kv-YMr" secondAttribute="trailing" constant="8" id="e0E-CJ-Tiy"/>
@@ -66,24 +55,17 @@
                 </subviews>
                 <color key="backgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
-                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="FeZ-Ak-61q" secondAttribute="bottom" constant="10" id="6uk-Qs-SEz"/>
                     <constraint firstItem="AYR-FP-BZr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Kxo-xw-0oH"/>
-                    <constraint firstItem="AYR-FP-BZr" firstAttribute="leading" secondItem="FeZ-Ak-61q" secondAttribute="trailing" constant="10" id="Sxk-ha-HEI"/>
-                    <constraint firstAttribute="trailing" secondItem="AYR-FP-BZr" secondAttribute="trailing" constant="10" id="TzM-Do-JU1"/>
+                    <constraint firstItem="AYR-FP-BZr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Le3-dd-F9n"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="AYR-FP-BZr" secondAttribute="trailing" constant="25" id="TzM-Do-JU1"/>
                     <constraint firstAttribute="bottom" secondItem="AYR-FP-BZr" secondAttribute="bottom" constant="10" id="aaC-pc-RVL"/>
-                    <constraint firstItem="FeZ-Ak-61q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="fhU-Th-m5f"/>
-                    <constraint firstItem="FeZ-Ak-61q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="sJs-Qv-yA9"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="imgVwUser" destination="FeZ-Ak-61q" id="hhI-lt-MKy"/>
                 <outlet property="lblMsg" destination="QgB-Kv-YMr" id="pIz-5s-iNj"/>
                 <outlet property="lblTime" destination="T8p-Kg-xPq" id="27J-vX-pAH"/>
             </connections>
             <point key="canvasLocation" x="26" y="70"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="UserPlaceHolder" width="84" height="84"/>
-    </resources>
 </document>

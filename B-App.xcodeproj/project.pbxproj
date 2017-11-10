@@ -95,6 +95,7 @@
 		252575D91F7A1D8400473DD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 252575D81F7A1D8400473DD8 /* Main.storyboard */; };
 		252575DB1F7A298100473DD8 /* current.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 252575DA1F7A298100473DD8 /* current.gpx */; };
 		252575DD1F7A2B6700473DD8 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252575DC1F7A2B6700473DD8 /* LocationManager.swift */; };
+		256F56A61FB5C8480013478D /* FBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256F56A51FB5C8480013478D /* FBManager.swift */; };
 		257B29B91FB428E400AA224D /* FaqTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257B29B71FB428E400AA224D /* FaqTableCell.swift */; };
 		257B29BA1FB428E400AA224D /* FaqTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 257B29B81FB428E400AA224D /* FaqTableCell.xib */; };
 		2583E1931F7BCC5D006293F1 /* PublishAdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2583E1921F7BCC5D006293F1 /* PublishAdVC.swift */; };
@@ -202,6 +203,8 @@
 		252575D81F7A1D8400473DD8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		252575DA1F7A298100473DD8 /* current.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = current.gpx; sourceTree = "<group>"; };
 		252575DC1F7A2B6700473DD8 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		256F56A51FB5C8480013478D /* FBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBManager.swift; sourceTree = "<group>"; };
+		256F56A71FB5CA1F0013478D /* B-App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "B-App-Bridging-Header.h"; sourceTree = "<group>"; };
 		257B29B71FB428E400AA224D /* FaqTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqTableCell.swift; sourceTree = "<group>"; };
 		257B29B81FB428E400AA224D /* FaqTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FaqTableCell.xib; sourceTree = "<group>"; };
 		2583E1921F7BCC5D006293F1 /* PublishAdVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublishAdVC.swift; sourceTree = "<group>"; };
@@ -267,6 +270,7 @@
 				252573C71F7A139300473DD8 /* Info.plist */,
 				252573C21F7A139300473DD8 /* Assets.xcassets */,
 				252573BF1F7A139300473DD8 /* B_App.xcdatamodeld */,
+				256F56A71FB5CA1F0013478D /* B-App-Bridging-Header.h */,
 			);
 			path = "B-App";
 			sourceTree = "<group>";
@@ -294,6 +298,7 @@
 		252574E61F7A1BB200473DD8 /* Handler */ = {
 			isa = PBXGroup;
 			children = (
+				256F56A21FB5B5330013478D /* FBManager */,
 				25A003A01FA3199B009BC240 /* Reachability.swift */,
 				25A003A21FA31A1B009BC240 /* ApiManager.swift */,
 			);
@@ -671,6 +676,14 @@
 			path = SwiftLoader;
 			sourceTree = "<group>";
 		};
+		256F56A21FB5B5330013478D /* FBManager */ = {
+			isa = PBXGroup;
+			children = (
+				256F56A51FB5C8480013478D /* FBManager.swift */,
+			);
+			path = FBManager;
+			sourceTree = "<group>";
+		};
 		257B29B61FB428BF00AA224D /* FAQCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -749,6 +762,7 @@
 					252573B41F7A139300473DD8 = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = QV46UN4P88;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -855,6 +869,8 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-B-App/Pods-B-App-resources.sh",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
 				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -884,6 +900,7 @@
 				25CEC8B61FB19ACC00989374 /* SentMsgCell.swift in Sources */,
 				2583E1951F7BCF36006293F1 /* CongratulationVC.swift in Sources */,
 				252575811F7A1BCD00473DD8 /* SortByVC.swift in Sources */,
+				256F56A61FB5C8480013478D /* FBManager.swift in Sources */,
 				2525756B1F7A1BCD00473DD8 /* PreviewVC.swift in Sources */,
 				25891F251F7D22A7000ADE52 /* PaymentCardCell.swift in Sources */,
 				252573B91F7A139300473DD8 /* AppDelegate.swift in Sources */,
@@ -1082,6 +1099,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = QV46UN4P88;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1097,6 +1115,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "5657095f-5386-457f-af5a-0c99e14a404c";
 				PROVISIONING_PROFILE_SPECIFIER = BAppDevProv;
+				SWIFT_OBJC_BRIDGING_HEADER = "B-App/B-App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -1107,6 +1127,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = QV46UN4P88;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1122,6 +1143,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "5657095f-5386-457f-af5a-0c99e14a404c";
 				PROVISIONING_PROFILE_SPECIFIER = BAppDevProv;
+				SWIFT_OBJC_BRIDGING_HEADER = "B-App/B-App-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

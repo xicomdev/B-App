@@ -8,12 +8,30 @@
 
 import UIKit
 
+struct SortInfo {
+    var sortEnabled = false
+    var sortCondition: SortCondition? = nil
+    
+}
+
+enum SortCondition : String {
+    case pending = "Pending",
+        placeNearToFar = "Place near to far",
+        placeFarToNear = "Place far to near",
+        price = "Price"
+}
+
+var sortDetails : SortInfo = SortInfo()
+
 class SortByVC: UIViewController {
 
     @IBOutlet weak var radioBtnPlaceFarNear: UIButton!
     @IBOutlet weak var radioBtnPlaceNearFar: UIButton!
     @IBOutlet weak var radioBtnPrice: UIButton!
     @IBOutlet weak var radioBtnPending: UIButton!
+    
+    var selectedCondition: SortCondition? = nil
+    var selectionDelegate: MSSelectionCallback!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,6 +45,8 @@ class SortByVC: UIViewController {
     }
     
     @IBAction func actionResetBtn(_ sender: AnyObject) {
+        sortDetails.sortCondition = nil
+        sortDetails.sortEnabled = false
     }
     
     @IBAction func actionRadioPending(_ sender: AnyObject) {
@@ -34,6 +54,7 @@ class SortByVC: UIViewController {
         radioBtnPrice.isSelected = false
         radioBtnPlaceNearFar.isSelected = false
         radioBtnPlaceFarNear.isSelected = false
+        selectedCondition = .pending
     }
     
     @IBAction func actionRadioPrice(_ sender: AnyObject) {
@@ -41,6 +62,7 @@ class SortByVC: UIViewController {
         radioBtnPrice.isSelected = true
         radioBtnPlaceNearFar.isSelected = false
         radioBtnPlaceFarNear.isSelected = false
+        selectedCondition = .price
     }
     
     @IBAction func actionRadioPlaceNearFar(_ sender: AnyObject) {
@@ -48,6 +70,7 @@ class SortByVC: UIViewController {
         radioBtnPrice.isSelected = false
         radioBtnPlaceNearFar.isSelected = true
         radioBtnPlaceFarNear.isSelected = false
+        selectedCondition = .placeNearToFar
     }
     
     @IBAction func actionRadioPlaceFarNear(_ sender: AnyObject) {
@@ -55,9 +78,16 @@ class SortByVC: UIViewController {
         radioBtnPrice.isSelected = false
         radioBtnPlaceNearFar.isSelected = false
         radioBtnPlaceFarNear.isSelected = true
+        selectedCondition = .placeFarToNear
     }
     
     @IBAction func actionApplyBtn(_ sender: AnyObject) {
+        sortDetails.sortEnabled = true
+        sortDetails.sortCondition = selectedCondition
+        if selectionDelegate != nil {
+            selectionDelegate.moveWithSortSelection!()
+            self.navigationController?.popToRootViewController(animated: true)
+        }
     }
     
     override func didReceiveMemoryWarning() {

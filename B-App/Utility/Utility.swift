@@ -10,6 +10,12 @@ import Foundation
 import UIKit
 
 
+@objc protocol MSSelectionCallback {
+    @objc optional func moveWithFilterSelection()
+    @objc optional func moveWithSortSelection()
+
+    
+}
 func FontBold(size: CGFloat) -> (UIFont)
 {
     return UIFont.boldSystemFont(ofSize: size)

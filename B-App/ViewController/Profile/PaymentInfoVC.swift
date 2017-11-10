@@ -27,6 +27,7 @@ class PaymentInfoVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     }
     
     @IBAction func actionAddCard(_ sender: Any) {
+        self.pushViewController(controllerName: "AddNewCardVC", storyboardName: profileStoryboard)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -43,7 +44,6 @@ class PaymentInfoVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         cell.lblTitle.text = (aryCards[indexPath.row] as NSString).replacingCharacters(in: NSMakeRange(0, 12), with: "************")
         return cell
     }
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

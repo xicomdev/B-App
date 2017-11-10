@@ -7,164 +7,164 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02A8CD406255AE081E99A62241BAC587 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57A158F2BC16B51F44317120ED6C793 /* IQToolbar.swift */; };
+		02A8CD406255AE081E99A62241BAC587 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86D547E769EA18495F125E1D3621D0 /* IQToolbar.swift */; };
 		05EDC01F1C6B1FBE82E2B3014A205A08 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0232C5FAB9CE0433294429F9FA3FEC84 /* UIKit.framework */; };
-		07432E8DEA8B25795C7C545AA67A0187 /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E40DBDF741B0AB0255D2DE98D5CD919 /* ImageTransition.swift */; };
-		0A5C7FBDD4CAC089ADD65398F2CCB936 /* SwiftLoader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2232D7D0DE87D19C6163EA9974C5FEDC /* SwiftLoader-dummy.m */; };
-		0A7AF0E9B853211DE831CAAD4C21F11C /* FSCalendarConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 59B924554BF86BBD9AFA21051EE0DE51 /* FSCalendarConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07432E8DEA8B25795C7C545AA67A0187 /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FE975D8E4D20B5B862F0E07C2EF52D /* ImageTransition.swift */; };
+		0A5C7FBDD4CAC089ADD65398F2CCB936 /* SwiftLoader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB76B4151C1D02226875390D178F0A25 /* SwiftLoader-dummy.m */; };
+		0A7AF0E9B853211DE831CAAD4C21F11C /* FSCalendarConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B6A6824BA7EC7D98842CFFE5395FACB /* FSCalendarConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0CA6357476373C221D44C498AA1D65FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AED863F5FB653C9519E637AE3994D1 /* Foundation.framework */; };
-		0DD46AF65FABE6D2BDE4501F807046A6 /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = AB35D237754B45A86BE68A7308D4F7BD /* FSCalendarAppearance.m */; };
-		0EB579FACF51C8E9262C550520B417B3 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = ECD44F34CD9088CE28537AEFAA0A45F5 /* Data */; };
-		10AD5E70FDD53228153032C58FBF4D52 /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B4EE458FE9AC9C7E6C595F77AD3704 /* String+MD5.swift */; };
-		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0080AC1355937DCFD4423981FAF6F0A0 /* Timeline.swift */; };
-		145565DF253A857CE63707442F9E65EF /* DKImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EAF88DA3CB47FD403E416D95079C1A /* DKImagePickerController.swift */; };
-		1827E7D94F3A12CA0C58EF33AE4B026D /* KingfisherOptionsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289626901B012FC2B758D15B4CED745B /* KingfisherOptionsInfo.swift */; };
-		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A18647E98D040E2EE310720D90183C16 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1DAF3BB88351664576507F774FEB051C /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE0E6A447CB2BA6DED3B1CD25CBD5A /* Filter.swift */; };
-		1DB0C83F0C43AD8582F585E426CA95E3 /* DKAssetGroupDetailVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9920E3A01A55621D9F0F48A92CEAE86 /* DKAssetGroupDetailVideoCell.swift */; };
-		1F0F49D029C4471F2AE3712D1FCB1D8A /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A49E8F9EBF170F8DF6B12B208D5A7C9 /* IQTitleBarButtonItem.swift */; };
-		1FCC0970C8435F10768CA84C2025A177 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E16380CCD111D99AD820C8F98AD1CC /* Resource.swift */; };
-		2082EB4AA16440FFD5479FAFC0181066 /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A3F18A19AE83A2DD1E54F2B4BA4CC9 /* Indicator.swift */; };
-		2237DF53C31AF7E0FE05521CEB46F201 /* DKImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F66E5D2A45408C1FADC48A93F34449 /* DKImageManager.swift */; };
-		2384AC373E752D55842F37DE4F2CE2A7 /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE71CEA3F4E5576C8A2C28CE93DF5820 /* IQUIScrollView+Additions.swift */; };
-		243E3FBB25AD6B55CDF6971E0D22DA4F /* FSCalendarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B06D0288130B5247F184521F1C3E259 /* FSCalendarConstants.m */; };
-		282E6F0E67F3799B0ABCB9ED96B666A9 /* RequestModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CA9814269A041B47C63E624727F395 /* RequestModifier.swift */; };
-		2A2FE216328BFC23AF9D30EAEFAA2303 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 32140D18D5DFA417D004900C04C48C71 /* IQKeyboardManager.bundle */; };
-		2C5C2468A6671012F32D2664CF55ECB7 /* DKPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CE4545DBA6CE1B8D1E7E7997159752 /* DKPopoverViewController.swift */; };
+		0DD46AF65FABE6D2BDE4501F807046A6 /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FE1845F3C690ED9A622138E08A4451 /* FSCalendarAppearance.m */; };
+		0EB579FACF51C8E9262C550520B417B3 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 7AD40528391B03C678B320F1B5996C09 /* Data */; };
+		10AD5E70FDD53228153032C58FBF4D52 /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C8AF2113D916928CE9EEA551057A6D /* String+MD5.swift */; };
+		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278B812A2F0A4CC7E3C421AADB29779B /* Timeline.swift */; };
+		145565DF253A857CE63707442F9E65EF /* DKImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0E555292938DFB613E86FD42357FC4 /* DKImagePickerController.swift */; };
+		1827E7D94F3A12CA0C58EF33AE4B026D /* KingfisherOptionsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0EC2D98FE5AE739497D2D81490D7BE /* KingfisherOptionsInfo.swift */; };
+		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 24F9A44A0BAEAC1E456C731ED1F0C47D /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DAF3BB88351664576507F774FEB051C /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA67DC8AF09DA1A933156ECCA40DE79F /* Filter.swift */; };
+		1DB0C83F0C43AD8582F585E426CA95E3 /* DKAssetGroupDetailVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FFC0C509E2CF25B1C239A982842607 /* DKAssetGroupDetailVideoCell.swift */; };
+		1F0F49D029C4471F2AE3712D1FCB1D8A /* IQTitleBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7158AAE03AE829DDD5E87FCF90A6B9 /* IQTitleBarButtonItem.swift */; };
+		1FCC0970C8435F10768CA84C2025A177 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A008AE329E3E64CF4DCF123EB397BC79 /* Resource.swift */; };
+		2082EB4AA16440FFD5479FAFC0181066 /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E5C9A851605344DA40AAB657E4CBCA /* Indicator.swift */; };
+		2237DF53C31AF7E0FE05521CEB46F201 /* DKImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FDD31E076EFE8A066DDC02E3DBC3F /* DKImageManager.swift */; };
+		2384AC373E752D55842F37DE4F2CE2A7 /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CC449BE42971427603C748516A6F9C /* IQUIScrollView+Additions.swift */; };
+		243E3FBB25AD6B55CDF6971E0D22DA4F /* FSCalendarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 26764A863CB91856E7B9B5F9149BDE6D /* FSCalendarConstants.m */; };
+		282E6F0E67F3799B0ABCB9ED96B666A9 /* RequestModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5781FB8007B64941345E1FFBD060297E /* RequestModifier.swift */; };
+		2A2FE216328BFC23AF9D30EAEFAA2303 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 032979319EE412AF7653C03C584F671B /* IQKeyboardManager.bundle */; };
+		2C5C2468A6671012F32D2664CF55ECB7 /* DKPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE3508B9EC2F9BC097D9237307FE4D9 /* DKPopoverViewController.swift */; };
 		2E36C1A287226816DC7B86AB5A9E7638 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0232C5FAB9CE0433294429F9FA3FEC84 /* UIKit.framework */; };
-		2F288ED3641B2B4775884C462AE377E6 /* Kingfisher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 47B4A632EB6C43E808EB96134BAAA995 /* Kingfisher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2FA38EE00B075A92B2F37BF1AC3682D5 /* SwiftLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA42B7934311A0EDBD7A31E518EB4105 /* SwiftLoader.swift */; };
-		3077B4186B916A8DB980BBB72DF7FFB9 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50160E1E4F080EE1EB4271C255466CC /* IQUIView+Hierarchy.swift */; };
-		33F2A6BCAC92D6D39C5221205DA79758 /* DKAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3E4BC632B8C2B9C72381E4776147CE /* DKAsset.swift */; };
-		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B7ACF7239A00F27EEA0B79E116F4F3 /* TaskDelegate.swift */; };
-		36F7A3789FC014B9BA09498EB2A067E0 /* DKAssetGroupDetailBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0280D89D748399D3FDF0A4055F303057 /* DKAssetGroupDetailBaseCell.swift */; };
-		36F7E6BFF60D3C6F020A1562B2A3C0A6 /* DKAssetGroupCellItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E5CAD6D1EBD14ABD2801F50750C713 /* DKAssetGroupCellItemProtocol.swift */; };
-		383C9A8DB84B83233633C3A00A2C1608 /* KingfisherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14424F682FBF5C05320B8C0FF43B8CCB /* KingfisherManager.swift */; };
-		38EC13E10AB4C5F1C326D0BF9BEC0F21 /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6B2DDB1A7CA28DFC889FEF712450B6 /* RangeSlider.swift */; };
-		40765AAA791D6DFC0022639E348F0E6A /* FormatIndicatedCacheSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920A35BE326D2F097A7B517FCC536C5C /* FormatIndicatedCacheSerializer.swift */; };
-		413C2A3759ABEC870AAE61F28C258C31 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A2FDD4A3BE83ACBE49F40E5C28B4B5 /* ImageDownloader.swift */; };
-		4882783C5576C5D43CE79C03DE33C3DD /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975E55E67CD738FAF3610C77C24A9BB2 /* IQKeyboardManager.swift */; };
-		48EC78A50C61424D4DFDC33A325CAA72 /* ThreadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFB7E1EA561874DB3AB9BEC95B01AFA /* ThreadHelper.swift */; };
-		49094EE541FB7CF9895BA8DEDD490C8E /* DKCameraResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D353F892D1792D9232E9F2DECDD66596 /* DKCameraResource.swift */; };
-		49F1C59A34E52484FD2B6462CE8D7C91 /* FSCalendarDelegationProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DCDF757CECFD6710C5D599E557E9BB3 /* FSCalendarDelegationProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4B3D2513653ADA50E999E2B9F2ED5A91 /* DKImagePickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 85C53AFFBCC317D866B36834B2673C73 /* DKImagePickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4EB40349047CF5B5B91CD05AE7F02A35 /* DKAssetGroupDetailImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BD528DB30B474F94C808C4759FFCED /* DKAssetGroupDetailImageCell.swift */; };
+		2F288ED3641B2B4775884C462AE377E6 /* Kingfisher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6195BE9480B1315EB6A686CCD26AC918 /* Kingfisher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FA38EE00B075A92B2F37BF1AC3682D5 /* SwiftLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E764D499B39CB934BDF4466666597A1 /* SwiftLoader.swift */; };
+		3077B4186B916A8DB980BBB72DF7FFB9 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF8462966C7A86D4AD9F24750CBEC90 /* IQUIView+Hierarchy.swift */; };
+		33F2A6BCAC92D6D39C5221205DA79758 /* DKAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF5999B90F64A6390E2245071C6F420 /* DKAsset.swift */; };
+		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F3C761DC0ABE87619D2287C7C0F109 /* TaskDelegate.swift */; };
+		36F7A3789FC014B9BA09498EB2A067E0 /* DKAssetGroupDetailBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A36DE187CA6C1B54CC4E7E8210772A2 /* DKAssetGroupDetailBaseCell.swift */; };
+		36F7E6BFF60D3C6F020A1562B2A3C0A6 /* DKAssetGroupCellItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BBD18A9DD1EAF9553047FDC9AA9901 /* DKAssetGroupCellItemProtocol.swift */; };
+		383C9A8DB84B83233633C3A00A2C1608 /* KingfisherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C96DC32AA6D2918583C267137C94B /* KingfisherManager.swift */; };
+		38EC13E10AB4C5F1C326D0BF9BEC0F21 /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531D4396DECAEDD705E81CAC5A3ED5F /* RangeSlider.swift */; };
+		40765AAA791D6DFC0022639E348F0E6A /* FormatIndicatedCacheSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ED582ECC31868A00D440C768D2249B /* FormatIndicatedCacheSerializer.swift */; };
+		413C2A3759ABEC870AAE61F28C258C31 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D148A8FD72B8253CB0256D311F3A24E /* ImageDownloader.swift */; };
+		4882783C5576C5D43CE79C03DE33C3DD /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EFB150AE3CE410277B379E74F85173 /* IQKeyboardManager.swift */; };
+		48EC78A50C61424D4DFDC33A325CAA72 /* ThreadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62461CF158945DE77ADD2B1911E745B6 /* ThreadHelper.swift */; };
+		49094EE541FB7CF9895BA8DEDD490C8E /* DKCameraResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325BA11DA6A3315A3CEC642B39362F05 /* DKCameraResource.swift */; };
+		49F1C59A34E52484FD2B6462CE8D7C91 /* FSCalendarDelegationProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = A1E9A401A1A84C112520046222F6EB88 /* FSCalendarDelegationProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B3D2513653ADA50E999E2B9F2ED5A91 /* DKImagePickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = C8AC2F587D8CFA192260876E37F586A9 /* DKImagePickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EB40349047CF5B5B91CD05AE7F02A35 /* DKAssetGroupDetailImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDECA4A526EC9ACCDDC805034EF21F5 /* DKAssetGroupDetailImageCell.swift */; };
 		52416A6AC7387ECACCC45596498D96AD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 485942EBDBC44FE1DF9F852E4AB46960 /* CFNetwork.framework */; };
-		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648B0433798EEA898C5B7C67C692FEBF /* Request.swift */; };
-		55F4561E55A6CF264BEDB8FB18B5FA8C /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C860823E638D5105D520C1D526CB7ADB /* FSCalendarCell.m */; };
-		57D4F36C483A487950FA1F143AE5DCBC /* FSCalendarDelegationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = A854B0F0D0E6E81729ED5772D4CC56D1 /* FSCalendarDelegationFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3EC8DD9F6838FCE1525CDD91AE67FE /* Request.swift */; };
+		55F4561E55A6CF264BEDB8FB18B5FA8C /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C25F1A9F0BCAE86FB466B8680D23D688 /* FSCalendarCell.m */; };
+		57D4F36C483A487950FA1F143AE5DCBC /* FSCalendarDelegationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E014B689E919143BDDC388AA6379E18 /* FSCalendarDelegationFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		58360C2B9299BDE249D87322B388C24F /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC03D583568820D58BCE80EA9749E12 /* Photos.framework */; };
-		5B5D8AE167BD8E304CE474A9B8DBA2B4 /* Kingfisher.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D9A3D4D18BDE00E2288148BFF190961 /* Kingfisher.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5C62C27E2855390100E9519DE3095DDB /* FSCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDB5CC3BF0AFCAEB98E5DBCB642CD87 /* FSCalendarHeaderView.m */; };
-		5D83206A9A4656F11D511158EC8E0784 /* CacheSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEA7D08C962390528A4F71529BB051 /* CacheSerializer.swift */; };
-		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D14720CF44AB76C1C7FE1C83B03CB /* DispatchQueue+Alamofire.swift */; };
-		625F05F7702CA250DEB66A699766DA9E /* FSCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E9379727C94F1961AAC74D8E743793B /* FSCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D372016B0DFF4D0BF1A9F6BAE5F880 /* ServerTrustPolicy.swift */; };
+		5B5D8AE167BD8E304CE474A9B8DBA2B4 /* Kingfisher.h in Headers */ = {isa = PBXBuildFile; fileRef = 2905AF8F8A1BDBF12CC75CEEA46AE90C /* Kingfisher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C62C27E2855390100E9519DE3095DDB /* FSCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2EBC4A66BE3B7599E617DDBE4BB3107 /* FSCalendarHeaderView.m */; };
+		5D83206A9A4656F11D511158EC8E0784 /* CacheSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981862AF72E8FE5654393AB08A8EF988 /* CacheSerializer.swift */; };
+		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A494F20E660B13628412BADE4C8E47F /* DispatchQueue+Alamofire.swift */; };
+		625F05F7702CA250DEB66A699766DA9E /* FSCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9286CDFC96FBE4AAD3A3B32FB5F8CB91 /* FSCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CCA25847D9DC6EB4085DFB1B5E453D /* ServerTrustPolicy.swift */; };
 		632BC81AB4D659AC7634E614F07188D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AED863F5FB653C9519E637AE3994D1 /* Foundation.framework */; };
-		64FFC1F647245F61C405AE7AC1DA9D31 /* IQUIWindow+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D1B69A942ED96E78D605343A45C0DA /* IQUIWindow+Hierarchy.swift */; };
-		65537F6217E29EE3DAF6B747668A04A0 /* DKCameraResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 622E88FB31A290F76C64456E7986B1EA /* DKCameraResource.bundle */; };
-		66737F48243D514269C499D65A7B4DBE /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C595E3F3800F8396FFFBF37CBB7095C /* FSCalendar.m */; };
-		6EC9566670A495905D9177EF70E641AF /* CountryPickerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A43BD75C1A3033BD7C654812AEDDF67A /* CountryPickerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64FFC1F647245F61C405AE7AC1DA9D31 /* IQUIWindow+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FB60296B78FDC0615387F8A1B3994A /* IQUIWindow+Hierarchy.swift */; };
+		65537F6217E29EE3DAF6B747668A04A0 /* DKCameraResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2CE082D7681DE3B905904E98561581E2 /* DKCameraResource.bundle */; };
+		66737F48243D514269C499D65A7B4DBE /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6988C034708E091CFFAB4F4BEC5FA5 /* FSCalendar.m */; };
+		6EC9566670A495905D9177EF70E641AF /* CountryPickerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 93622DA91E714FBF25F0D2D5818B8B6D /* CountryPickerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7049F24974FC7E44633F68D9001E41B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0232C5FAB9CE0433294429F9FA3FEC84 /* UIKit.framework */; };
-		712FF0C70B4C85F44AFB5CDDC1DD9018 /* FSCalendarDynamicHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 4723655DA9792C41CF5200D3198B973A /* FSCalendarDynamicHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7189871E49605C9979F6153B11659E1A /* DKAssetGroupDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7239BF74FCD69C3B4C47134AF6711F86 /* DKAssetGroupDetailVC.swift */; };
-		72BDBC5C3293B4AF0B121E9FD27E4FD1 /* CountryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4BB222AD68941B1AE847C112DBFCB8 /* CountryView.swift */; };
+		712FF0C70B4C85F44AFB5CDDC1DD9018 /* FSCalendarDynamicHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = D1F4EA75F40B501441B489A9A4A6DE3F /* FSCalendarDynamicHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7189871E49605C9979F6153B11659E1A /* DKAssetGroupDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2435DD81EA92061599B31F589830620 /* DKAssetGroupDetailVC.swift */; };
+		72BDBC5C3293B4AF0B121E9FD27E4FD1 /* CountryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4696B3163AF0896DADC41B8D32E42259 /* CountryView.swift */; };
 		73B9C996AED49ED7CF8EC2A6F1738059 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AED863F5FB653C9519E637AE3994D1 /* Foundation.framework */; };
 		7554E1D5399EDB8BB59CC05256805AEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AED863F5FB653C9519E637AE3994D1 /* Foundation.framework */; };
-		7929FEE8E706A02C317FC810AACFF115 /* DKImagePickerControllerDefaultUIDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D55F74D7ED16EB52256256B4AA25E35 /* DKImagePickerControllerDefaultUIDelegate.swift */; };
-		7A2505CE706504238316375E3AAE528A /* CountryView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE17F6B623F05EEA2A4A0F31E71A24 /* CountryView.xib */; };
-		7ADA1FEC41CB7712FC7F05AF3FCB0F68 /* DKPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642434FB9CBA92F5F8A8C64C780A9F3B /* DKPermissionView.swift */; };
-		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E982D4897DE79B4CFA97CA6C65951C /* SessionDelegate.swift */; };
-		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC97F47558E0365498EBD898FE19B6C /* Result.swift */; };
-		7E320930D1F4218F307C7FB786F0C514 /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B6B7AC82EDA37031F1AC28D7389F5B /* FSCalendarCollectionView.m */; };
+		7929FEE8E706A02C317FC810AACFF115 /* DKImagePickerControllerDefaultUIDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDA73F1B8DDA68D2979F15E9A69EB18 /* DKImagePickerControllerDefaultUIDelegate.swift */; };
+		7A2505CE706504238316375E3AAE528A /* CountryView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 2AE77D3E0987E835F45BE4A9AC119EFF /* CountryView.xib */; };
+		7ADA1FEC41CB7712FC7F05AF3FCB0F68 /* DKPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C89960EB62DD590DCC0F76EB91BB16 /* DKPermissionView.swift */; };
+		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4643C3FB4695B6502B327ED6E35FDCFD /* SessionDelegate.swift */; };
+		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = E419441ABD7A52C96491848E4F578128 /* Result.swift */; };
+		7E320930D1F4218F307C7FB786F0C514 /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA266D85463F6BFC7E0B1346E594A46 /* FSCalendarCollectionView.m */; };
 		81A2F975614A9B94F265CD3BA816B0A4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B39F51F5D86B3EC3EF53D2925B6685 /* QuartzCore.framework */; };
-		82B1AFADFB310B7F7DA6F4BB56791065 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 134B840155AB784D1B2EADC5BB8B5120 /* Images */; };
+		82B1AFADFB310B7F7DA6F4BB56791065 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 6E530F20CFE0F1BAD56B583FD5341BCB /* Images */; };
 		82D8D05A9371BEA2CF7FAA44CA725328 /* CountryPicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A8B090E4D9C876FEA862F978F829600B /* CountryPicker.bundle */; };
-		83227430E8741EB66A6250FCC3A38D88 /* DKAssetGroupDetailCameraCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C039300EADEE43D71D984047974E31 /* DKAssetGroupDetailCameraCell.swift */; };
-		8632FCFA0471878FC95240290BE97458 /* FSCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A5E8BB2237481E7290C466E6F56308 /* FSCalendar-dummy.m */; };
-		866952184CCB9236E8D567A97A7C3224 /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863460BEAE17CAD6210E51CB20C91D3C /* IQUIViewController+Additions.swift */; };
-		873BA68C2E24D634D38E4A8BCB74B08D /* Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E4B69B924C09A7571C2188968EE90D /* Kingfisher.swift */; };
+		83227430E8741EB66A6250FCC3A38D88 /* DKAssetGroupDetailCameraCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D501C1EAC552AD88302E09393B1A6425 /* DKAssetGroupDetailCameraCell.swift */; };
+		8632FCFA0471878FC95240290BE97458 /* FSCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8E961316DB579EAC229DDE71FC9119 /* FSCalendar-dummy.m */; };
+		866952184CCB9236E8D567A97A7C3224 /* IQUIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D618F9EA594489E7B81404AC614DF6CD /* IQUIViewController+Additions.swift */; };
+		873BA68C2E24D634D38E4A8BCB74B08D /* Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46A61E7E5DFD4B4A2569ABA8744B6C3 /* Kingfisher.swift */; };
 		874D04D1491FF0D91D6701CC7F6EC74A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AED863F5FB653C9519E637AE3994D1 /* Foundation.framework */; };
-		87AD9D97F0F94C85720FC018235CD8A9 /* IQKeyboardManagerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 80A5C1D2E12E3FE68DA1081F5423A66E /* IQKeyboardManagerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		88A25F661A4435D57041D21700515CC6 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0B3B1DD3318186B271584000849654 /* IQTextView.swift */; };
-		8CEABF8E1147C60C2BED5968C6E03E9B /* DKImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6F7B5786AB42255A0C44869F01D73C51 /* DKImagePickerController.bundle */; };
-		8D7D42C25F9430F572E14200C399D57B /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A6B722B18136FFE95FD84ACB10DCF4 /* ImageCache.swift */; };
-		8E8E60E0406837DF7038528766C90AEA /* FSCalendarScopeHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D3712B511137644C9FD57A2A378D5 /* FSCalendarScopeHandle.m */; };
-		8F7003744526BA3547F59200EE4F4D16 /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 928B378B65A6D5F713DA6468496D993C /* FSCalendarWeekdayView.m */; };
-		91693C90642539B4F411E794548A9E2A /* FSCalendarCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 22E3F5F13B932AC9A58DC8D1B1504BB7 /* FSCalendarCollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		93B26BF01F813A066DABDD02E08C9AFA /* SwiftRangeSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD429A7620DF01857A4B129587A6206B /* SwiftRangeSlider-dummy.m */; };
-		93D444FC9D79520E14FB8EF178F0B76E /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D951C5D4B99BCF3C14F47B05B452ED /* ImageProcessor.swift */; };
-		949E8A7CFA24E8186291DF7F69E13C54 /* CountryPickerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F0D1C1CC8450A503E7B582E840E733 /* CountryPickerSwift-dummy.m */; };
-		950D8E334E011B13CC5786595E6AE615 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29575B3D37307A2EE4C9587B60175C0E /* Image.swift */; };
-		96E021283F050BCADF9A9B668C77B203 /* FSCalendarExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F30789430C2F78E38C4EC7082ACC4E27 /* FSCalendarExtensions.m */; };
-		9B9C1A095D68E3B91BD38F910C6F2E7F /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6637A323F2B7CE4685F359C2EBFC7B9 /* IQKeyboardManagerConstants.swift */; };
-		9C178A996A6A0F14CF4B1F1D1BA4B2EB /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F125EA9A330D33B256ECC57282C9AEDE /* IQUIView+IQKeyboardToolbar.swift */; };
-		9CF04404C01848D25E78B22A88BFF129 /* FSCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 89635C1DD7F064FCA122C109DE3F26DD /* FSCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87AD9D97F0F94C85720FC018235CD8A9 /* IQKeyboardManagerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 288B753E6D1960114AAE422224B8C647 /* IQKeyboardManagerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88A25F661A4435D57041D21700515CC6 /* IQTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F6EC82B69582A767963D99F5B6B411 /* IQTextView.swift */; };
+		8CEABF8E1147C60C2BED5968C6E03E9B /* DKImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D1CF02BB7F5108D496698027B693ECD7 /* DKImagePickerController.bundle */; };
+		8D7D42C25F9430F572E14200C399D57B /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF34D3307EF6A66022D5EB0669B6F2FC /* ImageCache.swift */; };
+		8E8E60E0406837DF7038528766C90AEA /* FSCalendarScopeHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = D55B346D66FAA30735365D395E4A1155 /* FSCalendarScopeHandle.m */; };
+		8F7003744526BA3547F59200EE4F4D16 /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 392BCDC6DEF992E561DB10F0996B32A7 /* FSCalendarWeekdayView.m */; };
+		91693C90642539B4F411E794548A9E2A /* FSCalendarCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 04E613271146D41B20893C75DEFBD81D /* FSCalendarCollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93B26BF01F813A066DABDD02E08C9AFA /* SwiftRangeSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2C58928432F7D84FABDD541C0FE3C9 /* SwiftRangeSlider-dummy.m */; };
+		93D444FC9D79520E14FB8EF178F0B76E /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B294950B53CDA799ACCF28FB6ADBA64 /* ImageProcessor.swift */; };
+		949E8A7CFA24E8186291DF7F69E13C54 /* CountryPickerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14565FFAA1B72FF0CC0FBC1D0CF4D8B9 /* CountryPickerSwift-dummy.m */; };
+		950D8E334E011B13CC5786595E6AE615 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD8D39FBBD720A4CA8C8B57DB1EFFE3 /* Image.swift */; };
+		96E021283F050BCADF9A9B668C77B203 /* FSCalendarExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC4270EB60C71ECFCFC5F263B5C2769 /* FSCalendarExtensions.m */; };
+		9B9C1A095D68E3B91BD38F910C6F2E7F /* IQKeyboardManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A831723A081724A243121B6AF79C6BAE /* IQKeyboardManagerConstants.swift */; };
+		9C178A996A6A0F14CF4B1F1D1BA4B2EB /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC57BA37B9553001792188782D71D9F2 /* IQUIView+IQKeyboardToolbar.swift */; };
+		9CF04404C01848D25E78B22A88BFF129 /* FSCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 15587A249D3147239CEED49183016BE0 /* FSCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D0D93DA8BB6979EF78ECF24AFD50733 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0232C5FAB9CE0433294429F9FA3FEC84 /* UIKit.framework */; };
-		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135C5EE14CD55E1DF98C2C241EDDEC2C /* AFError.swift */; };
+		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD301229842480402625044AA10DFD6 /* AFError.swift */; };
 		9FE799FF5512C02C097E2D184B61C4BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AED863F5FB653C9519E637AE3994D1 /* Foundation.framework */; };
-		9FF9CE8BFD44B8CEA8B4BAEA481B45E7 /* DKGroupDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EAE842A7CF5B2597DBC1304237F21D /* DKGroupDataManager.swift */; };
-		A000A7A7023F7FB4CEDD1023EB87BF93 /* FSCalendarCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EA65C9B841254DE7D42C9C936A533274 /* FSCalendarCollectionViewLayout.m */; };
-		A1B6800A77A4851908991E622D1ADC7D /* SwiftRangeSlider-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BD30588C5F7B9B4AFCE105700259134D /* SwiftRangeSlider-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FF9CE8BFD44B8CEA8B4BAEA481B45E7 /* DKGroupDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F2691A872BAACEDC4065D6397917C3 /* DKGroupDataManager.swift */; };
+		A000A7A7023F7FB4CEDD1023EB87BF93 /* FSCalendarCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DA17D53FF8C4021AAA4D8D012A17A027 /* FSCalendarCollectionViewLayout.m */; };
+		A1B6800A77A4851908991E622D1ADC7D /* SwiftRangeSlider-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 94866B431A3174699FBDA365E1E252CC /* SwiftRangeSlider-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A25F717B5E0C4E6A6DE933B0BF0F6417 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AED863F5FB653C9519E637AE3994D1 /* Foundation.framework */; };
-		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF055450B97B8819344A69588C2D09E /* NetworkReachabilityManager.swift */; };
-		A3D1147CED9648BEDE2E47B8E8A44924 /* FSCalendar+Deprecated.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F97FF77D463A4B9DB8869A498284FA /* FSCalendar+Deprecated.m */; };
-		A7703376DBB0D8B97C9C3D562BE9E587 /* DKCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699277B0C708F993885657C08EFA9095 /* DKCamera.swift */; };
-		A7EC09EC6EFAB3778E0A0341E7DC9CE3 /* AnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E05BF35E82D646D8B31D3D5C6CC7F0 /* AnimatedImageView.swift */; };
-		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1350C8B8CF51FB3FA14C5FF5C4E01E /* Alamofire-dummy.m */; };
-		AA978FCF3EF1D8D10DDE3BB4C6312A7B /* FSCalendarDelegationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C378E43446BD3BA86E2D5506249B2CB /* FSCalendarDelegationProxy.m */; };
-		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3BBC65E947EB438C06D51C74CFF9FA /* SessionManager.swift */; };
-		AE59610E662935E303BF1801918C4088 /* DKAssetGroupGridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7CD59EFA3C20B3066C3AFBC08AAFEA /* DKAssetGroupGridLayout.swift */; };
-		B0033530A0EAABBB31CD46CA2899F3BD /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00020B9FE3549503661C94FB3701D572 /* Box.swift */; };
+		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517BBDBEC19DA338B01A5D7D8B8F4A40 /* NetworkReachabilityManager.swift */; };
+		A3D1147CED9648BEDE2E47B8E8A44924 /* FSCalendar+Deprecated.m in Sources */ = {isa = PBXBuildFile; fileRef = F43247B28B8FC78344E09F4E86F16C34 /* FSCalendar+Deprecated.m */; };
+		A7703376DBB0D8B97C9C3D562BE9E587 /* DKCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4779BAB8132C7E8102E6B2B4980AEC8C /* DKCamera.swift */; };
+		A7EC09EC6EFAB3778E0A0341E7DC9CE3 /* AnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C163C88926138998A931F2418AE53610 /* AnimatedImageView.swift */; };
+		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0195065F89CCA34BB70B349284B269ED /* Alamofire-dummy.m */; };
+		AA978FCF3EF1D8D10DDE3BB4C6312A7B /* FSCalendarDelegationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F781BA145057115FBD1A4E9D5E90B4 /* FSCalendarDelegationProxy.m */; };
+		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB187FAEE7DB62324245DB20278784B /* SessionManager.swift */; };
+		AE59610E662935E303BF1801918C4088 /* DKAssetGroupGridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9839C1EBAA8C90DC6EB9055295D5E248 /* DKAssetGroupGridLayout.swift */; };
+		B0033530A0EAABBB31CD46CA2899F3BD /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34961707BBC6DCE84E8BFFB6D1E663A2 /* Box.swift */; };
 		B0E7319FEB67DDEC8E57D0AF3CDAFFFB /* Pods-B-App-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BC37CD520644D0AAAD792EA914EA5D9E /* Pods-B-App-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B0EF72D8E2CB6594FEE4DB2600B32650 /* IQKeyboardManagerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DCC8524A387DF4B0245BFF18AA89BBF /* IQKeyboardManagerSwift-dummy.m */; };
-		B1A7ADAE2CAEDA5D703CE5C6A6DA405B /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A67D847282EA87E375984FDA3EB569 /* IQUITextFieldView+Additions.swift */; };
-		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B958181EC9D7D466BEFA17D306E3DB /* MultipartFormData.swift */; };
-		B75EE9D05B6FD40665922C4B04CB224E /* DKImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F79E13DEC35A6862C80E89E9E8BA895 /* DKImageResource.swift */; };
-		BA46FB7E6FF4B10142B2761764BFADC0 /* DKImagePickerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 799CF6AD78A06CD49E167BCB64CBB5E9 /* DKImagePickerController-dummy.m */; };
+		B0EF72D8E2CB6594FEE4DB2600B32650 /* IQKeyboardManagerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DFFFC1DB321DBF4B8B5255A773DF88 /* IQKeyboardManagerSwift-dummy.m */; };
+		B1A7ADAE2CAEDA5D703CE5C6A6DA405B /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26C447AE64DDED5C299777884373381 /* IQUITextFieldView+Additions.swift */; };
+		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524999A40E0E0AB2275584CB917FD46E /* MultipartFormData.swift */; };
+		B75EE9D05B6FD40665922C4B04CB224E /* DKImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FEC21E92E0F3AECA92855FB1A99DF /* DKImageResource.swift */; };
+		BA46FB7E6FF4B10142B2761764BFADC0 /* DKImagePickerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 542BAE94C90FF44B8FFA8565A2751EEC /* DKImagePickerController-dummy.m */; };
 		BB04209DDB72CD325AE09D2EC3EBC380 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1DE75C57D80BA55CB857C92E0AEB3CF /* CoreGraphics.framework */; };
-		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793326E85C1ABB3C4FECF79298418C6E /* Validation.swift */; };
-		BDA1ED05CBA5580B30785A431D5B231B /* FSCalendarTransitionCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 84C770431BE582E23081239C47EA7445 /* FSCalendarTransitionCoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47166DAFB99503210E0CDCC4A18BB7A7 /* ParameterEncoding.swift */; };
-		BEE15E26040D187BC57978E7F90E3A0B /* DKImagePickerController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0629765402A6731BF593FB75BAA168B0 /* DKImagePickerController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C17D68C964954EF1C0BB3C314C2F452F /* FSCalendarWeekdayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 460DE661C24D64B232718803E93F1886 /* FSCalendarWeekdayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F6CBC5ABA67644040295B8C60B9453 /* Validation.swift */; };
+		BDA1ED05CBA5580B30785A431D5B231B /* FSCalendarTransitionCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = CE9B79AC4EF2380EC0277C7C43093200 /* FSCalendarTransitionCoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AA999B2C315DF117B577B27EBC8219 /* ParameterEncoding.swift */; };
+		BEE15E26040D187BC57978E7F90E3A0B /* DKImagePickerController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 945CC825049506A11193D5D5A7451EA8 /* DKImagePickerController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C17D68C964954EF1C0BB3C314C2F452F /* FSCalendarWeekdayView.h in Headers */ = {isa = PBXBuildFile; fileRef = ECCC44F8AD76B459768EA723858E7AF3 /* FSCalendarWeekdayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C318A1BD17954FF7AD88D4A9D705E44A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AED863F5FB653C9519E637AE3994D1 /* Foundation.framework */; };
-		C393CB1AB8BC6D8C1351B192D76B3B81 /* RangeSliderTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD1BB29A6011965D8C0FA98128ADCF /* RangeSliderTrack.swift */; };
-		C40F6D2FE20755C045864C23F73260C8 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FF05BBDA588AF6685DF0A6935C75F4 /* IQKeyboardReturnKeyHandler.swift */; };
+		C393CB1AB8BC6D8C1351B192D76B3B81 /* RangeSliderTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC08E75F55C71BE65060255255064969 /* RangeSliderTrack.swift */; };
+		C40F6D2FE20755C045864C23F73260C8 /* IQKeyboardReturnKeyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9569010A417E53BCBF15DC9D0A2E3BE1 /* IQKeyboardReturnKeyHandler.swift */; };
 		C522EA8619A113C94A91004901B05308 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AED863F5FB653C9519E637AE3994D1 /* Foundation.framework */; };
-		C69663957B2EB4C7CF4D8192480AA8B4 /* FSCalendarExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = F991477BE163ED5F116DFE7500F5124C /* FSCalendarExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CB29E86F679E9DDC5C5A1C89482701CA /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F63BE40E615105441E28F709521436A /* IQPreviousNextView.swift */; };
-		CB4222BC34D92C2E06A5BCF730FEFE71 /* Kingfisher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7C0FDB25F4A494365F3AF24F282C14 /* Kingfisher-dummy.m */; };
-		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B5E864C2D53EA1C6C86393E50CB2A7 /* Response.swift */; };
-		CB8DF027448816C623E9B02A3685A59F /* ImageView+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D48EAFAB22AD2EBF238A3E554A4DEC /* ImageView+Kingfisher.swift */; };
+		C69663957B2EB4C7CF4D8192480AA8B4 /* FSCalendarExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 027C470F843827F80B12DC56D394CBFC /* FSCalendarExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB29E86F679E9DDC5C5A1C89482701CA /* IQPreviousNextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5EDFFA79343EA2F8A32CBE9B7267F5 /* IQPreviousNextView.swift */; };
+		CB4222BC34D92C2E06A5BCF730FEFE71 /* Kingfisher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD3280810150A586408442BD0DFF95F /* Kingfisher-dummy.m */; };
+		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD01C417611D7CD0E5971DEF5EB292C5 /* Response.swift */; };
+		CB8DF027448816C623E9B02A3685A59F /* ImageView+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1988FA55F73319D5D6ACD61A4922E736 /* ImageView+Kingfisher.swift */; };
 		CB90FF728620ED92A8E061CF7DD40F34 /* Pods-B-App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5519E3E0E9E57EAF565A8229CD475160 /* Pods-B-App-dummy.m */; };
-		CC93854C66A808596F5A3B58FDB49BF8 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97ECF6D1CEAF11C70CC527BF3557EB5 /* IQNSArray+Sort.swift */; };
-		CDB052C277F6148BBAACB2C2C7C6321B /* FSCalendarTransitionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE6691C4CCEFA5CB7FA9013B5A86C87 /* FSCalendarTransitionCoordinator.m */; };
-		D4F3BEEB43698475E5443150838E84ED /* FSCalendarStickyHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0900BF24FE43600634FC65C5A95D6267 /* FSCalendarStickyHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D6F2C07D9A70ACF7B8758C3A961B6892 /* DKAssetGroupListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE016FDE28510FEBDBEA918F18CBD66F /* DKAssetGroupListVC.swift */; };
-		DF93149F959F779B2F7AE50E8EAD1C26 /* CountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AC9481EB5C520AE37E83262BFEDD44 /* CountryPicker.swift */; };
-		E1B077BAFD8840CA3D96BB4545B7B255 /* FSCalendarScopeHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A420CE361216A70E41B186B2BB33196 /* FSCalendarScopeHandle.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E3B93CDF418A2678614DDAD9331C0C0D /* FSCalendarCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8236CCA4BEC61D060911722A97A0FC75 /* FSCalendarCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E710FF1F4EB4B125F9C5DBDFE3B9320F /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F15565DE9BC70D196684E9E249307F /* Placeholder.swift */; };
-		EC2CCB07B8CCEF669FAF345D29691030 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD11CA7B4A93945D8341D337664C8B5 /* IQKeyboardManagerConstantsInternal.swift */; };
-		ECC3FBCF0EBCB8EC036E526F7781FBE9 /* SwiftLoader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F5527AB3BFE9C63053A5F484E95D9834 /* SwiftLoader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE078A13105301767BE0ECAC1705A9B5 /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D781F472890182602921A9D764E58AB /* FSCalendarStickyHeader.m */; };
+		CC93854C66A808596F5A3B58FDB49BF8 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6998567FE3EDC94E0704CB98EE3C4ACA /* IQNSArray+Sort.swift */; };
+		CDB052C277F6148BBAACB2C2C7C6321B /* FSCalendarTransitionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E9253EF86A91CD005B38880A9B8467 /* FSCalendarTransitionCoordinator.m */; };
+		D4F3BEEB43698475E5443150838E84ED /* FSCalendarStickyHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = D856A1A3E416A5815EB450A3585EC85B /* FSCalendarStickyHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6F2C07D9A70ACF7B8758C3A961B6892 /* DKAssetGroupListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8213728CE4017E02CF3208481A7E32BC /* DKAssetGroupListVC.swift */; };
+		DF93149F959F779B2F7AE50E8EAD1C26 /* CountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F8CA6778169566A3DB70E951247033 /* CountryPicker.swift */; };
+		E1B077BAFD8840CA3D96BB4545B7B255 /* FSCalendarScopeHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DB70A3F3D94CE5DA931D1E5DA729C17 /* FSCalendarScopeHandle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3B93CDF418A2678614DDAD9331C0C0D /* FSCalendarCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = B80E473615265718C2816FA49AC2AD5C /* FSCalendarCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E710FF1F4EB4B125F9C5DBDFE3B9320F /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A109E836C62D8AAFDF76FE74144E9A /* Placeholder.swift */; };
+		EC2CCB07B8CCEF669FAF345D29691030 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F29C64AA8809A0FCD85061840CD05A /* IQKeyboardManagerConstantsInternal.swift */; };
+		ECC3FBCF0EBCB8EC036E526F7781FBE9 /* SwiftLoader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67937A0D864C0C6EE9B95C20E00A3D09 /* SwiftLoader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE078A13105301767BE0ECAC1705A9B5 /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 325582A49C2C5CA6D6BDF02477AD3C04 /* FSCalendarStickyHeader.m */; };
 		EE20C85515D53DE61D8435080677F58E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0232C5FAB9CE0433294429F9FA3FEC84 /* UIKit.framework */; };
 		EF79B42952D4B407242484D9CC034392 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B39F51F5D86B3EC3EF53D2925B6685 /* QuartzCore.framework */; };
-		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDEF19C51D507CBD52B1D22A838E2F7 /* Notifications.swift */; };
-		F48DD4AF7C254B7A2F67A690AF8EF143 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB0A75194563DD09BCD50F4B8C4C195 /* IQBarButtonItem.swift */; };
-		F54E2CAED6EAE74D9E1F878E10FA30BD /* FSCalendarDelegationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7108356E2F90250BADABE870927D3A /* FSCalendarDelegationFactory.m */; };
-		F6A1EC699E916996EF2B7B4C6137DB8D /* FSCalendarHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 674957AEAE1106D7CCADB5C9C137AF49 /* FSCalendarHeaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B309326BBC7755E1C0E09EF42B3FF08C /* ResponseSerialization.swift */; };
-		F746795DC38AD2DB3D584A110174FED0 /* FSCalendarCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = B17F3F5DFEF47E0CF8DF0E981CEFAE13 /* FSCalendarCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F75DFB5A6E8642C4964CC3968A2DD0C8 /* FSCalendarCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0367EEB5D4B71F3C36F528DE57E5084B /* FSCalendarCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F83EC01C22CFA63099580414E8944D07 /* RangeSliderKnob.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56EC56E57B29361411415AD5E7F5ED1 /* RangeSliderKnob.swift */; };
-		F8461624534E12B8F35A5A4CB99C1A66 /* DKAssetGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADB996091C0F54ADF2F78EEC9649D2C /* DKAssetGroup.swift */; };
-		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D6F055F15D3ECE4B4C13D42BA23B17 /* Alamofire.swift */; };
-		F99792883819ADBD16123F91F6A9F3F8 /* ImagePrefetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCC223EFDE066998F2AC88B04AF60B5 /* ImagePrefetcher.swift */; };
-		FAC3C67720C7E6EF51CCAE58F62645BC /* UIButton+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC51141181A94425D61AAD7030537C67 /* UIButton+Kingfisher.swift */; };
-		FD051B5A9F3E663081656EB261A724D2 /* FSCalendarAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = C92134146C9C7502DDAB1FE89AA8E2C6 /* FSCalendarAppearance.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FFBEAF63A28F6A7DD881E8256F9503B7 /* FSCalendarCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CBCCA1FAE300509BDE860637E4CCD28 /* FSCalendarCalculator.m */; };
+		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10229060BDB5EE47A207AD323C7FCE28 /* Notifications.swift */; };
+		F48DD4AF7C254B7A2F67A690AF8EF143 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45958A228EA13D77407D74739EBDB824 /* IQBarButtonItem.swift */; };
+		F54E2CAED6EAE74D9E1F878E10FA30BD /* FSCalendarDelegationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A060C824A18B95373A7535641A408521 /* FSCalendarDelegationFactory.m */; };
+		F6A1EC699E916996EF2B7B4C6137DB8D /* FSCalendarHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 237493B267A985FB5A66EF5B52143E37 /* FSCalendarHeaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A27B8C25FC9566AE7C9AE592D611DCF /* ResponseSerialization.swift */; };
+		F746795DC38AD2DB3D584A110174FED0 /* FSCalendarCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E2735E5D00248152DE9C7EAA35AF3FF /* FSCalendarCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F75DFB5A6E8642C4964CC3968A2DD0C8 /* FSCalendarCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E68F8C7AA6D4911D4E5937574B9B8396 /* FSCalendarCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F83EC01C22CFA63099580414E8944D07 /* RangeSliderKnob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C2C0FC2E5914445797527B7000B515 /* RangeSliderKnob.swift */; };
+		F8461624534E12B8F35A5A4CB99C1A66 /* DKAssetGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B45D57FA87C2BBFA1D61EC3F93F422 /* DKAssetGroup.swift */; };
+		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2EE47E994626B1FDE90AF4CBCF77A7 /* Alamofire.swift */; };
+		F99792883819ADBD16123F91F6A9F3F8 /* ImagePrefetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB1B7EB27F943C8A055254C53F49AD6 /* ImagePrefetcher.swift */; };
+		FAC3C67720C7E6EF51CCAE58F62645BC /* UIButton+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89140AB1F25C647395C5F775A95B54D0 /* UIButton+Kingfisher.swift */; };
+		FD051B5A9F3E663081656EB261A724D2 /* FSCalendarAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 9995F8352C2D7A1EA2DF45009E70AD59 /* FSCalendarAppearance.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFBEAF63A28F6A7DD881E8256F9503B7 /* FSCalendarCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5BA8756161ED86B3262620CB851CE /* FSCalendarCalculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -234,208 +234,212 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00020B9FE3549503661C94FB3701D572 /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Sources/Box.swift; sourceTree = "<group>"; };
-		0080AC1355937DCFD4423981FAF6F0A0 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		0195065F89CCA34BB70B349284B269ED /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		0232C5FAB9CE0433294429F9FA3FEC84 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		0280D89D748399D3FDF0A4055F303057 /* DKAssetGroupDetailBaseCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKAssetGroupDetailBaseCell.swift; path = DKImagePickerController/View/Cell/DKAssetGroupDetailBaseCell.swift; sourceTree = "<group>"; };
-		02BA7876DBC2BF5EB51724C155F7E9CB /* Kingfisher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kingfisher.xcconfig; sourceTree = "<group>"; };
-		034F0D78DE787002AA824A5E5A2AB58B /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		0367EEB5D4B71F3C36F528DE57E5084B /* FSCalendarCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCell.h; path = FSCalendar/FSCalendarCell.h; sourceTree = "<group>"; };
-		03B6DD1C6C8C8D4530001BC3553BA3D7 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
-		058EC7F5F11BF17ECC022094A57D022B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0629765402A6731BF593FB75BAA168B0 /* DKImagePickerController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DKImagePickerController-umbrella.h"; sourceTree = "<group>"; };
-		08A3F18A19AE83A2DD1E54F2B4BA4CC9 /* Indicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Indicator.swift; path = Sources/Indicator.swift; sourceTree = "<group>"; };
-		0900BF24FE43600634FC65C5A95D6267 /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarStickyHeader.h; path = FSCalendar/FSCalendarStickyHeader.h; sourceTree = "<group>"; };
-		09327197993FC45DD933F42351266AFF /* IQKeyboardManagerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = IQKeyboardManagerSwift.modulemap; sourceTree = "<group>"; };
+		027C470F843827F80B12DC56D394CBFC /* FSCalendarExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarExtensions.h; path = FSCalendar/FSCalendarExtensions.h; sourceTree = "<group>"; };
+		032979319EE412AF7653C03C584F671B /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = IQKeyboardManager.bundle; path = IQKeyboardManagerSwift/Resources/IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		0341F03B27E6ADD421EE81D2F2407F4D /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterCore.framework; path = iOS/TwitterCore.framework; sourceTree = "<group>"; };
+		03748A48D50F14CC645F720302F7CEBC /* IQKeyboardManagerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-prefix.pch"; sourceTree = "<group>"; };
+		04E613271146D41B20893C75DEFBD81D /* FSCalendarCollectionViewLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionViewLayout.h; path = FSCalendar/FSCalendarCollectionViewLayout.h; sourceTree = "<group>"; };
+		0531D4396DECAEDD705E81CAC5A3ED5F /* RangeSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RangeSlider.swift; path = SwiftRangeSlider/RangeSlider.swift; sourceTree = "<group>"; };
 		09AED863F5FB653C9519E637AE3994D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		0ADB996091C0F54ADF2F78EEC9649D2C /* DKAssetGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKAssetGroup.swift; path = DKImageManager/Data/Model/DKAssetGroup.swift; sourceTree = "<group>"; };
+		0A6BC794AF2E28A9A44716F9A111BA8D /* CountryPickerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CountryPickerSwift.xcconfig; sourceTree = "<group>"; };
+		0B6A6824BA7EC7D98842CFFE5395FACB /* FSCalendarConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarConstants.h; path = FSCalendar/FSCalendarConstants.h; sourceTree = "<group>"; };
+		0BD05E0AE0C663B9442EAB5EF78735BD /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		0CD301229842480402625044AA10DFD6 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		0CF944927110CCDB3C6028284B559A0D /* CountryPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CountryPicker.framework; path = CountryPickerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0D9A3D4D18BDE00E2288148BFF190961 /* Kingfisher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kingfisher.h; path = Sources/Kingfisher.h; sourceTree = "<group>"; };
+		0DD3280810150A586408442BD0DFF95F /* Kingfisher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kingfisher-dummy.m"; sourceTree = "<group>"; };
 		0DEF4377FC850502F79AB7246237180F /* SwiftRangeSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftRangeSlider.framework; path = SwiftRangeSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		10D951C5D4B99BCF3C14F47B05B452ED /* ImageProcessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageProcessor.swift; path = Sources/ImageProcessor.swift; sourceTree = "<group>"; };
-		134B840155AB784D1B2EADC5BB8B5120 /* Images */ = {isa = PBXFileReference; includeInIndex = 1; name = Images; path = CountryPicker/Assets/CountryPicker.bundle/Images; sourceTree = "<group>"; };
-		135C5EE14CD55E1DF98C2C241EDDEC2C /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
-		14424F682FBF5C05320B8C0FF43B8CCB /* KingfisherManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherManager.swift; path = Sources/KingfisherManager.swift; sourceTree = "<group>"; };
-		15D1B69A942ED96E78D605343A45C0DA /* IQUIWindow+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIWindow+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIWindow+Hierarchy.swift"; sourceTree = "<group>"; };
+		0E2C58928432F7D84FABDD541C0FE3C9 /* SwiftRangeSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftRangeSlider-dummy.m"; sourceTree = "<group>"; };
+		0E764D499B39CB934BDF4466666597A1 /* SwiftLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftLoader.swift; path = src/SwiftLoader/SwiftLoader.swift; sourceTree = "<group>"; };
+		0F3FEC21E92E0F3AECA92855FB1A99DF /* DKImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKImageResource.swift; path = DKImagePickerController/DKImageResource.swift; sourceTree = "<group>"; };
+		10229060BDB5EE47A207AD323C7FCE28 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		13A109E836C62D8AAFDF76FE74144E9A /* Placeholder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Placeholder.swift; path = Sources/Placeholder.swift; sourceTree = "<group>"; };
+		13AA999B2C315DF117B577B27EBC8219 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		14565FFAA1B72FF0CC0FBC1D0CF4D8B9 /* CountryPickerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CountryPickerSwift-dummy.m"; sourceTree = "<group>"; };
+		14A6B540F3F0272AABFC496E5BC72477 /* ResourceBundle-CountryPicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-CountryPicker-Info.plist"; sourceTree = "<group>"; };
+		15587A249D3147239CEED49183016BE0 /* FSCalendar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendar.h; path = FSCalendar/FSCalendar.h; sourceTree = "<group>"; };
+		16C89960EB62DD590DCC0F76EB91BB16 /* DKPermissionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKPermissionView.swift; path = DKImagePickerController/View/DKPermissionView.swift; sourceTree = "<group>"; };
 		16EEA85C68D0217CE5BF601BA54BA21D /* Pods-B-App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-B-App-acknowledgements.markdown"; sourceTree = "<group>"; };
 		171BD11B53EA90C84F52B84A0D5343A7 /* Pods-B-App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-B-App-acknowledgements.plist"; sourceTree = "<group>"; };
+		18D9699D815E8A3372506DB6183A5901 /* CountryPickerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CountryPickerSwift-prefix.pch"; sourceTree = "<group>"; };
+		1988FA55F73319D5D6ACD61A4922E736 /* ImageView+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ImageView+Kingfisher.swift"; path = "Sources/ImageView+Kingfisher.swift"; sourceTree = "<group>"; };
+		1A5EDFFA79343EA2F8A32CBE9B7267F5 /* IQPreviousNextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQPreviousNextView.swift; path = IQKeyboardManagerSwift/IQToolbar/IQPreviousNextView.swift; sourceTree = "<group>"; };
 		1BDC7525FA4A77731B331FEBA0F6ACED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1DE53C3B1EB87C86D034AA72AEC20ECF /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
-		1EDE17F6B623F05EEA2A4A0F31E71A24 /* CountryView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CountryView.xib; path = CountryPicker/Classes/CountryView.xib; sourceTree = "<group>"; };
-		2006EBAFB0C7FA654CBDBE05473476F9 /* Kingfisher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Kingfisher.modulemap; sourceTree = "<group>"; };
-		20D48EAFAB22AD2EBF238A3E554A4DEC /* ImageView+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ImageView+Kingfisher.swift"; path = "Sources/ImageView+Kingfisher.swift"; sourceTree = "<group>"; };
-		2232D7D0DE87D19C6163EA9974C5FEDC /* SwiftLoader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftLoader-dummy.m"; sourceTree = "<group>"; };
-		22E3F5F13B932AC9A58DC8D1B1504BB7 /* FSCalendarCollectionViewLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionViewLayout.h; path = FSCalendar/FSCalendarCollectionViewLayout.h; sourceTree = "<group>"; };
-		2525E03C8896A36D05EFA3006D4719F1 /* SwiftLoader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftLoader.modulemap; sourceTree = "<group>"; };
-		27A2FDD4A3BE83ACBE49F40E5C28B4B5 /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Sources/ImageDownloader.swift; sourceTree = "<group>"; };
-		289626901B012FC2B758D15B4CED745B /* KingfisherOptionsInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherOptionsInfo.swift; path = Sources/KingfisherOptionsInfo.swift; sourceTree = "<group>"; };
-		28EFB9A649003E228BC12627E80C4282 /* DKImagePickerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DKImagePickerController-prefix.pch"; sourceTree = "<group>"; };
-		28F0D1C1CC8450A503E7B582E840E733 /* CountryPickerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CountryPickerSwift-dummy.m"; sourceTree = "<group>"; };
-		29575B3D37307A2EE4C9587B60175C0E /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Sources/Image.swift; sourceTree = "<group>"; };
-		2A552724EAB0E769F026C49860914EA7 /* DKImagePickerController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DKImagePickerController.modulemap; sourceTree = "<group>"; };
+		237493B267A985FB5A66EF5B52143E37 /* FSCalendarHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarHeaderView.h; path = FSCalendar/FSCalendarHeaderView.h; sourceTree = "<group>"; };
+		24F9A44A0BAEAC1E456C731ED1F0C47D /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		25E9253EF86A91CD005B38880A9B8467 /* FSCalendarTransitionCoordinator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarTransitionCoordinator.m; path = FSCalendar/FSCalendarTransitionCoordinator.m; sourceTree = "<group>"; };
+		26764A863CB91856E7B9B5F9149BDE6D /* FSCalendarConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarConstants.m; path = FSCalendar/FSCalendarConstants.m; sourceTree = "<group>"; };
+		278B812A2F0A4CC7E3C421AADB29779B /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		288B753E6D1960114AAE422224B8C647 /* IQKeyboardManagerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-umbrella.h"; sourceTree = "<group>"; };
+		2905AF8F8A1BDBF12CC75CEEA46AE90C /* Kingfisher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kingfisher.h; path = Sources/Kingfisher.h; sourceTree = "<group>"; };
+		29254D85D42E4989253638A0B5EF6AC5 /* DKImagePickerController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DKImagePickerController.xcconfig; sourceTree = "<group>"; };
 		2AC04853AE68828999790F15155AFBB2 /* Pods_B_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_B_App.framework; path = "Pods-B-App.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B06D0288130B5247F184521F1C3E259 /* FSCalendarConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarConstants.m; path = FSCalendar/FSCalendarConstants.m; sourceTree = "<group>"; };
-		2C378E43446BD3BA86E2D5506249B2CB /* FSCalendarDelegationProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarDelegationProxy.m; path = FSCalendar/FSCalendarDelegationProxy.m; sourceTree = "<group>"; };
-		2F6B2DDB1A7CA28DFC889FEF712450B6 /* RangeSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RangeSlider.swift; path = SwiftRangeSlider/RangeSlider.swift; sourceTree = "<group>"; };
+		2AE77D3E0987E835F45BE4A9AC119EFF /* CountryView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CountryView.xib; path = CountryPicker/Classes/CountryView.xib; sourceTree = "<group>"; };
+		2C0EC2D98FE5AE739497D2D81490D7BE /* KingfisherOptionsInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherOptionsInfo.swift; path = Sources/KingfisherOptionsInfo.swift; sourceTree = "<group>"; };
+		2CE082D7681DE3B905904E98561581E2 /* DKCameraResource.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = DKCameraResource.bundle; path = DKCamera/DKCameraResource.bundle; sourceTree = "<group>"; };
+		2D3958F4D71969F5337A3BE35DB45453 /* DKImagePickerController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DKImagePickerController.modulemap; sourceTree = "<group>"; };
+		2E014B689E919143BDDC388AA6379E18 /* FSCalendarDelegationFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegationFactory.h; path = FSCalendar/FSCalendarDelegationFactory.h; sourceTree = "<group>"; };
+		2E5958057F32A023EA68DE8E3D9D3DEE /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		2EDA73F1B8DDA68D2979F15E9A69EB18 /* DKImagePickerControllerDefaultUIDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKImagePickerControllerDefaultUIDelegate.swift; path = DKImagePickerController/DKImagePickerControllerDefaultUIDelegate.swift; sourceTree = "<group>"; };
 		2F86237D034107106DD494525FD807AE /* DKImagePickerController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DKImagePickerController.framework; path = DKImagePickerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		31C039300EADEE43D71D984047974E31 /* DKAssetGroupDetailCameraCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKAssetGroupDetailCameraCell.swift; path = DKImagePickerController/View/Cell/DKAssetGroupDetailCameraCell.swift; sourceTree = "<group>"; };
-		31DABB6D43FC8AF2862BF96A3D1CFEB0 /* CountryPickerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CountryPickerSwift.modulemap; sourceTree = "<group>"; };
-		32140D18D5DFA417D004900C04C48C71 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = IQKeyboardManager.bundle; path = IQKeyboardManagerSwift/Resources/IQKeyboardManager.bundle; sourceTree = "<group>"; };
-		35B4EE458FE9AC9C7E6C595F77AD3704 /* String+MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+MD5.swift"; path = "Sources/String+MD5.swift"; sourceTree = "<group>"; };
-		36BD528DB30B474F94C808C4759FFCED /* DKAssetGroupDetailImageCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKAssetGroupDetailImageCell.swift; path = DKImagePickerController/View/Cell/DKAssetGroupDetailImageCell.swift; sourceTree = "<group>"; };
-		36D372016B0DFF4D0BF1A9F6BAE5F880 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
-		37E05BF35E82D646D8B31D3D5C6CC7F0 /* AnimatedImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedImageView.swift; path = Sources/AnimatedImageView.swift; sourceTree = "<group>"; };
-		3BCC223EFDE066998F2AC88B04AF60B5 /* ImagePrefetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePrefetcher.swift; path = Sources/ImagePrefetcher.swift; sourceTree = "<group>"; };
-		3CE6691C4CCEFA5CB7FA9013B5A86C87 /* FSCalendarTransitionCoordinator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarTransitionCoordinator.m; path = FSCalendar/FSCalendarTransitionCoordinator.m; sourceTree = "<group>"; };
-		3F1D3712B511137644C9FD57A2A378D5 /* FSCalendarScopeHandle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarScopeHandle.m; path = FSCalendar/FSCalendarScopeHandle.m; sourceTree = "<group>"; };
-		3F63BE40E615105441E28F709521436A /* IQPreviousNextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQPreviousNextView.swift; path = IQKeyboardManagerSwift/IQToolbar/IQPreviousNextView.swift; sourceTree = "<group>"; };
-		460DE661C24D64B232718803E93F1886 /* FSCalendarWeekdayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarWeekdayView.h; path = FSCalendar/FSCalendarWeekdayView.h; sourceTree = "<group>"; };
-		47166DAFB99503210E0CDCC4A18BB7A7 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		4723655DA9792C41CF5200D3198B973A /* FSCalendarDynamicHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDynamicHeader.h; path = FSCalendar/FSCalendarDynamicHeader.h; sourceTree = "<group>"; };
-		47B4A632EB6C43E808EB96134BAAA995 /* Kingfisher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-umbrella.h"; sourceTree = "<group>"; };
+		30FE1845F3C690ED9A622138E08A4451 /* FSCalendarAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarAppearance.m; path = FSCalendar/FSCalendarAppearance.m; sourceTree = "<group>"; };
+		31E09E5C90B0EBE8476322C2E3A196E8 /* SwiftLoader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftLoader-prefix.pch"; sourceTree = "<group>"; };
+		325582A49C2C5CA6D6BDF02477AD3C04 /* FSCalendarStickyHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarStickyHeader.m; path = FSCalendar/FSCalendarStickyHeader.m; sourceTree = "<group>"; };
+		325BA11DA6A3315A3CEC642B39362F05 /* DKCameraResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKCameraResource.swift; path = DKCamera/DKCameraResource.swift; sourceTree = "<group>"; };
+		34961707BBC6DCE84E8BFFB6D1E663A2 /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Sources/Box.swift; sourceTree = "<group>"; };
+		35BDB3DBF6109E9DE6B499973321D757 /* FSCalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSCalendar.xcconfig; sourceTree = "<group>"; };
+		35C2C0FC2E5914445797527B7000B515 /* RangeSliderKnob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RangeSliderKnob.swift; path = SwiftRangeSlider/RangeSliderKnob.swift; sourceTree = "<group>"; };
+		392BCDC6DEF992E561DB10F0996B32A7 /* FSCalendarWeekdayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarWeekdayView.m; path = FSCalendar/FSCalendarWeekdayView.m; sourceTree = "<group>"; };
+		39F6CBC5ABA67644040295B8C60B9453 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		3A494F20E660B13628412BADE4C8E47F /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		3B6988C034708E091CFFAB4F4BEC5FA5 /* FSCalendar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendar.m; path = FSCalendar/FSCalendar.m; sourceTree = "<group>"; };
+		3C013BA1B88190EEE09075C6C4D13F04 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		3C92D3CB3A58C6BB427613EA583945FB /* Kingfisher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-prefix.pch"; sourceTree = "<group>"; };
+		40CD64B64649649737FD6B8A77AD6734 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		425242AD4CB0D6FF574AA40BC69E3ECD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4259B464006A1BE59CA74FD497DD7246 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		45958A228EA13D77407D74739EBDB824 /* IQBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift; sourceTree = "<group>"; };
+		4643C3FB4695B6502B327ED6E35FDCFD /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		4696B3163AF0896DADC41B8D32E42259 /* CountryView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CountryView.swift; path = CountryPicker/Classes/CountryView.swift; sourceTree = "<group>"; };
+		4779BAB8132C7E8102E6B2B4980AEC8C /* DKCamera.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKCamera.swift; path = DKCamera/DKCamera.swift; sourceTree = "<group>"; };
 		485942EBDBC44FE1DF9F852E4AB46960 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		4A1350C8B8CF51FB3FA14C5FF5C4E01E /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		4CD5B7A31C14BBD727275D3112081D61 /* IQKeyboardManagerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManagerSwift.xcconfig; sourceTree = "<group>"; };
-		4D55F74D7ED16EB52256256B4AA25E35 /* DKImagePickerControllerDefaultUIDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKImagePickerControllerDefaultUIDelegate.swift; path = DKImagePickerController/DKImagePickerControllerDefaultUIDelegate.swift; sourceTree = "<group>"; };
-		4EFE23F477788F15026F50CD26CBFB7D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4F79E13DEC35A6862C80E89E9E8BA895 /* DKImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKImageResource.swift; path = DKImagePickerController/DKImageResource.swift; sourceTree = "<group>"; };
-		4FEC2BD59D25E33F296CE48EE801EBCF /* SwiftRangeSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftRangeSlider-prefix.pch"; sourceTree = "<group>"; };
-		512572843FD61A971580189C8F748B71 /* ResourceBundle-CountryPicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-CountryPicker-Info.plist"; sourceTree = "<group>"; };
-		54A5E8BB2237481E7290C466E6F56308 /* FSCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FSCalendar-dummy.m"; sourceTree = "<group>"; };
+		4A36DE187CA6C1B54CC4E7E8210772A2 /* DKAssetGroupDetailBaseCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKAssetGroupDetailBaseCell.swift; path = DKImagePickerController/View/Cell/DKAssetGroupDetailBaseCell.swift; sourceTree = "<group>"; };
+		4B294950B53CDA799ACCF28FB6ADBA64 /* ImageProcessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageProcessor.swift; path = Sources/ImageProcessor.swift; sourceTree = "<group>"; };
+		4CD5BA8756161ED86B3262620CB851CE /* FSCalendarCalculator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCalculator.m; path = FSCalendar/FSCalendarCalculator.m; sourceTree = "<group>"; };
+		4DB70A3F3D94CE5DA931D1E5DA729C17 /* FSCalendarScopeHandle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarScopeHandle.h; path = FSCalendar/FSCalendarScopeHandle.h; sourceTree = "<group>"; };
+		517BBDBEC19DA338B01A5D7D8B8F4A40 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		524999A40E0E0AB2275584CB917FD46E /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		542BAE94C90FF44B8FFA8565A2751EEC /* DKImagePickerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DKImagePickerController-dummy.m"; sourceTree = "<group>"; };
 		5519E3E0E9E57EAF565A8229CD475160 /* Pods-B-App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-B-App-dummy.m"; sourceTree = "<group>"; };
-		59B924554BF86BBD9AFA21051EE0DE51 /* FSCalendarConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarConstants.h; path = FSCalendar/FSCalendarConstants.h; sourceTree = "<group>"; };
-		59BB84C7B1BCC514B587E69D210A6044 /* IQKeyboardManagerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-prefix.pch"; sourceTree = "<group>"; };
-		5A49E8F9EBF170F8DF6B12B208D5A7C9 /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTitleBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
-		5CBCCA1FAE300509BDE860637E4CCD28 /* FSCalendarCalculator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCalculator.m; path = FSCalendar/FSCalendarCalculator.m; sourceTree = "<group>"; };
-		5D3E4BC632B8C2B9C72381E4776147CE /* DKAsset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKAsset.swift; path = DKImageManager/Data/Model/DKAsset.swift; sourceTree = "<group>"; };
-		5E7C0FDB25F4A494365F3AF24F282C14 /* Kingfisher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kingfisher-dummy.m"; sourceTree = "<group>"; };
-		5F3BBC65E947EB438C06D51C74CFF9FA /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
-		60EAE842A7CF5B2597DBC1304237F21D /* DKGroupDataManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKGroupDataManager.swift; path = DKImageManager/Data/DKGroupDataManager.swift; sourceTree = "<group>"; };
-		61E5CAD6D1EBD14ABD2801F50750C713 /* DKAssetGroupCellItemProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKAssetGroupCellItemProtocol.swift; path = DKImagePickerController/View/Cell/DKAssetGroupCellItemProtocol.swift; sourceTree = "<group>"; };
-		622E88FB31A290F76C64456E7986B1EA /* DKCameraResource.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = DKCameraResource.bundle; path = DKCamera/DKCameraResource.bundle; sourceTree = "<group>"; };
+		5781FB8007B64941345E1FFBD060297E /* RequestModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestModifier.swift; path = Sources/RequestModifier.swift; sourceTree = "<group>"; };
+		57F3C761DC0ABE87619D2287C7C0F109 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		5FF5999B90F64A6390E2245071C6F420 /* DKAsset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKAsset.swift; path = DKImageManager/Data/Model/DKAsset.swift; sourceTree = "<group>"; };
+		6195BE9480B1315EB6A686CCD26AC918 /* Kingfisher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-umbrella.h"; sourceTree = "<group>"; };
+		619B618D0CED5C98EF96F5F7801A9184 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		623B51742D9039637F08131394542E3A /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kingfisher.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		642434FB9CBA92F5F8A8C64C780A9F3B /* DKPermissionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKPermissionView.swift; path = DKImagePickerController/View/DKPermissionView.swift; sourceTree = "<group>"; };
-		648B0433798EEA898C5B7C67C692FEBF /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		64AACE6E5398CE21E9C1CAF5619102D5 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		651D14720CF44AB76C1C7FE1C83B03CB /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		674957AEAE1106D7CCADB5C9C137AF49 /* FSCalendarHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarHeaderView.h; path = FSCalendar/FSCalendarHeaderView.h; sourceTree = "<group>"; };
-		67BBD4DF96F37D9E41DB5766BA59A9F2 /* SwiftRangeSlider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftRangeSlider.modulemap; sourceTree = "<group>"; };
-		699277B0C708F993885657C08EFA9095 /* DKCamera.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKCamera.swift; path = DKCamera/DKCamera.swift; sourceTree = "<group>"; };
-		6A420CE361216A70E41B186B2BB33196 /* FSCalendarScopeHandle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarScopeHandle.h; path = FSCalendar/FSCalendarScopeHandle.h; sourceTree = "<group>"; };
+		62461CF158945DE77ADD2B1911E745B6 /* ThreadHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThreadHelper.swift; path = Sources/ThreadHelper.swift; sourceTree = "<group>"; };
+		64EFB150AE3CE410277B379E74F85173 /* IQKeyboardManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManager.swift; path = IQKeyboardManagerSwift/IQKeyboardManager.swift; sourceTree = "<group>"; };
+		666B6DE761921E1A17200C3173023E6C /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterKit.framework; path = iOS/TwitterKit.framework; sourceTree = "<group>"; };
+		67937A0D864C0C6EE9B95C20E00A3D09 /* SwiftLoader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftLoader-umbrella.h"; sourceTree = "<group>"; };
+		67ADB3B83C66F588FA03D7EB34086DD7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6998567FE3EDC94E0704CB98EE3C4ACA /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQNSArray+Sort.swift"; path = "IQKeyboardManagerSwift/Categories/IQNSArray+Sort.swift"; sourceTree = "<group>"; };
+		69F29C64AA8809A0FCD85061840CD05A /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstantsInternal.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
 		6AE2518659D372F5967322D7F46A9DFB /* Pods-B-App-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-B-App-resources.sh"; sourceTree = "<group>"; };
-		6DC545C0783A11D11C260EECC9B78BD8 /* SwiftRangeSlider.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftRangeSlider.xcconfig; sourceTree = "<group>"; };
-		6E40DBDF741B0AB0255D2DE98D5CD919 /* ImageTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageTransition.swift; path = Sources/ImageTransition.swift; sourceTree = "<group>"; };
-		6EC97F47558E0365498EBD898FE19B6C /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		6F7B5786AB42255A0C44869F01D73C51 /* DKImagePickerController.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = DKImagePickerController.bundle; path = DKImagePickerController/DKImagePickerController.bundle; sourceTree = "<group>"; };
-		7239BF74FCD69C3B4C47134AF6711F86 /* DKAssetGroupDetailVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKAssetGroupDetailVC.swift; path = DKImagePickerController/View/DKAssetGroupDetailVC.swift; sourceTree = "<group>"; };
-		72B958181EC9D7D466BEFA17D306E3DB /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		6BD8D39FBBD720A4CA8C8B57DB1EFFE3 /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Sources/Image.swift; sourceTree = "<group>"; };
+		6D438C8568ED1CF196585B494C38DA86 /* FSCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-prefix.pch"; sourceTree = "<group>"; };
+		6DC4270EB60C71ECFCFC5F263B5C2769 /* FSCalendarExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarExtensions.m; path = FSCalendar/FSCalendarExtensions.m; sourceTree = "<group>"; };
+		6E530F20CFE0F1BAD56B583FD5341BCB /* Images */ = {isa = PBXFileReference; includeInIndex = 1; name = Images; path = CountryPicker/Assets/CountryPicker.bundle/Images; sourceTree = "<group>"; };
+		70F781BA145057115FBD1A4E9D5E90B4 /* FSCalendarDelegationProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarDelegationProxy.m; path = FSCalendar/FSCalendarDelegationProxy.m; sourceTree = "<group>"; };
+		74BBD18A9DD1EAF9553047FDC9AA9901 /* DKAssetGroupCellItemProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKAssetGroupCellItemProtocol.swift; path = DKImagePickerController/View/Cell/DKAssetGroupCellItemProtocol.swift; sourceTree = "<group>"; };
 		774BF5C3A78BFCCC9BBA3CF92C451E09 /* Pods-B-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-B-App.debug.xcconfig"; sourceTree = "<group>"; };
-		79152466D743A42807EE7A5F9F1B6490 /* CountryPickerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CountryPickerSwift.xcconfig; sourceTree = "<group>"; };
-		793326E85C1ABB3C4FECF79298418C6E /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		799CF6AD78A06CD49E167BCB64CBB5E9 /* DKImagePickerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DKImagePickerController-dummy.m"; sourceTree = "<group>"; };
-		7A300948E405DBA9592A35C3D486BE22 /* SwiftLoader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLoader.xcconfig; sourceTree = "<group>"; };
-		7BBD1CEC0A0B793BB5867CE9EE5E4252 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A2EE47E994626B1FDE90AF4CBCF77A7 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		7AD40528391B03C678B320F1B5996C09 /* Data */ = {isa = PBXFileReference; includeInIndex = 1; name = Data; path = CountryPicker/Assets/CountryPicker.bundle/Data; sourceTree = "<group>"; };
 		7BC03D583568820D58BCE80EA9749E12 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
-		7DCDF757CECFD6710C5D599E557E9BB3 /* FSCalendarDelegationProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegationProxy.h; path = FSCalendar/FSCalendarDelegationProxy.h; sourceTree = "<group>"; };
-		7FFB7E1EA561874DB3AB9BEC95B01AFA /* ThreadHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThreadHelper.swift; path = Sources/ThreadHelper.swift; sourceTree = "<group>"; };
-		80A5C1D2E12E3FE68DA1081F5423A66E /* IQKeyboardManagerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManagerSwift-umbrella.h"; sourceTree = "<group>"; };
-		8236CCA4BEC61D060911722A97A0FC75 /* FSCalendarCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionView.h; path = FSCalendar/FSCalendarCollectionView.h; sourceTree = "<group>"; };
-		82B5E864C2D53EA1C6C86393E50CB2A7 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		84AEA7D08C962390528A4F71529BB051 /* CacheSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CacheSerializer.swift; path = Sources/CacheSerializer.swift; sourceTree = "<group>"; };
-		84C770431BE582E23081239C47EA7445 /* FSCalendarTransitionCoordinator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarTransitionCoordinator.h; path = FSCalendar/FSCalendarTransitionCoordinator.h; sourceTree = "<group>"; };
-		84F15565DE9BC70D196684E9E249307F /* Placeholder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Placeholder.swift; path = Sources/Placeholder.swift; sourceTree = "<group>"; };
-		85C53AFFBCC317D866B36834B2673C73 /* DKImagePickerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DKImagePickerController.h; path = DKImagePickerController/DKImagePickerController.h; sourceTree = "<group>"; };
-		863460BEAE17CAD6210E51CB20C91D3C /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIViewController+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
-		86E982D4897DE79B4CFA97CA6C65951C /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
-		86F8551F89E54B258249C4B32C29733A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		89635C1DD7F064FCA122C109DE3F26DD /* FSCalendar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendar.h; path = FSCalendar/FSCalendar.h; sourceTree = "<group>"; };
-		89D6F055F15D3ECE4B4C13D42BA23B17 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		8BDB5CC3BF0AFCAEB98E5DBCB642CD87 /* FSCalendarHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarHeaderView.m; path = FSCalendar/FSCalendarHeaderView.m; sourceTree = "<group>"; };
-		8C595E3F3800F8396FFFBF37CBB7095C /* FSCalendar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendar.m; path = FSCalendar/FSCalendar.m; sourceTree = "<group>"; };
-		8D781F472890182602921A9D764E58AB /* FSCalendarStickyHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarStickyHeader.m; path = FSCalendar/FSCalendarStickyHeader.m; sourceTree = "<group>"; };
-		8DCC8524A387DF4B0245BFF18AA89BBF /* IQKeyboardManagerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManagerSwift-dummy.m"; sourceTree = "<group>"; };
-		8E7CD59EFA3C20B3066C3AFBC08AAFEA /* DKAssetGroupGridLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKAssetGroupGridLayout.swift; path = DKImagePickerController/View/DKAssetGroupGridLayout.swift; sourceTree = "<group>"; };
-		8E9379727C94F1961AAC74D8E743793B /* FSCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-umbrella.h"; sourceTree = "<group>"; };
-		8FAF5F0EF93E26CB533622D4CCE5DDD2 /* Kingfisher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-prefix.pch"; sourceTree = "<group>"; };
-		91EAF88DA3CB47FD403E416D95079C1A /* DKImagePickerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKImagePickerController.swift; path = DKImagePickerController/DKImagePickerController.swift; sourceTree = "<group>"; };
-		920A35BE326D2F097A7B517FCC536C5C /* FormatIndicatedCacheSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormatIndicatedCacheSerializer.swift; path = Sources/FormatIndicatedCacheSerializer.swift; sourceTree = "<group>"; };
-		928B378B65A6D5F713DA6468496D993C /* FSCalendarWeekdayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarWeekdayView.m; path = FSCalendar/FSCalendarWeekdayView.m; sourceTree = "<group>"; };
+		7C0E555292938DFB613E86FD42357FC4 /* DKImagePickerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKImagePickerController.swift; path = DKImagePickerController/DKImagePickerController.swift; sourceTree = "<group>"; };
+		7C8E961316DB579EAC229DDE71FC9119 /* FSCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FSCalendar-dummy.m"; sourceTree = "<group>"; };
+		7E2735E5D00248152DE9C7EAA35AF3FF /* FSCalendarCalculator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCalculator.h; path = FSCalendar/FSCalendarCalculator.h; sourceTree = "<group>"; };
+		80E5C9A851605344DA40AAB657E4CBCA /* Indicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Indicator.swift; path = Sources/Indicator.swift; sourceTree = "<group>"; };
+		8213728CE4017E02CF3208481A7E32BC /* DKAssetGroupListVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKAssetGroupListVC.swift; path = DKImagePickerController/View/DKAssetGroupListVC.swift; sourceTree = "<group>"; };
+		87FB60296B78FDC0615387F8A1B3994A /* IQUIWindow+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIWindow+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIWindow+Hierarchy.swift"; sourceTree = "<group>"; };
+		88FE975D8E4D20B5B862F0E07C2EF52D /* ImageTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageTransition.swift; path = Sources/ImageTransition.swift; sourceTree = "<group>"; };
+		89140AB1F25C647395C5F775A95B54D0 /* UIButton+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Kingfisher.swift"; path = "Sources/UIButton+Kingfisher.swift"; sourceTree = "<group>"; };
+		8A0FDD31E076EFE8A066DDC02E3DBC3F /* DKImageManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKImageManager.swift; path = DKImageManager/DKImageManager.swift; sourceTree = "<group>"; };
+		8A27B8C25FC9566AE7C9AE592D611DCF /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		8BB1B7EB27F943C8A055254C53F49AD6 /* ImagePrefetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePrefetcher.swift; path = Sources/ImagePrefetcher.swift; sourceTree = "<group>"; };
+		8CC11FCD741390DBC758E7BE9015FA35 /* IQKeyboardManagerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = IQKeyboardManagerSwift.modulemap; sourceTree = "<group>"; };
+		8D148A8FD72B8253CB0256D311F3A24E /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Sources/ImageDownloader.swift; sourceTree = "<group>"; };
+		8F65303E5A3B45F4773F97B9837394C8 /* SwiftLoader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLoader.xcconfig; sourceTree = "<group>"; };
+		8FFE7548E5EA854AB1B0B43E82B6F389 /* IQKeyboardManagerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManagerSwift.xcconfig; sourceTree = "<group>"; };
+		9286CDFC96FBE4AAD3A3B32FB5F8CB91 /* FSCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-umbrella.h"; sourceTree = "<group>"; };
+		92F5203099CE033E0CE6EE9E56E04C4D /* SwiftLoader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftLoader.modulemap; sourceTree = "<group>"; };
+		93622DA91E714FBF25F0D2D5818B8B6D /* CountryPickerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CountryPickerSwift-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		96FF05BBDA588AF6685DF0A6935C75F4 /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardReturnKeyHandler.swift; path = IQKeyboardManagerSwift/IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
-		975E55E67CD738FAF3610C77C24A9BB2 /* IQKeyboardManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManager.swift; path = IQKeyboardManagerSwift/IQKeyboardManager.swift; sourceTree = "<group>"; };
-		97B7ACF7239A00F27EEA0B79E116F4F3 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
-		98B471757DD4ED9F1DBC1CA793F54C0C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		945CC825049506A11193D5D5A7451EA8 /* DKImagePickerController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DKImagePickerController-umbrella.h"; sourceTree = "<group>"; };
+		94866B431A3174699FBDA365E1E252CC /* SwiftRangeSlider-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftRangeSlider-umbrella.h"; sourceTree = "<group>"; };
+		9569010A417E53BCBF15DC9D0A2E3BE1 /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardReturnKeyHandler.swift; path = IQKeyboardManagerSwift/IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
+		981862AF72E8FE5654393AB08A8EF988 /* CacheSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CacheSerializer.swift; path = Sources/CacheSerializer.swift; sourceTree = "<group>"; };
+		9839C1EBAA8C90DC6EB9055295D5E248 /* DKAssetGroupGridLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKAssetGroupGridLayout.swift; path = DKImagePickerController/View/DKAssetGroupGridLayout.swift; sourceTree = "<group>"; };
 		995387F85B5F272BD65D3A721FA7C36E /* Pods-B-App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-B-App.modulemap"; sourceTree = "<group>"; };
-		99B6B7AC82EDA37031F1AC28D7389F5B /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionView.m; path = FSCalendar/FSCalendarCollectionView.m; sourceTree = "<group>"; };
-		9BC4B613AED6D36B2F5F8074BC4E4202 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9BF055450B97B8819344A69588C2D09E /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		9C232A7E663761359A29A735D5409C4B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9C7EDA721FF036951D163DBC1B4BE2EC /* FSCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FSCalendar.modulemap; sourceTree = "<group>"; };
-		9C978EDE633ECF793559C72B3706552B /* FSCalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSCalendar.xcconfig; sourceTree = "<group>"; };
-		A18647E98D040E2EE310720D90183C16 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		A43BD75C1A3033BD7C654812AEDDF67A /* CountryPickerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CountryPickerSwift-umbrella.h"; sourceTree = "<group>"; };
+		9995F8352C2D7A1EA2DF45009E70AD59 /* FSCalendarAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarAppearance.h; path = FSCalendar/FSCalendarAppearance.h; sourceTree = "<group>"; };
+		9AA266D85463F6BFC7E0B1346E594A46 /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionView.m; path = FSCalendar/FSCalendarCollectionView.m; sourceTree = "<group>"; };
+		9B40FCB73D57C21ABDCBF2704EAECDF2 /* SwiftRangeSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftRangeSlider-prefix.pch"; sourceTree = "<group>"; };
+		9BDECA4A526EC9ACCDDC805034EF21F5 /* DKAssetGroupDetailImageCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKAssetGroupDetailImageCell.swift; path = DKImagePickerController/View/Cell/DKAssetGroupDetailImageCell.swift; sourceTree = "<group>"; };
+		A008AE329E3E64CF4DCF123EB397BC79 /* Resource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = Sources/Resource.swift; sourceTree = "<group>"; };
+		A060C824A18B95373A7535641A408521 /* FSCalendarDelegationFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarDelegationFactory.m; path = FSCalendar/FSCalendarDelegationFactory.m; sourceTree = "<group>"; };
+		A1E9A401A1A84C112520046222F6EB88 /* FSCalendarDelegationProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegationProxy.h; path = FSCalendar/FSCalendarDelegationProxy.h; sourceTree = "<group>"; };
+		A232C103EE713C4E652A34C2BBA65795 /* DKImagePickerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DKImagePickerController-prefix.pch"; sourceTree = "<group>"; };
 		A5B39F51F5D86B3EC3EF53D2925B6685 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		A5F97FF77D463A4B9DB8869A498284FA /* FSCalendar+Deprecated.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FSCalendar+Deprecated.m"; path = "FSCalendar/FSCalendar+Deprecated.m"; sourceTree = "<group>"; };
-		A83A2D72AAE7E9987DE55BC2CD54DFEF /* CountryPickerSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CountryPickerSwift-prefix.pch"; sourceTree = "<group>"; };
-		A854B0F0D0E6E81729ED5772D4CC56D1 /* FSCalendarDelegationFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegationFactory.h; path = FSCalendar/FSCalendarDelegationFactory.h; sourceTree = "<group>"; };
+		A831723A081724A243121B6AF79C6BAE /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstants.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
 		A8B05C74616398EBA87D5C3155F98BA6 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IQKeyboardManagerSwift.framework; path = IQKeyboardManagerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8B090E4D9C876FEA862F978F829600B /* CountryPicker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = CountryPicker.bundle; path = CountryPicker.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8CE4545DBA6CE1B8D1E7E7997159752 /* DKPopoverViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKPopoverViewController.swift; path = DKImagePickerController/DKPopoverViewController.swift; sourceTree = "<group>"; };
-		AB35D237754B45A86BE68A7308D4F7BD /* FSCalendarAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarAppearance.m; path = FSCalendar/FSCalendarAppearance.m; sourceTree = "<group>"; };
-		ACD11CA7B4A93945D8341D337664C8B5 /* IQKeyboardManagerConstantsInternal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstantsInternal.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstantsInternal.swift; sourceTree = "<group>"; };
-		ACFE0E6A447CB2BA6DED3B1CD25CBD5A /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Sources/Filter.swift; sourceTree = "<group>"; };
-		B17F3F5DFEF47E0CF8DF0E981CEFAE13 /* FSCalendarCalculator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCalculator.h; path = FSCalendar/FSCalendarCalculator.h; sourceTree = "<group>"; };
-		B309326BBC7755E1C0E09EF42B3FF08C /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		B57A158F2BC16B51F44317120ED6C793 /* IQToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQToolbar.swift; path = IQKeyboardManagerSwift/IQToolbar/IQToolbar.swift; sourceTree = "<group>"; };
-		B9F66E5D2A45408C1FADC48A93F34449 /* DKImageManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKImageManager.swift; path = DKImageManager/DKImageManager.swift; sourceTree = "<group>"; };
-		BA7F4BB6425B0FD9D3D33B64C0406679 /* FSCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-prefix.pch"; sourceTree = "<group>"; };
+		A9C91B68C2921952F0B3D1234F71EFD4 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
+		B0BA86FAA329FB29BBDF069536EE16C8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B29B5F60A4CDDE4AD12807BA8730A0F0 /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
+		B46A61E7E5DFD4B4A2569ABA8744B6C3 /* Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kingfisher.swift; path = Sources/Kingfisher.swift; sourceTree = "<group>"; };
+		B80E473615265718C2816FA49AC2AD5C /* FSCalendarCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionView.h; path = FSCalendar/FSCalendarCollectionView.h; sourceTree = "<group>"; };
+		BBB187FAEE7DB62324245DB20278784B /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
 		BC37CD520644D0AAAD792EA914EA5D9E /* Pods-B-App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-B-App-umbrella.h"; sourceTree = "<group>"; };
-		BD30588C5F7B9B4AFCE105700259134D /* SwiftRangeSlider-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftRangeSlider-umbrella.h"; sourceTree = "<group>"; };
-		BD4BB222AD68941B1AE847C112DBFCB8 /* CountryView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CountryView.swift; path = CountryPicker/Classes/CountryView.swift; sourceTree = "<group>"; };
-		BEC259F2030EFC2C8E6EBC0126660A0E /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
-		C56EC56E57B29361411415AD5E7F5ED1 /* RangeSliderKnob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RangeSliderKnob.swift; path = SwiftRangeSlider/RangeSliderKnob.swift; sourceTree = "<group>"; };
-		C7485F772366DC6814D878CF4BA40968 /* SwiftLoader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftLoader-prefix.pch"; sourceTree = "<group>"; };
-		C860823E638D5105D520C1D526CB7ADB /* FSCalendarCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCell.m; path = FSCalendar/FSCalendarCell.m; sourceTree = "<group>"; };
-		C92134146C9C7502DDAB1FE89AA8E2C6 /* FSCalendarAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarAppearance.h; path = FSCalendar/FSCalendarAppearance.h; sourceTree = "<group>"; };
-		C9920E3A01A55621D9F0F48A92CEAE86 /* DKAssetGroupDetailVideoCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKAssetGroupDetailVideoCell.swift; path = DKImagePickerController/View/Cell/DKAssetGroupDetailVideoCell.swift; sourceTree = "<group>"; };
-		C9C3E6043D40BAB90793B5770F83607F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CC3DE6280B85BD05FB01B4482F526115 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
-		CD0B3B1DD3318186B271584000849654 /* IQTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTextView.swift; path = IQKeyboardManagerSwift/IQTextView/IQTextView.swift; sourceTree = "<group>"; };
-		CE016FDE28510FEBDBEA918F18CBD66F /* DKAssetGroupListVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKAssetGroupListVC.swift; path = DKImagePickerController/View/DKAssetGroupListVC.swift; sourceTree = "<group>"; };
-		D1CA9814269A041B47C63E624727F395 /* RequestModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestModifier.swift; path = Sources/RequestModifier.swift; sourceTree = "<group>"; };
-		D2AC9481EB5C520AE37E83262BFEDD44 /* CountryPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CountryPicker.swift; path = CountryPicker/Classes/CountryPicker.swift; sourceTree = "<group>"; };
-		D353F892D1792D9232E9F2DECDD66596 /* DKCameraResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKCameraResource.swift; path = DKCamera/DKCameraResource.swift; sourceTree = "<group>"; };
-		D3CB7BA0D8FCC8F3852773440D28B85A /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		BE1166D88BD4CDC24EF203558ADE37A7 /* TwitterShareExtensionUIResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TwitterShareExtensionUIResources.bundle; path = iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle; sourceTree = "<group>"; };
+		C0CCA25847D9DC6EB4085DFB1B5E453D /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		C163C88926138998A931F2418AE53610 /* AnimatedImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedImageView.swift; path = Sources/AnimatedImageView.swift; sourceTree = "<group>"; };
+		C25F1A9F0BCAE86FB466B8680D23D688 /* FSCalendarCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCell.m; path = FSCalendar/FSCalendarCell.m; sourceTree = "<group>"; };
+		C2EBC4A66BE3B7599E617DDBE4BB3107 /* FSCalendarHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarHeaderView.m; path = FSCalendar/FSCalendarHeaderView.m; sourceTree = "<group>"; };
+		C52B5943420A6D2AEF197FB1DB309567 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C53EFA95CA092EBDC624C3559F235EB2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5A60F7927753017B320BF2E4F23FAC3 /* Kingfisher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kingfisher.xcconfig; sourceTree = "<group>"; };
+		C66727A86C0511279FF468E6166F2F16 /* SwiftRangeSlider.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftRangeSlider.xcconfig; sourceTree = "<group>"; };
+		C7FFC0C509E2CF25B1C239A982842607 /* DKAssetGroupDetailVideoCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKAssetGroupDetailVideoCell.swift; path = DKImagePickerController/View/Cell/DKAssetGroupDetailVideoCell.swift; sourceTree = "<group>"; };
+		C8AC2F587D8CFA192260876E37F586A9 /* DKImagePickerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DKImagePickerController.h; path = DKImagePickerController/DKImagePickerController.h; sourceTree = "<group>"; };
+		C8C118EE54B86176996EA817DF17EBC6 /* CountryPickerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CountryPickerSwift.modulemap; sourceTree = "<group>"; };
+		CC57BA37B9553001792188782D71D9F2 /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+IQKeyboardToolbar.swift"; path = "IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		CE9B79AC4EF2380EC0277C7C43093200 /* FSCalendarTransitionCoordinator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarTransitionCoordinator.h; path = FSCalendar/FSCalendarTransitionCoordinator.h; sourceTree = "<group>"; };
+		CF34D3307EF6A66022D5EB0669B6F2FC /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Sources/ImageCache.swift; sourceTree = "<group>"; };
+		CF86D547E769EA18495F125E1D3621D0 /* IQToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQToolbar.swift; path = IQKeyboardManagerSwift/IQToolbar/IQToolbar.swift; sourceTree = "<group>"; };
+		D1CF02BB7F5108D496698027B693ECD7 /* DKImagePickerController.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = DKImagePickerController.bundle; path = DKImagePickerController/DKImagePickerController.bundle; sourceTree = "<group>"; };
+		D1DFFFC1DB321DBF4B8B5255A773DF88 /* IQKeyboardManagerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManagerSwift-dummy.m"; sourceTree = "<group>"; };
+		D1F4EA75F40B501441B489A9A4A6DE3F /* FSCalendarDynamicHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDynamicHeader.h; path = FSCalendar/FSCalendarDynamicHeader.h; sourceTree = "<group>"; };
+		D277DF5C9AB7BB0A8768FEFC09B5DD03 /* SwiftRangeSlider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftRangeSlider.modulemap; sourceTree = "<group>"; };
+		D3C8AF2113D916928CE9EEA551057A6D /* String+MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+MD5.swift"; path = "Sources/String+MD5.swift"; sourceTree = "<group>"; };
 		D40208BB24A78AD521E7CA9CD3E27E8C /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D48C629EE541C991D3EE39EAA916A60D /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
-		D4E16380CCD111D99AD820C8F98AD1CC /* Resource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = Sources/Resource.swift; sourceTree = "<group>"; };
-		D6637A323F2B7CE4685F359C2EBFC7B9 /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstants.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
-		D9AD1BB29A6011965D8C0FA98128ADCF /* RangeSliderTrack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RangeSliderTrack.swift; path = SwiftRangeSlider/RangeSliderTrack.swift; sourceTree = "<group>"; };
-		DA42B7934311A0EDBD7A31E518EB4105 /* SwiftLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftLoader.swift; path = src/SwiftLoader/SwiftLoader.swift; sourceTree = "<group>"; };
-		DC51141181A94425D61AAD7030537C67 /* UIButton+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Kingfisher.swift"; path = "Sources/UIButton+Kingfisher.swift"; sourceTree = "<group>"; };
-		DD429A7620DF01857A4B129587A6206B /* SwiftRangeSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftRangeSlider-dummy.m"; sourceTree = "<group>"; };
-		E1A67D847282EA87E375984FDA3EB569 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUITextFieldView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
-		E33F9FABC95BAA1C47088567D70E4B67 /* DKImagePickerController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DKImagePickerController.xcconfig; sourceTree = "<group>"; };
+		D501C1EAC552AD88302E09393B1A6425 /* DKAssetGroupDetailCameraCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKAssetGroupDetailCameraCell.swift; path = DKImagePickerController/View/Cell/DKAssetGroupDetailCameraCell.swift; sourceTree = "<group>"; };
+		D55B346D66FAA30735365D395E4A1155 /* FSCalendarScopeHandle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarScopeHandle.m; path = FSCalendar/FSCalendarScopeHandle.m; sourceTree = "<group>"; };
+		D618F9EA594489E7B81404AC614DF6CD /* IQUIViewController+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIViewController+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIViewController+Additions.swift"; sourceTree = "<group>"; };
+		D856A1A3E416A5815EB450A3585EC85B /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarStickyHeader.h; path = FSCalendar/FSCalendarStickyHeader.h; sourceTree = "<group>"; };
+		DA17D53FF8C4021AAA4D8D012A17A027 /* FSCalendarCollectionViewLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionViewLayout.m; path = FSCalendar/FSCalendarCollectionViewLayout.m; sourceTree = "<group>"; };
+		DAF8462966C7A86D4AD9F24750CBEC90 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
+		DC3EC8DD9F6838FCE1525CDD91AE67FE /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		DDE3508B9EC2F9BC097D9237307FE4D9 /* DKPopoverViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKPopoverViewController.swift; path = DKImagePickerController/DKPopoverViewController.swift; sourceTree = "<group>"; };
+		E26C447AE64DDED5C299777884373381 /* IQUITextFieldView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUITextFieldView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUITextFieldView+Additions.swift"; sourceTree = "<group>"; };
+		E419441ABD7A52C96491848E4F578128 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
 		E44C3E26A0D598D141EEF418F1A56713 /* Pods-B-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-B-App.release.xcconfig"; sourceTree = "<group>"; };
+		E5B45D57FA87C2BBFA1D61EC3F93F422 /* DKAssetGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKAssetGroup.swift; path = DKImageManager/Data/Model/DKAssetGroup.swift; sourceTree = "<group>"; };
 		E5C8DC59281765A33CC937F33D50804F /* FSCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FSCalendar.framework; path = FSCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA65C9B841254DE7D42C9C936A533274 /* FSCalendarCollectionViewLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionViewLayout.m; path = FSCalendar/FSCalendarCollectionViewLayout.m; sourceTree = "<group>"; };
-		EA7108356E2F90250BADABE870927D3A /* FSCalendarDelegationFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarDelegationFactory.m; path = FSCalendar/FSCalendarDelegationFactory.m; sourceTree = "<group>"; };
-		ECD44F34CD9088CE28537AEFAA0A45F5 /* Data */ = {isa = PBXFileReference; includeInIndex = 1; name = Data; path = CountryPicker/Assets/CountryPicker.bundle/Data; sourceTree = "<group>"; };
-		EE71CEA3F4E5576C8A2C28CE93DF5820 /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIScrollView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
-		EF544ACFA0BE3580C77D49FCF5654002 /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
+		E5F2691A872BAACEDC4065D6397917C3 /* DKGroupDataManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKGroupDataManager.swift; path = DKImageManager/Data/DKGroupDataManager.swift; sourceTree = "<group>"; };
+		E68F8C7AA6D4911D4E5937574B9B8396 /* FSCalendarCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCell.h; path = FSCalendar/FSCalendarCell.h; sourceTree = "<group>"; };
+		E6F6EC82B69582A767963D99F5B6B411 /* IQTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTextView.swift; path = IQKeyboardManagerSwift/IQTextView/IQTextView.swift; sourceTree = "<group>"; };
+		E70B2B292FF378FCFC34D9BC53668589 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8F8CA6778169566A3DB70E951247033 /* CountryPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CountryPicker.swift; path = CountryPicker/Classes/CountryPicker.swift; sourceTree = "<group>"; };
+		E97C96DC32AA6D2918583C267137C94B /* KingfisherManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherManager.swift; path = Sources/KingfisherManager.swift; sourceTree = "<group>"; };
+		EA4C5AD9FF2B9FAA6B88D03CDDE410F1 /* Kingfisher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Kingfisher.modulemap; sourceTree = "<group>"; };
+		EA67DC8AF09DA1A933156ECCA40DE79F /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Sources/Filter.swift; sourceTree = "<group>"; };
+		EA7158AAE03AE829DDD5E87FCF90A6B9 /* IQTitleBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQTitleBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQTitleBarButtonItem.swift; sourceTree = "<group>"; };
+		EB76B4151C1D02226875390D178F0A25 /* SwiftLoader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftLoader-dummy.m"; sourceTree = "<group>"; };
+		ECCC44F8AD76B459768EA723858E7AF3 /* FSCalendarWeekdayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarWeekdayView.h; path = FSCalendar/FSCalendarWeekdayView.h; sourceTree = "<group>"; };
 		EF5ECF7F68C8C0A9B91BC4B3DF486548 /* Pods-B-App-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-B-App-frameworks.sh"; sourceTree = "<group>"; };
-		F125EA9A330D33B256ECC57282C9AEDE /* IQUIView+IQKeyboardToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+IQKeyboardToolbar.swift"; path = "IQKeyboardManagerSwift/IQToolbar/IQUIView+IQKeyboardToolbar.swift"; sourceTree = "<group>"; };
+		EF606DF920CA166673AA309CFD4C622D /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		F122805CDF38C2EA49F9CA30A69E73B3 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
 		F1DE75C57D80BA55CB857C92E0AEB3CF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		F30789430C2F78E38C4EC7082ACC4E27 /* FSCalendarExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarExtensions.m; path = FSCalendar/FSCalendarExtensions.m; sourceTree = "<group>"; };
-		F50160E1E4F080EE1EB4271C255466CC /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
-		F5527AB3BFE9C63053A5F484E95D9834 /* SwiftLoader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftLoader-umbrella.h"; sourceTree = "<group>"; };
+		F2435DD81EA92061599B31F589830620 /* DKAssetGroupDetailVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DKAssetGroupDetailVC.swift; path = DKImagePickerController/View/DKAssetGroupDetailVC.swift; sourceTree = "<group>"; };
+		F43247B28B8FC78344E09F4E86F16C34 /* FSCalendar+Deprecated.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FSCalendar+Deprecated.m"; path = "FSCalendar/FSCalendar+Deprecated.m"; sourceTree = "<group>"; };
+		F4CC449BE42971427603C748516A6F9C /* IQUIScrollView+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIScrollView+Additions.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIScrollView+Additions.swift"; sourceTree = "<group>"; };
+		F6ED582ECC31868A00D440C768D2249B /* FormatIndicatedCacheSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormatIndicatedCacheSerializer.swift; path = Sources/FormatIndicatedCacheSerializer.swift; sourceTree = "<group>"; };
 		F74BFDCD647509600F359654EDFB6EF0 /* SwiftLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftLoader.framework; path = SwiftLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8E4B69B924C09A7571C2188968EE90D /* Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kingfisher.swift; path = Sources/Kingfisher.swift; sourceTree = "<group>"; };
-		F97ECF6D1CEAF11C70CC527BF3557EB5 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQNSArray+Sort.swift"; path = "IQKeyboardManagerSwift/Categories/IQNSArray+Sort.swift"; sourceTree = "<group>"; };
-		F991477BE163ED5F116DFE7500F5124C /* FSCalendarExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarExtensions.h; path = FSCalendar/FSCalendarExtensions.h; sourceTree = "<group>"; };
-		F9A6B722B18136FFE95FD84ACB10DCF4 /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Sources/ImageCache.swift; sourceTree = "<group>"; };
-		FAB0A75194563DD09BCD50F4B8C4C195 /* IQBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift; sourceTree = "<group>"; };
-		FDDEF19C51D507CBD52B1D22A838E2F7 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		FA5061A32C2EEF4889D2265C9A91E409 /* FSCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FSCalendar.modulemap; sourceTree = "<group>"; };
+		FC08E75F55C71BE65060255255064969 /* RangeSliderTrack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RangeSliderTrack.swift; path = SwiftRangeSlider/RangeSliderTrack.swift; sourceTree = "<group>"; };
+		FD01C417611D7CD0E5971DEF5EB292C5 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		FFBDFB1071D0B14848CADF5AF21CF751 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFBF2D84B347BCA4F405B732C32E026F /* TwitterKitResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = iOS/TwitterKit.framework/TwitterKitResources.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -531,30 +535,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		01EF000665665DF4B3C1183BB83426B1 /* DKImagePickerController */ = {
+		0A4A6E571DA823E79900F557666C503B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				61E5CAD6D1EBD14ABD2801F50750C713 /* DKAssetGroupCellItemProtocol.swift */,
-				0280D89D748399D3FDF0A4055F303057 /* DKAssetGroupDetailBaseCell.swift */,
-				31C039300EADEE43D71D984047974E31 /* DKAssetGroupDetailCameraCell.swift */,
-				36BD528DB30B474F94C808C4759FFCED /* DKAssetGroupDetailImageCell.swift */,
-				7239BF74FCD69C3B4C47134AF6711F86 /* DKAssetGroupDetailVC.swift */,
-				C9920E3A01A55621D9F0F48A92CEAE86 /* DKAssetGroupDetailVideoCell.swift */,
-				8E7CD59EFA3C20B3066C3AFBC08AAFEA /* DKAssetGroupGridLayout.swift */,
-				CE016FDE28510FEBDBEA918F18CBD66F /* DKAssetGroupListVC.swift */,
-				85C53AFFBCC317D866B36834B2673C73 /* DKImagePickerController.h */,
-				91EAF88DA3CB47FD403E416D95079C1A /* DKImagePickerController.swift */,
-				4D55F74D7ED16EB52256256B4AA25E35 /* DKImagePickerControllerDefaultUIDelegate.swift */,
-				4F79E13DEC35A6862C80E89E9E8BA895 /* DKImageResource.swift */,
-				642434FB9CBA92F5F8A8C64C780A9F3B /* DKPermissionView.swift */,
-				A8CE4545DBA6CE1B8D1E7E7997159752 /* DKPopoverViewController.swift */,
-				9E5F4DC01AA50AD9348AD126A6B0E8D2 /* Camera */,
-				F85E7760AD903CEE7862732E59FF70A6 /* ImageManager */,
-				D11AE80B792063D44CD6A02536006ABB /* Resources */,
-				24400DF1D34281CCF81363D6D5066877 /* Support Files */,
+				F122805CDF38C2EA49F9CA30A69E73B3 /* GoogleMapsBase.framework */,
 			);
-			name = DKImagePickerController;
-			path = DKImagePickerController;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		0F75DF6C7C5F002280EC53F48E80B587 /* Frameworks */ = {
@@ -565,114 +551,200 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		22C37671F3835FC48776E9154831C6B1 /* Frameworks */ = {
+		124FC4FB92897264A7438BBB7BC05FF8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1DE53C3B1EB87C86D034AA72AEC20ECF /* GoogleMaps.framework */,
-				03B6DD1C6C8C8D4530001BC3553BA3D7 /* GoogleMapsCore.framework */,
+				619B618D0CED5C98EF96F5F7801A9184 /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1967F1FB9DEA7E9E2C16A36DC0AF71A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0341F03B27E6ADD421EE81D2F2407F4D /* TwitterCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		23BFAF5B25F68D05931A45353AEDE7D9 /* Pods */ = {
+		1B1CBB3438DAD238DC1A88035E8814B0 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
-				9FE654B6487F353B45041C05C3592480 /* Alamofire */,
-				9B763AC7B439C689734AAA4202838483 /* CountryPickerSwift */,
-				01EF000665665DF4B3C1183BB83426B1 /* DKImagePickerController */,
-				6AFFF2CC8195EA9402566B73A84A59EE /* FSCalendar */,
-				EF32D92E8EE2DD82685AA85D77305B1C /* GoogleMaps */,
-				A5915F98FE24E3FBEF67C8FB7C00B824 /* GooglePlaces */,
-				2C1B0995030785546A70C744930022F1 /* IQKeyboardManagerSwift */,
-				751829696B033A1900E69F4A350B0AB3 /* Kingfisher */,
-				99E46C1E83B6567D6173D80AECA1E842 /* SwiftLoader */,
-				E06C0C56F7C26FAF5F277DFB2642B1AC /* SwiftRangeSlider */,
+				4779BAB8132C7E8102E6B2B4980AEC8C /* DKCamera.swift */,
+				325BA11DA6A3315A3CEC642B39362F05 /* DKCameraResource.swift */,
+				7890FEFBB43A6A01654F707EEA571D89 /* Resources */,
+			);
+			name = Camera;
+			sourceTree = "<group>";
+		};
+		1C7FAB95B8B8A3BABC53F897514F41A7 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				0CD301229842480402625044AA10DFD6 /* AFError.swift */,
+				7A2EE47E994626B1FDE90AF4CBCF77A7 /* Alamofire.swift */,
+				3A494F20E660B13628412BADE4C8E47F /* DispatchQueue+Alamofire.swift */,
+				524999A40E0E0AB2275584CB917FD46E /* MultipartFormData.swift */,
+				517BBDBEC19DA338B01A5D7D8B8F4A40 /* NetworkReachabilityManager.swift */,
+				10229060BDB5EE47A207AD323C7FCE28 /* Notifications.swift */,
+				13AA999B2C315DF117B577B27EBC8219 /* ParameterEncoding.swift */,
+				DC3EC8DD9F6838FCE1525CDD91AE67FE /* Request.swift */,
+				FD01C417611D7CD0E5971DEF5EB292C5 /* Response.swift */,
+				8A27B8C25FC9566AE7C9AE592D611DCF /* ResponseSerialization.swift */,
+				E419441ABD7A52C96491848E4F578128 /* Result.swift */,
+				C0CCA25847D9DC6EB4085DFB1B5E453D /* ServerTrustPolicy.swift */,
+				4643C3FB4695B6502B327ED6E35FDCFD /* SessionDelegate.swift */,
+				BBB187FAEE7DB62324245DB20278784B /* SessionManager.swift */,
+				57F3C761DC0ABE87619D2287C7C0F109 /* TaskDelegate.swift */,
+				278B812A2F0A4CC7E3C421AADB29779B /* Timeline.swift */,
+				39F6CBC5ABA67644040295B8C60B9453 /* Validation.swift */,
+				391B813A60E5EE689963A8A88E5D868E /* Support Files */,
+			);
+			name = Alamofire;
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		1E3CFE17BEC673D5B98C5848D23A23A5 /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				66C3104B857D442B83E2D4B7A5B1B94D /* Base */,
+				74344526A5A1E3F71CC122EBDEF49F91 /* Maps */,
+			);
+			name = GoogleMaps;
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		2E1D36F8F39926B1872DE28459F444C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C7FAB95B8B8A3BABC53F897514F41A7 /* Alamofire */,
+				339971507D0EFD7EA0A21EDF225E9282 /* CountryPickerSwift */,
+				5CE31BD7FC4A8500D7EB32585A6C045A /* DKImagePickerController */,
+				6365C9146894E351349B322BCC59B7CF /* FSCalendar */,
+				1E3CFE17BEC673D5B98C5848D23A23A5 /* GoogleMaps */,
+				52FECE79A39C79FAF2BDD0C5542889C7 /* GooglePlaces */,
+				9B4F7AB88A119A5415D551DD52C53A3F /* IQKeyboardManagerSwift */,
+				37152DAC212FA94F9E564231C7596AF3 /* Kingfisher */,
+				30AA44ACED4C35CF8E44453771031D62 /* SwiftLoader */,
+				F86260638EA61FF16ECC7B07D3936217 /* SwiftRangeSlider */,
+				BDE6B786A19FB878359D3E6CF2AB4DBA /* TwitterCore */,
+				AC3A1312FE3D76538133921558D9BAF1 /* TwitterKit */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		24400DF1D34281CCF81363D6D5066877 /* Support Files */ = {
+		30AA44ACED4C35CF8E44453771031D62 /* SwiftLoader */ = {
 			isa = PBXGroup;
 			children = (
-				2A552724EAB0E769F026C49860914EA7 /* DKImagePickerController.modulemap */,
-				E33F9FABC95BAA1C47088567D70E4B67 /* DKImagePickerController.xcconfig */,
-				799CF6AD78A06CD49E167BCB64CBB5E9 /* DKImagePickerController-dummy.m */,
-				28EFB9A649003E228BC12627E80C4282 /* DKImagePickerController-prefix.pch */,
-				0629765402A6731BF593FB75BAA168B0 /* DKImagePickerController-umbrella.h */,
-				98B471757DD4ED9F1DBC1CA793F54C0C /* Info.plist */,
+				0E764D499B39CB934BDF4466666597A1 /* SwiftLoader.swift */,
+				9012E2CFF6D396C305995B0407DAE76E /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/DKImagePickerController";
+			name = SwiftLoader;
+			path = SwiftLoader;
 			sourceTree = "<group>";
 		};
-		259C4F84853D431F2CF9860978CB8641 /* Support Files */ = {
+		339971507D0EFD7EA0A21EDF225E9282 /* CountryPickerSwift */ = {
 			isa = PBXGroup;
 			children = (
-				4EFE23F477788F15026F50CD26CBFB7D /* Info.plist */,
-				2525E03C8896A36D05EFA3006D4719F1 /* SwiftLoader.modulemap */,
-				7A300948E405DBA9592A35C3D486BE22 /* SwiftLoader.xcconfig */,
-				2232D7D0DE87D19C6163EA9974C5FEDC /* SwiftLoader-dummy.m */,
-				C7485F772366DC6814D878CF4BA40968 /* SwiftLoader-prefix.pch */,
-				F5527AB3BFE9C63053A5F484E95D9834 /* SwiftLoader-umbrella.h */,
+				E8F8CA6778169566A3DB70E951247033 /* CountryPicker.swift */,
+				4696B3163AF0896DADC41B8D32E42259 /* CountryView.swift */,
+				2AE77D3E0987E835F45BE4A9AC119EFF /* CountryView.xib */,
+				DCE6998CFE9A6DFC6354F846D44A5222 /* Resources */,
+				82D5D3DD42ACB4C91E2AD3A4E23445EC /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftLoader";
+			name = CountryPickerSwift;
+			path = CountryPickerSwift;
 			sourceTree = "<group>";
 		};
-		2C1B0995030785546A70C744930022F1 /* IQKeyboardManagerSwift */ = {
+		37152DAC212FA94F9E564231C7596AF3 /* Kingfisher */ = {
 			isa = PBXGroup;
 			children = (
-				FAB0A75194563DD09BCD50F4B8C4C195 /* IQBarButtonItem.swift */,
-				975E55E67CD738FAF3610C77C24A9BB2 /* IQKeyboardManager.swift */,
-				D6637A323F2B7CE4685F359C2EBFC7B9 /* IQKeyboardManagerConstants.swift */,
-				ACD11CA7B4A93945D8341D337664C8B5 /* IQKeyboardManagerConstantsInternal.swift */,
-				96FF05BBDA588AF6685DF0A6935C75F4 /* IQKeyboardReturnKeyHandler.swift */,
-				F97ECF6D1CEAF11C70CC527BF3557EB5 /* IQNSArray+Sort.swift */,
-				3F63BE40E615105441E28F709521436A /* IQPreviousNextView.swift */,
-				CD0B3B1DD3318186B271584000849654 /* IQTextView.swift */,
-				5A49E8F9EBF170F8DF6B12B208D5A7C9 /* IQTitleBarButtonItem.swift */,
-				B57A158F2BC16B51F44317120ED6C793 /* IQToolbar.swift */,
-				EE71CEA3F4E5576C8A2C28CE93DF5820 /* IQUIScrollView+Additions.swift */,
-				E1A67D847282EA87E375984FDA3EB569 /* IQUITextFieldView+Additions.swift */,
-				F50160E1E4F080EE1EB4271C255466CC /* IQUIView+Hierarchy.swift */,
-				F125EA9A330D33B256ECC57282C9AEDE /* IQUIView+IQKeyboardToolbar.swift */,
-				863460BEAE17CAD6210E51CB20C91D3C /* IQUIViewController+Additions.swift */,
-				15D1B69A942ED96E78D605343A45C0DA /* IQUIWindow+Hierarchy.swift */,
-				4EBBF01AFCBF24CEAC1D623B69221681 /* Resources */,
-				AED950F187271BEBFB7AE0A300EC904B /* Support Files */,
+				C163C88926138998A931F2418AE53610 /* AnimatedImageView.swift */,
+				34961707BBC6DCE84E8BFFB6D1E663A2 /* Box.swift */,
+				981862AF72E8FE5654393AB08A8EF988 /* CacheSerializer.swift */,
+				EA67DC8AF09DA1A933156ECCA40DE79F /* Filter.swift */,
+				F6ED582ECC31868A00D440C768D2249B /* FormatIndicatedCacheSerializer.swift */,
+				6BD8D39FBBD720A4CA8C8B57DB1EFFE3 /* Image.swift */,
+				CF34D3307EF6A66022D5EB0669B6F2FC /* ImageCache.swift */,
+				8D148A8FD72B8253CB0256D311F3A24E /* ImageDownloader.swift */,
+				8BB1B7EB27F943C8A055254C53F49AD6 /* ImagePrefetcher.swift */,
+				4B294950B53CDA799ACCF28FB6ADBA64 /* ImageProcessor.swift */,
+				88FE975D8E4D20B5B862F0E07C2EF52D /* ImageTransition.swift */,
+				1988FA55F73319D5D6ACD61A4922E736 /* ImageView+Kingfisher.swift */,
+				80E5C9A851605344DA40AAB657E4CBCA /* Indicator.swift */,
+				2905AF8F8A1BDBF12CC75CEEA46AE90C /* Kingfisher.h */,
+				B46A61E7E5DFD4B4A2569ABA8744B6C3 /* Kingfisher.swift */,
+				E97C96DC32AA6D2918583C267137C94B /* KingfisherManager.swift */,
+				2C0EC2D98FE5AE739497D2D81490D7BE /* KingfisherOptionsInfo.swift */,
+				13A109E836C62D8AAFDF76FE74144E9A /* Placeholder.swift */,
+				5781FB8007B64941345E1FFBD060297E /* RequestModifier.swift */,
+				A008AE329E3E64CF4DCF123EB397BC79 /* Resource.swift */,
+				D3C8AF2113D916928CE9EEA551057A6D /* String+MD5.swift */,
+				62461CF158945DE77ADD2B1911E745B6 /* ThreadHelper.swift */,
+				89140AB1F25C647395C5F775A95B54D0 /* UIButton+Kingfisher.swift */,
+				903F15CA503614F983431885CC3EE3D4 /* Support Files */,
 			);
-			name = IQKeyboardManagerSwift;
-			path = IQKeyboardManagerSwift;
+			name = Kingfisher;
+			path = Kingfisher;
 			sourceTree = "<group>";
 		};
-		2F23B912AE5A1FA2794118ABECACC202 /* Resources */ = {
+		391B813A60E5EE689963A8A88E5D868E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				EF544ACFA0BE3580C77D49FCF5654002 /* GooglePlaces.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		4EBBF01AFCBF24CEAC1D623B69221681 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				32140D18D5DFA417D004900C04C48C71 /* IQKeyboardManager.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		50A77FEB6E5C6EE6C9FEE80C25701F65 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				64AACE6E5398CE21E9C1CAF5619102D5 /* Alamofire.modulemap */,
-				D48C629EE541C991D3EE39EAA916A60D /* Alamofire.xcconfig */,
-				4A1350C8B8CF51FB3FA14C5FF5C4E01E /* Alamofire-dummy.m */,
-				034F0D78DE787002AA824A5E5A2AB58B /* Alamofire-prefix.pch */,
-				A18647E98D040E2EE310720D90183C16 /* Alamofire-umbrella.h */,
-				9BC4B613AED6D36B2F5F8074BC4E4202 /* Info.plist */,
+				EF606DF920CA166673AA309CFD4C622D /* Alamofire.modulemap */,
+				3C013BA1B88190EEE09075C6C4D13F04 /* Alamofire.xcconfig */,
+				0195065F89CCA34BB70B349284B269ED /* Alamofire-dummy.m */,
+				0BD05E0AE0C663B9442EAB5EF78735BD /* Alamofire-prefix.pch */,
+				24F9A44A0BAEAC1E456C731ED1F0C47D /* Alamofire-umbrella.h */,
+				B0BA86FAA329FB29BBDF069536EE16C8 /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		3F004E53B3E4EBEC04F373C6486E097F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				425242AD4CB0D6FF574AA40BC69E3ECD /* Info.plist */,
+				8CC11FCD741390DBC758E7BE9015FA35 /* IQKeyboardManagerSwift.modulemap */,
+				8FFE7548E5EA854AB1B0B43E82B6F389 /* IQKeyboardManagerSwift.xcconfig */,
+				D1DFFFC1DB321DBF4B8B5255A773DF88 /* IQKeyboardManagerSwift-dummy.m */,
+				03748A48D50F14CC645F720302F7CEBC /* IQKeyboardManagerSwift-prefix.pch */,
+				288B753E6D1960114AAE422224B8C647 /* IQKeyboardManagerSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IQKeyboardManagerSwift";
+			sourceTree = "<group>";
+		};
+		4FFD11C1AD3FE4E409320423ECE49503 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B29B5F60A4CDDE4AD12807BA8730A0F0 /* GooglePlaces.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		52FECE79A39C79FAF2BDD0C5542889C7 /* GooglePlaces */ = {
+			isa = PBXGroup;
+			children = (
+				94CF8C87A938C77F5311485EC70051A7 /* Frameworks */,
+				4FFD11C1AD3FE4E409320423ECE49503 /* Resources */,
+			);
+			name = GooglePlaces;
+			path = GooglePlaces;
+			sourceTree = "<group>";
+		};
+		5A2B3FAD15757D4B19C8657FE7DEE020 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA5061A32C2EEF4889D2265C9A91E409 /* FSCalendar.modulemap */,
+				35BDB3DBF6109E9DE6B499973321D757 /* FSCalendar.xcconfig */,
+				7C8E961316DB579EAC229DDE71FC9119 /* FSCalendar-dummy.m */,
+				6D438C8568ED1CF196585B494C38DA86 /* FSCalendar-prefix.pch */,
+				9286CDFC96FBE4AAD3A3B32FB5F8CB91 /* FSCalendar-umbrella.h */,
+				40CD64B64649649737FD6B8A77AD6734 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FSCalendar";
 			sourceTree = "<group>";
 		};
 		5A836C553DCA44996E55C6E9E40F7958 /* Products */ = {
@@ -692,77 +764,113 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6AFFF2CC8195EA9402566B73A84A59EE /* FSCalendar */ = {
+		5CE31BD7FC4A8500D7EB32585A6C045A /* DKImagePickerController */ = {
 			isa = PBXGroup;
 			children = (
-				89635C1DD7F064FCA122C109DE3F26DD /* FSCalendar.h */,
-				8C595E3F3800F8396FFFBF37CBB7095C /* FSCalendar.m */,
-				A5F97FF77D463A4B9DB8869A498284FA /* FSCalendar+Deprecated.m */,
-				C92134146C9C7502DDAB1FE89AA8E2C6 /* FSCalendarAppearance.h */,
-				AB35D237754B45A86BE68A7308D4F7BD /* FSCalendarAppearance.m */,
-				B17F3F5DFEF47E0CF8DF0E981CEFAE13 /* FSCalendarCalculator.h */,
-				5CBCCA1FAE300509BDE860637E4CCD28 /* FSCalendarCalculator.m */,
-				0367EEB5D4B71F3C36F528DE57E5084B /* FSCalendarCell.h */,
-				C860823E638D5105D520C1D526CB7ADB /* FSCalendarCell.m */,
-				8236CCA4BEC61D060911722A97A0FC75 /* FSCalendarCollectionView.h */,
-				99B6B7AC82EDA37031F1AC28D7389F5B /* FSCalendarCollectionView.m */,
-				22E3F5F13B932AC9A58DC8D1B1504BB7 /* FSCalendarCollectionViewLayout.h */,
-				EA65C9B841254DE7D42C9C936A533274 /* FSCalendarCollectionViewLayout.m */,
-				59B924554BF86BBD9AFA21051EE0DE51 /* FSCalendarConstants.h */,
-				2B06D0288130B5247F184521F1C3E259 /* FSCalendarConstants.m */,
-				A854B0F0D0E6E81729ED5772D4CC56D1 /* FSCalendarDelegationFactory.h */,
-				EA7108356E2F90250BADABE870927D3A /* FSCalendarDelegationFactory.m */,
-				7DCDF757CECFD6710C5D599E557E9BB3 /* FSCalendarDelegationProxy.h */,
-				2C378E43446BD3BA86E2D5506249B2CB /* FSCalendarDelegationProxy.m */,
-				4723655DA9792C41CF5200D3198B973A /* FSCalendarDynamicHeader.h */,
-				F991477BE163ED5F116DFE7500F5124C /* FSCalendarExtensions.h */,
-				F30789430C2F78E38C4EC7082ACC4E27 /* FSCalendarExtensions.m */,
-				674957AEAE1106D7CCADB5C9C137AF49 /* FSCalendarHeaderView.h */,
-				8BDB5CC3BF0AFCAEB98E5DBCB642CD87 /* FSCalendarHeaderView.m */,
-				6A420CE361216A70E41B186B2BB33196 /* FSCalendarScopeHandle.h */,
-				3F1D3712B511137644C9FD57A2A378D5 /* FSCalendarScopeHandle.m */,
-				0900BF24FE43600634FC65C5A95D6267 /* FSCalendarStickyHeader.h */,
-				8D781F472890182602921A9D764E58AB /* FSCalendarStickyHeader.m */,
-				84C770431BE582E23081239C47EA7445 /* FSCalendarTransitionCoordinator.h */,
-				3CE6691C4CCEFA5CB7FA9013B5A86C87 /* FSCalendarTransitionCoordinator.m */,
-				460DE661C24D64B232718803E93F1886 /* FSCalendarWeekdayView.h */,
-				928B378B65A6D5F713DA6468496D993C /* FSCalendarWeekdayView.m */,
-				829D7521FAA3F1BF4BE1DF9F3FAC8E5E /* Support Files */,
+				74BBD18A9DD1EAF9553047FDC9AA9901 /* DKAssetGroupCellItemProtocol.swift */,
+				4A36DE187CA6C1B54CC4E7E8210772A2 /* DKAssetGroupDetailBaseCell.swift */,
+				D501C1EAC552AD88302E09393B1A6425 /* DKAssetGroupDetailCameraCell.swift */,
+				9BDECA4A526EC9ACCDDC805034EF21F5 /* DKAssetGroupDetailImageCell.swift */,
+				F2435DD81EA92061599B31F589830620 /* DKAssetGroupDetailVC.swift */,
+				C7FFC0C509E2CF25B1C239A982842607 /* DKAssetGroupDetailVideoCell.swift */,
+				9839C1EBAA8C90DC6EB9055295D5E248 /* DKAssetGroupGridLayout.swift */,
+				8213728CE4017E02CF3208481A7E32BC /* DKAssetGroupListVC.swift */,
+				C8AC2F587D8CFA192260876E37F586A9 /* DKImagePickerController.h */,
+				7C0E555292938DFB613E86FD42357FC4 /* DKImagePickerController.swift */,
+				2EDA73F1B8DDA68D2979F15E9A69EB18 /* DKImagePickerControllerDefaultUIDelegate.swift */,
+				0F3FEC21E92E0F3AECA92855FB1A99DF /* DKImageResource.swift */,
+				16C89960EB62DD590DCC0F76EB91BB16 /* DKPermissionView.swift */,
+				DDE3508B9EC2F9BC097D9237307FE4D9 /* DKPopoverViewController.swift */,
+				1B1CBB3438DAD238DC1A88035E8814B0 /* Camera */,
+				F1356C878B5136FEA9D0E8153E73FB72 /* ImageManager */,
+				A2C4809C2A66645EAD09F56F1747EF3E /* Resources */,
+				F889507C58DB43669F12938BF247F1F0 /* Support Files */,
+			);
+			name = DKImagePickerController;
+			path = DKImagePickerController;
+			sourceTree = "<group>";
+		};
+		5EC06C71AC01147C4FDE3E8A7414CF10 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				032979319EE412AF7653C03C584F671B /* IQKeyboardManager.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		6365C9146894E351349B322BCC59B7CF /* FSCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				15587A249D3147239CEED49183016BE0 /* FSCalendar.h */,
+				3B6988C034708E091CFFAB4F4BEC5FA5 /* FSCalendar.m */,
+				F43247B28B8FC78344E09F4E86F16C34 /* FSCalendar+Deprecated.m */,
+				9995F8352C2D7A1EA2DF45009E70AD59 /* FSCalendarAppearance.h */,
+				30FE1845F3C690ED9A622138E08A4451 /* FSCalendarAppearance.m */,
+				7E2735E5D00248152DE9C7EAA35AF3FF /* FSCalendarCalculator.h */,
+				4CD5BA8756161ED86B3262620CB851CE /* FSCalendarCalculator.m */,
+				E68F8C7AA6D4911D4E5937574B9B8396 /* FSCalendarCell.h */,
+				C25F1A9F0BCAE86FB466B8680D23D688 /* FSCalendarCell.m */,
+				B80E473615265718C2816FA49AC2AD5C /* FSCalendarCollectionView.h */,
+				9AA266D85463F6BFC7E0B1346E594A46 /* FSCalendarCollectionView.m */,
+				04E613271146D41B20893C75DEFBD81D /* FSCalendarCollectionViewLayout.h */,
+				DA17D53FF8C4021AAA4D8D012A17A027 /* FSCalendarCollectionViewLayout.m */,
+				0B6A6824BA7EC7D98842CFFE5395FACB /* FSCalendarConstants.h */,
+				26764A863CB91856E7B9B5F9149BDE6D /* FSCalendarConstants.m */,
+				2E014B689E919143BDDC388AA6379E18 /* FSCalendarDelegationFactory.h */,
+				A060C824A18B95373A7535641A408521 /* FSCalendarDelegationFactory.m */,
+				A1E9A401A1A84C112520046222F6EB88 /* FSCalendarDelegationProxy.h */,
+				70F781BA145057115FBD1A4E9D5E90B4 /* FSCalendarDelegationProxy.m */,
+				D1F4EA75F40B501441B489A9A4A6DE3F /* FSCalendarDynamicHeader.h */,
+				027C470F843827F80B12DC56D394CBFC /* FSCalendarExtensions.h */,
+				6DC4270EB60C71ECFCFC5F263B5C2769 /* FSCalendarExtensions.m */,
+				237493B267A985FB5A66EF5B52143E37 /* FSCalendarHeaderView.h */,
+				C2EBC4A66BE3B7599E617DDBE4BB3107 /* FSCalendarHeaderView.m */,
+				4DB70A3F3D94CE5DA931D1E5DA729C17 /* FSCalendarScopeHandle.h */,
+				D55B346D66FAA30735365D395E4A1155 /* FSCalendarScopeHandle.m */,
+				D856A1A3E416A5815EB450A3585EC85B /* FSCalendarStickyHeader.h */,
+				325582A49C2C5CA6D6BDF02477AD3C04 /* FSCalendarStickyHeader.m */,
+				CE9B79AC4EF2380EC0277C7C43093200 /* FSCalendarTransitionCoordinator.h */,
+				25E9253EF86A91CD005B38880A9B8467 /* FSCalendarTransitionCoordinator.m */,
+				ECCC44F8AD76B459768EA723858E7AF3 /* FSCalendarWeekdayView.h */,
+				392BCDC6DEF992E561DB10F0996B32A7 /* FSCalendarWeekdayView.m */,
+				5A2B3FAD15757D4B19C8657FE7DEE020 /* Support Files */,
 			);
 			name = FSCalendar;
 			path = FSCalendar;
 			sourceTree = "<group>";
 		};
-		751829696B033A1900E69F4A350B0AB3 /* Kingfisher */ = {
+		655BF4EBC048F58BFD36A4D8F2322EFD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				37E05BF35E82D646D8B31D3D5C6CC7F0 /* AnimatedImageView.swift */,
-				00020B9FE3549503661C94FB3701D572 /* Box.swift */,
-				84AEA7D08C962390528A4F71529BB051 /* CacheSerializer.swift */,
-				ACFE0E6A447CB2BA6DED3B1CD25CBD5A /* Filter.swift */,
-				920A35BE326D2F097A7B517FCC536C5C /* FormatIndicatedCacheSerializer.swift */,
-				29575B3D37307A2EE4C9587B60175C0E /* Image.swift */,
-				F9A6B722B18136FFE95FD84ACB10DCF4 /* ImageCache.swift */,
-				27A2FDD4A3BE83ACBE49F40E5C28B4B5 /* ImageDownloader.swift */,
-				3BCC223EFDE066998F2AC88B04AF60B5 /* ImagePrefetcher.swift */,
-				10D951C5D4B99BCF3C14F47B05B452ED /* ImageProcessor.swift */,
-				6E40DBDF741B0AB0255D2DE98D5CD919 /* ImageTransition.swift */,
-				20D48EAFAB22AD2EBF238A3E554A4DEC /* ImageView+Kingfisher.swift */,
-				08A3F18A19AE83A2DD1E54F2B4BA4CC9 /* Indicator.swift */,
-				0D9A3D4D18BDE00E2288148BFF190961 /* Kingfisher.h */,
-				F8E4B69B924C09A7571C2188968EE90D /* Kingfisher.swift */,
-				14424F682FBF5C05320B8C0FF43B8CCB /* KingfisherManager.swift */,
-				289626901B012FC2B758D15B4CED745B /* KingfisherOptionsInfo.swift */,
-				84F15565DE9BC70D196684E9E249307F /* Placeholder.swift */,
-				D1CA9814269A041B47C63E624727F395 /* RequestModifier.swift */,
-				D4E16380CCD111D99AD820C8F98AD1CC /* Resource.swift */,
-				35B4EE458FE9AC9C7E6C595F77AD3704 /* String+MD5.swift */,
-				7FFB7E1EA561874DB3AB9BEC95B01AFA /* ThreadHelper.swift */,
-				DC51141181A94425D61AAD7030537C67 /* UIButton+Kingfisher.swift */,
-				F102E585B773394A26D699955A337BD6 /* Support Files */,
+				FFBF2D84B347BCA4F405B732C32E026F /* TwitterKitResources.bundle */,
+				BE1166D88BD4CDC24EF203558ADE37A7 /* TwitterShareExtensionUIResources.bundle */,
 			);
-			name = Kingfisher;
-			path = Kingfisher;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		66C3104B857D442B83E2D4B7A5B1B94D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0A4A6E571DA823E79900F557666C503B /* Frameworks */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		74344526A5A1E3F71CC122EBDEF49F91 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				FDC4F20237B60F5B26F9AABF06329160 /* Frameworks */,
+				124FC4FB92897264A7438BBB7BC05FF8 /* Resources */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		7890FEFBB43A6A01654F707EEA571D89 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2CE082D7681DE3B905904E98561581E2 /* DKCameraResource.bundle */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -770,46 +878,25 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				0F75DF6C7C5F002280EC53F48E80B587 /* Frameworks */,
-				23BFAF5B25F68D05931A45353AEDE7D9 /* Pods */,
+				2E1D36F8F39926B1872DE28459F444C5 /* Pods */,
 				5A836C553DCA44996E55C6E9E40F7958 /* Products */,
 				85E2ED7E42660E616E1B4D8789DAEECF /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		7F0D53A4A78B3B61D052ABAA9179A5E7 /* Support Files */ = {
+		82D5D3DD42ACB4C91E2AD3A4E23445EC /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				058EC7F5F11BF17ECC022094A57D022B /* Info.plist */,
-				67BBD4DF96F37D9E41DB5766BA59A9F2 /* SwiftRangeSlider.modulemap */,
-				6DC545C0783A11D11C260EECC9B78BD8 /* SwiftRangeSlider.xcconfig */,
-				DD429A7620DF01857A4B129587A6206B /* SwiftRangeSlider-dummy.m */,
-				4FEC2BD59D25E33F296CE48EE801EBCF /* SwiftRangeSlider-prefix.pch */,
-				BD30588C5F7B9B4AFCE105700259134D /* SwiftRangeSlider-umbrella.h */,
+				C8C118EE54B86176996EA817DF17EBC6 /* CountryPickerSwift.modulemap */,
+				0A6BC794AF2E28A9A44716F9A111BA8D /* CountryPickerSwift.xcconfig */,
+				14565FFAA1B72FF0CC0FBC1D0CF4D8B9 /* CountryPickerSwift-dummy.m */,
+				18D9699D815E8A3372506DB6183A5901 /* CountryPickerSwift-prefix.pch */,
+				93622DA91E714FBF25F0D2D5818B8B6D /* CountryPickerSwift-umbrella.h */,
+				C52B5943420A6D2AEF197FB1DB309567 /* Info.plist */,
+				14A6B540F3F0272AABFC496E5BC72477 /* ResourceBundle-CountryPicker-Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SwiftRangeSlider";
-			sourceTree = "<group>";
-		};
-		81C68834B221409B3626D8518B784A58 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				A03EF4A281B6A1DEF61689AFA5DFE9A8 /* Frameworks */,
-			);
-			name = Base;
-			sourceTree = "<group>";
-		};
-		829D7521FAA3F1BF4BE1DF9F3FAC8E5E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9C7EDA721FF036951D163DBC1B4BE2EC /* FSCalendar.modulemap */,
-				9C978EDE633ECF793559C72B3706552B /* FSCalendar.xcconfig */,
-				54A5E8BB2237481E7290C466E6F56308 /* FSCalendar-dummy.m */,
-				BA7F4BB6425B0FD9D3D33B64C0406679 /* FSCalendar-prefix.pch */,
-				8E9379727C94F1961AAC74D8E743793B /* FSCalendar-umbrella.h */,
-				C9C3E6043D40BAB90793B5770F83607F /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/FSCalendar";
+			path = "../Target Support Files/CountryPickerSwift";
 			sourceTree = "<group>";
 		};
 		85E2ED7E42660E616E1B4D8789DAEECF /* Targets Support Files */ = {
@@ -820,12 +907,18 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		8A1353F9C1B66D525C7721E5F586360A /* Frameworks */ = {
+		8B54F589E61822685E09B675755A1CC9 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BEC259F2030EFC2C8E6EBC0126660A0E /* GooglePlaces.framework */,
+				FFBDFB1071D0B14848CADF5AF21CF751 /* Info.plist */,
+				D277DF5C9AB7BB0A8768FEFC09B5DD03 /* SwiftRangeSlider.modulemap */,
+				C66727A86C0511279FF468E6166F2F16 /* SwiftRangeSlider.xcconfig */,
+				0E2C58928432F7D84FABDD541C0FE3C9 /* SwiftRangeSlider-dummy.m */,
+				9B40FCB73D57C21ABDCBF2704EAECDF2 /* SwiftRangeSlider-prefix.pch */,
+				94866B431A3174699FBDA365E1E252CC /* SwiftRangeSlider-umbrella.h */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/SwiftRangeSlider";
 			sourceTree = "<group>";
 		};
 		8D775251B53A9D65661571137C012E2A /* Pods-B-App */ = {
@@ -846,81 +939,82 @@
 			path = "Target Support Files/Pods-B-App";
 			sourceTree = "<group>";
 		};
-		99E46C1E83B6567D6173D80AECA1E842 /* SwiftLoader */ = {
+		9012E2CFF6D396C305995B0407DAE76E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				DA42B7934311A0EDBD7A31E518EB4105 /* SwiftLoader.swift */,
-				259C4F84853D431F2CF9860978CB8641 /* Support Files */,
+				E70B2B292FF378FCFC34D9BC53668589 /* Info.plist */,
+				92F5203099CE033E0CE6EE9E56E04C4D /* SwiftLoader.modulemap */,
+				8F65303E5A3B45F4773F97B9837394C8 /* SwiftLoader.xcconfig */,
+				EB76B4151C1D02226875390D178F0A25 /* SwiftLoader-dummy.m */,
+				31E09E5C90B0EBE8476322C2E3A196E8 /* SwiftLoader-prefix.pch */,
+				67937A0D864C0C6EE9B95C20E00A3D09 /* SwiftLoader-umbrella.h */,
 			);
-			name = SwiftLoader;
-			path = SwiftLoader;
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLoader";
 			sourceTree = "<group>";
 		};
-		9B763AC7B439C689734AAA4202838483 /* CountryPickerSwift */ = {
+		903F15CA503614F983431885CC3EE3D4 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D2AC9481EB5C520AE37E83262BFEDD44 /* CountryPicker.swift */,
-				BD4BB222AD68941B1AE847C112DBFCB8 /* CountryView.swift */,
-				1EDE17F6B623F05EEA2A4A0F31E71A24 /* CountryView.xib */,
-				B7262B17D711283A01A148891520A3B3 /* Resources */,
-				BF63229751F8637BD5F5C8FD36604215 /* Support Files */,
+				C53EFA95CA092EBDC624C3559F235EB2 /* Info.plist */,
+				EA4C5AD9FF2B9FAA6B88D03CDDE410F1 /* Kingfisher.modulemap */,
+				C5A60F7927753017B320BF2E4F23FAC3 /* Kingfisher.xcconfig */,
+				0DD3280810150A586408442BD0DFF95F /* Kingfisher-dummy.m */,
+				3C92D3CB3A58C6BB427613EA583945FB /* Kingfisher-prefix.pch */,
+				6195BE9480B1315EB6A686CCD26AC918 /* Kingfisher-umbrella.h */,
 			);
-			name = CountryPickerSwift;
-			path = CountryPickerSwift;
+			name = "Support Files";
+			path = "../Target Support Files/Kingfisher";
 			sourceTree = "<group>";
 		};
-		9E5F4DC01AA50AD9348AD126A6B0E8D2 /* Camera */ = {
+		94CF8C87A938C77F5311485EC70051A7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				699277B0C708F993885657C08EFA9095 /* DKCamera.swift */,
-				D353F892D1792D9232E9F2DECDD66596 /* DKCameraResource.swift */,
-				C34E6AAB4A73DADDF17158974D031978 /* Resources */,
-			);
-			name = Camera;
-			sourceTree = "<group>";
-		};
-		9FE654B6487F353B45041C05C3592480 /* Alamofire */ = {
-			isa = PBXGroup;
-			children = (
-				135C5EE14CD55E1DF98C2C241EDDEC2C /* AFError.swift */,
-				89D6F055F15D3ECE4B4C13D42BA23B17 /* Alamofire.swift */,
-				651D14720CF44AB76C1C7FE1C83B03CB /* DispatchQueue+Alamofire.swift */,
-				72B958181EC9D7D466BEFA17D306E3DB /* MultipartFormData.swift */,
-				9BF055450B97B8819344A69588C2D09E /* NetworkReachabilityManager.swift */,
-				FDDEF19C51D507CBD52B1D22A838E2F7 /* Notifications.swift */,
-				47166DAFB99503210E0CDCC4A18BB7A7 /* ParameterEncoding.swift */,
-				648B0433798EEA898C5B7C67C692FEBF /* Request.swift */,
-				82B5E864C2D53EA1C6C86393E50CB2A7 /* Response.swift */,
-				B309326BBC7755E1C0E09EF42B3FF08C /* ResponseSerialization.swift */,
-				6EC97F47558E0365498EBD898FE19B6C /* Result.swift */,
-				36D372016B0DFF4D0BF1A9F6BAE5F880 /* ServerTrustPolicy.swift */,
-				86E982D4897DE79B4CFA97CA6C65951C /* SessionDelegate.swift */,
-				5F3BBC65E947EB438C06D51C74CFF9FA /* SessionManager.swift */,
-				97B7ACF7239A00F27EEA0B79E116F4F3 /* TaskDelegate.swift */,
-				0080AC1355937DCFD4423981FAF6F0A0 /* Timeline.swift */,
-				793326E85C1ABB3C4FECF79298418C6E /* Validation.swift */,
-				50A77FEB6E5C6EE6C9FEE80C25701F65 /* Support Files */,
-			);
-			name = Alamofire;
-			path = Alamofire;
-			sourceTree = "<group>";
-		};
-		A03EF4A281B6A1DEF61689AFA5DFE9A8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D3CB7BA0D8FCC8F3852773440D28B85A /* GoogleMapsBase.framework */,
+				A9C91B68C2921952F0B3D1234F71EFD4 /* GooglePlaces.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A5915F98FE24E3FBEF67C8FB7C00B824 /* GooglePlaces */ = {
+		9B4F7AB88A119A5415D551DD52C53A3F /* IQKeyboardManagerSwift */ = {
 			isa = PBXGroup;
 			children = (
-				8A1353F9C1B66D525C7721E5F586360A /* Frameworks */,
-				2F23B912AE5A1FA2794118ABECACC202 /* Resources */,
+				45958A228EA13D77407D74739EBDB824 /* IQBarButtonItem.swift */,
+				64EFB150AE3CE410277B379E74F85173 /* IQKeyboardManager.swift */,
+				A831723A081724A243121B6AF79C6BAE /* IQKeyboardManagerConstants.swift */,
+				69F29C64AA8809A0FCD85061840CD05A /* IQKeyboardManagerConstantsInternal.swift */,
+				9569010A417E53BCBF15DC9D0A2E3BE1 /* IQKeyboardReturnKeyHandler.swift */,
+				6998567FE3EDC94E0704CB98EE3C4ACA /* IQNSArray+Sort.swift */,
+				1A5EDFFA79343EA2F8A32CBE9B7267F5 /* IQPreviousNextView.swift */,
+				E6F6EC82B69582A767963D99F5B6B411 /* IQTextView.swift */,
+				EA7158AAE03AE829DDD5E87FCF90A6B9 /* IQTitleBarButtonItem.swift */,
+				CF86D547E769EA18495F125E1D3621D0 /* IQToolbar.swift */,
+				F4CC449BE42971427603C748516A6F9C /* IQUIScrollView+Additions.swift */,
+				E26C447AE64DDED5C299777884373381 /* IQUITextFieldView+Additions.swift */,
+				DAF8462966C7A86D4AD9F24750CBEC90 /* IQUIView+Hierarchy.swift */,
+				CC57BA37B9553001792188782D71D9F2 /* IQUIView+IQKeyboardToolbar.swift */,
+				D618F9EA594489E7B81404AC614DF6CD /* IQUIViewController+Additions.swift */,
+				87FB60296B78FDC0615387F8A1B3994A /* IQUIWindow+Hierarchy.swift */,
+				5EC06C71AC01147C4FDE3E8A7414CF10 /* Resources */,
+				3F004E53B3E4EBEC04F373C6486E097F /* Support Files */,
 			);
-			name = GooglePlaces;
-			path = GooglePlaces;
+			name = IQKeyboardManagerSwift;
+			path = IQKeyboardManagerSwift;
+			sourceTree = "<group>";
+		};
+		A2C4809C2A66645EAD09F56F1747EF3E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D1CF02BB7F5108D496698027B693ECD7 /* DKImagePickerController.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A925D2CD13E790592C6947B25B8145DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				666B6DE761921E1A17200C3173023E6C /* TwitterKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		AAED47AE8EC4D2F3EA709C5BDB053A32 /* iOS */ = {
@@ -936,122 +1030,78 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		AD969FDE379574A983E95C61A069781E /* Maps */ = {
+		AC3A1312FE3D76538133921558D9BAF1 /* TwitterKit */ = {
 			isa = PBXGroup;
 			children = (
-				22C37671F3835FC48776E9154831C6B1 /* Frameworks */,
-				BE608B318E1A1E9825F37673FEBF6A8F /* Resources */,
+				A925D2CD13E790592C6947B25B8145DF /* Frameworks */,
+				655BF4EBC048F58BFD36A4D8F2322EFD /* Resources */,
 			);
-			name = Maps;
+			name = TwitterKit;
+			path = TwitterKit;
 			sourceTree = "<group>";
 		};
-		AED950F187271BEBFB7AE0A300EC904B /* Support Files */ = {
+		BDE6B786A19FB878359D3E6CF2AB4DBA /* TwitterCore */ = {
 			isa = PBXGroup;
 			children = (
-				7BBD1CEC0A0B793BB5867CE9EE5E4252 /* Info.plist */,
-				09327197993FC45DD933F42351266AFF /* IQKeyboardManagerSwift.modulemap */,
-				4CD5B7A31C14BBD727275D3112081D61 /* IQKeyboardManagerSwift.xcconfig */,
-				8DCC8524A387DF4B0245BFF18AA89BBF /* IQKeyboardManagerSwift-dummy.m */,
-				59BB84C7B1BCC514B587E69D210A6044 /* IQKeyboardManagerSwift-prefix.pch */,
-				80A5C1D2E12E3FE68DA1081F5423A66E /* IQKeyboardManagerSwift-umbrella.h */,
+				1967F1FB9DEA7E9E2C16A36DC0AF71A1 /* Frameworks */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/IQKeyboardManagerSwift";
+			name = TwitterCore;
+			path = TwitterCore;
 			sourceTree = "<group>";
 		};
-		B7262B17D711283A01A148891520A3B3 /* Resources */ = {
+		DCE6998CFE9A6DFC6354F846D44A5222 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				ECD44F34CD9088CE28537AEFAA0A45F5 /* Data */,
-				134B840155AB784D1B2EADC5BB8B5120 /* Images */,
+				7AD40528391B03C678B320F1B5996C09 /* Data */,
+				6E530F20CFE0F1BAD56B583FD5341BCB /* Images */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		BE608B318E1A1E9825F37673FEBF6A8F /* Resources */ = {
+		F1356C878B5136FEA9D0E8153E73FB72 /* ImageManager */ = {
 			isa = PBXGroup;
 			children = (
-				CC3DE6280B85BD05FB01B4482F526115 /* GoogleMaps.bundle */,
+				5FF5999B90F64A6390E2245071C6F420 /* DKAsset.swift */,
+				E5B45D57FA87C2BBFA1D61EC3F93F422 /* DKAssetGroup.swift */,
+				E5F2691A872BAACEDC4065D6397917C3 /* DKGroupDataManager.swift */,
+				8A0FDD31E076EFE8A066DDC02E3DBC3F /* DKImageManager.swift */,
 			);
-			name = Resources;
+			name = ImageManager;
 			sourceTree = "<group>";
 		};
-		BF63229751F8637BD5F5C8FD36604215 /* Support Files */ = {
+		F86260638EA61FF16ECC7B07D3936217 /* SwiftRangeSlider */ = {
 			isa = PBXGroup;
 			children = (
-				31DABB6D43FC8AF2862BF96A3D1CFEB0 /* CountryPickerSwift.modulemap */,
-				79152466D743A42807EE7A5F9F1B6490 /* CountryPickerSwift.xcconfig */,
-				28F0D1C1CC8450A503E7B582E840E733 /* CountryPickerSwift-dummy.m */,
-				A83A2D72AAE7E9987DE55BC2CD54DFEF /* CountryPickerSwift-prefix.pch */,
-				A43BD75C1A3033BD7C654812AEDDF67A /* CountryPickerSwift-umbrella.h */,
-				9C232A7E663761359A29A735D5409C4B /* Info.plist */,
-				512572843FD61A971580189C8F748B71 /* ResourceBundle-CountryPicker-Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/CountryPickerSwift";
-			sourceTree = "<group>";
-		};
-		C34E6AAB4A73DADDF17158974D031978 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				622E88FB31A290F76C64456E7986B1EA /* DKCameraResource.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		D11AE80B792063D44CD6A02536006ABB /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				6F7B5786AB42255A0C44869F01D73C51 /* DKImagePickerController.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		E06C0C56F7C26FAF5F277DFB2642B1AC /* SwiftRangeSlider */ = {
-			isa = PBXGroup;
-			children = (
-				2F6B2DDB1A7CA28DFC889FEF712450B6 /* RangeSlider.swift */,
-				C56EC56E57B29361411415AD5E7F5ED1 /* RangeSliderKnob.swift */,
-				D9AD1BB29A6011965D8C0FA98128ADCF /* RangeSliderTrack.swift */,
-				7F0D53A4A78B3B61D052ABAA9179A5E7 /* Support Files */,
+				0531D4396DECAEDD705E81CAC5A3ED5F /* RangeSlider.swift */,
+				35C2C0FC2E5914445797527B7000B515 /* RangeSliderKnob.swift */,
+				FC08E75F55C71BE65060255255064969 /* RangeSliderTrack.swift */,
+				8B54F589E61822685E09B675755A1CC9 /* Support Files */,
 			);
 			name = SwiftRangeSlider;
 			path = SwiftRangeSlider;
 			sourceTree = "<group>";
 		};
-		EF32D92E8EE2DD82685AA85D77305B1C /* GoogleMaps */ = {
+		F889507C58DB43669F12938BF247F1F0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				81C68834B221409B3626D8518B784A58 /* Base */,
-				AD969FDE379574A983E95C61A069781E /* Maps */,
-			);
-			name = GoogleMaps;
-			path = GoogleMaps;
-			sourceTree = "<group>";
-		};
-		F102E585B773394A26D699955A337BD6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				86F8551F89E54B258249C4B32C29733A /* Info.plist */,
-				2006EBAFB0C7FA654CBDBE05473476F9 /* Kingfisher.modulemap */,
-				02BA7876DBC2BF5EB51724C155F7E9CB /* Kingfisher.xcconfig */,
-				5E7C0FDB25F4A494365F3AF24F282C14 /* Kingfisher-dummy.m */,
-				8FAF5F0EF93E26CB533622D4CCE5DDD2 /* Kingfisher-prefix.pch */,
-				47B4A632EB6C43E808EB96134BAAA995 /* Kingfisher-umbrella.h */,
+				2D3958F4D71969F5337A3BE35DB45453 /* DKImagePickerController.modulemap */,
+				29254D85D42E4989253638A0B5EF6AC5 /* DKImagePickerController.xcconfig */,
+				542BAE94C90FF44B8FFA8565A2751EEC /* DKImagePickerController-dummy.m */,
+				A232C103EE713C4E652A34C2BBA65795 /* DKImagePickerController-prefix.pch */,
+				945CC825049506A11193D5D5A7451EA8 /* DKImagePickerController-umbrella.h */,
+				67ADB3B83C66F588FA03D7EB34086DD7 /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Kingfisher";
+			path = "../Target Support Files/DKImagePickerController";
 			sourceTree = "<group>";
 		};
-		F85E7760AD903CEE7862732E59FF70A6 /* ImageManager */ = {
+		FDC4F20237B60F5B26F9AABF06329160 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5D3E4BC632B8C2B9C72381E4776147CE /* DKAsset.swift */,
-				0ADB996091C0F54ADF2F78EEC9649D2C /* DKAssetGroup.swift */,
-				60EAE842A7CF5B2597DBC1304237F21D /* DKGroupDataManager.swift */,
-				B9F66E5D2A45408C1FADC48A93F34449 /* DKImageManager.swift */,
+				2E5958057F32A023EA68DE8E3D9D3DEE /* GoogleMaps.framework */,
+				4259B464006A1BE59CA74FD497DD7246 /* GoogleMapsCore.framework */,
 			);
-			name = ImageManager;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1643,7 +1693,7 @@
 /* Begin XCBuildConfiguration section */
 		077C4BB7DBEAA715DED46C057DC8051C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D48C629EE541C991D3EE39EAA916A60D /* Alamofire.xcconfig */;
+			baseConfigurationReference = 3C013BA1B88190EEE09075C6C4D13F04 /* Alamofire.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1678,7 +1728,7 @@
 		};
 		0EF9B506644124D4D631793070AB86DB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C978EDE633ECF793559C72B3706552B /* FSCalendar.xcconfig */;
+			baseConfigurationReference = 35BDB3DBF6109E9DE6B499973321D757 /* FSCalendar.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1712,7 +1762,7 @@
 		};
 		38CE7D2AFE1959EF013F24FD23FC5F4F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02BA7876DBC2BF5EB51724C155F7E9CB /* Kingfisher.xcconfig */;
+			baseConfigurationReference = C5A60F7927753017B320BF2E4F23FAC3 /* Kingfisher.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1747,7 +1797,7 @@
 		};
 		552AD4F0EDEDE7A0B8B08E986745B266 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79152466D743A42807EE7A5F9F1B6490 /* CountryPickerSwift.xcconfig */;
+			baseConfigurationReference = 0A6BC794AF2E28A9A44716F9A111BA8D /* CountryPickerSwift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1782,7 +1832,7 @@
 		};
 		63DB0332BADC816134681B54CF142D1C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4CD5B7A31C14BBD727275D3112081D61 /* IQKeyboardManagerSwift.xcconfig */;
+			baseConfigurationReference = 8FFE7548E5EA854AB1B0B43E82B6F389 /* IQKeyboardManagerSwift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1817,7 +1867,7 @@
 		};
 		6DCFC2E4860FF3BAC4195CBD8BAE55E4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6DC545C0783A11D11C260EECC9B78BD8 /* SwiftRangeSlider.xcconfig */;
+			baseConfigurationReference = C66727A86C0511279FF468E6166F2F16 /* SwiftRangeSlider.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1852,7 +1902,7 @@
 		};
 		7BE9827D1CE28C57221E42AB4796DD2C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79152466D743A42807EE7A5F9F1B6490 /* CountryPickerSwift.xcconfig */;
+			baseConfigurationReference = 0A6BC794AF2E28A9A44716F9A111BA8D /* CountryPickerSwift.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CountryPickerSwift";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1869,7 +1919,7 @@
 		};
 		7C5F849A5AE30AF5B1A558CCB48215FC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6DC545C0783A11D11C260EECC9B78BD8 /* SwiftRangeSlider.xcconfig */;
+			baseConfigurationReference = C66727A86C0511279FF468E6166F2F16 /* SwiftRangeSlider.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1943,7 +1993,7 @@
 		};
 		924700136AE21EECBD141BC9DC88E89D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E33F9FABC95BAA1C47088567D70E4B67 /* DKImagePickerController.xcconfig */;
+			baseConfigurationReference = 29254D85D42E4989253638A0B5EF6AC5 /* DKImagePickerController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1978,7 +2028,7 @@
 		};
 		94F450FBA59155B03232F6E954743579 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E33F9FABC95BAA1C47088567D70E4B67 /* DKImagePickerController.xcconfig */;
+			baseConfigurationReference = 29254D85D42E4989253638A0B5EF6AC5 /* DKImagePickerController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2062,7 +2112,7 @@
 		};
 		9D2BB1663DB9028DE43B989CD3B64BF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C978EDE633ECF793559C72B3706552B /* FSCalendar.xcconfig */;
+			baseConfigurationReference = 35BDB3DBF6109E9DE6B499973321D757 /* FSCalendar.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2096,7 +2146,7 @@
 		};
 		9E4805B7D783E1C6620A0C0A2C39528D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79152466D743A42807EE7A5F9F1B6490 /* CountryPickerSwift.xcconfig */;
+			baseConfigurationReference = 0A6BC794AF2E28A9A44716F9A111BA8D /* CountryPickerSwift.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CountryPickerSwift";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -2113,7 +2163,7 @@
 		};
 		9EB49FD9F8BC20F860E21D52BCCB8A05 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A300948E405DBA9592A35C3D486BE22 /* SwiftLoader.xcconfig */;
+			baseConfigurationReference = 8F65303E5A3B45F4773F97B9837394C8 /* SwiftLoader.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2148,7 +2198,7 @@
 		};
 		A1DF1118E91E16168C7F0B045B5C7414 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4CD5B7A31C14BBD727275D3112081D61 /* IQKeyboardManagerSwift.xcconfig */;
+			baseConfigurationReference = 8FFE7548E5EA854AB1B0B43E82B6F389 /* IQKeyboardManagerSwift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2183,7 +2233,7 @@
 		};
 		A4CB7B856C5C822BC58EF1A80B4787FD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79152466D743A42807EE7A5F9F1B6490 /* CountryPickerSwift.xcconfig */;
+			baseConfigurationReference = 0A6BC794AF2E28A9A44716F9A111BA8D /* CountryPickerSwift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2218,7 +2268,7 @@
 		};
 		B90C00C77E1A4C0060A950D6F3F4B1D8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A300948E405DBA9592A35C3D486BE22 /* SwiftLoader.xcconfig */;
+			baseConfigurationReference = 8F65303E5A3B45F4773F97B9837394C8 /* SwiftLoader.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2297,7 +2347,7 @@
 		};
 		D60F8C4DE6B0D221A33959774DA3DAFF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D48C629EE541C991D3EE39EAA916A60D /* Alamofire.xcconfig */;
+			baseConfigurationReference = 3C013BA1B88190EEE09075C6C4D13F04 /* Alamofire.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2332,7 +2382,7 @@
 		};
 		DC995548C290F9767E01F7C6DCD69099 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02BA7876DBC2BF5EB51724C155F7E9CB /* Kingfisher.xcconfig */;
+			baseConfigurationReference = C5A60F7927753017B320BF2E4F23FAC3 /* Kingfisher.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

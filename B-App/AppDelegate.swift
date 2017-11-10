@@ -11,6 +11,7 @@ import CoreData
 import IQKeyboardManagerSwift
 import GoogleMaps
 import GooglePlaces
+import TwitterKit
 
 let appDelegateObj = UIApplication.shared.delegate as! AppDelegate
 
@@ -26,9 +27,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.sharedManager().shouldResignOnTouchOutside = true
         GMSServices.provideAPIKey("AIzaSyBNNYNPabfeamWXspAdChLzkYANao1NG4E")
         GMSPlacesClient.provideAPIKey("AIzaSyBNNYNPabfeamWXspAdChLzkYANao1NG4E")
+        
+        Twitter.sharedInstance().start(withConsumerKey:"hTpkPVU4pThkM0", consumerSecret:"ovEqziMzLpUOF163Qg2mj")
+
         return true
     }
 
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        return Twitter.sharedInstance().application(app, open: url, options: options)
+    }
+    
     public  func showAlert(_ str: String) {
         let alert = UIAlertController(title: str, message: "", preferredStyle: .alert)
         let alertAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)

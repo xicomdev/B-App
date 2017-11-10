@@ -20,7 +20,9 @@ class User: NSObject, NSCoding  {
     var emailNotification = Bool()
     var userId = ""
     var token = ""
-
+    
+    var socialID = ""
+    var imageURL = ""
     static var me = User()
     
     override init()

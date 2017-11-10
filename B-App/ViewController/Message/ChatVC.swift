@@ -45,7 +45,6 @@ class ChatVC: UIViewController , UITextViewDelegate, UITableViewDelegate, UITabl
         
         timerChat =  Timer.scheduledTimer(withTimeInterval: 1.5, repeats: true, block: { (result) in
             self.getAllThreadMessages()
-            
         })
         
     }
@@ -62,6 +61,7 @@ class ChatVC: UIViewController , UITextViewDelegate, UITableViewDelegate, UITabl
         tblChat.reloadData()
         
     }
+    
     override func viewWillDisappear(_ animated: Bool)  {
         super.viewDidDisappear(animated)
         self.stopKeyboardObserver()
@@ -71,7 +71,6 @@ class ChatVC: UIViewController , UITextViewDelegate, UITableViewDelegate, UITabl
         timerChat.invalidate()
         
     }
-    
     
     func actionBtnBackPressed() {
         self.navigationController!.popViewController(animated: true)

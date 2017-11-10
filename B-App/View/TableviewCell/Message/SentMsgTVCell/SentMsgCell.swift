@@ -14,7 +14,6 @@ class SentMsgCell: UITableViewCell {
     
     @IBOutlet weak var lblTime: UILabel!
     @IBOutlet weak var lblMsg: UILabel!
-    @IBOutlet weak var imgVwUser: SetCornerImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -25,6 +25,21 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>twitterkit-hTpkPVU4pThkM0</string>
+                </array>
+            </dict>
+        </array>
+        <key>LSApplicationQueriesSchemes</key>
+        <array>
+            <string>twitter</string>
+            <string>twitterauth</string>
+        </array>
+
 	<key>NSCameraUsageDescription</key>
 	<string>App needs to take new photos.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>

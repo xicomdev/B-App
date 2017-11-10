@@ -18,6 +18,9 @@ PODS:
   - Kingfisher (3.13.1)
   - SwiftLoader (0.2.5)
   - SwiftRangeSlider (1.1.0)
+  - TwitterCore (3.0.2)
+  - TwitterKit (3.2.1):
+    - TwitterCore (>= 3.0.2)
 
 DEPENDENCIES:
   - Alamofire (~> 4.5)
@@ -30,6 +33,7 @@ DEPENDENCIES:
   - Kingfisher (~> 3.12)
   - SwiftLoader (~> 0.2)
   - SwiftRangeSlider (~> 1.1)
+  - TwitterKit
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
@@ -42,7 +46,9 @@ SPEC CHECKSUMS:
   Kingfisher: ed9707a409cc47fddafbcd12a43a9757e3600af5
   SwiftLoader: 12d7a6f661f5e9a2c9a72003e7dd6162f4ff0cc4
   SwiftRangeSlider: fdaabc219e813d47f26525d9a56b6b5e5ba55b51
+  TwitterCore: e0420b01e02e7d20e94690e37f43e75de219ab8d
+  TwitterKit: 205ac89824bbfe9e85a16c420d30bb7bcbedac45
 
-PODFILE CHECKSUM: def2382c7c0283318fb803df7288da1561a42eb2
+PODFILE CHECKSUM: ba5d450aaed5a93d5644f9f7f4a81b5026c11f25
 
 COCOAPODS: 1.3.1

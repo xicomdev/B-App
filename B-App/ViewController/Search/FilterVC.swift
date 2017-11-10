@@ -9,6 +9,20 @@
 import UIKit
 import SwiftRangeSlider
 
+struct FilterInfo {
+    var filterEnabled = false
+    var region = String()
+    var priceRangeStart = Int()
+    var priceRangeEnd = Int()
+    var size = Int()
+    var gender = false
+    var term = false
+    
+}
+
+var filterDetails : FilterInfo = FilterInfo()
+
+
 class FilterVC: UIViewController {
 
     @IBOutlet weak var lblPriceRange: UILabel!
@@ -19,6 +33,8 @@ class FilterVC: UIViewController {
     @IBOutlet weak var priceRangeSlider: RangeSlider!
     
     var currentSize = 0
+    
+    var selectionDelegate: MSSelectionCallback!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,16 +49,19 @@ class FilterVC: UIViewController {
     }
     
     @IBAction func actionResetBtn(_ sender: AnyObject) {
+        filterDetails.filterEnabled = false
     }
     
     @IBAction func actionSIzeMinus(_ sender: AnyObject) {
         if currentSize != 0 {
-            lblSizeValue.text = "\(currentSize - 1)"
+            currentSize -= 1
+            lblSizeValue.text = "\(currentSize)"
         }
     }
     
     @IBAction func actionSizePlus(_ sender: AnyObject) {
-        lblSizeValue.text = "\(currentSize + 1)"
+        currentSize += 1
+        lblSizeValue.text = "\(currentSize)"
     }
     
     @IBAction func actionGenderBtn(_ sender: AnyObject) {
@@ -62,10 +81,20 @@ class FilterVC: UIViewController {
     }
     
     @IBAction func actionApplyBtn(_ sender: AnyObject) {
+        filterDetails.filterEnabled = true
+        filterDetails.gender = btnGender.isSelected
+        filterDetails.term = btnTerm.isSelected
+        filterDetails.size = currentSize
+        filterDetails.priceRangeStart = Int(priceRangeSlider.lowerValue)
+        filterDetails.priceRangeEnd = Int(priceRangeSlider.upperValue)
+        if selectionDelegate != nil {
+            selectionDelegate.moveWithFilterSelection!()
+            self.navigationController?.popToRootViewController(animated: true)
+        }
     }
     
     @IBAction func actionPriceChanged(_ sender: AnyObject) {
-        lblPriceRange.text = "$\(priceRangeSlider.lowerValue)-$\(priceRangeSlider.upperValue)"
+        lblPriceRange.text = "$\(Int(priceRangeSlider.lowerValue))-$\(Int(priceRangeSlider.upperValue))"
     }
     
     override func didReceiveMemoryWarning() {

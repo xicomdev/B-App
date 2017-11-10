@@ -28,22 +28,26 @@ class TabItemProfileVC: UIViewController {
         let faqvc = profileStoryboard.instantiateViewController(withIdentifier: "FAQVC") as! FAQVC
         faqvc.screenTitle = "FAQ"
         self.navigationController?.pushViewController(faqvc, animated: true)
-//        self.pushViewController(controllerName: "FAQVC", storyboardName: profileStoryboard)
     }
+    
     @IBAction func actionPaymentInfo(_ sender: AnyObject) {
         self.pushViewController(controllerName: "PaymentInfoVC", storyboardName: profileStoryboard)
-
     }
+    
     @IBAction func actionStat(_ sender: AnyObject) {
         self.pushViewController(controllerName: "ProfileVC", storyboardName: profileStoryboard)
-
     }
+ 
     @IBAction func actionExit(_ sender: AnyObject) {
-
+        let landingVc = mainStoryboard.instantiateViewController(withIdentifier: "LandingVC") as! LandingVC
+        let navControllr = UINavigationController.init(rootViewController: landingVc)
+        appDelegate().window?.rootViewController = navControllr
     }
+    
     @IBAction func actionBackBtn(_ sender: AnyObject) {
         self.navigationController?.popViewController(animated: true)
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

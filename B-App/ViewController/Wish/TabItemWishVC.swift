@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TabItemWishVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class TabItemWishVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, MSSelectionCallback {
 
     @IBOutlet weak var collctnVwAds: UICollectionView!
     @IBOutlet weak var btnSortBy: UIButton!
@@ -49,13 +49,24 @@ class TabItemWishVC: UIViewController, UICollectionViewDelegate, UICollectionVie
     @IBAction func actionFilterBtn(_ sender: AnyObject) {
         let filterVc = tabbarStoryboard.instantiateViewController(withIdentifier: "FilterVC") as! FilterVC
         filterVc.hidesBottomBarWhenPushed = true
+        filterVc.selectionDelegate = self
         self.navigationController?.pushViewController(filterVc, animated: true)
     }
     
     @IBAction func actionSortByBtn(_ sender: AnyObject) {
         let sortVc = tabbarStoryboard.instantiateViewController(withIdentifier: "SortByVC") as! SortByVC
         sortVc.hidesBottomBarWhenPushed = true
+        sortVc.selectionDelegate = self
         self.navigationController?.pushViewController(sortVc, animated: true)
+    }
+    
+    //MARK: - Delegate functions
+    func moveWithFilterSelection() {
+    
+    }
+    
+    func moveWithSortSelection() {
+        
     }
     
     //MARK: - Tableview delegate and datsource methods 

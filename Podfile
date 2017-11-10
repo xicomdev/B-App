@@ -16,4 +16,5 @@ pod 'GooglePlaces', '~> 2.4'
 pod 'DKImagePickerController', '~> 3.6'
 pod 'FSCalendar', '~> 2.7'
 pod 'SwiftLoader', '~> 0.2'
+pod 'TwitterKit'
 end

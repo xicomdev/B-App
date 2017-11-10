@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TwitterKit
 
 class SocialSignupVC: UIViewController {
 
@@ -21,9 +22,41 @@ class SocialSignupVC: UIViewController {
     }
     
     @IBAction func actionFacebookBtn(_ sender: AnyObject) {
+        FBManager.sharedInstance.currentUserProfile(viewController: self) { (success, response, strError) in
+            
+            if success == true{
+                if let dictFB = response as? Dictionary <String , Any>
+                {
+                    print(dictFB["id"] as! String)
+                    User.me.firstname = dictFB["first_name"] as! String
+                    User.me.lastname = dictFB["last_name"] as! String
+                    User.me.socialID = dictFB["id"] as! String
+                    User.me.imageURL = String(format: "http://graph.facebook.com/%@/picture?type=large", User.me.socialID)
+                }
+            }else{
+                showAlert(title: "B-App", message: strError!, controller: self)
+            }
+        }
     }
     
     @IBAction func actionTwitterBtn(_ sender: AnyObject) {
+        Twitter.sharedInstance().logIn(completion: { (session, error) in
+            if (session != nil) {
+                
+                let client = TWTRAPIClient.withCurrentUser()
+                
+                client.requestEmail { email, error in
+                    if (email != nil) {
+                        print("signed in as \(session!.userName)");
+                    } else {
+                        print("error: \(error!.localizedDescription)");
+                    }
+                }
+
+            } else {
+                print("error: \(error!.localizedDescription)");
+            }
+        })
     }
     
     @IBAction func actionLinkedinBtn(_ sender: AnyObject) {
