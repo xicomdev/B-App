@@ -46,6 +46,12 @@ class TabItemMessageVC: UIViewController, UITableViewDelegate, UITableViewDataSo
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let chatVC = tabbarStoryboard.instantiateViewController(withIdentifier: "ChatVC") as! ChatVC
+        chatVC.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(chatVC, animated: true)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

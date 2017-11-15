@@ -25,8 +25,10 @@ class ProfileVC: UIViewController {
         txtfldEmail.text = User.me.email
         txtfldName.text = User.me.firstname
         txtfldLastName.text = User.me.lastname
+        txtfldPhone.text = User.me.phone_no
         
         setInteractionOff()
+        imgvwDP.layer.cornerRadius = imgvwDP.frame.width / 2
 
     }
 

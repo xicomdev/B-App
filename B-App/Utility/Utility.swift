@@ -33,16 +33,18 @@ func FontLight(size: CGFloat) -> (UIFont)
 }
 
 func getAuthHeader() -> String {
-    if User.me.email == "" {
-        return ""
-    }else if User.me.password == "" {
-        return ""
-    }
-    let loginString = String(format: "%@:%@", User.me.email, User.me.password)
-    let loginData = loginString.data(using: String.Encoding.utf8)!
-    let base64LoginString = loginData.base64EncodedString()
+
+        if User.me.email == "" {
+            return ""
+        }else if User.me.password == "" {
+            return ""
+        }
+        let loginString = String(format: "%@:%@", User.me.email, User.me.password)
+        let loginData = loginString.data(using: String.Encoding.utf8)!
+        let base64LoginString = loginData.base64EncodedString()
+        
+        return "Basic \(base64LoginString)"
     
-    return "Basic \(base64LoginString)"
 }
 
 func  showAlert(title : String , message : String , controller : UIViewController)
@@ -80,6 +82,13 @@ public func getDayAndDateString(_ date: Date) -> (dayStr:String, dateStr:String)
     formatter.dateFormat = "E"
     let dayStr = formatter.string(from: date)
     return (dayStr,dateStr)
+}
+
+public func getDateStr(_ date: Date) -> String {
+    let formatter = DateFormatter()
+    formatter.dateFormat  = "yyyy-MM-dd HH:mm:ss"
+    formatter.timeZone = TimeZone(abbreviation: "UTC")
+    return formatter.string(from: date)
 }
 
 public func generateDatesArrayBetweenTwoDates(startDate: Date , endDate:Date) ->[Date]

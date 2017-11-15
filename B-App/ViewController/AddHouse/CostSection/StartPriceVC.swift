@@ -26,9 +26,11 @@ class StartPriceVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         {
             lblSliderValue.text = "$100"
             sliderPrice.value = 100
+            txtfldCurrency.text = "$"
+
         }else
         {
-            lblSliderValue.text = "$\(House.newHouse.startPrice)"
+            lblSliderValue.text = "\(txtfldCurrency.text!)\(House.newHouse.startPrice)"
             sliderPrice.value = Float(House.newHouse.startPrice)!
         }
         
@@ -40,16 +42,16 @@ class StartPriceVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         self.navigationController?.popViewController(animated:  true)
     }
     @IBAction func actionSaveExitBtn(_ sender: AnyObject) {
-        House.newHouse.startPrice = "$\(Int(sliderPrice.value))"
+        House.newHouse.startPrice = "\(txtfldCurrency.text!)\(Int(sliderPrice.value))"
         self.navigationController?.popToRootViewController(animated: true)
 
     }
     @IBAction func actionContinueBtn(_ sender: AnyObject) {
-        House.newHouse.startPrice = "$\(Int(sliderPrice.value))"
+        House.newHouse.startPrice = "\(txtfldCurrency.text!)\(Int(sliderPrice.value))"
         self.pushViewController(controllerName: "NoticePeriodVC", storyboardName: AddHouseStoryboard)
     }
     @IBAction func actionSliderPrice(_ sender: Any) {
-        lblSliderValue.text = "$\(Int(sliderPrice.value))"
+        lblSliderValue.text = "\(txtfldCurrency.text!)\(Int(sliderPrice.value))"
     }
 
     //MARK: - picker view delegate methods
@@ -68,6 +70,7 @@ class StartPriceVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         txtfldCurrency.text = aryCurrency[row]
+        lblSliderValue.text = "\(txtfldCurrency.text!)\(Int(sliderPrice.value))"
     }
     
     override func didReceiveMemoryWarning() {

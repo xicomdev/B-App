@@ -18,10 +18,42 @@ class PublishAdVC: UIViewController {
     }
 
     @IBAction func actionPublish(_ sender: Any) {
-        self.pushViewController(controllerName: "CongratulationVC", storyboardName: AddHouseStoryboard)
+        let param = [
+            "category": House.newHouse.accomodationType ,
+            "coordinate": [
+                "latitude": House.newHouse.lattitude,
+                "longitude": House.newHouse.longitude
+            ],
+            "address": "\(House.newHouse.apartmentNo) \(House.newHouse.street) \(House.newHouse.city) \(House.newHouse.country) \(House.newHouse.zipcode)",
+            "board_size": [
+                "width": "\(Int(House.newHouse.areaSIze)!/2)",
+                "height": "\(Int(House.newHouse.areaSIze)!/2)"
+            ],
+            "sale_plans": [
+                [
+                    "price": House.newHouse.startPrice,
+                    "unit": House.newHouse.costType,
+                    "times": [
+                        "from": House.newHouse.bookDateStart,
+                        "until": House.newHouse.bookDateEnd
+                    ]
+                ]
+            ]
+            ] as [String : Any]
+        
+        
+        ApiManager.sharedObj.requestApi(API_Billboards, method: .post, param: param) { (responseDict, isSuccess, errorStr) in
+            if isSuccess {
+                
+            }else {
+                showAlert(title: "B-App", message: errorStr!, controller: self)
+            }
+        }
+//        self.pushViewController(controllerName: "CongratulationVC", storyboardName: AddHouseStoryboard)
     }
     
     @IBAction func actionMoreDetail(_ sender: Any) {
+        
         self.navigationController?.popToRootViewController(animated: true)
     }
     

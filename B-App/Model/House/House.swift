@@ -28,7 +28,8 @@ class House: NSObject {
     var currency = ""
     var startPrice = ""
     var noticePeriod = ""
-    var bookDate = ""
+    var bookDateStart = ""
+    var bookDateEnd = ""
     var profilePhoto: UIImage?
     var phoneNo = ""
     var countryCode = ""

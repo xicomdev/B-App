@@ -90,7 +90,7 @@ class User: NSObject, NSCoding  {
         
         let email : String? = aDecoder.decodeObject(forKey: "email") as? String
         if email != nil {
-            self.lastname = email!
+            self.email = email!
         }
         
         let userId : String? = aDecoder.decodeObject(forKey: "userId") as? String
@@ -102,6 +102,11 @@ class User: NSObject, NSCoding  {
         if token != nil {
             self.token = token!
         }
+        
+        let password : String? = aDecoder.decodeObject(forKey: "password") as? String
+        if password != nil {
+            self.password = password!
+        }
     }
     
     public func encode(with aCoder: NSCoder) {
@@ -111,6 +116,7 @@ class User: NSObject, NSCoding  {
         aCoder.encode(self.lastname, forKey: "lastname")
         aCoder.encode(self.email, forKey: "email")
         aCoder.encode(self.userId, forKey: "userId")
+        aCoder.encode(self.password, forKey: "password")
 
     }
     

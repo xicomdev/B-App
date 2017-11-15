@@ -19,7 +19,7 @@ class ApiManager{
         
     }
     
-    func requestApi(_ endpoint: String, method: HTTPMethod, param: Parameters?, completion: @escaping (_ result:NSDictionary?, _ isSuccess:Bool, _ errorStr:String?) -> Void) {
+    func requestApi(_ endpoint: String, method: HTTPMethod, param: [String : Any]?, completion: @escaping (_ result:NSDictionary?, _ isSuccess:Bool, _ errorStr:String?) -> Void) {
         if (Reachability()?.isReachable)! {
             
             showIndicator()

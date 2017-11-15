@@ -12,6 +12,8 @@ import UIKit
 
 let API_Signup = "signup"
 let API_Login = "user/login"
+let API_GetProfile = "user/profile"
+let API_Billboards = "billboards"
 
 let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
 let tabbarStoryboard = UIStoryboard(name: "TabBar", bundle: nil)
@@ -20,7 +22,7 @@ let profileStoryboard = UIStoryboard(name: "Profile", bundle: nil)
 let AddHouseStoryboard = UIStoryboard(name: "AddHouse", bundle: nil)
 
 let colorBlueBtn = UIColor(red: 88/255, green: 193/255, blue: 207/255, alpha: 1)
-var arrayMsgs = [("HEllo",0),("Hii",1)]
+var arrayMsgs = [("Hello",0),("Hii",1),("Whats up?",0),("Great",1)]
 
 let InterestDetails: [String:Any] = ["title":"What are you interested in?","detail":[["subtitle":"Advertise","content":"I want to give an ad for my business","button":"Advertise"],["subtitle":"Search for an ad","content":"I am interested in searching for an ad","button":"Search for an ad"]]]
 let advertiseDetails: [String:Any] = ["title":"What type of ad do you want to submit?","detail":[["subtitle":"Place an ad to rent your house","content":"We will inform you once someone sends you a message","button":"Add an ad"],["subtitle":"Rent a house for advertising","content":"We will inform you once someone sends you a message","button":"Add a house"]]]

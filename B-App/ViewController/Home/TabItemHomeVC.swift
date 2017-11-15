@@ -14,6 +14,11 @@ class TabItemHomeVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     @IBOutlet weak var btnDesiredAds: UIButton!
     @IBOutlet weak var btnMyAds: UIButton!
     @IBOutlet weak var btnNewAd: UIButton!
+    @IBOutlet weak var lblNoPost: UILabel!
+    
+    let aryMyAds = [House]()
+    
+    var selectedTab = "my ads"
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +27,11 @@ class TabItemHomeVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         tblVwAds.dataSource = self
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        selectedTab = "my ads"
+        getMyAds()
+    }
+    
     //MARK: - Buttons Actions
     @IBAction func actionNewAdBtn(_ sender: AnyObject) {
         let addHouseVc = AddHouseStoryboard.instantiateViewController(withIdentifier: "AddHouseVC") as! AddHouseVC
@@ -30,18 +40,27 @@ class TabItemHomeVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     }
     
     @IBAction func actionMyAdsBtn(_ sender: AnyObject) {
+        selectedTab = "my ads"
         btnDesiredAds.setTitleColor(UIColor.lightGray, for: .normal)
         btnMyAds.setTitleColor(UIColor.black, for: .normal)
+        getMyAds()
     }
     @IBAction func actionDesiredAdsBtn(_ sender: AnyObject) {
+        selectedTab = "desired ads"
         btnMyAds.setTitleColor(UIColor.lightGray, for: .normal)
         btnDesiredAds.setTitleColor(UIColor.black, for: .normal)
+        tblVwAds.isHidden = false
+        tblVwAds.reloadData()
     }
     
     //MARK: - TableView delegate and datasource methods
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        if selectedTab == "my ads" {
+            return aryMyAds.count
+        }else  {
+            return 4
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -53,6 +72,19 @@ class TabItemHomeVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         return 95
     }
     
+    func getMyAds() {
+        
+        ApiManager.sharedObj.requestApi(API_Billboards, method: .get, param: nil) { (responseDict, isSuccess, errorStr) in
+            if isSuccess {
+                self.tblVwAds.isHidden = false
+
+            }else {
+                showAlert(title: "B-App", message: errorStr!, controller: self)
+                self.tblVwAds.isHidden = true
+            }
+            self.tblVwAds.reloadData()
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

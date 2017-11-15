@@ -19,6 +19,16 @@ class TabItemProfileVC: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        ApiManager.sharedObj.requestApi(API_GetProfile, method: .get, param: nil, completion: { (resultDict, isSuccess, strError) in
+            if isSuccess {
+                User.setUserMe(resultDict!)
+                self.lblName.text = User.me.firstname + " " + User.me.lastname
+            }else {
+                showAlert(title: "B-App", message: strError!, controller: self)
+            }
+        })
+    }
     //MARK: - Buttons actions
     
     @IBAction func actionPersonalInfo(_ sender: AnyObject) {
@@ -39,9 +49,9 @@ class TabItemProfileVC: UIViewController {
     }
  
     @IBAction func actionExit(_ sender: AnyObject) {
-        let landingVc = mainStoryboard.instantiateViewController(withIdentifier: "LandingVC") as! LandingVC
-        let navControllr = UINavigationController.init(rootViewController: landingVc)
-        appDelegate().window?.rootViewController = navControllr
+        User.removeUserProfile()
+        let landingVc = mainStoryboard.instantiateInitialViewController()
+        appDelegate().window?.rootViewController = landingVc
     }
     
     @IBAction func actionBackBtn(_ sender: AnyObject) {

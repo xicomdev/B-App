@@ -61,7 +61,7 @@ class HouseLocationMapVC: UIViewController, GMSMapViewDelegate {
             House.newHouse.lattitude = "\(markerLocation.latitude)"
             House.newHouse.longitude = "\(markerLocation.longitude)"
             if House.newHouse.stageCompleted == 0 {
-                House.newHouse.stageCompleted = 1
+                House.newHouse.stageCompleted = 2
             }
             self.navigationController?.popToRootViewController(animated: true)
         }else

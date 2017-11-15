@@ -23,20 +23,10 @@ class ChatVC: UIViewController , UITextViewDelegate, UITableViewDelegate, UITabl
     {
         super.viewDidLoad()
         
-        self.navigationController?.isNavigationBarHidden = false
         tblChat.tableFooterView = UIView()
         
         txtVWMsg.delegate = self
         tblChat.registerNibsForCells(arryNib: ["SentMsgCell","RecievedMsgCell"])
-        
-        self.navigationController?.navigationBar.tintColor = .black
-        
-        let btnLeftBar:UIBarButtonItem = UIBarButtonItem.init(image:UIImage(named: "backIcon"), style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.actionBtnBackPressed))
-        self.navigationItem.leftBarButtonItem = btnLeftBar
-        
-        let secondUserInfo =  " "
-        
-        self.navTitle(title: secondUserInfo  as NSString , color: UIColor.black , font:  FontRegular(size: 17))
         
         tblChat.delegate = self
         tblChat.dataSource = self
@@ -50,7 +40,6 @@ class ChatVC: UIViewController , UITextViewDelegate, UITableViewDelegate, UITabl
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.isNavigationBarHidden = false
 
         self.startKeyboardObserver()
         IQKeyboardManager.sharedManager().enable = false
@@ -72,7 +61,11 @@ class ChatVC: UIViewController , UITextViewDelegate, UITableViewDelegate, UITabl
         
     }
     
-    func actionBtnBackPressed() {
+    
+    @IBAction func actionOptions(_ sender: Any) {
+    }
+    
+    @IBAction func sctionBack(_ sender: Any) {
         self.navigationController!.popViewController(animated: true)
     }
     
@@ -92,7 +85,6 @@ class ChatVC: UIViewController , UITextViewDelegate, UITableViewDelegate, UITabl
         tblChat.reloadData()
         
         self.perform(#selector(self.scrollToBottomInitial), with: nil, afterDelay: 0.1)
-        
     }
     
     //MARK :- Handle Keyboard
@@ -160,24 +152,25 @@ class ChatVC: UIViewController , UITextViewDelegate, UITableViewDelegate, UITabl
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 4
+        return arrayMsgs.count
         
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // let msgObj: Message = arrayMsgs[indexPath.row]
         
         var returnCell : UITableViewCell!
         
-        if true
+        if arrayMsgs[indexPath.row].1 == 1
         {
             let cell = tblChat.dequeueReusableCell(withIdentifier: "SentMsgCell", for: indexPath) as! SentMsgCell
+            cell.lblMsg.text = arrayMsgs[indexPath.row].0
 //            cell.setMessageDetails(msgInfo: message)
             returnCell = cell
             
         }else{
             
             let cell = tblChat.dequeueReusableCell(withIdentifier: "RecievedMsgCell", for: indexPath) as! RecievedMsgCell
+            cell.lblMsg.text = arrayMsgs[indexPath.row].0
 //            cell.setMessageDetails(msgInfo: message)
             returnCell = cell
             
@@ -217,6 +210,8 @@ class ChatVC: UIViewController , UITextViewDelegate, UITableViewDelegate, UITabl
     
     func sendMessageAPI(textMessage : String)
     {
+        
+        arrayMsgs.append((textMessage,1))
 //        thread.sendMessage(message: textMessage) { (isSuccess, response, error) in
 //            if isSuccess
 //            {

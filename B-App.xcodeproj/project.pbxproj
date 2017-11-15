@@ -95,6 +95,8 @@
 		252575D91F7A1D8400473DD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 252575D81F7A1D8400473DD8 /* Main.storyboard */; };
 		252575DB1F7A298100473DD8 /* current.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 252575DA1F7A298100473DD8 /* current.gpx */; };
 		252575DD1F7A2B6700473DD8 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252575DC1F7A2B6700473DD8 /* LocationManager.swift */; };
+		253719091FBC4FE00063F6C6 /* SentMsgCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25CEC8AA1FB1939300989374 /* SentMsgCell.xib */; };
+		2537190A1FBC4FE30063F6C6 /* RecievedMsgCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25CEC8AD1FB1939A00989374 /* RecievedMsgCell.xib */; };
 		256F56A61FB5C8480013478D /* FBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256F56A51FB5C8480013478D /* FBManager.swift */; };
 		257B29B91FB428E400AA224D /* FaqTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257B29B71FB428E400AA224D /* FaqTableCell.swift */; };
 		257B29BA1FB428E400AA224D /* FaqTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 257B29B81FB428E400AA224D /* FaqTableCell.xib */; };
@@ -792,6 +794,8 @@
 			files = (
 				2525750F1F7A1BB200473DD8 /* HouseAdCVCell.xib in Resources */,
 				25891F261F7D22A7000ADE52 /* PaymentCardCell.xib in Resources */,
+				2537190A1FBC4FE30063F6C6 /* RecievedMsgCell.xib in Resources */,
+				253719091FBC4FE00063F6C6 /* SentMsgCell.xib in Resources */,
 				252575171F7A1BB200473DD8 /* MyAdsTVCell.xib in Resources */,
 				252574E21F7A1B6B00473DD8 /* Profile.storyboard in Resources */,
 				252573C61F7A139300473DD8 /* LaunchScreen.storyboard in Resources */,
