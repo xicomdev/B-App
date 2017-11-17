@@ -14,6 +14,7 @@ let API_Signup = "signup"
 let API_Login = "user/login"
 let API_GetProfile = "user/profile"
 let API_Billboards = "billboards"
+let API_MyBillboards = "user/billboards"
 
 let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
 let tabbarStoryboard = UIStoryboard(name: "TabBar", bundle: nil)

@@ -91,6 +91,20 @@ public func getDateStr(_ date: Date) -> String {
     return formatter.string(from: date)
 }
 
+public func getAreaInMeters(_ area: String, lblArea: UILabel)-> NSMutableAttributedString {
+    let str = "m2"
+    let aString = NSMutableAttributedString(string: str)
+    
+    let myFont = UIFont(name: lblArea.font!.fontName, size: 11.0)
+    let superscriptAttributes: [String : Any] = [ NSBaselineOffsetAttributeName: 5, NSFontAttributeName:  myFont! ]
+    aString.addAttributes(superscriptAttributes, range: NSRange(location: 1, length: 1))
+    aString.addAttribute(NSKernAttributeName, value: 1.5, range: NSRange(location: 0, length: 2))
+    
+    let priceStr = NSMutableAttributedString(string: area, attributes: [NSFontAttributeName: myFont!])
+    priceStr.append(aString)
+    return priceStr
+}
+
 public func generateDatesArrayBetweenTwoDates(startDate: Date , endDate:Date) ->[Date]
 {
     var datesArray: [Date] =  [Date]()

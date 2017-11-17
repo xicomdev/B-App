@@ -38,15 +38,12 @@ class ApiManager{
                             }
                         }else {
                             print(NSString(data: response.data!, encoding: String.Encoding.utf8.rawValue)!)
-//                            if response.error != nil {
-//                                completion(nil,false,response.error?.localizedDescription)
-//                            }else {
-                                completion(nil,false,NSString(data: response.data!, encoding: String.Encoding.utf8.rawValue) as String?)
-//                            }
+                            completion(nil,false,NSString(data: response.data!, encoding: String.Encoding.utf8.rawValue) as String?)
                         }
                 }
             }else if method == .post {
-                request(requestUrl, method: .post, parameters: param, encoding: JSONEncoding.default, headers: ["content-type": "application/json", "Authorization":getAuthHeader()])
+            
+                request(requestUrl, method: .post, parameters: param!, encoding: JSONEncoding.default, headers: ["content-type": "application/json", "Authorization":getAuthHeader()])
                     .responseJSON { response in
                         self.hideIndicator()
                         print(response)
@@ -60,11 +57,8 @@ class ApiManager{
 
                         }else {
                             print(NSString(data: response.data!, encoding: String.Encoding.utf8.rawValue)!)
-//                            if response.error != nil {
-//                                completion(nil,false,response.error?.localizedDescription)
-//                            }else {
-                                completion(nil,false,NSString(data: response.data!, encoding: String.Encoding.utf8.rawValue) as String?)
-//                            }
+
+                            completion(nil,false,NSString(data: response.data!, encoding: String.Encoding.utf8.rawValue) as String?)
                         }
                 }
             }
@@ -74,6 +68,49 @@ class ApiManager{
         }
     }
     
+    func postRequestWithBody(_ endpoint: String, param: [String : Any]?, completion: @escaping (_ result:NSDictionary?, _ isSuccess:Bool, _ errorStr:String?) -> Void) {
+        
+        showIndicator()
+
+        let requestUrl = baseUrl + endpoint
+
+        var request = URLRequest(url: URL(string: requestUrl)!)
+        request.httpMethod = HTTPMethod.post.rawValue
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue(getAuthHeader(), forHTTPHeaderField: "Authorization")
+
+        let data = try! JSONSerialization.data(withJSONObject: param!, options: JSONSerialization.WritingOptions.prettyPrinted)
+        
+        let json = NSString(data: data, encoding: String.Encoding.utf8.rawValue)
+        if let json = json {
+            print(json)
+        }
+        request.httpBody = json!.data(using: String.Encoding.utf8.rawValue);
+        
+        Alamofire.request(request).responseJSON { (response) in
+            
+            self.hideIndicator()
+            print(response)
+            if response.response?.statusCode == 200 {
+                if let jsonData = response.result.value as? NSDictionary {
+                    print(jsonData)
+                    completion(jsonData,true,nil)
+                }else {
+                    completion(nil,false,NSString(data: response.data!, encoding: String.Encoding.utf8.rawValue) as String?)
+                }
+                
+            }else {
+                print(NSString(data: response.data!, encoding: String.Encoding.utf8.rawValue)!)
+                //                            if response.error != nil {
+                //                                completion(nil,false,response.error?.localizedDescription)
+                //                            }else {
+                completion(nil,false,NSString(data: response.data!, encoding: String.Encoding.utf8.rawValue) as String?)
+                //                            }
+            }
+            
+        }
+    
+    }
     
     func uploadImages(_ endpoint:String, param: [String: String], assets:[DKAsset], completion: @escaping (NSDictionary) -> Void) {
         if (Reachability()?.isReachable)! {

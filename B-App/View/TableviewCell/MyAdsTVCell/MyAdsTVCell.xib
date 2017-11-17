@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1611" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -12,17 +15,20 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="320" height="94"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="94.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3NN-Xh-9DZ" customClass="SetCornerButton" customModule="B_App" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="5" width="320" height="84.5"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummyHouse" translatesAutoresizingMaskIntoConstraints="NO" id="Tx9-cN-WZ3">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noImg" translatesAutoresizingMaskIntoConstraints="NO" id="Tx9-cN-WZ3">
+                                <rect key="frame" x="215" y="5" width="100" height="74.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="mu2-jc-kbQ"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Under review" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDA-tu-Qyy">
+                                <rect key="frame" x="8" y="8" width="88" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="zX4-dY-PlA"/>
                                 </constraints>
@@ -31,11 +37,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fE-f1-4zk">
+                                <rect key="frame" x="8" y="35" width="199" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$20 per month" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkh-el-M1G">
+                                <rect key="frame" x="8" y="55.5" width="84.5" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="18" id="P5w-Em-C2i"/>
                                 </constraints>
@@ -44,10 +52,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60m" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GK3-2h-1Qq">
+                                <rect key="frame" x="104.5" y="55.5" width="70" height="18"/>
                                 <color key="backgroundColor" red="0.85490196080000003" green="0.90588235289999997" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="18" id="Cdi-ZG-CEn"/>
-                                    <constraint firstAttribute="width" constant="50" id="bdT-vz-FMx"/>
+                                    <constraint firstAttribute="width" constant="70" id="bdT-vz-FMx"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -95,10 +104,17 @@
                     <constraint firstAttribute="bottom" secondItem="3NN-Xh-9DZ" secondAttribute="bottom" constant="5" id="t7L-9C-AgX"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="imgvw" destination="Tx9-cN-WZ3" id="XLH-E9-I4n"/>
+                <outlet property="lblAddress" destination="6fE-f1-4zk" id="uQd-Sn-3ZW"/>
+                <outlet property="lblArea" destination="GK3-2h-1Qq" id="Nhz-Xw-VZt"/>
+                <outlet property="lblPrice" destination="hkh-el-M1G" id="AIc-Zc-bkX"/>
+                <outlet property="lblStatus" destination="XDA-tu-Qyy" id="cE7-8S-FEy"/>
+            </connections>
             <point key="canvasLocation" x="26" y="77.5"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="dummyHouse" width="720" height="495"/>
+        <image name="noImg" width="225" height="156"/>
     </resources>
 </document>

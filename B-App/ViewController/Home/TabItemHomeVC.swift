@@ -16,7 +16,7 @@ class TabItemHomeVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     @IBOutlet weak var btnNewAd: UIButton!
     @IBOutlet weak var lblNoPost: UILabel!
     
-    let aryMyAds = [House]()
+    var aryMyAds = [House]()
     
     var selectedTab = "my ads"
     override func viewDidLoad() {
@@ -65,6 +65,7 @@ class TabItemHomeVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tblVwAds.dequeueReusableCell(withIdentifier: "MyAdsTVCell") as! MyAdsTVCell
+        cell.showMyAd(aryMyAds[indexPath.row])
         return cell
     }
     
@@ -74,10 +75,11 @@ class TabItemHomeVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     
     func getMyAds() {
         
-        ApiManager.sharedObj.requestApi(API_Billboards, method: .get, param: nil) { (responseDict, isSuccess, errorStr) in
+        ApiManager.sharedObj.requestApi(API_MyBillboards, method: .get, param: nil) { (responseDict, isSuccess, errorStr) in
             if isSuccess {
                 self.tblVwAds.isHidden = false
-
+                self.aryMyAds = House.getMyAds(responseDict!["billboards"] as! NSArray)
+                self.tblVwAds.reloadData()
             }else {
                 showAlert(title: "B-App", message: errorStr!, controller: self)
                 self.tblVwAds.isHidden = true

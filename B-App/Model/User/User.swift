@@ -13,6 +13,7 @@ class User: NSObject, NSCoding  {
 
     var firstname: String = ""
     var lastname = ""
+    var fullname = ""
     var password = ""
     var email = ""
     var phone_no = ""
@@ -38,8 +39,8 @@ class User: NSObject, NSCoding  {
     
     convenience init(dictUser : NSDictionary) {
         self.init()
-        
-       
+
+
         if let firstname = dictUser["first_name"] as? String{
             self.firstname = firstname
         }
@@ -51,11 +52,28 @@ class User: NSObject, NSCoding  {
         }
         if let userId = dictUser["id"] as? String{
             self.userId = userId
+        }else if let userId = dictUser["id"] as? Int{
+            self.userId = String(userId)
         }
         if let token = dictUser["token"] as? String{
             self.token = token
         }
     }
+    
+    class func getOwnerInfo(_ dict: NSDictionary) -> User {
+        let objUser = User()
+        if let name = dict["name"] as? String{
+            objUser.fullname = name
+        }
+        
+        if let userId = dict["user_id"] as? String{
+            objUser.userId = userId
+        }else if let userId = dict["user_id"] as? Int{
+            objUser.userId = String(userId)
+        }
+        return objUser
+    }
+    
     
     class func setUserMe(_ dictUser:NSDictionary) {
         if let firstname = dictUser["first_name"] as? String{
@@ -69,6 +87,8 @@ class User: NSObject, NSCoding  {
         }
         if let userId = dictUser["user_id"] as? String{
             User.me.userId = userId
+        }else if let userId = dictUser["user_id"] as? Int{
+            User.me.userId = String(userId)
         }
         if let token = dictUser["token"] as? String{
             User.me.token = token

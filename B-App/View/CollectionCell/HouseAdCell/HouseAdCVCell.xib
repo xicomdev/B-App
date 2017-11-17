@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1611" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -15,7 +18,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="195" height="225"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummyHouse" translatesAutoresizingMaskIntoConstraints="NO" id="T6Z-NA-3Kj" customClass="SetCornerImageView" customModule="B_App" customModuleProvider="target">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noImg" translatesAutoresizingMaskIntoConstraints="NO" id="T6Z-NA-3Kj" customClass="SetCornerImageView" customModule="B_App" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="10" width="195" height="125.5"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                 <real key="value" value="12"/>
@@ -23,6 +27,7 @@
                         </userDefinedRuntimeAttributes>
                     </imageView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DhX-vO-Ikn">
+                        <rect key="frame" x="0.0" y="188" width="80" height="25"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="25" id="UMm-YW-ztd"/>
                             <constraint firstAttribute="width" constant="80" id="iXG-Bm-eXl"/>
@@ -33,6 +38,7 @@
                         </state>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$20 per month" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WhP-Bp-UfO">
+                        <rect key="frame" x="0.0" y="160" width="86" height="18"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="18" id="UW8-hP-JDU"/>
                         </constraints>
@@ -41,11 +47,13 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Tokyo, nakaro, Sokme" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sM4-Uk-kvO">
+                        <rect key="frame" x="0.0" y="140.5" width="195" height="14.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60m" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYf-Zu-3iV">
+                        <rect key="frame" x="98" y="160" width="50" height="18"/>
                         <color key="backgroundColor" red="0.85490196080000003" green="0.90588235289999997" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="18" id="dKu-fs-apN"/>
@@ -61,6 +69,7 @@
                         </userDefinedRuntimeAttributes>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZVU-2x-jUB">
+                        <rect key="frame" x="160" y="15" width="25" height="25"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="25" id="GiR-06-6px"/>
                             <constraint firstAttribute="height" constant="25" id="KCC-zo-XjS"/>
@@ -102,7 +111,7 @@
     </objects>
     <resources>
         <image name="button_small" width="208" height="58"/>
-        <image name="dummyHouse" width="720" height="495"/>
         <image name="heart_small" width="19" height="16"/>
+        <image name="noImg" width="225" height="156"/>
     </resources>
 </document>

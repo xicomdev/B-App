@@ -65,6 +65,7 @@ class HouseLocationVC: UIViewController {
             House.newHouse.street = txtfldStreet.text!
             House.newHouse.apartmentNo = txtfldApartmentNo.text!
             House.newHouse.zipcode = txtfldZipcode.text!
+            House.newHouse.address = "\(txtfldApartmentNo.text!) \(txtfldStreet.text!) \(txtfldCity.text!) \(txtfldCountry.text!) \(txtfldZipcode.text!)"
             self.pushViewController(controllerName: "HouseLocationMapVC", storyboardName: AddHouseStoryboard)
 
         }

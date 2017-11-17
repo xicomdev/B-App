@@ -25,17 +25,17 @@ class CostTypeSelectVC: UIViewController {
     }
     @IBAction func actionSaveExitBtn(_ sender: AnyObject) {
         if btnDemandPrice.isSelected {
-            House.newHouse.costType = "Demand Price"
+            House.newHouse.costType = "Demand"
         }else {
-            House.newHouse.costType = "Fixed Price"
+            House.newHouse.costType = "Fixed"
         }
         self.navigationController?.popToRootViewController(animated: true)
     }
     @IBAction func actionContinueBtn(_ sender: AnyObject) {
         if btnDemandPrice.isSelected {
-            House.newHouse.costType = "Demand Price"
+            House.newHouse.costType = "Demand"
         }else {
-            House.newHouse.costType = "Fixed Price"
+            House.newHouse.costType = "Fixed"
         }
         self.pushViewController(controllerName: "StartPriceVC", storyboardName: AddHouseStoryboard)
     }

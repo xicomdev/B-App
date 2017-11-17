@@ -29,7 +29,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GPV-UW-0Mg">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1209"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummyHouse" translatesAutoresizingMaskIntoConstraints="NO" id="hZb-1S-ukH">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noImg" translatesAutoresizingMaskIntoConstraints="NO" id="hZb-1S-ukH">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
                                                 <color key="backgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -1313,7 +1313,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummyHouse" translatesAutoresizingMaskIntoConstraints="NO" id="jtO-0y-Pc8">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noImg" translatesAutoresizingMaskIntoConstraints="NO" id="jtO-0y-Pc8">
                                                 <rect key="frame" x="245" y="21" width="100" height="70"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="E9I-R2-Il3"/>
@@ -1700,8 +1700,8 @@
         <image name="arrow_next_blue" width="12" height="20"/>
         <image name="button" width="336" height="57"/>
         <image name="check" width="22" height="17"/>
-        <image name="dummyHouse" width="720" height="495"/>
         <image name="heart_ontop" width="19" height="16"/>
+        <image name="noImg" width="225" height="156"/>
         <image name="pin-small" width="22" height="29"/>
         <image name="user_icon" width="80" height="79"/>
     </resources>

@@ -27,12 +27,12 @@ class HouseLocationMapVC: UIViewController, GMSMapViewDelegate {
 
     override func viewWillAppear(_ animated: Bool) {
         
-        if House.newHouse.lattitude != "" {
-            let camera = GMSCameraPosition.camera(withLatitude: Double(House.newHouse.lattitude)!, longitude: Double(House.newHouse.longitude)!, zoom: 12.0)
+        if House.newHouse.lattitude != 0.0 {
+            let camera = GMSCameraPosition.camera(withLatitude: House.newHouse.lattitude, longitude: House.newHouse.longitude, zoom: 12.0)
             mapvw.animate(to: camera)
-            marker.position = CLLocationCoordinate2D(latitude: Double(House.newHouse.lattitude)!, longitude: Double(House.newHouse.longitude)!)
+            marker.position = CLLocationCoordinate2D(latitude: House.newHouse.lattitude, longitude: House.newHouse.longitude)
             locationSelected = true
-            markerLocation = CLLocationCoordinate2D(latitude: Double(House.newHouse.lattitude)!, longitude: Double(House.newHouse.longitude)!)
+            markerLocation = CLLocationCoordinate2D(latitude: House.newHouse.lattitude, longitude: House.newHouse.longitude)
         }
         else if UserDefaults.standard.value(forKey: "lat") != nil {
             let camera = GMSCameraPosition.camera(withLatitude: Double(UserDefaults.standard.value(forKey: "lat") as! String)!, longitude: Double(UserDefaults.standard.value(forKey: "long") as! String)!, zoom: 12.0)
@@ -51,15 +51,15 @@ class HouseLocationMapVC: UIViewController, GMSMapViewDelegate {
         self.navigationController?.popViewController(animated: true)
     }
     @IBAction func actionSaveExitBtn(_ sender: AnyObject) {
-        House.newHouse.lattitude = "\(markerLocation.latitude)"
-        House.newHouse.longitude = "\(markerLocation.longitude)"
+        House.newHouse.lattitude = markerLocation.latitude
+        House.newHouse.longitude = markerLocation.longitude
         self.navigationController?.popToRootViewController(animated: true)
     }
     
     @IBAction func actionContinueBtn(_ sender: AnyObject) {
         if locationSelected {
-            House.newHouse.lattitude = "\(markerLocation.latitude)"
-            House.newHouse.longitude = "\(markerLocation.longitude)"
+            House.newHouse.lattitude = markerLocation.latitude
+            House.newHouse.longitude = markerLocation.longitude
             if House.newHouse.stageCompleted == 0 {
                 House.newHouse.stageCompleted = 2
             }

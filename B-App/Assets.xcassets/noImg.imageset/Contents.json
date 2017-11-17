@@ -2,17 +2,16 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "noDP-2.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "noDP-1.png",
+      "filename" : "No_Image_Available.jpg",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "noDP.png",
+      "filename" : "No_Image_Available-1.jpg",
       "scale" : "3x"
     }
   ],
