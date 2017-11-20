@@ -73,6 +73,13 @@ class TabItemHomeVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         return 95
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let previewVc = AddHouseStoryboard.instantiateViewController(withIdentifier: "PreviewVC") as! PreviewVC
+        previewVc.hidesBottomBarWhenPushed = true
+        previewVc.houseInfo = aryMyAds[indexPath.row]
+        self.navigationController?.pushViewController(previewVc, animated: true)
+    }
+    
     func getMyAds() {
         
         ApiManager.sharedObj.requestApi(API_MyBillboards, method: .get, param: nil) { (responseDict, isSuccess, errorStr) in

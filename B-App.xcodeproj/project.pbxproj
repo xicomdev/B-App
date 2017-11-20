@@ -97,6 +97,7 @@
 		252575DD1F7A2B6700473DD8 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252575DC1F7A2B6700473DD8 /* LocationManager.swift */; };
 		253719091FBC4FE00063F6C6 /* SentMsgCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25CEC8AA1FB1939300989374 /* SentMsgCell.xib */; };
 		2537190A1FBC4FE30063F6C6 /* RecievedMsgCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25CEC8AD1FB1939A00989374 /* RecievedMsgCell.xib */; };
+		253FBCCF1FC2A0CD009A62EA /* HouseImgPreviewColCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253FBCCE1FC2A0CD009A62EA /* HouseImgPreviewColCell.swift */; };
 		256F56A61FB5C8480013478D /* FBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256F56A51FB5C8480013478D /* FBManager.swift */; };
 		257B29B91FB428E400AA224D /* FaqTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257B29B71FB428E400AA224D /* FaqTableCell.swift */; };
 		257B29BA1FB428E400AA224D /* FaqTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 257B29B81FB428E400AA224D /* FaqTableCell.xib */; };
@@ -205,6 +206,7 @@
 		252575D81F7A1D8400473DD8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		252575DA1F7A298100473DD8 /* current.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = current.gpx; sourceTree = "<group>"; };
 		252575DC1F7A2B6700473DD8 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		253FBCCE1FC2A0CD009A62EA /* HouseImgPreviewColCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseImgPreviewColCell.swift; sourceTree = "<group>"; };
 		256F56A51FB5C8480013478D /* FBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBManager.swift; sourceTree = "<group>"; };
 		256F56A71FB5CA1F0013478D /* B-App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "B-App-Bridging-Header.h"; sourceTree = "<group>"; };
 		257B29B71FB428E400AA224D /* FaqTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqTableCell.swift; sourceTree = "<group>"; };
@@ -357,6 +359,7 @@
 		252574F11F7A1BB200473DD8 /* CollectionCell */ = {
 			isa = PBXGroup;
 			children = (
+				253FBCCD1FC2A090009A62EA /* HouseImgPreview */,
 				252574F21F7A1BB200473DD8 /* AddPhotoCell */,
 				252574F51F7A1BB200473DD8 /* HouseAdCell */,
 			);
@@ -678,6 +681,14 @@
 			path = SwiftLoader;
 			sourceTree = "<group>";
 		};
+		253FBCCD1FC2A090009A62EA /* HouseImgPreview */ = {
+			isa = PBXGroup;
+			children = (
+				253FBCCE1FC2A0CD009A62EA /* HouseImgPreviewColCell.swift */,
+			);
+			path = HouseImgPreview;
+			sourceTree = "<group>";
+		};
 		256F56A21FB5B5330013478D /* FBManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -896,6 +907,7 @@
 				2583E1931F7BCC5D006293F1 /* PublishAdVC.swift in Sources */,
 				252575BC1F7A1BF700473DD8 /* JiroTextField.swift in Sources */,
 				252575DD1F7A2B6700473DD8 /* LocationManager.swift in Sources */,
+				253FBCCF1FC2A0CD009A62EA /* HouseImgPreviewColCell.swift in Sources */,
 				252573C11F7A139300473DD8 /* B_App.xcdatamodeld in Sources */,
 				252575821F7A1BCD00473DD8 /* TabItemSearchVC.swift in Sources */,
 				252575BB1F7A1BF700473DD8 /* IsaoTextField.swift in Sources */,

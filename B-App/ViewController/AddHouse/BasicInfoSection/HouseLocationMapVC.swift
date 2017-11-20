@@ -35,7 +35,7 @@ class HouseLocationMapVC: UIViewController, GMSMapViewDelegate {
             markerLocation = CLLocationCoordinate2D(latitude: House.newHouse.lattitude, longitude: House.newHouse.longitude)
         }
         else if UserDefaults.standard.value(forKey: "lat") != nil {
-            let camera = GMSCameraPosition.camera(withLatitude: Double(UserDefaults.standard.value(forKey: "lat") as! String)!, longitude: Double(UserDefaults.standard.value(forKey: "long") as! String)!, zoom: 12.0)
+            let camera = GMSCameraPosition.camera(withLatitude: Double(UserDefaults.standard.value(forKey: "lat") as! String)!, longitude: Double(UserDefaults.standard.value(forKey: "long") as! String)!, zoom: 14.0)
             mapvw.animate(to: camera)
         }
         
