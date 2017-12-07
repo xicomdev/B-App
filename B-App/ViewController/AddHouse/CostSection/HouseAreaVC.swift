@@ -9,7 +9,7 @@
 import UIKit
 
 class HouseAreaVC: UIViewController {
-
+    
     @IBOutlet weak var sliderWidth: UISlider!
     @IBOutlet weak var sliderLength: UISlider!
     @IBOutlet weak var lblAreaValue: UILabel!
@@ -17,6 +17,7 @@ class HouseAreaVC: UIViewController {
     @IBOutlet weak var lblLengthValue: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {

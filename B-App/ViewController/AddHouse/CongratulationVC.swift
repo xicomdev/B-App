@@ -12,9 +12,10 @@ class CongratulationVC: UIViewController {
 
     @IBOutlet var lblText: UILabel!
     var timer = Timer()
+    var titleString = "Congratulations! Your ad has been published"
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        lblText.text = titleString
         timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(timerRunning), userInfo: nil, repeats: false)
     }
     

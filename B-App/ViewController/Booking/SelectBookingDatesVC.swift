@@ -21,7 +21,6 @@ class SelectBookingDatesVC: UIViewController, FSCalendarDelegate {
     
     var dateFirst: Date? = nil
     var dateSecond: Date? = nil
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -88,6 +87,16 @@ class SelectBookingDatesVC: UIViewController, FSCalendarDelegate {
     @IBAction func actionReset(_ sender: Any) {
     }
     @IBAction func actionApply(_ sender: Any) {
+        let calendar = NSCalendar.current
+        
+        // Replace the hour (time) of both dates with 00:00
+        let date1 = calendar.startOfDay(for: dateFirst!)
+        let date2 = calendar.startOfDay(for: dateSecond!)
+        
+        let components = calendar.dateComponents([.day], from: date1, to: date2)
+        Booking.newBooking.noOFDays = components.day!
+        Booking.newBooking.startDate = getDateStr(dateFirst!)
+        Booking.newBooking.endDate = getDateStr(dateSecond!)
         self.pushViewController(controllerName: "BeforeBookOptionsVC", storyboardName: bookingStoryboard)
     }
     

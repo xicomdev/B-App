@@ -14,6 +14,8 @@ class BeforeBookOptionsVC: UIViewController {
     @IBOutlet weak var imgContactDetails: UIImageView!
     @IBOutlet weak var imgAddPhoto: UIImageView!
     @IBOutlet weak var imgCreateAccnt: UIImageView!
+    var houseInfo = House()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

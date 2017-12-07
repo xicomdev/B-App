@@ -65,7 +65,7 @@ class TabItemHomeVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tblVwAds.dequeueReusableCell(withIdentifier: "MyAdsTVCell") as! MyAdsTVCell
-        cell.showMyAd(aryMyAds[indexPath.row])
+        cell.showData(aryMyAds[indexPath.row])
         return cell
     }
     

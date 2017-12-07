@@ -28,10 +28,13 @@ class ProfileVC: UIViewController {
         txtfldPhone.text = User.me.phone_no
         
         setInteractionOff()
-        imgvwDP.layer.cornerRadius = imgvwDP.frame.width / 2
 
     }
 
+    override func viewDidLayoutSubviews() {
+        imgvwDP.layer.cornerRadius = imgvwDP.frame.width / 2
+    }
+    
     @IBAction func actionEditBtn(_ sender: Any) {
         if btnEdit.title(for: .normal) == "Edit"{
             btnEdit.setTitle("Save", for: .normal)

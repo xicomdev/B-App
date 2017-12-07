@@ -18,7 +18,18 @@ class HouseAdCVCell: UICollectionViewCell {
     @IBOutlet weak var imgvw: SetCornerImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
+        lblAreaSize.layer.cornerRadius = lblAreaSize.frame.height / 2
+        lblAreaSize.clipsToBounds = true
         // Initialization code
     }
 
+    func showData(_ objHouse: House) {
+        
+        lblAreaSize.attributedText = getAreaInMeters(objHouse.areaSIze, lblArea: lblAreaSize)
+        lblAddress.text = objHouse.address
+        lblPrice.text = objHouse.startPrice + (objHouse.costType == "Hourly" ? " per hour" : "")
+        if objHouse.aryImgUrls.count > 0 {
+            imgvw.kf.setImage(with: URL(string: objHouse.aryImgUrls[0]))
+        }
+    }
 }

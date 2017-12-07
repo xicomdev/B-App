@@ -65,6 +65,8 @@ extension NSObject{
 
 extension Date {
     
+    
+    
     public static func timestamp() -> String {
         return "\(Date().timeIntervalSince1970 * 1000)" as String
     }

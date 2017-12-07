@@ -28,7 +28,7 @@ class MyAdsTVCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func showMyAd(_ objHouse: House) {
+    func showData(_ objHouse: House) {
     
         lblArea.attributedText = getAreaInMeters(objHouse.areaSIze, lblArea: lblArea)
         lblAddress.text = objHouse.address
@@ -36,8 +36,6 @@ class MyAdsTVCell: UITableViewCell {
         if objHouse.aryImgUrls.count > 0 {
             imgvw.kf.setImage(with: URL(string: objHouse.aryImgUrls[0]))
         }
-        
     }
-    
     
 }

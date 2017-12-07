@@ -27,7 +27,9 @@ class PaymentInfoVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     }
     
     @IBAction func actionAddCard(_ sender: Any) {
-        self.pushViewController(controllerName: "AddNewCardVC", storyboardName: profileStoryboard)
+        let addCardVc = profileStoryboard.instantiateViewController(withIdentifier: "AddNewCardVC") as! AddNewCardVC
+        addCardVc.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(addCardVc, animated: true)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

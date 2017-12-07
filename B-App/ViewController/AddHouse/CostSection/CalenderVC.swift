@@ -25,7 +25,6 @@ class CalenderVC: UIViewController ,FSCalendarDelegate{
         calenderVw.allowsMultipleSelection = true
         
     }
-
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -41,6 +40,7 @@ class CalenderVC: UIViewController ,FSCalendarDelegate{
             calenderVw.select(dateSecond)
         }
     }
+    
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
         if date < Date() {
             showAlert(title: "B-App", message: "You can not select previous dates", controller: self)
@@ -68,11 +68,15 @@ class CalenderVC: UIViewController ,FSCalendarDelegate{
                 //                for dt in dateAry {
                 //                    calenderVw.select(dt)
                 //                }
-                dateFirstStr = getDateStrWithSimpleFormat(dateFirst!)
-                dateSecondStr = getDateStrWithSimpleFormat(dateSecond!)
+//                dateFirstStr = getDateStr(dateFirst!)
+//                dateSecondStr = getDateStr(dateSecond!)
                 
-                House.newHouse.bookDateStart = dateFirstStr
-                House.newHouse.bookDateEnd = dateSecondStr
+                    dateFirstStr = getDateStrWithSimpleFormat(dateFirst!)
+                    dateSecondStr = getDateStrWithSimpleFormat(dateSecond!)
+                    
+                    House.newHouse.bookDateStart = dateFirstStr
+                    House.newHouse.bookDateEnd = dateSecondStr
+                
             }
         }
         
@@ -92,24 +96,24 @@ class CalenderVC: UIViewController ,FSCalendarDelegate{
     
     @IBAction func actionSaveExitBtn(_ sender: AnyObject) {
         if !(dateFirstStr == "" || dateSecondStr == "") {
-            House.newHouse.bookDateStart = dateFirstStr
-            House.newHouse.bookDateEnd = dateSecondStr
-        }
+                    House.newHouse.bookDateStart = dateFirstStr
+                    House.newHouse.bookDateEnd = dateSecondStr
+            }
         self.navigationController?.popToRootViewController(animated: true)
     }
     @IBAction func actionContinueBtn(_ sender: AnyObject) {
         if dateFirstStr == "" || dateSecondStr == "" {
-            showAlert(title: "B-App", message: "Please select booking start end end date", controller: self)
-            return
+                showAlert(title: "B-App", message: "Please select booking start and end date", controller: self)
+                return
         }
         House.newHouse.bookDateStart = dateFirstStr
         House.newHouse.bookDateEnd = dateSecondStr
         self.pushViewController(controllerName: "ConfirmAgreementVC", storyboardName: AddHouseStoryboard)
-      
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 }

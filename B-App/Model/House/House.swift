@@ -10,7 +10,7 @@ import UIKit
 import DKImagePickerController
 
 class House: NSObject {
-    
+
     var stageCompleted = 0
     var accomodationType = ""
     var country = ""
@@ -39,10 +39,13 @@ class House: NSObject {
     var countryCode = ""
     var isNoificationOn = Bool()
     var houseId = Int()
-    
+    var salesId = Int()
+
     var ownerInfo = User()
     
     static var newHouse = House()
+    
+    static var selectedHouse: House? = nil
     
     class func getMyAds(_ aryAds: NSArray) -> [House] {
         var aryHouse = [House]()
@@ -69,6 +72,12 @@ class House: NSObject {
             let height = dictHouse.value(forKeyPath: "board_size.height") as! Int
             let width = dictHouse.value(forKeyPath: "board_size.width") as! Int
             objHouse.areaSIze = "\(height*width)"
+            //            let sales = (dictHouse["sales"] as! NSArray)[0] as! NSDictionary
+            //            objHouse.salesId = sales["sale_id"] as! Int
+            //            objHouse.startPrice = sales["price"] as! String
+            //            objHouse.costType = sales["unit"] as! String
+            //            objHouse.bookDateStart = sales.value(forKeyPath: "times.from") as! String
+            //            objHouse.bookDateEnd = sales.value(forKeyPath: "times.until") as! String
             if let arrayHouse = dictHouse["sales"] as? NSArray {
                 if arrayHouse.count > 0, let sales = arrayHouse[0] as? NSDictionary {
                     objHouse.startPrice = sales["price"] as! String
@@ -78,7 +87,6 @@ class House: NSObject {
                 }
             }
             aryHouse.append(objHouse)
-            
         }
         return aryHouse
     }
@@ -94,7 +102,7 @@ class House: NSObject {
             "board_size": [
                 "width": width,
                 "height": length
-           ],
+            ],
             "sale_plans": [
                 [
                     "price": "\(startPrice) \(currency)",

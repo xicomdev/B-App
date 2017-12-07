@@ -8,9 +8,11 @@
 
 import UIKit
 import GoogleMaps
+import Kingfisher
 
 class BookingAdDetailVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, GMSMapViewDelegate, UICollectionViewDelegateFlowLayout {
 
+    @IBOutlet weak var collctnvwImages: UICollectionView!
     @IBOutlet weak var mapvw: GMSMapView!
     @IBOutlet weak var btnFavourite: UIButton!
     @IBOutlet weak var btnBook: UIButton!
@@ -25,21 +27,42 @@ class BookingAdDetailVC: UIViewController, UICollectionViewDelegate, UICollectio
     @IBOutlet weak var lblUserStatus: UILabel!
     @IBOutlet weak var lblUserName: UILabel!
     @IBOutlet weak var imgVwUser: SetCornerImageView!
-    @IBOutlet weak var imgVwAd: UIImageView!
+    
+    var aryImages = [String]()
+    var houseInfo = House()
+    var coordinates = CLLocationCoordinate2D()
+    let marker = GMSMarker()
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if House.selectedHouse != nil {
+            houseInfo = House.selectedHouse!
+        }
         let nibAd = UINib(nibName: "HouseAdCVCell", bundle: nil)
         collctnVwMoreAds.register(nibAd, forCellWithReuseIdentifier: "HouseAdCVCell")
         collctnVwMoreAds.delegate = self
         collctnVwMoreAds.dataSource = self
         
+        aryImages = houseInfo.aryImgUrls
+        lblUserName.text = houseInfo.ownerInfo.fullname
+        lblAddress.text = houseInfo.address
+        lblAddress1.text = houseInfo.address
+        coordinates.latitude = houseInfo.lattitude
+        coordinates.longitude = houseInfo.longitude
+        
         mapvw.delegate = self
-        if UserDefaults.standard.value(forKey: "lat") != nil {
-            let camera = GMSCameraPosition.camera(withLatitude: Double(UserDefaults.standard.value(forKey: "lat") as! String)!, longitude: Double(UserDefaults.standard.value(forKey: "long") as! String)!, zoom: 12.0)
-            mapvw.animate(to: camera)
+        marker.appearAnimation = .pop
+        marker.map = mapvw
+        marker.icon = #imageLiteral(resourceName: "pin_big")
+        marker.position = coordinates
+        
+        let camera = GMSCameraPosition.camera(withLatitude: coordinates.latitude, longitude: coordinates.longitude, zoom: 14.0)
+        mapvw.animate(to: camera)
+        if aryImages.count == 0 {
+            aryImages.append("")
         }
-
+        collctnvwImages.delegate = self
+        collctnvwImages.dataSource = self
     }
     @IBAction func actionBack(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
@@ -51,11 +74,14 @@ class BookingAdDetailVC: UIViewController, UICollectionViewDelegate, UICollectio
 
     @IBAction func actionMoreAds(_ sender: Any) {
     }
+    
     @IBAction func actionContactOwner(_ sender: Any) {
     }
+    
     @IBAction func actionBook(_ sender: Any) {
         self.pushViewController(controllerName: "SelectBookingDatesVC", storyboardName: bookingStoryboard)
     }
+    
     @IBAction func actionFavourite(_ sender: Any) {
         btnFavourite.isSelected = !btnFavourite.isSelected
     }
@@ -64,17 +90,36 @@ class BookingAdDetailVC: UIViewController, UICollectionViewDelegate, UICollectio
     //MARK:- CollectionView delegate and datasource methods
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        if collectionView == collctnvwImages {
+            return aryImages.count
+        }else {
+            return 4
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HouseAdCVCell", for: indexPath) as! HouseAdCVCell
-        return cell
+        if collectionView == collctnvwImages {
+            let cell = collctnvwImages.dequeueReusableCell(withReuseIdentifier: "HouseImgPreviewColCell", for: indexPath) as! HouseImgPreviewColCell
+            cell.imgvwHouse.kf.setImage(with: URL(string: aryImages[indexPath.item]), placeholder: #imageLiteral(resourceName: "noImg"))
+            return cell
+        }else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HouseAdCVCell", for: indexPath) as! HouseAdCVCell
+            cell.btnHeart.addTarget(self, action: #selector(actionFavBtn(_:)), for: .touchUpInside)
+            cell.btnHeart.tag = indexPath.item
+            return cell
+        }
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        return CGSize(width: collctnVwMoreAds.frame.width * 3 / 5, height: collctnVwMoreAds.frame.height)
+        if collectionView == collctnvwImages {
+            return CGSize(width: collctnvwImages.frame.width, height: 250)
+        }else {
+            return CGSize(width: collctnVwMoreAds.frame.width * 3 / 5, height: collctnVwMoreAds.frame.height)
+        }
+    }
+    
+    @objc func actionFavBtn(_ sender: UIButton) {
         
     }
 
@@ -82,16 +127,6 @@ class BookingAdDetailVC: UIViewController, UICollectionViewDelegate, UICollectio
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

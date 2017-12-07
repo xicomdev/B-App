@@ -25,7 +25,7 @@ class ApiManager{
             showIndicator()
             let requestUrl = baseUrl + endpoint
             if method == .get {
-                request(requestUrl, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: ["content-type": "application/json", "Authorization":getAuthHeader()])
+                request(requestUrl, method: .get, parameters: param, encoding: JSONEncoding.default, headers: ["content-type": "application/json", "Authorization":getAuthHeader()])
                     .responseJSON { response in
                         self.hideIndicator()
                         print(response)
@@ -72,20 +72,18 @@ class ApiManager{
         
         showIndicator()
 
+        
+        
+        
         let requestUrl = baseUrl + endpoint
 
         var request = URLRequest(url: URL(string: requestUrl)!)
-        request.httpMethod = HTTPMethod.post.rawValue
+        request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.setValue(getAuthHeader(), forHTTPHeaderField: "Authorization")
 
-        let data = try! JSONSerialization.data(withJSONObject: param!, options: JSONSerialization.WritingOptions.prettyPrinted)
-        
-        let json = NSString(data: data, encoding: String.Encoding.utf8.rawValue)
-        if let json = json {
-            print(json)
-        }
-        request.httpBody = json!.data(using: String.Encoding.utf8.rawValue);
+        request.httpBody = try! JSONSerialization.data(withJSONObject: param!)
+
         
         Alamofire.request(request).responseJSON { (response) in
             

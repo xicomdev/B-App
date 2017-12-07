@@ -45,7 +45,7 @@ class TabItemProfileVC: UIViewController {
     }
     
     @IBAction func actionStat(_ sender: AnyObject) {
-        self.pushViewController(controllerName: "ProfileVC", storyboardName: profileStoryboard)
+        self.pushViewController(controllerName: "StatisticsVC", storyboardName: profileStoryboard)
     }
  
     @IBAction func actionExit(_ sender: AnyObject) {

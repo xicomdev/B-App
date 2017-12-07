@@ -18,10 +18,12 @@ class TabItemSearchVC: UIViewController, UICollectionViewDelegate, UICollectionV
     @IBOutlet weak var btnSearchHouse: UIButton!
     @IBOutlet weak var btnSearchAd: UIButton!
     
+    var aryAds = [House]()
+    var aryRecommendedAds = [House]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
         let nibAd = UINib(nibName: "HouseAdCVCell", bundle: nil)
         collctnVwRecomendAds.register(nibAd, forCellWithReuseIdentifier: "HouseAdCVCell")
         collctnVwAds.register(nibAd, forCellWithReuseIdentifier: "HouseAdCVCell")
@@ -30,6 +32,10 @@ class TabItemSearchVC: UIViewController, UICollectionViewDelegate, UICollectionV
         collctnVwAds.dataSource = self
         collctnVwRecomendAds.delegate = self
         collctnVwRecomendAds.dataSource = self
+        
+        getAds()
+        filterDetails = FilterInfo()
+        sortDetails = SortInfo()
     }
     
     //MARK: - Buttons Actions
@@ -59,20 +65,30 @@ class TabItemSearchVC: UIViewController, UICollectionViewDelegate, UICollectionV
     
     //MARK: - Delegate functions
     func moveWithFilterSelection() {
-        
+        getFilteredAds()
     }
     
     func moveWithSortSelection() {
-        
+        getFilteredAds()
     }
+    
     //MARK:- CollectionView delegate and datasource methods
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        if collectionView == collctnVwAds {
+            return aryAds.count
+        }else {
+            return aryRecommendedAds.count
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HouseAdCVCell", for: indexPath) as! HouseAdCVCell
+        if collectionView == collctnVwAds {
+            cell.showData(aryAds[indexPath.row])
+        }else {
+            cell.showData(aryRecommendedAds[indexPath.row])
+        }
         return cell
     }
     
@@ -86,8 +102,74 @@ class TabItemSearchVC: UIViewController, UICollectionViewDelegate, UICollectionV
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let detailVc = bookingStoryboard.instantiateViewController(withIdentifier: "BookingAdDetailVC") as! BookingAdDetailVC
+        if collectionView == collctnVwAds {
+            House.selectedHouse  = aryAds[indexPath.row]
+        }else {
+            House.selectedHouse  = aryRecommendedAds[indexPath.row]
+        }
         detailVc.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(detailVc, animated: true)
+    }
+    
+    //MARK: - Api Hit
+    func getAds() {
+        
+        ApiManager.sharedObj.requestApi(API_MyBillboards, method: .get, param: nil) { (responseDict, isSuccess, errorStr) in
+            if isSuccess {
+                self.aryAds = House.getMyAds(responseDict!["billboards"] as! NSArray)
+                self.aryRecommendedAds = House.getMyAds(responseDict!["billboards"] as! NSArray)
+
+                self.collctnVwAds.reloadData()
+                self.collctnVwRecomendAds.reloadData()
+            }else {
+                showAlert(title: "B-App", message: errorStr!, controller: self)
+            }
+        }
+    }
+    
+    func getFilteredAds() {
+        
+        var param = [String:Any]()
+        if sortDetails.sortEnabled {
+            if sortDetails.sortCondition == SortCondition.price {
+                param.updateValue("Price", forKey: "sort_by")
+            }else {
+                param.updateValue("Distance", forKey: "sort_by")
+            }
+        }
+        
+        if filterDetails.filterEnabled {
+            if filterDetails.priceRangeStart != 0 {
+                param.updateValue(filterDetails.priceRangeStart, forKey: "min_price")
+                param.updateValue(filterDetails.priceRangeEnd, forKey: "max_price")
+            }
+            if filterDetails.size != 0 {
+                param.updateValue(filterDetails.size, forKey: "min_board_size")
+            }
+//            if filterDetails.region != "" {
+//                param.updateValue(filterDetails.region, forKey: "region")
+//            }
+        }
+        if UserDefaults.standard.value(forKey: "lat") != nil {
+            param.updateValue("\(UserDefaults.standard.value(forKey: "lat") as! String),\(UserDefaults.standard.value(forKey: "long") as! String)", forKey: "coordinate")
+        }else {
+            showAlert(title: "B-App", message: "Unable to get your location.", controller: self)
+            return
+        }
+        
+        print(param)
+        
+        ApiManager.sharedObj.requestApi(API_MyBillboards, method: .get, param: param) { (responseDict, isSuccess, errorStr) in
+            if isSuccess {
+                self.aryAds = House.getMyAds(responseDict!["billboards"] as! NSArray)
+                self.aryRecommendedAds = House.getMyAds(responseDict!["billboards"] as! NSArray)
+                
+                self.collctnVwAds.reloadData()
+                self.collctnVwRecomendAds.reloadData()
+            }else {
+                showAlert(title: "B-App", message: errorStr!, controller: self)
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -95,6 +177,4 @@ class TabItemSearchVC: UIViewController, UICollectionViewDelegate, UICollectionV
         // Dispose of any resources that can be recreated.
     }
     
-
-  
 }

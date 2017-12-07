@@ -14,8 +14,11 @@ class NoticePeriodVC: UIViewController {
     @IBOutlet weak var btnNotifications: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+
+ 
         
         txtfldTime.setBorder(corners: 5, borderWidth: 1, borderColor: UIColor.gray)
+
     }
     
     override func viewWillAppear(_ animated: Bool) {

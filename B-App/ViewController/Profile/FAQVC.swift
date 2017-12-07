@@ -13,6 +13,7 @@ class FAQVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var lblScreenTitle: UILabel!
     @IBOutlet weak var tblFaq: UITableView!
     @IBOutlet weak var lblSubtitle: UILabel!
+    @IBOutlet weak var lblSubtitleHgt: NSLayoutConstraint!
     
     var screenTitle = ""
     var aryFaq = ["Payment Methods", "Cancellation", "Transactions", "Terms of use", "Profile confirmation"]
@@ -22,6 +23,9 @@ class FAQVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         lblScreenTitle.text = screenTitle
         if screenTitle == "" {
             lblSubtitle.text = ""
+            lblSubtitleHgt.constant = 0
+        }else {
+            lblSubtitleHgt.constant = 44
         }
         tblFaq.registerNibsForCells(arryNib: ["FaqTableCell"])
         tblFaq.delegate = self

@@ -9,7 +9,7 @@
 import UIKit
 
 class CostTypeSelectVC: UIViewController {
-
+    
     @IBOutlet weak var btnHourly: UIButton!
     @IBOutlet weak var btnDaily: UIButton!
     @IBOutlet weak var btnWeekly: UIButton!
@@ -32,16 +32,20 @@ class CostTypeSelectVC: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     @IBAction func actionSaveExitBtn(_ sender: AnyObject) {
+        
         House.newHouse.costType = selectedCostType
         self.navigationController?.popToRootViewController(animated: true)
     }
     @IBAction func actionContinueBtn(_ sender: AnyObject) {
+        
         House.newHouse.costType = selectedCostType
         self.pushViewController(controllerName: "StartPriceVC", storyboardName: AddHouseStoryboard)
     }
+    
     @IBAction func actionHourlyPrice(_ sender: Any) {
         setSelectedCostType("Hourly")
     }
+    
     @IBAction func actionDailyPrice(_ sender: Any) {
         setSelectedCostType("Daily")
     }
@@ -51,12 +55,12 @@ class CostTypeSelectVC: UIViewController {
     @IBAction func actionMonlyPrice(_ sender: Any) {
         setSelectedCostType("Monthly")
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     private func setSelectedCostType(_ type: String) {
         selectedCostType = type
         
@@ -76,5 +80,5 @@ class CostTypeSelectVC: UIViewController {
             btnMonthly.isSelected = true
         }
     }
-
+    
 }

@@ -111,6 +111,14 @@
 		25CEC8B41FB19AB600989374 /* RecievedMsgCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CEC8B31FB19AB600989374 /* RecievedMsgCell.swift */; };
 		25CEC8B61FB19ACC00989374 /* SentMsgCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CEC8B51FB19ACC00989374 /* SentMsgCell.swift */; };
 		963DE5047998BE528CBA8489 /* Pods_B_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1435D3E69AC79308708C3F73 /* Pods_B_App.framework */; };
+		BC1211BA1FD90D1500510FEE /* StatisticsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1211B91FD90D1500510FEE /* StatisticsVC.swift */; };
+		BC1211BF1FD9117000510FEE /* IncomeHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1211BD1FD9117000510FEE /* IncomeHistoryCell.swift */; };
+		BC1211C01FD9117000510FEE /* IncomeHistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC1211BE1FD9117000510FEE /* IncomeHistoryCell.xib */; };
+		BC1211C51FD9119D00510FEE /* MonthlyIncomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1211C31FD9119D00510FEE /* MonthlyIncomeCell.swift */; };
+		BC1211C61FD9119D00510FEE /* MonthlyIncomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC1211C41FD9119D00510FEE /* MonthlyIncomeCell.xib */; };
+		BC1211C81FD9148300510FEE /* MonthlyIncomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1211C71FD9148300510FEE /* MonthlyIncomeVC.swift */; };
+		BC1211CA1FD9149000510FEE /* PaymentHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1211C91FD9149000510FEE /* PaymentHistoryVC.swift */; };
+		BC3C17171FD7D3A000DF8409 /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3C17161FD7D3A000DF8409 /* Booking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -222,6 +230,14 @@
 		25CEC8AE1FB1942900989374 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		25CEC8B31FB19AB600989374 /* RecievedMsgCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecievedMsgCell.swift; sourceTree = "<group>"; };
 		25CEC8B51FB19ACC00989374 /* SentMsgCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentMsgCell.swift; sourceTree = "<group>"; };
+		BC1211B91FD90D1500510FEE /* StatisticsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsVC.swift; sourceTree = "<group>"; };
+		BC1211BD1FD9117000510FEE /* IncomeHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeHistoryCell.swift; sourceTree = "<group>"; };
+		BC1211BE1FD9117000510FEE /* IncomeHistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IncomeHistoryCell.xib; sourceTree = "<group>"; };
+		BC1211C31FD9119D00510FEE /* MonthlyIncomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyIncomeCell.swift; sourceTree = "<group>"; };
+		BC1211C41FD9119D00510FEE /* MonthlyIncomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MonthlyIncomeCell.xib; sourceTree = "<group>"; };
+		BC1211C71FD9148300510FEE /* MonthlyIncomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyIncomeVC.swift; sourceTree = "<group>"; };
+		BC1211C91FD9149000510FEE /* PaymentHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHistoryVC.swift; sourceTree = "<group>"; };
+		BC3C17161FD7D3A000DF8409 /* Booking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booking.swift; sourceTree = "<group>"; };
 		C4AE89BEDF7F27C69315153B /* Pods-B-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-B-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-B-App/Pods-B-App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -312,6 +328,7 @@
 		252574E71F7A1BB200473DD8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BC3C17151FD7D37700DF8409 /* Booking */,
 				25CEC8B81FB19B6700989374 /* Message */,
 				252574E81F7A1BB200473DD8 /* House */,
 				252574EA1F7A1BB200473DD8 /* User */,
@@ -387,6 +404,8 @@
 		252574F81F7A1BB200473DD8 /* TableviewCell */ = {
 			isa = PBXGroup;
 			children = (
+				BC1211BB1FD9115900510FEE /* IncomeHistoryCell */,
+				BC1211BC1FD9115900510FEE /* MonthlyIncomeCell */,
 				257B29B61FB428BF00AA224D /* FAQCell */,
 				25891F221F7D2256000ADE52 /* PaymentCardCell */,
 				252574F91F7A1BB200473DD8 /* Message */,
@@ -527,8 +546,8 @@
 				252575331F7A1BCD00473DD8 /* BookingOtpCodeVC.swift */,
 				252575321F7A1BCD00473DD8 /* BookingEmailConfirmVC.swift */,
 				252575351F7A1BCD00473DD8 /* EmailSendAgainVC.swift */,
-				252575361F7A1BCD00473DD8 /* ReviewBookingDetailVC.swift */,
 				252575381F7A1BCD00473DD8 /* SelectPaymentMethodVC.swift */,
+				252575361F7A1BCD00473DD8 /* ReviewBookingDetailVC.swift */,
 			);
 			path = Booking;
 			sourceTree = "<group>";
@@ -576,6 +595,9 @@
 				252575461F7A1BCD00473DD8 /* PaymentInfoVC.swift */,
 				252575471F7A1BCD00473DD8 /* ProfileVC.swift */,
 				252575481F7A1BCD00473DD8 /* TabItemProfileVC.swift */,
+				BC1211B91FD90D1500510FEE /* StatisticsVC.swift */,
+				BC1211C71FD9148300510FEE /* MonthlyIncomeVC.swift */,
+				BC1211C91FD9149000510FEE /* PaymentHistoryVC.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -722,6 +744,32 @@
 			path = Message;
 			sourceTree = "<group>";
 		};
+		BC1211BB1FD9115900510FEE /* IncomeHistoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				BC1211BD1FD9117000510FEE /* IncomeHistoryCell.swift */,
+				BC1211BE1FD9117000510FEE /* IncomeHistoryCell.xib */,
+			);
+			path = IncomeHistoryCell;
+			sourceTree = "<group>";
+		};
+		BC1211BC1FD9115900510FEE /* MonthlyIncomeCell */ = {
+			isa = PBXGroup;
+			children = (
+				BC1211C31FD9119D00510FEE /* MonthlyIncomeCell.swift */,
+				BC1211C41FD9119D00510FEE /* MonthlyIncomeCell.xib */,
+			);
+			path = MonthlyIncomeCell;
+			sourceTree = "<group>";
+		};
+		BC3C17151FD7D37700DF8409 /* Booking */ = {
+			isa = PBXGroup;
+			children = (
+				BC3C17161FD7D3A000DF8409 /* Booking.swift */,
+			);
+			path = Booking;
+			sourceTree = "<group>";
+		};
 		BDDEBE06F371DB3DF86A5EBD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -817,7 +865,9 @@
 				252574E31F7A1B6B00473DD8 /* TabBar.storyboard in Resources */,
 				252575DB1F7A298100473DD8 /* current.gpx in Resources */,
 				257B29BA1FB428E400AA224D /* FaqTableCell.xib in Resources */,
+				BC1211C61FD9119D00510FEE /* MonthlyIncomeCell.xib in Resources */,
 				252573C31F7A139300473DD8 /* Assets.xcassets in Resources */,
+				BC1211C01FD9117000510FEE /* IncomeHistoryCell.xib in Resources */,
 				2525750D1F7A1BB200473DD8 /* AddPhotoCVCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -906,6 +956,7 @@
 				252575891F7A1BCD00473DD8 /* SocialSignupVC.swift in Sources */,
 				2583E1931F7BCC5D006293F1 /* PublishAdVC.swift in Sources */,
 				252575BC1F7A1BF700473DD8 /* JiroTextField.swift in Sources */,
+				BC1211BA1FD90D1500510FEE /* StatisticsVC.swift in Sources */,
 				252575DD1F7A2B6700473DD8 /* LocationManager.swift in Sources */,
 				253FBCCF1FC2A0CD009A62EA /* HouseImgPreviewColCell.swift in Sources */,
 				252573C11F7A139300473DD8 /* B_App.xcdatamodeld in Sources */,
@@ -926,7 +977,9 @@
 				2525757B1F7A1BCD00473DD8 /* FAQVC.swift in Sources */,
 				2525757C1F7A1BCD00473DD8 /* PasswordVC.swift in Sources */,
 				2525755B1F7A1BCD00473DD8 /* AddHouseVC.swift in Sources */,
+				BC1211C51FD9119D00510FEE /* MonthlyIncomeCell.swift in Sources */,
 				252575731F7A1BCD00473DD8 /* SelectBookingDatesVC.swift in Sources */,
+				BC1211BF1FD9117000510FEE /* IncomeHistoryCell.swift in Sources */,
 				252575831F7A1BCD00473DD8 /* SignupStep1VC.swift in Sources */,
 				2525757D1F7A1BCD00473DD8 /* PaymentInfoVC.swift in Sources */,
 				252575621F7A1BCD00473DD8 /* HouseAreaVC.swift in Sources */,
@@ -934,6 +987,7 @@
 				252575721F7A1BCD00473DD8 /* ReviewBookingDetailVC.swift in Sources */,
 				2525750C1F7A1BB200473DD8 /* AddPhotoCVCell.swift in Sources */,
 				252575841F7A1BCD00473DD8 /* SignupStep2VC.swift in Sources */,
+				BC1211CA1FD9149000510FEE /* PaymentHistoryVC.swift in Sources */,
 				252575861F7A1BCD00473DD8 /* SignupStep4VC.swift in Sources */,
 				252575661F7A1BCD00473DD8 /* AddPhotoVC.swift in Sources */,
 				252575BA1F7A1BF700473DD8 /* HoshiTextField.swift in Sources */,
@@ -972,7 +1026,9 @@
 				252575701F7A1BCD00473DD8 /* BookingPhoneNoVC.swift in Sources */,
 				2525757A1F7A1BCD00473DD8 /* AddNewCardVC.swift in Sources */,
 				252575BD1F7A1BF700473DD8 /* KaedeTextField.swift in Sources */,
+				BC3C17171FD7D3A000DF8409 /* Booking.swift in Sources */,
 				2525756E1F7A1BCD00473DD8 /* BookingEmailConfirmVC.swift in Sources */,
+				BC1211C81FD9148300510FEE /* MonthlyIncomeVC.swift in Sources */,
 				25CEC8AF1FB1942900989374 /* ChatVC.swift in Sources */,
 				252575091F7A1BB200473DD8 /* IBDesignables.swift in Sources */,
 				252575771F7A1BCD00473DD8 /* ForgotPasswordVC.swift in Sources */,
@@ -1129,7 +1185,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.App.B-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5657095f-5386-457f-af5a-0c99e14a404c";
+				PROVISIONING_PROFILE = "df73d385-8c6d-4d68-bf86-9176cf31ae9b";
 				PROVISIONING_PROFILE_SPECIFIER = BAppDevProv;
 				SWIFT_OBJC_BRIDGING_HEADER = "B-App/B-App-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1157,7 +1213,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.App.B-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5657095f-5386-457f-af5a-0c99e14a404c";
+				PROVISIONING_PROFILE = "df73d385-8c6d-4d68-bf86-9176cf31ae9b";
 				PROVISIONING_PROFILE_SPECIFIER = BAppDevProv;
 				SWIFT_OBJC_BRIDGING_HEADER = "B-App/B-App-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

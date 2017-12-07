@@ -90,12 +90,11 @@ public func getDateStr(_ date: Date) -> String {
     formatter.timeZone = TimeZone(abbreviation: "UTC")
     return formatter.string(from: date)
 }
-
 public func getDateStrWithSimpleFormat(_ date: Date) -> String {
-    let formatter = DateFormatter()
-    formatter.dateFormat  = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
-    formatter.timeZone = TimeZone(abbreviation: "UTC")
-    return formatter.string(from: date)
+        let formatter = DateFormatter()
+        formatter.dateFormat  = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
+        formatter.timeZone = TimeZone(abbreviation: "UTC")
+        return formatter.string(from: date)
 }
 
 public func getCurrencySymbolFromCode(_ code: String) -> String {
@@ -109,6 +108,7 @@ public func getCurrencySymbolFromCode(_ code: String) -> String {
     }
     return symbol
 }
+
 
 public func getAreaInMeters(_ area: String, lblArea: UILabel)-> NSMutableAttributedString {
     let str = "m2"

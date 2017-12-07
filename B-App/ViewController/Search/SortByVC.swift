@@ -34,6 +34,39 @@ class SortByVC: UIViewController {
     var selectionDelegate: MSSelectionCallback!
     override func viewDidLoad() {
         super.viewDidLoad()
+        if sortDetails.sortEnabled {
+            switch sortDetails.sortCondition! {
+            case .pending:
+                radioBtnPending.isSelected = true
+                radioBtnPrice.isSelected = false
+                radioBtnPlaceNearFar.isSelected = false
+                radioBtnPlaceFarNear.isSelected = false
+                selectedCondition = .pending
+                break
+            case .placeNearToFar:
+                radioBtnPending.isSelected = false
+                radioBtnPrice.isSelected = false
+                radioBtnPlaceNearFar.isSelected = true
+                radioBtnPlaceFarNear.isSelected = false
+                selectedCondition = .placeNearToFar
+                break
+            case .placeFarToNear:
+                radioBtnPending.isSelected = false
+                radioBtnPrice.isSelected = false
+                radioBtnPlaceNearFar.isSelected = false
+                radioBtnPlaceFarNear.isSelected = true
+                selectedCondition = .placeFarToNear
+                break
+            case .price:
+                radioBtnPending.isSelected = false
+                radioBtnPrice.isSelected = true
+                radioBtnPlaceNearFar.isSelected = false
+                radioBtnPlaceFarNear.isSelected = false
+                selectedCondition = .price
+                break
+            }
+            
+        }
 
         // Do any additional setup after loading the view.
     }

@@ -39,6 +39,17 @@ class FilterVC: UIViewController {
         super.viewDidLoad()
 
         self.hidesBottomBarWhenPushed = true
+        lblSizeValue.text = "0"
+        lblPriceRange.text = "$\(Int(priceRangeSlider.lowerValue))-$\(Int(priceRangeSlider.upperValue))"
+        if filterDetails.filterEnabled {
+            txtfldRegion.text = filterDetails.region
+            priceRangeSlider.lowerValue = Double(filterDetails.priceRangeStart)
+            priceRangeSlider.upperValue = Double(filterDetails.priceRangeEnd)
+            lblPriceRange.text = "$\(filterDetails.priceRangeStart)-$\(filterDetails.priceRangeEnd)"
+            lblSizeValue.text = "\(filterDetails.size)"
+            btnGender.isSelected = filterDetails.gender
+            btnTerm.isSelected = filterDetails.term
+        }
     }
 
     //MARK: - Buttons actions

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ReviewBookingDetailVC: UIViewController {
 
@@ -20,7 +21,9 @@ class ReviewBookingDetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if House.selectedHouse != nil {
+//            imgVw.kf.setImage(with: URL(string: (House.selectedHouse?.aryImgUrls[0])!))
+        }
     }
 
     @IBAction func actionBack(_ sender: Any) {
@@ -29,7 +32,8 @@ class ReviewBookingDetailVC: UIViewController {
     
     @IBAction func actionCofirmBooking(_ sender: Any) {
         let congratsVC = AddHouseStoryboard.instantiateViewController(withIdentifier: "CongratulationVC") as! CongratulationVC
-        congratsVC.lblText.text = "Congratulations! your booking of a house successful"
+        congratsVC.titleString = "Congratulations! your booking of a house successful"
+        self.navigationController?.pushViewController(congratsVC, animated: true)
     }
     
     override func didReceiveMemoryWarning() {

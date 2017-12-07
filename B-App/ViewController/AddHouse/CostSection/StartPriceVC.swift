@@ -9,7 +9,7 @@
 import UIKit
 
 class StartPriceVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
-
+    
     @IBOutlet weak var lblSliderValue: UILabel!
     @IBOutlet weak var sliderPrice: UISlider!
     @IBOutlet weak var txtfldCurrency: UITextField!
@@ -18,9 +18,11 @@ class StartPriceVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     var aryCurrency = ["USD","EUR","GBP"]
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        txtfldCurrency.text = House.newHouse.currency
         picker.delegate = self
         txtfldCurrency.inputView = picker
+        
         txtfldCurrency.setBorder(corners: 5, borderWidth: 1, borderColor: UIColor.gray)
     }
     
@@ -39,7 +41,7 @@ class StartPriceVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     @IBAction func actionSaveExitBtn(_ sender: AnyObject) {
         savePrice()
         self.navigationController?.popToRootViewController(animated: true)
-
+        
     }
     @IBAction func actionContinueBtn(_ sender: AnyObject) {
         savePrice()
@@ -48,7 +50,7 @@ class StartPriceVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     @IBAction func actionSliderPrice(_ sender: Any) {
         lblSliderValue.text = "\(txtfldCurrency.text!)\(Int(sliderPrice.value))"
     }
-
+    
     //MARK: - picker view delegate methods
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
