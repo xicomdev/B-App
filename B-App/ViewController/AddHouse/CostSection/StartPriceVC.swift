@@ -15,26 +15,21 @@ class StartPriceVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     @IBOutlet weak var txtfldCurrency: UITextField!
     
     var picker = UIPickerView()
-    var aryCurrency = ["$","€","£"]
+    var aryCurrency = ["USD","EUR","GBP"]
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        txtfldCurrency.text = House.newHouse.currency
         picker.delegate = self
         txtfldCurrency.inputView = picker
-        if House.newHouse.startPrice == ""
-        {
-            lblSliderValue.text = "$100"
-            sliderPrice.value = 100
-            txtfldCurrency.text = "$"
-
-        }else
-        {
-            lblSliderValue.text = "\(txtfldCurrency.text!)\(House.newHouse.startPrice)"
-            sliderPrice.value = Float(House.newHouse.startPrice)!
-        }
-        
         txtfldCurrency.setBorder(corners: 5, borderWidth: 1, borderColor: UIColor.gray)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        txtfldCurrency.text = getCurrencySymbolFromCode(House.newHouse.currency)
+        lblSliderValue.text = "\(txtfldCurrency.text!)\(House.newHouse.startPrice)"
+        sliderPrice.value = Float(House.newHouse.startPrice)!
     }
     
     //MARK: - Buttons actions
@@ -42,12 +37,12 @@ class StartPriceVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         self.navigationController?.popViewController(animated:  true)
     }
     @IBAction func actionSaveExitBtn(_ sender: AnyObject) {
-        House.newHouse.startPrice = "\(txtfldCurrency.text!)\(Int(sliderPrice.value))"
+        savePrice()
         self.navigationController?.popToRootViewController(animated: true)
 
     }
     @IBAction func actionContinueBtn(_ sender: AnyObject) {
-        House.newHouse.startPrice = "\(txtfldCurrency.text!)\(Int(sliderPrice.value))"
+        savePrice()
         self.pushViewController(controllerName: "NoticePeriodVC", storyboardName: AddHouseStoryboard)
     }
     @IBAction func actionSliderPrice(_ sender: Any) {
@@ -65,17 +60,22 @@ class StartPriceVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return aryCurrency[row]
+        return getCurrencySymbolFromCode(aryCurrency[row])
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        txtfldCurrency.text = aryCurrency[row]
+        txtfldCurrency.text = getCurrencySymbolFromCode(aryCurrency[row])
         lblSliderValue.text = "\(txtfldCurrency.text!)\(Int(sliderPrice.value))"
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    private func savePrice() {
+        House.newHouse.startPrice = "\(Int(sliderPrice.value))"
+        House.newHouse.currency = aryCurrency[picker.selectedRow(inComponent: 0)]
     }
     
 }

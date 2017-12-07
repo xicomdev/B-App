@@ -65,8 +65,6 @@ extension NSObject{
 
 extension Date {
     
-    
-    
     public static func timestamp() -> String {
         return "\(Date().timeIntervalSince1970 * 1000)" as String
     }
@@ -197,6 +195,13 @@ extension String
     {
         let strTrimmed = self.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
         return strTrimmed
+    }
+    
+    func toDateWithSimpleFormat() -> Date?  {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat  = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
+        dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
+        return dateFormatter.date(from: self)
     }
 }
 

@@ -10,13 +10,21 @@ import UIKit
 
 class CostTypeSelectVC: UIViewController {
 
-    @IBOutlet weak var btnDemandPrice: UIButton!
-    @IBOutlet weak var btnFixedPrice: UIButton!
+    @IBOutlet weak var btnHourly: UIButton!
+    @IBOutlet weak var btnDaily: UIButton!
+    @IBOutlet weak var btnWeekly: UIButton!
+    @IBOutlet weak var btnMonthly: UIButton!
+    
+    var selectedCostType = "Monthly"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        House.newHouse.costType = "Demand Price"
-        btnDemandPrice.isSelected = true
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        setSelectedCostType(House.newHouse.costType)
     }
     
     //MARK: - Buttons actions
@@ -24,34 +32,49 @@ class CostTypeSelectVC: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     @IBAction func actionSaveExitBtn(_ sender: AnyObject) {
-        if btnDemandPrice.isSelected {
-            House.newHouse.costType = "Demand"
-        }else {
-            House.newHouse.costType = "Fixed"
-        }
+        House.newHouse.costType = selectedCostType
         self.navigationController?.popToRootViewController(animated: true)
     }
     @IBAction func actionContinueBtn(_ sender: AnyObject) {
-        if btnDemandPrice.isSelected {
-            House.newHouse.costType = "Demand"
-        }else {
-            House.newHouse.costType = "Fixed"
-        }
+        House.newHouse.costType = selectedCostType
         self.pushViewController(controllerName: "StartPriceVC", storyboardName: AddHouseStoryboard)
     }
-    @IBAction func actionDemandPrice(_ sender: Any) {
-        btnDemandPrice.isSelected = true
-        btnFixedPrice.isSelected = false
+    @IBAction func actionHourlyPrice(_ sender: Any) {
+        setSelectedCostType("Hourly")
     }
-    @IBAction func actionFixedPrice(_ sender: Any) {
-        btnDemandPrice.isSelected = false
-        btnFixedPrice.isSelected = true
+    @IBAction func actionDailyPrice(_ sender: Any) {
+        setSelectedCostType("Daily")
+    }
+    @IBAction func actionWeeklyPrice(_ sender: Any) {
+        setSelectedCostType("Weekly")
+    }
+    @IBAction func actionMonlyPrice(_ sender: Any) {
+        setSelectedCostType("Monthly")
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
+    private func setSelectedCostType(_ type: String) {
+        selectedCostType = type
+        
+        btnHourly.isSelected = false
+        btnDaily.isSelected = false
+        btnWeekly.isSelected = false
+        btnMonthly.isSelected = false
+        
+        switch type {
+        case "Hourly":
+            btnHourly.isSelected = true
+        case "Daily":
+            btnDaily.isSelected = true
+        case "Weekly":
+            btnWeekly.isSelected = true
+        default:
+            btnMonthly.isSelected = true
+        }
+    }
 
 }

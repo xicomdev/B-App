@@ -18,28 +18,28 @@ class PublishAdVC: UIViewController {
     }
 
     @IBAction func actionPublish(_ sender: Any) {
-//        let param = [
-//            "category": House.newHouse.accomodationType ,
-//            "coordinate": [
-//                "latitude": House.newHouse.lattitude,
-//                "longitude": House.newHouse.longitude
-//            ],
-//            "address": House.newHouse.address,
-//            "board_size": [
-//                "width": "\(Int(House.newHouse.areaSIze)!/2)",
-//                "height": "\(Int(House.newHouse.areaSIze)!/2)"
-//            ],
-//            "sale_plans": [
-//                [
-//                    "price": House.newHouse.startPrice,
-//                    "unit": House.newHouse.costType,
-//                    "times": [
-//                        "from": House.newHouse.bookDateStart,
-//                        "until": House.newHouse.bookDateEnd
-//                    ]
-//                ]
-//            ]
-//            ] as! [String : Any]
+        //        let param = [
+        //            "category": House.newHouse.accomodationType ,
+        //            "coordinate": [
+        //                "latitude": House.newHouse.lattitude,
+        //                "longitude": House.newHouse.longitude
+        //            ],
+        //            "address": House.newHouse.address,
+        //            "board_size": [
+        //                "width": "\(Int(House.newHouse.areaSIze)!/2)",
+        //                "height": "\(Int(House.newHouse.areaSIze)!/2)"
+        //            ],
+        //            "sale_plans": [
+        //                [
+        //                    "price": House.newHouse.startPrice,
+        //                    "unit": House.newHouse.costType,
+        //                    "times": [
+        //                        "from": House.newHouse.bookDateStart,
+        //                        "until": House.newHouse.bookDateEnd
+        //                    ]
+        //                ]
+        //            ]
+        //            ] as! [String : Any]
 //
 //
 //        ApiManager.sharedObj.requestApi(API_Billboards, method: .post, param: param) { (responseDict, isSuccess, errorStr) in
@@ -50,9 +50,18 @@ class PublishAdVC: UIViewController {
 //                showAlert(title: "B-App", message: errorStr!, controller: self)
 //            }
 //        }
-        self.pushViewController(controllerName: "CongratulationVC", storyboardName: AddHouseStoryboard)
-
-    }
+        
+        let param = House.newHouse.toDictionary()
+        print(param)
+        ApiManager.sharedObj.requestApi(API_Billboards, method: .post, param: param) { (responseDict, isSuccess, errorStr) in
+            if isSuccess {
+                House.newHouse = House()
+                self.pushViewController(controllerName: "CongratulationVC", storyboardName: AddHouseStoryboard)
+            }else {
+                showAlert(title: "B-App", message: errorStr!, controller: self)
+            }
+        }
+   }
     
     @IBAction func actionMoreDetail(_ sender: Any) {
         

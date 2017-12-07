@@ -43,7 +43,7 @@ class ApiManager{
                 }
             }else if method == .post {
             
-                request(requestUrl, method: .post, parameters: param!, encoding: JSONEncoding.default, headers: ["content-type": "application/json", "Authorization":getAuthHeader()])
+                request(requestUrl, method: .post, parameters: param, encoding: JSONEncoding.default, headers: ["content-type": "application/json", "Authorization":getAuthHeader()])
                     .responseJSON { response in
                         self.hideIndicator()
                         print(response)

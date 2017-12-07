@@ -14,12 +14,15 @@ class NoticePeriodVC: UIViewController {
     @IBOutlet weak var btnNotifications: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        txtfldTime.text = House.newHouse.noticePeriod
-        btnNotifications.isSelected = House.newHouse.isNoificationOn
         
         txtfldTime.setBorder(corners: 5, borderWidth: 1, borderColor: UIColor.gray)
-
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        txtfldTime.text = House.newHouse.noticePeriod
+        btnNotifications.isSelected = House.newHouse.isNoificationOn
     }
     
     //MARK: - Buttons actions
