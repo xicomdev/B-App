@@ -95,9 +95,9 @@ class SelectBookingDatesVC: UIViewController, FSCalendarDelegate {
         
         let components = calendar.dateComponents([.day], from: date1, to: date2)
         Booking.newBooking.noOFDays = components.day!
-        Booking.newBooking.startDate = getDateStr(dateFirst!)
-        Booking.newBooking.endDate = getDateStr(dateSecond!)
-        self.pushViewController(controllerName: "BeforeBookOptionsVC", storyboardName: bookingStoryboard)
+        Booking.newBooking.startDate = getDateStrWithSimpleFormat(dateFirst!)
+        Booking.newBooking.endDate = getDateStrWithSimpleFormat(dateSecond!)
+        self.pushViewController(controllerName: "SelectPaymentMethodVC", storyboardName: bookingStoryboard)
     }
     
     override func didReceiveMemoryWarning() {

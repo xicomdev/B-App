@@ -18,7 +18,8 @@ class PreviewVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
     @IBOutlet weak var lblOwnerName: UILabel!
     @IBOutlet weak var imgvwOwner: SetCornerImageView!
     @IBOutlet weak var collctnvwImages: UICollectionView!
-    
+    @IBOutlet weak var lblPrice: UILabel!
+
     var aryImages = [String]()
     var houseInfo = House()
     var coordinates = CLLocationCoordinate2D()
@@ -32,7 +33,11 @@ class PreviewVC: UIViewController, UICollectionViewDelegate, UICollectionViewDat
         lblLocationBottm.text = houseInfo.address
         coordinates.latitude = houseInfo.lattitude
         coordinates.longitude = houseInfo.longitude
-
+        let priceComponents = houseInfo.startPrice.components(separatedBy: CharacterSet(charactersIn: " "))
+        let priceStr = priceComponents[0].replacingOccurrences(of: ",", with: "")
+        let currencyStr = priceComponents[1]
+        
+        lblPrice.text = getCurrencySymbolFromCode(currencyStr) + priceStr + houseInfo.costType
         mapvw.delegate = self
         marker.appearAnimation = .pop
         marker.map = mapvw

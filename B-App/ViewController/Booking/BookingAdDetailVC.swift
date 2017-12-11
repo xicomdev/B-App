@@ -27,6 +27,9 @@ class BookingAdDetailVC: UIViewController, UICollectionViewDelegate, UICollectio
     @IBOutlet weak var lblUserStatus: UILabel!
     @IBOutlet weak var lblUserName: UILabel!
     @IBOutlet weak var imgVwUser: SetCornerImageView!
+    @IBOutlet weak var lblWidth: UILabel!
+    @IBOutlet weak var lblLength: UILabel!
+    @IBOutlet weak var lblTotalArea: UILabel!
     
     var aryImages = [String]()
     var houseInfo = House()
@@ -49,7 +52,16 @@ class BookingAdDetailVC: UIViewController, UICollectionViewDelegate, UICollectio
         lblAddress1.text = houseInfo.address
         coordinates.latitude = houseInfo.lattitude
         coordinates.longitude = houseInfo.longitude
+        lblWidth.text = "\(houseInfo.width)m"
+        lblLength.text = "\(houseInfo.length)m"
+        lblTotalArea.attributedText = getAreaInMeters(houseInfo.areaSIze, lblArea: lblTotalArea)
+
+        let priceComponents = houseInfo.startPrice.components(separatedBy: CharacterSet(charactersIn: " "))
+        let priceStr = priceComponents[0].replacingOccurrences(of: ",", with: "")
+        let currencyStr = priceComponents[1]
         
+        lblPrice.text = getCurrencySymbolFromCode(currencyStr) + priceStr + " " + houseInfo.costType
+
         mapvw.delegate = self
         marker.appearAnimation = .pop
         marker.map = mapvw
@@ -64,9 +76,17 @@ class BookingAdDetailVC: UIViewController, UICollectionViewDelegate, UICollectio
         collctnvwImages.delegate = self
         collctnvwImages.dataSource = self
     }
+    
+    override func viewDidLayoutSubviews() {
+        lblWidth.makeCircularBorder()
+        lblLength.makeCircularBorder()
+        lblTotalArea.makeCircularBorder()
+    }
+    
     @IBAction func actionBack(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
+    
     
     @IBAction func actionLearnMore(_ sender: Any) {
         

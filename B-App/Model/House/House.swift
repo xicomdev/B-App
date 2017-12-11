@@ -80,6 +80,11 @@ class House: NSObject {
             //            objHouse.bookDateEnd = sales.value(forKeyPath: "times.until") as! String
             if let arrayHouse = dictHouse["sales"] as? NSArray {
                 if arrayHouse.count > 0, let sales = arrayHouse[0] as? NSDictionary {
+                    if let sale_id = sales["sale_id"] as? String {
+                        objHouse.salesId = Int(sale_id)!
+                    }else {
+                        objHouse.salesId = sales["sale_id"] as! Int
+                    }
                     objHouse.startPrice = sales["price"] as! String
                     objHouse.costType = sales["unit"] as! String
                     objHouse.bookDateStart = sales.value(forKeyPath: "times.from") as! String

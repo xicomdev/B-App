@@ -15,7 +15,7 @@ class StartPriceVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     @IBOutlet weak var txtfldCurrency: UITextField!
     
     var picker = UIPickerView()
-    var aryCurrency = ["USD","EUR","GBP"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -97,6 +97,13 @@ public func getDateStrWithSimpleFormat(_ date: Date) -> String {
         return formatter.string(from: date)
 }
 
+public func getDateFromSimpleFormat(_ dateStr: String) -> Date {
+    let formatter = DateFormatter()
+    formatter.dateFormat  = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
+    formatter.timeZone = TimeZone(abbreviation: "UTC")
+    return formatter.date(from: dateStr)!
+}
+
 public func getCurrencySymbolFromCode(_ code: String) -> String {
     var symbol: String
     switch code {

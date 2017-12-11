@@ -206,7 +206,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RoH-fR-8Km">
                                                         <rect key="frame" x="0.0" y="0.0" width="105" height="116.5"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNQ-GO-YpN">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Width" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNQ-GO-YpN">
                                                                 <rect key="frame" x="0.0" y="89" width="105" height="19.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                                 <nil key="textColor"/>
@@ -236,7 +236,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CHC-IW-xJz">
                                                         <rect key="frame" x="105" y="0.0" width="105" height="116.5"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNH-uk-T5f">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Length" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNH-uk-T5f">
                                                                 <rect key="frame" x="0.0" y="89" width="105" height="19.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                                 <nil key="textColor"/>
@@ -266,7 +266,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ZF-ok-87x">
                                                         <rect key="frame" x="210" y="0.0" width="105" height="116.5"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYD-FL-8oR">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Area" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYD-FL-8oR">
                                                                 <rect key="frame" x="0.0" y="89" width="105" height="19.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                                 <nil key="textColor"/>
@@ -476,9 +476,12 @@
                         <outlet property="lblAddress" destination="7YS-Xp-k1o" id="3a1-HW-0Ve"/>
                         <outlet property="lblAddress1" destination="TWb-Py-Ohk" id="z8S-e2-4Fx"/>
                         <outlet property="lblBeforeJoinText" destination="5hE-Xd-3Xa" id="87M-v7-cZ0"/>
+                        <outlet property="lblLength" destination="SZH-4F-LFy" id="TgA-I2-j5I"/>
                         <outlet property="lblPrice" destination="y53-uk-3pU" id="eVF-Wt-Kv0"/>
+                        <outlet property="lblTotalArea" destination="e9N-B4-gPO" id="fQf-cE-0tc"/>
                         <outlet property="lblUserName" destination="qnG-Ri-rLg" id="ci8-va-fs5"/>
                         <outlet property="lblUserStatus" destination="ga9-ku-nll" id="XUk-LM-0Jn"/>
+                        <outlet property="lblWidth" destination="ofO-iq-KTN" id="zyV-AN-5lz"/>
                         <outlet property="mapvw" destination="xln-La-rfz" id="Rgp-gn-vFs"/>
                     </connections>
                 </viewController>

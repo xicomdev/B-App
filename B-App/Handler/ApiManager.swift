@@ -68,48 +68,6 @@ class ApiManager{
         }
     }
     
-    func postRequestWithBody(_ endpoint: String, param: [String : Any]?, completion: @escaping (_ result:NSDictionary?, _ isSuccess:Bool, _ errorStr:String?) -> Void) {
-        
-        showIndicator()
-
-        
-        
-        
-        let requestUrl = baseUrl + endpoint
-
-        var request = URLRequest(url: URL(string: requestUrl)!)
-        request.httpMethod = "POST"
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.setValue(getAuthHeader(), forHTTPHeaderField: "Authorization")
-
-        request.httpBody = try! JSONSerialization.data(withJSONObject: param!)
-
-        
-        Alamofire.request(request).responseJSON { (response) in
-            
-            self.hideIndicator()
-            print(response)
-            if response.response?.statusCode == 200 {
-                if let jsonData = response.result.value as? NSDictionary {
-                    print(jsonData)
-                    completion(jsonData,true,nil)
-                }else {
-                    completion(nil,false,NSString(data: response.data!, encoding: String.Encoding.utf8.rawValue) as String?)
-                }
-                
-            }else {
-                print(NSString(data: response.data!, encoding: String.Encoding.utf8.rawValue)!)
-                //                            if response.error != nil {
-                //                                completion(nil,false,response.error?.localizedDescription)
-                //                            }else {
-                completion(nil,false,NSString(data: response.data!, encoding: String.Encoding.utf8.rawValue) as String?)
-                //                            }
-            }
-            
-        }
-    
-    }
-    
     func uploadImages(_ endpoint:String, param: [String: String], assets:[DKAsset], completion: @escaping (NSDictionary) -> Void) {
         if (Reachability()?.isReachable)! {
             showIndicator()

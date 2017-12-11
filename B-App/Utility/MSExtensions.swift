@@ -225,6 +225,15 @@ extension UIView
 
 }
 
+extension UILabel
+{
+    public func makeCircularBorder() {
+        self.layer.cornerRadius = self.frame.width/2
+        self.layer.borderColor = self.textColor.cgColor
+        self.layer.borderWidth = 1
+        self.clipsToBounds = true
+    }
+}
 
 
 extension UIViewController

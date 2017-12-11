@@ -950,7 +950,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mark Steven" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iw9-Mf-cET">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tokyo" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iw9-Mf-cET">
                                                 <rect key="frame" x="25" y="270" width="165" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
@@ -1098,6 +1098,7 @@
                         <outlet property="lblAddress" destination="Iw9-Mf-cET" id="RyQ-2G-evu"/>
                         <outlet property="lblLocationBottm" destination="Ifi-OK-NyM" id="Hiq-DM-1PP"/>
                         <outlet property="lblOwnerName" destination="cwA-Yz-MgX" id="XBp-Oe-itr"/>
+                        <outlet property="lblPrice" destination="4rh-ue-0NY" id="VL8-AP-X1a"/>
                         <outlet property="mapvw" destination="CHh-AN-Jqy" id="ivL-u0-sv5"/>
                     </connections>
                 </viewController>
