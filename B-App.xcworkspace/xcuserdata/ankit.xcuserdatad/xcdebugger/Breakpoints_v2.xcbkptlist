@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "B-App/Handler/ApiManager.swift"
-            timestampString = "534672173.450689"
+            timestampString = "534950041.012866"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "requestApi(_:method:param:completion:)"
             landmarkType = "7">
          </BreakpointContent>

@@ -31,7 +31,6 @@ class ApiManager{
                         print(response)
                         if response.response?.statusCode == 200 {
                             if let jsonData = response.result.value as? NSDictionary {
-                                print(jsonData)
                                 completion(jsonData,true,nil)
                             }else {
                                 completion(nil,false,NSString(data: response.data!, encoding: String.Encoding.utf8.rawValue) as String?)
@@ -68,6 +67,7 @@ class ApiManager{
         }
     }
     
+    
     func uploadImages(_ endpoint:String, param: [String: String], assets:[DKAsset], completion: @escaping (NSDictionary) -> Void) {
         if (Reachability()?.isReachable)! {
             showIndicator()
@@ -76,7 +76,7 @@ class ApiManager{
             upload(multipartFormData: { multipartFormData in
                 for i in 0 ..< assets.count {
                     assets[i].fetchImageWithSize(CGSize(width: 200, height: 200), completeBlock: { image, info in
-                        multipartFormData.append(UIImagePNGRepresentation(image!)!, withName: "product_image[\(i)]", fileName: "\(Date().timeIntervalSince1970).jpeg", mimeType: "image/jpeg")
+                        multipartFormData.append(UIImagePNGRepresentation(image!)!, withName: "file", fileName: "\(Date().timeIntervalSince1970).jpeg", mimeType: "image/jpeg")
                     })
                 }
                 for (key, value) in param {
@@ -97,6 +97,45 @@ class ApiManager{
                     }
                 case .failure(let error):
                     print(error)
+                }
+                
+            })
+        }else {
+            appDelegateObj.showAlert("No internet connection")
+        }
+        
+    }
+    
+    func uploadImage(_ endpoint:String, param: [String: String]?, image:UIImage, completion: @escaping (_ result:NSDictionary?, _ isSuccess:Bool, _ errorStr:String?) -> Void) {
+        if (Reachability()?.isReachable)! {
+            showIndicator()
+            let requestUrl = baseUrl + endpoint
+            
+            upload(multipartFormData: { multipartFormData in
+                
+                multipartFormData.append(UIImagePNGRepresentation(image)!, withName: "filename", fileName: "\(Date().timeIntervalSince1970).jpeg", mimeType: "image/jpeg")
+                
+            }, to: requestUrl,
+               method:.post,
+               headers:["content-type": "application/json", "Authorization":getAuthHeader()],
+               encodingCompletion: { encodingResult in
+                switch encodingResult {
+                case .success(let upload, _, _):
+                    upload.responseJSON { response in
+                        print(response)
+                        self.hideIndicator()
+                        if response.response?.statusCode == 200 {
+                            if let jsonData = response.result.value as? NSDictionary {
+                                completion(jsonData,true,nil)
+                            }else {
+                                completion(nil,false,NSString(data: response.data!, encoding: String.Encoding.utf8.rawValue) as String?)
+                            }
+                        }else {
+                            completion(nil,false,NSString(data: response.data!, encoding: String.Encoding.utf8.rawValue) as String?)
+                        }
+                    }
+                case .failure(let error):
+                    completion(nil,false,error.localizedDescription)
                 }
                 
             })
