@@ -67,7 +67,7 @@ class House: NSObject {
                 objHouse.longitude = (dictHouse.value(forKeyPath: "coordinate.longitude") as? Double) ?? 0.0
             }
             
-            objHouse.aryImgUrls = dictHouse["photos"] as! [String]
+//            objHouse.aryImgUrls = dictHouse["photos"] as! [String]
             objHouse.ownerInfo = User.getOwnerInfo(dictHouse["seller"] as! NSDictionary)
             let height = dictHouse.value(forKeyPath: "board_size.height") as! Int
             let width = dictHouse.value(forKeyPath: "board_size.width") as! Int

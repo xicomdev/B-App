@@ -87,9 +87,12 @@ class SelectBookingDatesVC: UIViewController, FSCalendarDelegate {
     @IBAction func actionReset(_ sender: Any) {
     }
     @IBAction func actionApply(_ sender: Any) {
+        if dateFirst == nil || dateSecond == nil {
+            showAlert(title: "B-App", message: "Please select start and end date for booking", controller: self)
+        }else {
+            
+        }
         let calendar = NSCalendar.current
-        
-        // Replace the hour (time) of both dates with 00:00
         let date1 = calendar.startOfDay(for: dateFirst!)
         let date2 = calendar.startOfDay(for: dateSecond!)
         

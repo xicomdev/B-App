@@ -159,7 +159,6 @@ class ProfileVC: UIViewController , UIImagePickerControllerDelegate, UINavigatio
             ApiManager.sharedObj.uploadImage(APi_UploadUserPhoto, param: nil, image: selectedImg!, completion: { (responseDict, isSuccess, errorStr) in
                 if isSuccess {
                     showAlert(title: "B-App", message: "Profile picture uploaded successfully", controller: self)
-
                 }else {
                     showAlert(title: "B-App", message: errorStr!, controller: self)
                 }
